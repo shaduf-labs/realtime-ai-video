@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "status": "current",
+  "current_answer": "Three different routes exist today: fal H3 Max Director is a hosted open WebRTC session, the inspected FastH3 route is buffered short-clip playout, and local MiniMax H3 is a short-clip workflow. None of the inspected sources establishes a cheap, proven self-hosted 24/7 route.",
+  "catalogue_card": {
+    "question": "Which AI video route can actually stay live?",
+    "text": "The headline hides three products: open sessions, buffered clips, and offline local renders. See the price, hardware, and failure condition before you build."
+  },
+  "summary": [
+    "fal's current H3 Max Director page describes an interactive WebRTC session, priced by generated second and limited public-session duration; its terms need a current check before purchase.",
+    "Reactor's FastH3 reference is a queued clip system. Its reported playback-rate profile uses four B200 GPUs and still needs a ready buffer.",
+    "Local MiniMax H3 can be a short-clip experiment, but community low-VRAM reports do not show live throughput or a general hardware recommendation."
+  ],
+  "uncertainty": [
+    "fal documents conflicting Director session details across pages; the newer endpoint page is used provisionally.",
+    "No pool test, invoice, uptime log, or end-to-end latency measurement exists.",
+    "Project and community performance reports are condition-specific and not independently reproduced."
+  ],
+  "checked_at": "2026-09-10T18:53:00Z",
+  "meaningfully_updated_at": "2026-09-10T18:53:00Z",
+  "freshness_note": "This first public map was checked on 10 September 2026. Pricing, session limits, model versions, and workflow compatibility can change quickly."
+}

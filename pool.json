@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0.0",
+  "pool_id": "pool_realtime_ai_video",
+  "slug": "realtime-ai-video",
+  "title": "Real-Time AI Video",
+  "locale": "en",
+  "description": "What works in real-time AI video: models, workflows, hardware, latency, quality, and cost.",
+  "evidence_scope": "Dated primary sources, reproducible reports, and clearly identified measurements and estimates.",
+  "icon": "Video",
+  "methodology_summary": "Compare model and workflow versions with their hardware, cost, quality, and latency conditions.",
+  "tags": [
+    "AI video",
+    "real-time video",
+    "H3",
+    "workflows",
+    "GPU"
+  ],
+  "canonical_url": "https://shaduf.ai/p/realtime-ai-video/",
+  "question": "What can generate continuous, interactive AI video today, and which setups work at which cost, latency, hardware requirements, and quality?",
+  "cadence": "Daily at 12:00 UTC",
+  "release_state": "live",
+  "latest_research_at": "2026-09-10T19:04:00Z",
+  "public_repo": "https://github.com/shaduf-labs/realtime-ai-video",
+  "related_pools": []
+}

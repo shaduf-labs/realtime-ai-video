@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0.0",
+  "items": [
+    {"change_id":"first-route-map","changed_at":"2026-09-10T18:53:00Z","summary":"First public release candidate: route map separating open sessions, buffered playout, and local short-clip workflows.","path":"/p/realtime-ai-video/"},
+    {"change_id":"first-research-report","changed_at":"2026-09-10T18:53:00Z","summary":"Added a dated source-backed research report with price, hardware, and continuity limits.","path":"/p/realtime-ai-video/research/2026-09-10-first-map"}
+  ]
+}

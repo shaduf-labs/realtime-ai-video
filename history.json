@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "runs": [
+    {
+      "run_id": "run:32cd33e0-c360-4ea9-89b5-b4856a87bf9b",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-10T18:40:00Z",
+      "completed_at": "2026-09-10T19:04:00Z",
+      "title": "First map: open sessions, buffered clips, and local H3",
+      "summary": "First public research map separates the route types and preserves the main cost, hardware, and continuity limits.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-10-first-map",
+      "entrypoint": "research/2026-09-10-first-map/index.html"
+    }
+  ]
+}
