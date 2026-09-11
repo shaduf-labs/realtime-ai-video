@@ -1,22 +1,24 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "Three different routes exist today: fal H3 Max Director is a hosted open WebRTC session, the inspected FastH3 route is buffered short-clip playout, and local MiniMax H3 is a short-clip workflow. None of the inspected sources establishes a cheap, proven self-hosted 24/7 route.",
+  "current_answer": "Four separate choices exist today: fal H3 Max Director is a hosted open WebRTC session; Reactor's FastH3 is buffered clip playout; FastVideo FastH3 Preview now has local Apple Silicon and DGX Spark clip routes; and local MiniMax H3 remains a short-clip workflow. The fastest stated local FastH3 preview condition still takes about 23 wall-clock seconds per output second, so no cheap, proven self-hosted continuous route is established.",
   "catalogue_card": {
-    "question": "Which AI video route can actually stay live?",
-    "text": "The headline hides three products: open sessions, buffered clips, and offline local renders. See the price, hardware, and failure condition before you build."
+    "question": "FastH3 runs locally now. Can it stay live?",
+    "text": "The new local route is real, but the fastest stated preview still spends about 23 seconds making one second of video. See the hardware, decoder, and failure boundary before you build a stream."
   },
   "summary": [
-    "fal's current H3 Max Director page describes an interactive WebRTC session, priced by generated second and limited public-session duration; its terms need a current check before purchase.",
-    "Reactor's FastH3 reference is a queued clip system. Its reported playback-rate profile uses four B200 GPUs and still needs a ready buffer.",
-    "Local MiniMax H3 can be a short-clip experiment, but community low-VRAM reports do not show live throughput or a general hardware recommendation."
+    "FastVideo now documents FastH3 Preview for Apple Silicon MLX and one or two DGX Sparks, but MLX is T2VA only and the published runs are local clips, not viewer-speed output.",
+    "On FastVideo's stated 832×480, 124-frame, four-step comparison, two Sparks with the TAEH3 preview decoder took 119 seconds for about 5.17 seconds of video; full H3 VAE took 209 seconds and is the reported quality path.",
+    "fal's current H3 Max Director page still describes the closest route to a live guided session, priced by generated second with a finite public-session limit; terms need a current check before purchase.",
+    "Community 16 GB MiniMax H3 records support an offline baseline discussion, not a live-performance or cost recommendation."
   ],
   "uncertainty": [
+    "FastH3 timings and quality trade-offs are project-published results under fixed hardware and decoder conditions, not independently reproduced pool measurements.",
     "fal documents conflicting Director session details across pages; the newer endpoint page is used provisionally.",
-    "No pool test, invoice, uptime log, or end-to-end latency measurement exists.",
-    "Project and community performance reports are condition-specific and not independently reproduced."
+    "No pool test, invoice, uptime log, end-to-end latency measurement, or first-party pool analytics exists.",
+    "Community H3 reports are condition-specific and cannot establish general hardware fit or delivered-stream cost."
   ],
-  "checked_at": "2026-09-10T18:53:00Z",
-  "meaningfully_updated_at": "2026-09-10T18:53:00Z",
-  "freshness_note": "This first public map was checked on 10 September 2026. Pricing, session limits, model versions, and workflow compatibility can change quickly."
+  "checked_at": "2026-09-11T12:14:32Z",
+  "meaningfully_updated_at": "2026-09-11T12:14:32Z",
+  "freshness_note": "Checked 11 September 2026. FastH3 local paths, fal pricing and session terms, model versions, and workflow compatibility can change quickly."
 }

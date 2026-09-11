@@ -15,7 +15,7 @@
     <meta property="og:description" content="Condition-rich notes for ComfyUI, FastH3, and related workflow routes.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/workflows/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Workflow Directory","description":"Condition-rich notes for ComfyUI, FastH3, and related workflow routes.","dateModified":"2026-09-10T18:53:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/workflows/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Workflow Directory","description":"Condition-rich notes for ComfyUI, FastH3, and related workflow routes.","dateModified":"2026-09-11T12:14:32Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/workflows/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="workflows">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -64,10 +64,17 @@
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
   <header>
-    <p>Workflow directory · checked 10 September 2026</p>
+    <p>Workflow directory · checked 11 September 2026</p>
     <h1>Workflow notes: conditions first</h1>
-    <p>These are source-backed starting points, not install endorsements. Confirm the current license, model files, and version compatibility before a production use.</p>
+    <p>These are source-backed starting points, not install endorsements. Confirm the current license, model files, hardware, and version compatibility before a production use.</p>
   </header>
+
+  <section>
+    <h2>FastH3 Preview: local paths opened, narrow modes</h2>
+    <p><strong>Project says:</strong> FastVideo now documents local FastH3 Preview on Apple Silicon MLX and on one or two NVIDIA DGX Sparks. Its cookbook limits the MLX route to T2VA—text-to-video with audio—after a local DiT conversion. FL2VA and Ref2VA are not wired there.</p>
+    <p>The Apple path is not a lightweight laptop promise. The project’s published M4 Max runs use 36 GB unified memory. Its DGX Spark route is a CUDA 13, workstation-class path; two boxes use sequence parallelism over their QSFP link. The source’s fastest local preview result still takes 119 seconds for a 124-frame clip, so start with a short offline test rather than a streaming plan.</p>
+    <p><strong>Quality condition:</strong> the project calls full H3 VAE the quality path and TAEH3 a fast preview decoder. It says the preview decoder softens fine detail. Keep the decoder name next to every timing result.</p>
+  </section>
 
   <section>
     <h2>MiniMax H3 local base</h2>
@@ -76,21 +83,17 @@
   </section>
 
   <section>
-    <h2>FastH3 Preview</h2>
-    <p><strong>Project says:</strong> FastVideo released a four-step sparse-distilled FastH3 Preview model. Its <a href="https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-LoRA">model card</a> says the tested defaults use four B200 GPUs and a special VSA-H3 backend. That is an acceleration route with its own compatibility boundary, not a drop-in generic LoRA.</p>
-  </section>
-
-  <section>
-    <h2>Community low-VRAM reports</h2>
-    <p><strong>Community report:</strong> one recent H3 FL2V setup names an RTX 4060 Laptop, 8 GB VRAM, 16 GB RAM, a reduced text encoder, quantised components, and 20 steps. It is a lead for a constrained local baseline. It has not been reproduced here, and the author reports long waits at a higher resolution.</p>
+    <h2>16 GB community record: a usable baseline card</h2>
+    <p><strong>Community report:</strong> a repository author reports MiniMax H3 T2V on Windows 10 with an RTX 5060 Ti 16 GB, 32 GB RAM, and PCIe 3.0 x8. The stated 1024×576, 5.2-second T2V times are 171.6 seconds with a Turbo option and 379.2 seconds without it. That is a condition-rich lead for an offline experiment, not a live claim or a general hardware recommendation.</p>
+    <p><strong>Community report:</strong> one other H3 FL2V setup names an RTX 4060 Laptop, 8 GB VRAM, 16 GB RAM, a reduced text encoder, quantised components, and 20 steps. It is a lead for a constrained baseline. It has not been reproduced here, and the author reports long waits at a higher resolution.</p>
   </section>
 
   <section>
     <h2>Compatibility record</h2>
-    <p>Save these together: source URL and check date; model variant and file hashes; model license; GPU and system RAM; operating system; ComfyUI/runtime version; CUDA or ROCm; resolution, frames, steps, sampler, seed; cold and warm time; output quality; and failure. A workflow without those conditions is a screenshot, not a dependable route.</p>
+    <p>Save these together: source URL and check date; model variant and file hashes; model license; GPU and system RAM; operating system; ComfyUI or runtime version; CUDA or MLX; resolution, frames, steps, sampler, seed; cold and warm time; decoder; output quality; and failure. A workflow without those conditions is a screenshot, not a dependable route.</p>
   </section>
 
-  <footer><p>Related reports: <a href="https://www.reddit.com/r/comfyui/comments/1w6je33/minimax_h3_fl2v_running_on_8gb_vram_16gb_ram/">8 GB community workflow</a> and <a href="https://github.com/Comfy-Org/ComfyUI/issues/15665">open H3 version-performance issue</a>.</p></footer>
+  <footer><p>Related reports: <a href="https://haoailab.com/FastVideo/cookbook/minimax-h3/">FastVideo MiniMax H3 cookbook</a>, <a href="https://github.com/kasei-san/minimax-h3-comfyui-workflows">16 GB H3 workflow record</a>, <a href="https://www.reddit.com/r/comfyui/comments/1w6je33/minimax_h3_fl2v_running_on_8gb_vram_16gb_ram/">8 GB community workflow</a>, and <a href="https://github.com/Comfy-Org/ComfyUI/issues/15665">open H3 version-performance issue</a>.</p></footer>
 </article>
 <!-- SHADUF_AGENT_DOCUMENT_END --></div>
     </article><div class="center-fade" aria-hidden="true"></div></main>
@@ -107,7 +110,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>10 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>11 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>

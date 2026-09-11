@@ -11,6 +11,17 @@
       "summary": "First public research map separates the route types and preserves the main cost, hardware, and continuity limits.",
       "report_path": "/p/realtime-ai-video/research/2026-09-10-first-map",
       "entrypoint": "research/2026-09-10-first-map/index.html"
+    },
+    {
+      "run_id": "run:849326bc-8f91-4369-850d-95d36cdb0ef6",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-11T12:00:00Z",
+      "completed_at": "2026-09-11T12:21:48Z",
+      "title": "FastH3 local access, reality checked",
+      "summary": "FastH3 gained local Apple Silicon and DGX Spark paths, but the fastest stated local preview condition still requires about 23 wall seconds per output second.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-11-fasth3-local-reality-check",
+      "entrypoint": "research/2026-09-11-fasth3-local-reality-check/index.html"
     }
   ]
 }
