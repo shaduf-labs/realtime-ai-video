@@ -5,7 +5,7 @@
     <meta name="description" content="Condition-rich notes for ComfyUI, FastH3, and related workflow routes.">
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
     <link rel="canonical" href="https://shaduf.ai/p/realtime-ai-video/workflows/">
-    <link rel="icon" href="../assets/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="../assets/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="../assets/apple-touch-icon.png" type="image/png" sizes="180x180"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" sizes="180x180">
     <link rel="preload" href="../assets/fonts/cal-sans-ui-variable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="../assets/shaduf.css?v=20260908-research-preview">
     <meta name="theme-color" content="#ffffff">
@@ -15,7 +15,7 @@
     <meta property="og:description" content="Condition-rich notes for ComfyUI, FastH3, and related workflow routes.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/workflows/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Workflow Directory","description":"Condition-rich notes for ComfyUI, FastH3, and related workflow routes.","dateModified":"2026-09-11T12:14:32Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/workflows/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Workflow Directory","description":"Condition-rich notes for ComfyUI, FastH3, and related workflow routes.","dateModified":"2026-09-12T12:13:44Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/workflows/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="workflows">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -64,14 +64,20 @@
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
   <header>
-    <p>Workflow directory · checked 11 September 2026</p>
+    <p>Workflow directory · checked 12 September 2026</p>
     <h1>Workflow notes: conditions first</h1>
     <p>These are source-backed starting points, not install endorsements. Confirm the current license, model files, hardware, and version compatibility before a production use.</p>
   </header>
 
   <section>
+    <h2>Comfy’s official H3 access route: a footprint is not a speed claim</h2>
+    <p><strong>Comfy says:</strong> its optimized H3 path prunes modulation weights, uses INT8 ConvRot, and reduces the smallest variants’ total memory footprint from 123.6 GB to 42.5 GB. It says dynamic VRAM offloading can run H3 on a GPU like an RTX 3060.</p>
+    <p>That is useful for a first local test. It does not say which task mode, resolution, duration, quality, system RAM, retry rate, or wall time fits that card. Keep “it started” separate from “it produced the shot I need before I gave up.”</p>
+  </section>
+
+  <section>
     <h2>FastH3 Preview: local paths opened, narrow modes</h2>
-    <p><strong>Project says:</strong> FastVideo now documents local FastH3 Preview on Apple Silicon MLX and on one or two NVIDIA DGX Sparks. Its cookbook limits the MLX route to T2VA—text-to-video with audio—after a local DiT conversion. FL2VA and Ref2VA are not wired there.</p>
+    <p><strong>Project says:</strong> FastVideo documents local FastH3 Preview on Apple Silicon MLX and on one or two NVIDIA DGX Sparks. Its cookbook limits the MLX route to T2VA—text-to-video with audio—after a local DiT conversion. FL2VA and Ref2VA are not wired there.</p>
     <p>The Apple path is not a lightweight laptop promise. The project’s published M4 Max runs use 36 GB unified memory. Its DGX Spark route is a CUDA 13, workstation-class path; two boxes use sequence parallelism over their QSFP link. The source’s fastest local preview result still takes 119 seconds for a 124-frame clip, so start with a short offline test rather than a streaming plan.</p>
     <p><strong>Quality condition:</strong> the project calls full H3 VAE the quality path and TAEH3 a fast preview decoder. It says the preview decoder softens fine detail. Keep the decoder name next to every timing result.</p>
   </section>
@@ -85,15 +91,10 @@
   <section>
     <h2>16 GB community record: a usable baseline card</h2>
     <p><strong>Community report:</strong> a repository author reports MiniMax H3 T2V on Windows 10 with an RTX 5060 Ti 16 GB, 32 GB RAM, and PCIe 3.0 x8. The stated 1024×576, 5.2-second T2V times are 171.6 seconds with a Turbo option and 379.2 seconds without it. That is a condition-rich lead for an offline experiment, not a live claim or a general hardware recommendation.</p>
-    <p><strong>Community report:</strong> one other H3 FL2V setup names an RTX 4060 Laptop, 8 GB VRAM, 16 GB RAM, a reduced text encoder, quantised components, and 20 steps. It is a lead for a constrained baseline. It has not been reproduced here, and the author reports long waits at a higher resolution.</p>
+    <p>Fresh community questions around 8 GB and 12 GB VRAM reinforce the same rule: memory labels alone hide task mode, system RAM, output duration, offload, and wait. A workflow record without those conditions is a screenshot, not a dependable route.</p>
   </section>
 
-  <section>
-    <h2>Compatibility record</h2>
-    <p>Save these together: source URL and check date; model variant and file hashes; model license; GPU and system RAM; operating system; ComfyUI or runtime version; CUDA or MLX; resolution, frames, steps, sampler, seed; cold and warm time; decoder; output quality; and failure. A workflow without those conditions is a screenshot, not a dependable route.</p>
-  </section>
-
-  <footer><p>Related reports: <a href="https://haoailab.com/FastVideo/cookbook/minimax-h3/">FastVideo MiniMax H3 cookbook</a>, <a href="https://github.com/kasei-san/minimax-h3-comfyui-workflows">16 GB H3 workflow record</a>, <a href="https://www.reddit.com/r/comfyui/comments/1w6je33/minimax_h3_fl2v_running_on_8gb_vram_16gb_ram/">8 GB community workflow</a>, and <a href="https://github.com/Comfy-Org/ComfyUI/issues/15665">open H3 version-performance issue</a>.</p></footer>
+  <footer><p>Related reports: <a href="https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui">Comfy H3 note</a>, <a href="https://haoailab.com/FastVideo/cookbook/minimax-h3/">FastVideo MiniMax H3 cookbook</a>, <a href="https://github.com/kasei-san/minimax-h3-comfyui-workflows">16 GB H3 workflow record</a>, and <a href="https://github.com/Comfy-Org/ComfyUI/issues/15665">open H3 version-performance issue</a>.</p></footer>
 </article>
 <!-- SHADUF_AGENT_DOCUMENT_END --></div>
     </article><div class="center-fade" aria-hidden="true"></div></main>
@@ -110,7 +111,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>11 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>12 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>

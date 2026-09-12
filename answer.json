@@ -1,24 +1,24 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "Four separate choices exist today: fal H3 Max Director is a hosted open WebRTC session; Reactor's FastH3 is buffered clip playout; FastVideo FastH3 Preview now has local Apple Silicon and DGX Spark clip routes; and local MiniMax H3 remains a short-clip workflow. The fastest stated local FastH3 preview condition still takes about 23 wall-clock seconds per output second, so no cheap, proven self-hosted continuous route is established.",
+  "current_answer": "Current evidence supports four separate choices: fal H3 Max Director is a finite hosted, context-carrying WebRTC session; Reactor FastH3 can run a chat-driven queue and paced RTMP broadcast but uses independently generated clips with hard cuts; FastVideo FastH3 Preview has local clip routes; and Comfy’s optimized H3 route broadens local access. No low-cost, independently proven setup delivers continuous context at viewer speed.",
   "catalogue_card": {
-    "question": "FastH3 runs locally now. Can it stay live?",
-    "text": "The new local route is real, but the fastest stated preview still spends about 23 seconds making one second of video. See the hardware, decoder, and failure boundary before you build a stream."
+    "question": "Can an “infinite” AI-video broadcast keep the same scene alive?",
+    "text": "FastH3 can keep a paced RTMP feed running, but its current project notes say every generated clip hard-cuts. See the queue, fallback, and story boundary before you promise viewers continuity."
   },
   "summary": [
-    "FastVideo now documents FastH3 Preview for Apple Silicon MLX and one or two DGX Sparks, but MLX is T2VA only and the published runs are local clips, not viewer-speed output.",
-    "On FastVideo's stated 832×480, 124-frame, four-step comparison, two Sparks with the TAEH3 preview decoder took 119 seconds for about 5.17 seconds of video; full H3 VAE took 209 seconds and is the reported quality path.",
-    "fal's current H3 Max Director page still describes the closest route to a live guided session, priced by generated second with a finite public-session limit; terms need a current check before purchase.",
-    "Community 16 GB MiniMax H3 records support an offline baseline discussion, not a live-performance or cost recommendation."
+    "Reactor documents a chat-to-queue-to-RTMP FastH3 system, but its model notes say independently generated clips have hard cuts with no continuity of subject, framing, or voice.",
+    "The project’s client can automatically chain ready clips and use repeated frames plus silence to keep a 24 fps output clock running. That is delivery continuity, not proof of continuous visual or audio story.",
+    "fal’s current H3 Max Director page still describes the closest route to one continuing, directed session, with provider-claimed carried context and hidden overlap. Its public sessions and pricing remain finite and changeable.",
+    "Comfy says its optimized H3 path reduces the smallest variants’ total memory footprint to 42.5 GB and supports dynamic-VRAM offloading, but it gives no general speed or hardware-suitability promise."
   ],
   "uncertainty": [
-    "FastH3 timings and quality trade-offs are project-published results under fixed hardware and decoder conditions, not independently reproduced pool measurements.",
-    "fal documents conflicting Director session details across pages; the newer endpoint page is used provisionally.",
-    "No pool test, invoice, uptime log, end-to-end latency measurement, or first-party pool analytics exists.",
-    "Community H3 reports are condition-specific and cannot establish general hardware fit or delivered-stream cost."
+    "Reactor’s continuity and timing statements are project-maintainer documentation for one implementation, not independent pool measurements or a viewer study.",
+    "fal’s current endpoint terms and continuity behavior are provider claims; a prior provider learning article still conflicts on session and audio details.",
+    "Comfy’s memory-optimized H3 statement is not a performance, quality, or minimum-hardware guarantee.",
+    "No pool test, invoice, uptime log, end-to-end latency measurement, or first-party pool analytics is available."
   ],
-  "checked_at": "2026-09-11T12:14:32Z",
-  "meaningfully_updated_at": "2026-09-11T12:14:32Z",
-  "freshness_note": "Checked 11 September 2026. FastH3 local paths, fal pricing and session terms, model versions, and workflow compatibility can change quickly."
+  "checked_at": "2026-09-12T12:13:44Z",
+  "meaningfully_updated_at": "2026-09-12T12:13:44Z",
+  "freshness_note": "Checked 12 September 2026. FastH3 implementation behavior, H3 local compatibility, fal pricing, and session terms can change quickly."
 }

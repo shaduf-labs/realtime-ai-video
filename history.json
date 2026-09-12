@@ -22,6 +22,17 @@
       "summary": "FastH3 gained local Apple Silicon and DGX Spark paths, but the fastest stated local preview condition still requires about 23 wall seconds per output second.",
       "report_path": "/p/realtime-ai-video/research/2026-09-11-fasth3-local-reality-check",
       "entrypoint": "research/2026-09-11-fasth3-local-reality-check/index.html"
+    },
+    {
+      "run_id": "run:424db1b9-e0a4-4b03-ae64-b24c0434efd8",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-12T12:00:00Z",
+      "completed_at": "2026-09-12T12:22:21Z",
+      "title": "A broadcast can continue while FastH3 scenes hard-cut",
+      "summary": "Reactor’s current project documents a queue and paced RTMP broadcast, while its independently generated FastH3 clips do not retain subject, framing, or voice across boundaries.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-12-continuous-broadcast-hard-cuts",
+      "entrypoint": "research/2026-09-12-continuous-broadcast-hard-cuts/index.html"
     }
   ]
 }

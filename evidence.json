@@ -1,14 +1,115 @@
 {
   "schema_version": "1.0.0",
   "items": [
-    {"evidence_id":"public:fasth3-local-release","source_type":"project release and benchmark report","source_url":"https://haoailab.com/blogs/fasth3-local/","title":"FastVideo FastH3 Goes Local","claim":"FastVideo reports local M4 Max and one- or two-DGX-Spark FastH3 Preview timings, including full-VAE and TAEH3 conditions.","accessed_at":"2026-09-11T12:14:32Z","relation":"supports","publication_basis":"linked-summary"},
-    {"evidence_id":"public:fasth3-local-cookbook","source_type":"project cookbook","source_url":"https://haoailab.com/FastVideo/cookbook/minimax-h3/","title":"FastVideo MiniMax H3 cookbook","claim":"The cookbook defines the local MLX and DGX Spark paths and limits the MLX FastH3 Preview route to T2VA.","accessed_at":"2026-09-11T12:14:32Z","relation":"supports","publication_basis":"linked-summary"},
-    {"evidence_id":"public:minimax-h3-16gb-community","source_type":"community workflow report","source_url":"https://github.com/kasei-san/minimax-h3-comfyui-workflows","title":"MiniMax H3 ComfyUI workflows for 16 GB VRAM","claim":"One author reports a condition-rich RTX 5060 Ti 16 GB MiniMax H3 workflow and stated offline clip timings.","accessed_at":"2026-09-11T12:14:32Z","relation":"context","publication_basis":"linked-summary"},
-    {"evidence_id":"public:director-current","source_type":"provider documentation","source_url":"https://fal.ai/h3-max-director","title":"H3 Max Director","claim":"The provider describes an open WebRTC session, current price conditions, and a public session limit.","accessed_at":"2026-09-11T12:14:32Z","relation":"supports","publication_basis":"linked-summary"},
-    {"evidence_id":"public:director-conflict","source_type":"provider learning article","source_url":"https://fal.ai/learn/tools/what-is-minimax-h3-max-director","title":"What is MiniMax H3 Max Director?","claim":"A first-party learning article gives different session and audio details from the endpoint page.","accessed_at":"2026-09-10T18:53:00Z","relation":"limits","publication_basis":"linked-summary"},
-    {"evidence_id":"public:fasth3-architecture","source_type":"project repository","source_url":"https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md","title":"Reactor FastH3 README","claim":"The documented implementation has separate generation and playout queues, explicit playback, and a high-end reference profile.","accessed_at":"2026-09-10T18:53:00Z","relation":"context","publication_basis":"linked-summary"},
-    {"evidence_id":"public:minimax-h3","source_type":"provider repository","source_url":"https://github.com/MiniMax-AI/MiniMax-H3","title":"MiniMax H3 repository","claim":"The repository documents local 4–15 second base clips and separate task-specific checkpoint families.","accessed_at":"2026-09-10T18:53:00Z","relation":"context","publication_basis":"linked-summary"},
-    {"evidence_id":"public:low-vram-report","source_type":"community report","source_url":"https://www.reddit.com/r/comfyui/comments/1w6je33/minimax_h3_fl2v_running_on_8gb_vram_16gb_ram/","title":"8 GB H3 FL2V community report","claim":"One author reports a constrained 8 GB laptop workflow and its stated runtime conditions.","accessed_at":"2026-09-10T18:53:00Z","relation":"context","publication_basis":"linked-summary"},
-    {"evidence_id":"public:comfyui-issue","source_type":"community issue report","source_url":"https://github.com/Comfy-Org/ComfyUI/issues/15665","title":"ComfyUI issue #15665","claim":"One open issue reports a version-specific H3 performance concern under stated conditions.","accessed_at":"2026-09-10T18:53:00Z","relation":"limits","publication_basis":"linked-summary"}
+    {
+      "evidence_id": "public:fasth3-continuity",
+      "source_type": "project model documentation",
+      "source_url": "https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md",
+      "title": "Reactor FastH3 README",
+      "claim": "The project describes hard clip boundaries, no subject, framing, or voice continuity across independently generated clips, and its stated four-B200 timing profile.",
+      "accessed_at": "2026-09-12T12:13:44Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:reactor-streaming-client",
+      "source_type": "project streaming-client documentation",
+      "source_url": "https://github.com/reactor-team/infinite-livestream/blob/main/streaming-client/README.md",
+      "title": "Reactor FastH3 streaming client README",
+      "claim": "The client documents separate queues, automatic playout, a paced RTMP output clock, and repeated-frame or silent gap behavior.",
+      "accessed_at": "2026-09-12T12:13:44Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:comfy-h3-local",
+      "source_type": "framework provider announcement",
+      "source_url": "https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui",
+      "title": "Comfy: MiniMax H3 Day-0 Support",
+      "claim": "Comfy says pruning, INT8 ConvRot, and dynamic VRAM offloading reduce its smallest H3 variants’ memory footprint and open a local route on a GPU like an RTX 3060.",
+      "accessed_at": "2026-09-12T12:13:44Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:director-current",
+      "source_type": "provider documentation",
+      "source_url": "https://fal.ai/h3-max-director",
+      "title": "H3 Max Director",
+      "claim": "The provider describes a held WebRTC session, carried segment context, current price conditions, and a public session limit.",
+      "accessed_at": "2026-09-12T12:13:44Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:fasth3-local-release",
+      "source_type": "project release and benchmark report",
+      "source_url": "https://haoailab.com/blogs/fasth3-local/",
+      "title": "FastVideo FastH3 Goes Local",
+      "claim": "FastVideo reports local M4 Max and one- or two-DGX-Spark FastH3 Preview timings, including full-VAE and TAEH3 conditions.",
+      "accessed_at": "2026-09-11T12:14:32Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:fasth3-local-cookbook",
+      "source_type": "project cookbook",
+      "source_url": "https://haoailab.com/FastVideo/cookbook/minimax-h3/",
+      "title": "FastVideo MiniMax H3 cookbook",
+      "claim": "The cookbook defines the local MLX and DGX Spark paths and limits the MLX FastH3 Preview route to T2VA.",
+      "accessed_at": "2026-09-11T12:14:32Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:minimax-h3-16gb-community",
+      "source_type": "community workflow report",
+      "source_url": "https://github.com/kasei-san/minimax-h3-comfyui-workflows",
+      "title": "MiniMax H3 ComfyUI workflows for 16 GB VRAM",
+      "claim": "One author reports a condition-rich RTX 5060 Ti 16 GB MiniMax H3 workflow and stated offline clip timings.",
+      "accessed_at": "2026-09-11T12:14:32Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:director-conflict",
+      "source_type": "provider learning article",
+      "source_url": "https://fal.ai/learn/tools/what-is-minimax-h3-max-director",
+      "title": "What is MiniMax H3 Max Director?",
+      "claim": "A first-party learning article gives different session and audio details from the endpoint page.",
+      "accessed_at": "2026-09-10T18:53:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:minimax-h3",
+      "source_type": "provider repository",
+      "source_url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "title": "MiniMax H3 repository",
+      "claim": "The repository documents local 4–15 second base clips and separate task-specific checkpoint families.",
+      "accessed_at": "2026-09-12T12:13:44Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:low-vram-report",
+      "source_type": "community report",
+      "source_url": "https://www.reddit.com/r/comfyui/comments/1w6je33/minimax_h3_fl2v_running_on_8gb_vram_16gb_ram/",
+      "title": "8 GB H3 FL2V community report",
+      "claim": "One author reports a constrained 8 GB laptop workflow and its stated runtime conditions.",
+      "accessed_at": "2026-09-10T18:53:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:comfyui-issue",
+      "source_type": "community issue report",
+      "source_url": "https://github.com/Comfy-Org/ComfyUI/issues/15665",
+      "title": "ComfyUI issue #15665",
+      "claim": "One open issue reports a version-specific H3 performance concern under stated conditions.",
+      "accessed_at": "2026-09-10T18:53:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    }
   ]
 }

@@ -1,8 +1,29 @@
 {
   "schema_version": "1.0.0",
   "items": [
-    {"change_id":"first-route-map","changed_at":"2026-09-10T18:53:00Z","summary":"First public release candidate: route map separating open sessions, buffered playout, and local short-clip workflows.","path":"/p/realtime-ai-video/"},
-    {"change_id":"first-research-report","changed_at":"2026-09-10T18:53:00Z","summary":"Added a dated source-backed research report with price, hardware, and continuity limits.","path":"/p/realtime-ai-video/research/2026-09-10-first-map"},
-    {"change_id":"fasth3-local-reality-check","changed_at":"2026-09-11T12:14:32Z","summary":"Added FastH3 local MLX and DGX Spark route conditions, source timing conversions, and the full-quality versus preview-decode boundary.","path":"/p/realtime-ai-video/research/2026-09-11-fasth3-local-reality-check"}
+    {
+      "change_id": "first-route-map",
+      "changed_at": "2026-09-10T18:53:00Z",
+      "summary": "First public release candidate: route map separating open sessions, buffered playout, and local short-clip workflows.",
+      "path": "/p/realtime-ai-video/"
+    },
+    {
+      "change_id": "first-research-report",
+      "changed_at": "2026-09-10T18:53:00Z",
+      "summary": "Added a dated source-backed research report with price, hardware, and continuity limits.",
+      "path": "/p/realtime-ai-video/research/2026-09-10-first-map"
+    },
+    {
+      "change_id": "fasth3-local-reality-check",
+      "changed_at": "2026-09-11T12:14:32Z",
+      "summary": "Added FastH3 local MLX and DGX Spark route conditions, source timing conversions, and the full-quality versus preview-decode boundary.",
+      "path": "/p/realtime-ai-video/research/2026-09-11-fasth3-local-reality-check"
+    },
+    {
+      "change_id": "fasth3-continuity-boundary",
+      "changed_at": "2026-09-12T12:13:44Z",
+      "summary": "Added the distinction between a paced continuous broadcast and hard-cut independent FastH3 scenes, plus qualified local-H3 access conditions.",
+      "path": "/p/realtime-ai-video/research/2026-09-12-continuous-broadcast-hard-cuts"
+    }
   ]
 }
