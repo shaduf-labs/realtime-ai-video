@@ -37,7 +37,7 @@
       "source_url": "https://fal.ai/h3-max-director",
       "title": "H3 Max Director",
       "claim": "The provider describes a held WebRTC session, carried segment context, current price conditions, and a public session limit.",
-      "accessed_at": "2026-09-12T12:13:44Z",
+      "accessed_at": "2026-09-13T12:21:05Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
     },
@@ -108,6 +108,56 @@
       "title": "ComfyUI issue #15665",
       "claim": "One open issue reports a version-specific H3 performance concern under stated conditions.",
       "accessed_at": "2026-09-10T18:53:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:fasth3-autoplay-contract",
+      "source_type": "project model documentation",
+      "source_url": "https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md",
+      "title": "Reactor FastH3 README",
+      "claim": "The project documents manual playout by default, black after a completed or stopped clip, and an optional autoplay command that starts a ready playout-front clip.",
+      "accessed_at": "2026-09-13T12:21:05Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:fasth3-reference-client",
+      "source_type": "project reference-client documentation",
+      "source_url": "https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/client/README.md",
+      "title": "Reactor FastH3 queue client README",
+      "claim": "The reference client demonstrates a manual queue flow: play a ready clip, confirm black after it finishes, then play the next.",
+      "accessed_at": "2026-09-13T12:21:05Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:local-h3-12gb-longform-community",
+      "source_type": "community workflow report",
+      "source_url": "https://www.reddit.com/r/comfyui/comments/1wadn4c/minimax_h3_60second_seamless_video_workflow_for/",
+      "title": "60-second MiniMax H3 workflow community post",
+      "claim": "One author reports a 60-second local H3 workflow on a 12 GB RTX and 64 GB DDR5 with a stated fastest Turbo time of 35 minutes 11 seconds.",
+      "accessed_at": "2026-09-13T12:21:05Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:comfyui-035-h3",
+      "source_type": "framework release notes and community issue",
+      "source_url": "https://github.com/Comfy-Org/ComfyUI/releases",
+      "title": "ComfyUI v0.35.0 release",
+      "claim": "Release notes list new MiniMax H3 features; a linked fresh issue separately reports an experimental H3 sparse-attention failure, so shipped support is not a performance guarantee.",
+      "accessed_at": "2026-09-13T12:21:05Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:comfyui-h3-sparse-issue",
+      "source_type": "community issue report",
+      "source_url": "https://github.com/Comfy-Org/ComfyUI/issues/16236",
+      "title": "ComfyUI issue #16236",
+      "claim": "One user reports an experimental core Block Sparse Attention failure in an H3 workflow tested on v0.35.0.",
+      "accessed_at": "2026-09-13T12:21:05Z",
       "relation": "limits",
       "publication_basis": "linked-summary"
     }

@@ -33,6 +33,17 @@
       "summary": "Reactor’s current project documents a queue and paced RTMP broadcast, while its independently generated FastH3 clips do not retain subject, framing, or voice across boundaries.",
       "report_path": "/p/realtime-ai-video/research/2026-09-12-continuous-broadcast-hard-cuts",
       "entrypoint": "research/2026-09-12-continuous-broadcast-hard-cuts/index.html"
+    },
+    {
+      "run_id": "run:d852075d-8acf-41ae-b295-d1998cbbe9e7",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-13T12:00:00Z",
+      "completed_at": "2026-09-13T12:21:05Z",
+      "title": "FastH3 autoplay is a setting, not a stream",
+      "summary": "Reactor’s current FastH3 contract defaults to black after a clip until a client plays the next one; an optional autoplay policy can advance ready clips but cannot supply a buffer or preserve the story.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-13-autoplay-is-a-setting",
+      "entrypoint": "research/2026-09-13-autoplay-is-a-setting/index.html"
     }
   ]
 }

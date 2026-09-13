@@ -1,24 +1,25 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "Current evidence supports four separate choices: fal H3 Max Director is a finite hosted, context-carrying WebRTC session; Reactor FastH3 can run a chat-driven queue and paced RTMP broadcast but uses independently generated clips with hard cuts; FastVideo FastH3 Preview has local clip routes; and Comfy’s optimized H3 route broadens local access. No low-cost, independently proven setup delivers continuous context at viewer speed.",
+  "current_answer": "Current evidence supports four separate choices: fal H3 Max Director is a finite hosted, context-carrying WebRTC session; Reactor FastH3 has separate build and playout queues whose default output stops to black unless an optional autoplay policy advances a ready clip; FastVideo FastH3 Preview has local clip routes; and Comfy’s optimized H3 route broadens local access. No low-cost, independently proven setup delivers continuous context at viewer speed.",
   "catalogue_card": {
-    "question": "Can an “infinite” AI-video broadcast keep the same scene alive?",
-    "text": "FastH3 can keep a paced RTMP feed running, but its current project notes say every generated clip hard-cuts. See the queue, fallback, and story boundary before you promise viewers continuity."
+    "question": "Does FastH3 play the next clip by itself?",
+    "text": "Not by default. Reactor’s FastH3 queue goes black after a clip until a client plays the next one or enables autoplay. That can pace ready scenes, not preserve the story."
   },
   "summary": [
-    "Reactor documents a chat-to-queue-to-RTMP FastH3 system, but its model notes say independently generated clips have hard cuts with no continuity of subject, framing, or voice.",
-    "The project’s client can automatically chain ready clips and use repeated frames plus silence to keep a 24 fps output clock running. That is delivery continuity, not proof of continuous visual or audio story.",
-    "fal’s current H3 Max Director page still describes the closest route to one continuing, directed session, with provider-claimed carried context and hidden overlap. Its public sessions and pricing remain finite and changeable.",
-    "Comfy says its optimized H3 path reduces the smallest variants’ total memory footprint to 42.5 GB and supports dynamic-VRAM offloading, but it gives no general speed or hardware-suitability promise."
+    "Reactor documents a FastH3 queue whose default completed or stopped output flushes to black; its optional autoplay can start a ready playout-front clip when nothing is playing.",
+    "Autoplay changes playout control, not the model boundary: the project says independently generated FastH3 clips hard-cut without carried subject, framing, or voice.",
+    "fal’s current H3 Max Director page still describes the closest route to one continuing, directed session. It lists $0.02 per generated second right now and $0.08 from 14 September 2026.",
+    "A fresh 12 GB local-H3 community workflow report targets a 60-second output but gives a stated fastest Turbo time of 35 minutes 11 seconds; it is an offline lead, not a live claim.",
+    "ComfyUI v0.35.0 adds H3 features, while a fresh issue reports one failure in its experimental H3 sparse-attention path; treat a new version as a condition to test."
   ],
   "uncertainty": [
-    "Reactor’s continuity and timing statements are project-maintainer documentation for one implementation, not independent pool measurements or a viewer study.",
+    "Reactor’s playout, continuity, and timing statements are project-maintainer documentation for one implementation, not independent pool measurements or a viewer study.",
     "fal’s current endpoint terms and continuity behavior are provider claims; a prior provider learning article still conflicts on session and audio details.",
-    "Comfy’s memory-optimized H3 statement is not a performance, quality, or minimum-hardware guarantee.",
+    "The 12 GB longform workflow and the ComfyUI experimental-feature issue are individual community reports, not general compatibility or performance evidence.",
     "No pool test, invoice, uptime log, end-to-end latency measurement, or first-party pool analytics is available."
   ],
-  "checked_at": "2026-09-12T12:13:44Z",
-  "meaningfully_updated_at": "2026-09-12T12:13:44Z",
-  "freshness_note": "Checked 12 September 2026. FastH3 implementation behavior, H3 local compatibility, fal pricing, and session terms can change quickly."
+  "checked_at": "2026-09-13T12:21:05Z",
+  "meaningfully_updated_at": "2026-09-13T12:21:05Z",
+  "freshness_note": "Checked 13 September 2026. FastH3 playout behavior, H3 local compatibility, ComfyUI versions, and fal pricing can change quickly; the stated Director price change begins 14 September 2026."
 }
