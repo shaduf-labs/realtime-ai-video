@@ -30,6 +30,12 @@
       "changed_at": "2026-09-13T12:21:05Z",
       "summary": "Added FastH3’s manual-default versus optional-autoplay playout boundary, a current Director price-expiry warning, and fresh longform-local and workflow-version conditions.",
       "path": "/p/realtime-ai-video/research/2026-09-13-autoplay-is-a-setting"
+    },
+    {
+      "change_id": "fasth3-four-vs-eight-capacity",
+      "changed_at": "2026-09-14T09:50:14Z",
+      "summary": "Corrected the FastH3 high-end timing into separate four- and eight-B200 conditions, updated Director to its current list price, and added a condition-rich local 5090 signal.",
+      "path": "/p/realtime-ai-video/research/2026-09-14-four-vs-eight-b200"
     }
   ]
 }

@@ -6,8 +6,8 @@
       "source_type": "project model documentation",
       "source_url": "https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md",
       "title": "Reactor FastH3 README",
-      "claim": "The project describes hard clip boundaries, no subject, framing, or voice continuity across independently generated clips, and its stated four-B200 timing profile.",
-      "accessed_at": "2026-09-12T12:13:44Z",
+      "claim": "The project describes independently generated hard-cut clips and current four- and eight-B200 build conditions.",
+      "accessed_at": "2026-09-14T09:50:14Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
     },
@@ -16,8 +16,8 @@
       "source_type": "project streaming-client documentation",
       "source_url": "https://github.com/reactor-team/infinite-livestream/blob/main/streaming-client/README.md",
       "title": "Reactor FastH3 streaming client README",
-      "claim": "The client documents separate queues, automatic playout, a paced RTMP output clock, and repeated-frame or silent gap behavior.",
-      "accessed_at": "2026-09-12T12:13:44Z",
+      "claim": "The supplied client documents autoplay on, client-curated playout, idle filler, and paced RTMP output.",
+      "accessed_at": "2026-09-14T09:50:14Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
     },
@@ -36,8 +36,8 @@
       "source_type": "provider documentation",
       "source_url": "https://fal.ai/h3-max-director",
       "title": "H3 Max Director",
-      "claim": "The provider describes a held WebRTC session, carried segment context, current price conditions, and a public session limit.",
-      "accessed_at": "2026-09-13T12:21:05Z",
+      "claim": "The provider describes a held WebRTC session, carried segment context, current $0.08-per-second pricing, and a public-session limit.",
+      "accessed_at": "2026-09-14T09:50:14Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
     },
@@ -159,6 +159,16 @@
       "claim": "One user reports an experimental core Block Sparse Attention failure in an H3 workflow tested on v0.35.0.",
       "accessed_at": "2026-09-13T12:21:05Z",
       "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:local-h3-5090-community",
+      "source_type": "community performance report",
+      "source_url": "https://www.reddit.com/r/comfyui/comments/1vwxd52/running_minimax_h3_locally_on_a_5090_362_frames/",
+      "title": "5090 local MiniMax H3 community report",
+      "claim": "One author reports a condition-rich RTX 5090 and 64 GB RAM MiniMax H3 result: roughly 15 seconds at 768×1024 in about 22 minutes.",
+      "accessed_at": "2026-09-14T09:50:14Z",
+      "relation": "context",
       "publication_basis": "linked-summary"
     }
   ]

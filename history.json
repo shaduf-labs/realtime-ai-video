@@ -44,6 +44,17 @@
       "summary": "Reactor’s current FastH3 contract defaults to black after a clip until a client plays the next one; an optional autoplay policy can advance ready clips but cannot supply a buffer or preserve the story.",
       "report_path": "/p/realtime-ai-video/research/2026-09-13-autoplay-is-a-setting",
       "entrypoint": "research/2026-09-13-autoplay-is-a-setting/index.html"
+    },
+    {
+      "run_id": "run:bfe1f584-fea4-4fcf-bd3f-14a6ba43ebbf",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-14T09:45:00Z",
+      "completed_at": "2026-09-14T09:57:21Z",
+      "title": "Four B200s do not clear FastH3’s documented 15-second deadline",
+      "summary": "Reactor’s current project documentation separates a roughly 15-second FastH3 build into about 15.5 seconds on four B200 GPUs and 12.9 seconds on eight; the update also records the current Director price and a local 5090 offline signal.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-14-four-vs-eight-b200",
+      "entrypoint": "research/2026-09-14-four-vs-eight-b200/index.html"
     }
   ]
 }

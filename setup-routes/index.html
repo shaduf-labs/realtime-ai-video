@@ -15,7 +15,7 @@
     <meta property="og:description" content="Choose local, rented, or API paths by constraints rather than model hype.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/setup-routes/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Setup Routes","description":"Choose local, rented, or API paths by constraints rather than model hype.","dateModified":"2026-09-13T12:21:05Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/setup-routes/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Setup Routes","description":"Choose local, rented, or API paths by constraints rather than model hype.","dateModified":"2026-09-14T09:50:14Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/setup-routes/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="setup-routes">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -64,7 +64,7 @@
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
   <header>
-    <p>Decision guide · checked 13 September 2026</p>
+    <p>Decision guide · checked 14 September 2026</p>
     <h1>Choose the route, then test the claim</h1>
     <p>A model name does not tell you whether you are buying an interactive session, operating a clip queue, or rendering a short file locally.</p>
   </header>
@@ -74,9 +74,9 @@
     <table>
       <thead><tr><th>Need</th><th>Route to inspect</th><th>Evidence status</th><th>Constraint that changes the answer</th></tr></thead>
       <tbody>
-        <tr><td>Viewer input should alter an active stream</td><td>fal H3 Max Director</td><td><strong>Provider says:</strong> persistent WebRTC tracks, carried context, and mid-session text directions.</td><td>Public session limit, per-second billing, reconnect, and moderation design.</td></tr>
-        <tr><td>A chat-shaped feed of short scenes</td><td>FastH3 queue and playout</td><td><strong>Project says:</strong> separate build and play queues can feed paced output; autoplay is optional.</td><td>Queue default, ready-buffer depth, GPU profile, hard cuts, and what viewers see after a miss.</td></tr>
-        <tr><td>One controlled local shot</td><td>MiniMax H3 through a local framework such as ComfyUI</td><td><strong>Provider and Comfy say:</strong> local base clips and an optimized dynamic-VRAM path exist.</td><td>Task mode, system RAM, model pack, resolution, steps, software version, and wait tolerance.</td></tr>
+        <tr><td>Viewer input should alter an active stream</td><td>fal H3 Max Director</td><td><strong>Provider says:</strong> persistent WebRTC tracks, carried context, and mid-session text directions.</td><td>Public session limit, current $0.08/second billing, reconnect, and moderation design.</td></tr>
+        <tr><td>A chat-shaped feed of short scenes</td><td>FastH3 queue and playout</td><td><strong>Project says:</strong> separate build and play queues can feed paced output; its current cited 15-second build is 15.5 s on four B200s and 12.9 s on eight.</td><td>GPU profile, warm-up, ready-buffer depth, autoplay/filler policy, hard cuts, and what viewers see after a miss.</td></tr>
+        <tr><td>One controlled local shot</td><td>MiniMax H3 through a local framework such as ComfyUI</td><td><strong>Provider and community reports say:</strong> local base clips and an optimized dynamic-VRAM path exist; one 5090 report gives a condition-rich offline result.</td><td>Task mode, system RAM, model pack, resolution, steps, software version, and wait tolerance.</td></tr>
       </tbody>
     </table>
   </section>
@@ -84,25 +84,25 @@
   <section>
     <h2>Route filters</h2>
     <h3>Pick Director when</h3>
-    <p>You need the product shape of an open session. The current <a href="https://fal.ai/h3-max-director">provider page</a> says it streams through WebRTC and carries context into later directions. Plan for a finite session from the first sketch, and recheck its price before a test.</p>
+    <p>You need the product shape of an open session. The current <a href="https://fal.ai/h3-max-director">provider page</a> says it streams through WebRTC and carries context into later directions. Plan for a finite session from the first sketch, and price $4.80 for even the stated 60-second minimum.</p>
     <h3>Pick buffered FastH3 when</h3>
-    <p>You want a sequence of distinct scenes and can prebuild it. The <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">inspected contract</a> says playout waits after a clip unless a client plays the next one or enables autoplay. A ready queue can move hands-free with autoplay on; it is still a scheduling system, not a persistent-world renderer.</p>
+    <p>You want a sequence of distinct scenes and can prebuild it. The <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">inspected contract</a> says a roughly 15-second clip takes about 15.5 seconds to build on four B200s and 12.9 on eight. Its <a href="https://github.com/reactor-team/infinite-livestream/blob/main/streaming-client/README.md">streaming client</a> enables autoplay and filler, but that is a delivery policy, not story continuity.</p>
     <h3>Pick local H3 when</h3>
-    <p>You want to learn, iterate, or make short clips on your own hardware. MiniMax documents 4–15 second output. Comfy says dynamic offloading can open an optimized route on a GPU like an RTX 3060; it does not publish a viewer-speed promise for that route.</p>
+    <p>You want to learn, iterate, or make short clips on your own hardware. MiniMax documents 4–15 second output. A community author reports a 5090 and 64 GB RAM making roughly 15 seconds at 768×1024 in about 22 minutes. Treat that as a condition card for an offline experiment, not a hardware promise.</p>
   </section>
 
   <section>
     <h2>Baseline card before you spend a weekend</h2>
     <ol>
       <li>Write the model variant, task mode, and every model file or precision choice.</li>
-      <li>Record GPU, VRAM, system RAM, storage path, OS, ComfyUI version, runtime, and launch flags.</li>
+      <li>Record GPU count, VRAM, system RAM, storage path, OS, ComfyUI version, runtime, and launch flags.</li>
       <li>Keep resolution, frames, steps, seed, sampler, and prompt fixed for a first comparison.</li>
-      <li>For a queue, record manual or autoplay policy, cold time, warm time, retry count, ready seconds, and black or silent fallback.</li>
+      <li>For a queue, record cold time, warm time, manual or autoplay policy, filler, retry count, ready seconds, and black or silent fallback.</li>
       <li>Label the result as provider documentation, community report, or a measured test. Do not blend them.</li>
     </ol>
   </section>
 
-  <footer><p>Sources: <a href="https://github.com/MiniMax-AI/MiniMax-H3">MiniMax H3 repository</a>, <a href="https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui">Comfy H3 local-inference note</a>, <a href="https://fal.ai/h3-max-director">fal Director documentation</a>, and the <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">Reactor FastH3 README</a>.</p></footer>
+  <footer><p>Sources: <a href="https://github.com/MiniMax-AI/MiniMax-H3">MiniMax H3 repository</a>, <a href="https://fal.ai/h3-max-director">fal Director documentation</a>, <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">Reactor FastH3 README</a>, <a href="https://github.com/reactor-team/infinite-livestream/blob/main/streaming-client/README.md">Reactor streaming-client README</a>, and a <a href="https://www.reddit.com/r/comfyui/comments/1vwxd52/running_minimax_h3_locally_on_a_5090_362_frames/">5090 community report</a>.</p></footer>
 </article>
 <!-- SHADUF_AGENT_DOCUMENT_END --></div>
     </article><div class="center-fade" aria-hidden="true"></div></main>
@@ -119,7 +119,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>13 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>14 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>

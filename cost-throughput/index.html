@@ -15,7 +15,7 @@
     <meta property="og:description" content="Measured and reported cost, latency, hardware, and playback trade-offs.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/cost-throughput/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Cost and Throughput","description":"Measured and reported cost, latency, hardware, and playback trade-offs.","dateModified":"2026-09-13T12:21:05Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/cost-throughput/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Cost and Throughput","description":"Measured and reported cost, latency, hardware, and playback trade-offs.","dateModified":"2026-09-14T09:50:14Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/cost-throughput/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="cost-throughput">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -64,9 +64,9 @@
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
   <header>
-    <p>Cost and throughput · checked 13 September 2026</p>
-    <h1>“Runs locally” can still mean 23 seconds of work per output second</h1>
-    <p>Put output duration beside wall-clock duration before calling a route fast. Then add buffer, retries, idle hardware, encoding, delivery, and session resets before calling it cheap.</p>
+    <p>Cost and throughput · checked 14 September 2026</p>
+    <h1>Four B200s are not the same FastH3 capacity claim as eight.</h1>
+    <p>Put a clip’s output duration beside its build time, then add queue margin, retries, idle hardware, encoding, delivery, and session resets before calling a route fast or cheap.</p>
   </header>
 
   <section>
@@ -81,19 +81,19 @@
         <tr><td>Two DGX Sparks</td><td>TAEH3 preview</td><td>119 s</td><td>23.0 s</td><td>Fast prompt check; source reports softer fine detail</td></tr>
       </tbody>
     </table>
-    <p>The calculation is elapsed time divided by 124 frames ÷ 24 fps. It does not include hardware cost, power, storage, retries, process startup, delivery, or an independent quality review. A local process that produces one clip is not a viewer-speed generator.</p>
+    <p>The calculation is elapsed time divided by 124 frames ÷ 24 fps. It does not include hardware cost, power, storage, retries, process startup, delivery, or an independent quality review.</p>
   </section>
 
   <section>
-    <h2>Queue capacity also needs a policy</h2>
-    <p><strong>Project says:</strong> Reactor reports a warm 14.4-second build for a 14.375-second FastH3 clip on four B200 GPUs. Its queue contract makes autoplay optional and off by default; a finished or stopped clip clears to black. A ready queue is only useful after you name who advances it and what happens after the last ready clip.</p>
-    <p>That is a design clue, not a rental quote or proof that another deployment has the same behavior. The clips still have hard boundaries even when a queue stays full.</p>
+    <h2>FastH3’s high-end profile now has two decision rows</h2>
+    <p><strong>Project says:</strong> the current Reactor FastH3 README says a roughly 15-second clip builds in about 15.5 seconds on four B200 GPUs and 12.9 seconds on eight. Four is slightly behind the stated clip duration. Eight is ahead by the source’s own numbers. Neither line includes an independent queue-drain, retry, or cost result.</p>
+    <p>The same project’s streaming client runs autoplay with an idle filler policy. A short gap between already-ready clips is useful playout behavior; it is not a promise that a viewer prompt will arrive in time or that the next clip continues the story.</p>
   </section>
 
   <section>
     <h2>Current priced route: H3 Max Director</h2>
-    <p><strong>Provider says:</strong> the <a href="https://fal.ai/h3-max-director">current fal page</a> lists $0.02 per generated second right now and $0.08 per second from 14 September 2026. The minimum is 60 seconds: $1.20 during the promotion and $4.80 at the stated list price. A full 15-minute public session would be $18 during the promotion or $72 at list price.</p>
-    <p><strong>Unknown:</strong> actual billed time, direction-to-change latency, delivery cost, moderation cost, and whether an audience sees a clean restart. This arithmetic is generated-video spend, not an operating quote.</p>
+    <p><strong>Provider says:</strong> the <a href="https://fal.ai/h3-max-director">current fal page</a> lists $0.08 per generated second, a 60-second minimum, and public sessions up to 15 minutes. That makes the stated minimum $4.80 and a stated full 15-minute session $72 in generated-video spend.</p>
+    <p><strong>Unknown:</strong> actual billed time, direction-to-change latency, delivery cost, moderation cost, and whether an audience sees a clean restart. This arithmetic is not an operating quote.</p>
   </section>
 
   <section>
@@ -106,7 +106,7 @@
     </tbody></table>
   </section>
 
-  <footer><p>Sources: <a href="https://haoailab.com/blogs/fasth3-local/">FastH3 local timing report</a>, <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">Reactor FastH3 README</a>, and <a href="https://fal.ai/h3-max-director">fal H3 Max Director</a>.</p></footer>
+  <footer><p>Sources: <a href="https://haoailab.com/blogs/fasth3-local/">FastH3 local timing report</a>, <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">Reactor FastH3 README</a>, <a href="https://github.com/reactor-team/infinite-livestream/blob/main/streaming-client/README.md">Reactor streaming-client README</a>, and <a href="https://fal.ai/h3-max-director">fal H3 Max Director</a>.</p></footer>
 </article>
 <!-- SHADUF_AGENT_DOCUMENT_END --></div>
     </article><div class="center-fade" aria-hidden="true"></div></main>
@@ -123,7 +123,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>13 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>14 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>
