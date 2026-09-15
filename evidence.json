@@ -170,6 +170,26 @@
       "accessed_at": "2026-09-14T09:50:14Z",
       "relation": "context",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:fasth3-live-5090",
+      "source_type": "community project dataset card",
+      "source_url": "https://huggingface.co/datasets/jacokon/fasth3-live",
+      "title": "FastH3 Live",
+      "claim": "One author reports an unattended FastH3 audio-video channel on an RTX 5090 (32 GB) with current source-stated 22.1-fps throughput, a 448×448 canvas, retimed playout, and prequeued scenes.",
+      "accessed_at": "2026-09-15T09:57:08.634Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:fastvideo-fasth3-variant-path",
+      "source_type": "project inference example",
+      "source_url": "https://github.com/hao-ai-lab/FastVideo/blob/main/examples/inference/basic/basic_fasth3_lora_preview.py",
+      "title": "FastVideo FastH3 Preview example",
+      "claim": "FastVideo’s example distinguishes VSA and dense attention paths by adapter payload, making checkpoint and backend part of any FastH3 timing condition.",
+      "accessed_at": "2026-09-15T09:57:08.634Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }

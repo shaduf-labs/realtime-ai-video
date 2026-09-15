@@ -1,25 +1,24 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "Current evidence supports four separate choices: fal H3 Max Director is a finite hosted, context-carrying WebRTC session now listed at $0.08 per generated second; Reactor FastH3 has separate build and playout queues, hard-cut clips, and a source-stated roughly 15-second build taking about 15.5 seconds on four B200 GPUs or 12.9 seconds on eight; FastVideo FastH3 Preview has local clip routes; and Comfy’s optimized H3 route broadens local access. No low-cost, independently proven setup delivers continuous context at viewer speed.",
+  "current_answer": "Current evidence supports five distinct routes: fal H3 Max Director is a finite hosted context-carrying WebRTC session; Reactor FastH3 is a high-end VSA queue-and-playout route; FastVideo FastH3 Preview has local clip paths; a community project reports one RTX 5090 sustaining an unattended dense FastH3 channel at 22.1 fps through 448×448 output, prequeued prompts, and retimed playout; and Comfy’s optimized H3 path broadens local access. The consumer-channel report is not independent proof of 24-fps native motion, viewer-controlled interaction, cross-clip story continuity, uptime, or cost.",
   "catalogue_card": {
-    "question": "Do four B200s make FastH3 real time?",
-    "text": "Not by the project’s current 15-second example: its FastH3 README says about 15.5 seconds on four B200s and 12.9 on eight. Ready-clip playout still is not a viewer prompt appearing now."
+    "question": "Can one RTX 5090 keep FastH3 on air?",
+    "text": "A community project says yes at 22.1 fps, but only as a 448×448, prequeued, retimed channel of self-contained scenes—not a proven interactive 24-fps feed."
   },
   "summary": [
-    "Reactor’s current FastH3 README gives a roughly 15-second build at about 15.5 seconds on four B200 GPUs and 12.9 seconds on eight. These are project-reported conditions, not pool measurements.",
-    "The supplied streaming client enables autoplay and idle filler, which can move already-ready clips quickly but cannot remove a build wait, a drained queue, or FastH3’s hard scene boundary.",
-    "fal’s H3 Max Director page now lists $0.08 per generated second, a $4.80 60-second minimum, and a stated $72 full 15-minute public-session generated-video spend.",
-    "A new-to-the-pool community 5090 report gives roughly 15 seconds at 768×1024 in about 22 minutes with 64 GB RAM under stated settings. It is an offline lead, not a hardware promise or a live result.",
-    "A current ComfyUI development-version issue reports higher VRAM pressure and interrupted H3 work on a 5090 D; treat version and launch conditions as part of every local-H3 recommendation."
+    "A community FastH3 project reports a one-RTX-5090 ComfyUI channel at 22.1 sustained fps in its current dataset-card release. This is a self-reported one-machine result, not a pool test.",
+    "The route works as an unattended local channel because it prequeues work, uses self-contained scene prompts, retimes delivery, and accepts a 448×448 canvas. It does not establish native-24-fps motion or live viewer control.",
+    "FastVideo’s own example distinguishes VSA and dense FastH3 paths by adapter payload, so a timing without the checkpoint and attention path is not a portable FastH3 result.",
+    "Reactor’s four- and eight-B200 queue profiles and fal’s hosted Director session remain separate routes with different hardware, control, and continuity contracts."
   ],
   "uncertainty": [
+    "The one-RTX-5090 FastH3 channel is a community project’s one-machine self-report; the pool has not run or independently audited it, and its downloadable files are access-gated.",
     "Reactor’s playout, continuity, and four- or eight-B200 timing statements are project-maintainer documentation for one implementation, not independent pool measurements or a viewer study.",
     "fal’s current endpoint terms and continuity behavior are provider claims; a prior provider learning article still conflicts on session and audio details.",
-    "The local 5090 report and ComfyUI development-version issue are individual community reports, not general compatibility, quality, or performance evidence.",
     "No pool test, invoice, uptime log, end-to-end latency measurement, or first-party pool analytics is available."
   ],
-  "checked_at": "2026-09-14T09:50:14Z",
-  "meaningfully_updated_at": "2026-09-14T09:50:14Z",
-  "freshness_note": "Checked 14 September 2026. FastH3 implementation conditions, local workflow versions, and fal pricing can change quickly; four- and eight-B200 build figures are project documentation, not pool measurements."
+  "checked_at": "2026-09-15T09:57:08.634Z",
+  "meaningfully_updated_at": "2026-09-15T09:57:08.634Z",
+  "freshness_note": "Checked 15 September 2026. The one-RTX-5090 channel is a community self-report whose throughput, image quality, dependencies, licensing conditions, and long-run behavior need independent replication; FastH3 variants and local workflow settings move quickly."
 }

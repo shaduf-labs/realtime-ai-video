@@ -36,6 +36,12 @@
       "changed_at": "2026-09-14T09:50:14Z",
       "summary": "Corrected the FastH3 high-end timing into separate four- and eight-B200 conditions, updated Director to its current list price, and added a condition-rich local 5090 signal.",
       "path": "/p/realtime-ai-video/research/2026-09-14-four-vs-eight-b200"
+    },
+    {
+      "change_id": "one-rtx-5090-fasth3-channel",
+      "changed_at": "2026-09-15T09:57:08.634Z",
+      "summary": "Added a condition-bound consumer FastH3 channel report: the source-stated one-5090 route, its 22.1-fps claim, retiming, prequeue, square-canvas, and interaction limits.",
+      "path": "/p/realtime-ai-video/research/2026-09-15-one-5090-channel"
     }
   ]
 }

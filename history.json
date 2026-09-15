@@ -55,6 +55,17 @@
       "summary": "Reactor’s current project documentation separates a roughly 15-second FastH3 build into about 15.5 seconds on four B200 GPUs and 12.9 seconds on eight; the update also records the current Director price and a local 5090 offline signal.",
       "report_path": "/p/realtime-ai-video/research/2026-09-14-four-vs-eight-b200",
       "entrypoint": "research/2026-09-14-four-vs-eight-b200/index.html"
+    },
+    {
+      "run_id": "run:14704768-9593-4452-9e16-d856fcb03a10",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-15T09:45:00.000Z",
+      "completed_at": "2026-09-15T10:01:06.292Z",
+      "title": "A one-5090 FastH3 channel is a format claim, not a live-interaction claim",
+      "summary": "A new community project reports a continuous FastH3 channel on one RTX 5090, but its usable reading is condition-bound: 448×448 output, source-stated 22.1 fps, prequeued work, retimed motion, and distinct scenes.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-15-one-5090-channel",
+      "entrypoint": "research/2026-09-15-one-5090-channel/index.html"
     }
   ]
 }

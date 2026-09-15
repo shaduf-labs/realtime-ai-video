@@ -15,7 +15,7 @@
     <meta property="og:description" content="Condition-rich notes for ComfyUI, FastH3, and related workflow routes.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/workflows/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Workflow Directory","description":"Condition-rich notes for ComfyUI, FastH3, and related workflow routes.","dateModified":"2026-09-14T09:50:14Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/workflows/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Workflow Directory","description":"Condition-rich notes for ComfyUI, FastH3, and related workflow routes.","dateModified":"2026-09-15T09:57:08.634Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/workflows/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="workflows">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -64,10 +64,22 @@
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
   <header>
-    <p>Workflow directory · checked 14 September 2026</p>
+    <p>Workflow directory · checked 15 September 2026</p>
     <h1>Workflow notes: conditions first</h1>
     <p>These are source-backed starting points, not install endorsements. Confirm the current license, model files, hardware, and version compatibility before a production use.</p>
   </header>
+
+  <section>
+    <h2>One-5090 FastH3 channel: a format-specific community route</h2>
+    <p><strong>Community project says:</strong> FastH3 Live runs an unattended local audio-video channel on one RTX 5090 (32 GB) with ComfyUI. Its current card claims 22.1 sustained fps at 448×448 through a dense four-step FastH3 conversion, a prequeue, retimed playback, and a large library of self-contained scenes.</p>
+    <p>That is not a local interactive-session recipe. The source frames are authored for 24 fps; the project retimes delivery to its sustainable pace. Its scenes do not retain a viewer’s current world state across the next clip. Treat it as a reproducibility lead for a particular AI-TV format.</p>
+  </section>
+
+  <section>
+    <h2>FastH3 has named attention paths</h2>
+    <p><strong>Project says:</strong> FastVideo’s current FastH3 Preview example selects VSA or dense FA4 attention from the adapter payload. An adapter carrying the VSA compression gate must run VSA; an adapter without it defaults to dense. Keep that fact beside any FastH3 speed number.</p>
+    <p>The one-5090 community project says it chose a dense conversion because stock ComfyUI does not preserve its VSA gate tensors. Its result is therefore not a consumer version of Reactor’s VSA B200 deployment. Same model family is not the same workflow.</p>
+  </section>
 
   <section>
     <h2>Comfy’s official H3 access route: a footprint is not a speed claim</h2>
@@ -82,24 +94,17 @@
   </section>
 
   <section>
-    <h2>New ComfyUI H3 features are test leads</h2>
-    <p><strong>Framework release notes say:</strong> ComfyUI v0.35.0 adds H3 features including PDD LoRA support and H3 Max options. <strong>Community report:</strong> one issue says the experimental core Block Sparse Attention node failed in an H3 workflow on that version.</p>
-    <p>A feature being shipped is not a repeatable speed or reliability promise. Keep the exact ComfyUI version, hardware, workflow, node mode, and error log beside any improvement claim.</p>
-  </section>
-
-  <section>
     <h2>FastH3 Preview: local paths opened, narrow modes</h2>
     <p><strong>Project says:</strong> FastVideo documents local FastH3 Preview on Apple Silicon MLX and on one or two NVIDIA DGX Sparks. Its cookbook limits the MLX route to T2VA—text-to-video with audio—after a local DiT conversion. FL2VA and Ref2VA are not wired there.</p>
     <p>The source’s fastest local preview result still takes 119 seconds for a 124-frame clip, so start with a short offline test rather than a streaming plan. Keep full H3 VAE separate from its TAEH3 preview decoder, because the project says the shortcut softens fine detail.</p>
   </section>
 
   <section>
-    <h2>Community longform signal: 12 GB does not mean quick</h2>
-    <p><strong>Community report:</strong> one author says a 12 GB RTX and 64 GB DDR5 can produce a 60-second H3 result in 35 minutes 11 seconds with a Turbo path. This is a lead for an offline long-shot experiment, not a live claim, a general 12 GB recommendation, or a quality benchmark.</p>
-    <p>Record task mode, source material, resolution, frames, steps, model files, system RAM, GPU, version, seed, cold and warm wall time, and failures. A workflow without those fields is a screenshot, not a dependable route.</p>
+    <h2>Record this before calling any workflow fast</h2>
+    <p>Capture the exact checkpoint, adapter, attention path, quantisation, canvas, source frames, delivered fps, task mode, host RAM, GPU, version, seed, cold and warm wall time, queue state, failures, and observed quality. A workflow without those fields is a screenshot, not a dependable route.</p>
   </section>
 
-  <footer><p>Related records: <a href="https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui">Comfy H3 note</a>, <a href="https://github.com/Comfy-Org/ComfyUI/releases">ComfyUI v0.35.0 release</a>, <a href="https://github.com/Comfy-Org/ComfyUI/issues/16150">current 5090 D issue</a>, <a href="https://haoailab.com/FastVideo/cookbook/minimax-h3/">FastVideo cookbook</a>, the <a href="https://www.reddit.com/r/comfyui/comments/1vwxd52/running_minimax_h3_locally_on_a_5090_362_frames/">5090 community report</a>, and the <a href="https://www.reddit.com/r/comfyui/comments/1wadn4c/minimax_h3_60second_seamless_video_workflow_for/">12 GB longform community report</a>.</p></footer>
+  <footer><p>Related records: <a href="https://huggingface.co/datasets/jacokon/fasth3-live">FastH3 Live community project</a>, <a href="https://github.com/hao-ai-lab/FastVideo/blob/main/examples/inference/basic/basic_fasth3_lora_preview.py">FastVideo’s FastH3 Preview example</a>, <a href="https://blog.comfy.org/p/minimax-h3-day-0-support-in-comfyui">Comfy H3 note</a>, <a href="https://haoailab.com/FastVideo/cookbook/minimax-h3/">FastVideo cookbook</a>, and the <a href="https://www.reddit.com/r/comfyui/comments/1vwxd52/running_minimax_h3_locally_on_a_5090_362_frames/">5090 native-H3 community report</a>.</p></footer>
 </article>
 <!-- SHADUF_AGENT_DOCUMENT_END --></div>
     </article><div class="center-fade" aria-hidden="true"></div></main>
@@ -116,7 +121,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>14 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>15 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>
