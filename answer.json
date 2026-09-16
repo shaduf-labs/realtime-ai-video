@@ -1,24 +1,26 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "Current evidence supports five distinct routes: fal H3 Max Director is a finite hosted context-carrying WebRTC session; Reactor FastH3 is a high-end VSA queue-and-playout route; FastVideo FastH3 Preview has local clip paths; a community project reports one RTX 5090 sustaining an unattended dense FastH3 channel at 22.1 fps through 448×448 output, prequeued prompts, and retimed playout; and Comfy’s optimized H3 path broadens local access. The consumer-channel report is not independent proof of 24-fps native motion, viewer-controlled interaction, cross-clip story continuity, uptime, or cost.",
+  "current_answer": "Current evidence supports six distinct routes: fal H3 Max Director is a finite hosted context-carrying WebRTC session; Yoroll says H3 Superfast powers YoLive, a public group proposal-and-vote route for the next scene, with a 10-second 768p/24-fps/native-audio generation claim in four seconds on eight B200 GPUs; Reactor FastH3 is a high-end VSA queue-and-playout route; FastVideo FastH3 Preview has local clip paths; a community project reports one RTX 5090 sustaining an unattended dense FastH3 channel at 22.1 fps through 448×448 output, prequeued prompts, and retimed playout; and Comfy’s optimized H3 path broadens local access. YoLive’s launch claim does not establish individual prompt-to-screen latency, public uptime, cost, or durable story continuity.",
   "catalogue_card": {
-    "question": "Can one RTX 5090 keep FastH3 on air?",
-    "text": "A community project says yes at 22.1 fps, but only as a 448×448, prequeued, retimed channel of self-contained scenes—not a proven interactive 24-fps feed."
+    "question": "Is YoLive actually real-time AI video?",
+    "text": "Yoroll says its new group-story product generates the next 10-second 768p/24-fps scene in four seconds on eight B200 GPUs. That clears a clip benchmark, not vote-to-screen delay or public uptime."
   },
   "summary": [
-    "A community FastH3 project reports a one-RTX-5090 ComfyUI channel at 22.1 sustained fps in its current dataset-card release. This is a self-reported one-machine result, not a pool test.",
+    "Yoroll says its new YoLive product lets viewers propose and vote on the next scene. Its H3 Superfast claim is 10 seconds of 768p, 24 fps video with native audio in four seconds on eight B200 GPUs.",
+    "YoLive is a collective next-scene route. It does not establish a viewer’s direct control of the active scene, input-to-visible-change delay, moderation timing, public uptime, cost, or durable story state.",
     "The route works as an unattended local channel because it prequeues work, uses self-contained scene prompts, retimes delivery, and accepts a 448×448 canvas. It does not establish native-24-fps motion or live viewer control.",
     "FastVideo’s own example distinguishes VSA and dense FastH3 paths by adapter payload, so a timing without the checkpoint and attention path is not a portable FastH3 result.",
     "Reactor’s four- and eight-B200 queue profiles and fal’s hosted Director session remain separate routes with different hardware, control, and continuity contracts."
   ],
   "uncertainty": [
+    "Yoroll’s YoLive control loop and H3 Superfast timing are company launch claims; the pool did not observe a live vote, measure end-to-end response, or independently reproduce the eight-B200 result.",
     "The one-RTX-5090 FastH3 channel is a community project’s one-machine self-report; the pool has not run or independently audited it, and its downloadable files are access-gated.",
     "Reactor’s playout, continuity, and four- or eight-B200 timing statements are project-maintainer documentation for one implementation, not independent pool measurements or a viewer study.",
     "fal’s current endpoint terms and continuity behavior are provider claims; a prior provider learning article still conflicts on session and audio details.",
     "No pool test, invoice, uptime log, end-to-end latency measurement, or first-party pool analytics is available."
   ],
-  "checked_at": "2026-09-15T09:57:08.634Z",
-  "meaningfully_updated_at": "2026-09-15T09:57:08.634Z",
-  "freshness_note": "Checked 15 September 2026. The one-RTX-5090 channel is a community self-report whose throughput, image quality, dependencies, licensing conditions, and long-run behavior need independent replication; FastH3 variants and local workflow settings move quickly."
+  "checked_at": "2026-09-16T09:50:10.824Z",
+  "meaningfully_updated_at": "2026-09-16T09:50:10.824Z",
+  "freshness_note": "Checked 16 September 2026. Yoroll’s public launch describes a collective choice product and a faster-than-playback clip condition, but independent evidence for vote-to-screen delay, moderation, delivery, continuity, cost, uptime, and audience return is absent."
 }

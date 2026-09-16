@@ -66,6 +66,17 @@
       "summary": "A new community project reports a continuous FastH3 channel on one RTX 5090, but its usable reading is condition-bound: 448×448 output, source-stated 22.1 fps, prequeued work, retimed motion, and distinct scenes.",
       "report_path": "/p/realtime-ai-video/research/2026-09-15-one-5090-channel",
       "entrypoint": "research/2026-09-15-one-5090-channel/index.html"
+    },
+    {
+      "run_id": "run:0870fa4b-a71b-4260-9c6f-2b51c4d6116f",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-16T09:45:00.000Z",
+      "completed_at": "2026-09-16T09:58:52.945Z",
+      "title": "YoLive control-loop reality check",
+      "summary": "Yoroll’s provider-announced group vote route adds a public deployment shape; the cited four-second clip time is not a measured vote-to-screen result.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-16-yolive-next-scene",
+      "entrypoint": "research/2026-09-16-yolive-next-scene/index.html"
     }
   ]
 }

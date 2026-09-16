@@ -190,6 +190,26 @@
       "accessed_at": "2026-09-15T09:57:08.634Z",
       "relation": "context",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:yoroll-yolive-launch",
+      "source_type": "company launch announcement",
+      "source_url": "https://www.globenewswire.com/news-release/2026/09/07/3357194/0/en/10-seconds-of-video-in-4-seconds-yoroll-launches-h3-superfast-and-yolive.html",
+      "title": "Yoroll H3 Superfast and YoLive launch announcement",
+      "claim": "Yoroll says YoLive uses viewer proposals and votes to guide the next scene, and says H3 Superfast generates 10 seconds of 768p, 24 fps video with native audio in four seconds on eight NVIDIA B200 GPUs.",
+      "accessed_at": "2026-09-16T09:50:10.824Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:yolive",
+      "source_type": "public product landing page",
+      "source_url": "https://yo.live/",
+      "title": "YoLive",
+      "claim": "The public YoLive landing page was reachable during this research; the pool did not observe an active session or a complete audience decision cycle.",
+      "accessed_at": "2026-09-16T09:50:10.824Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }

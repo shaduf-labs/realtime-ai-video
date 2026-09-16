@@ -15,7 +15,7 @@
     <meta property="og:description" content="Queues, buffers, playout, interaction, recovery, and delivery for live-looking video.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/live-systems/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Live Systems","description":"Queues, buffers, playout, interaction, recovery, and delivery for live-looking video.","dateModified":"2026-09-15T09:57:08.634Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/live-systems/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Live Systems","description":"Queues, buffers, playout, interaction, recovery, and delivery for live-looking video.","dateModified":"2026-09-16T09:50:10.824Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/live-systems/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="live-systems">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -64,21 +64,27 @@
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
   <header>
-    <p>Live systems · checked 15 September 2026</p>
+    <p>Live systems · checked 16 September 2026</p>
     <h1>“Continuous” survives only if the system survives a miss</h1>
-    <p>A smooth demo can hide a queue, an idle filler, a repeated frame, a slower playback rate, or a hard scene cut. Ask what continues when the next clip is late, a prompt fails, or a session ends.</p>
+    <p>A smooth demo can hide a queue, an idle filler, a repeated frame, a slower playback rate, a hard scene cut, or a vote that waits offscreen. Ask what continues when the next clip is late, a prompt fails, a vote closes, or a session ends.</p>
   </header>
 
   <section>
     <h2>Architecture before model</h2>
     <ol>
-      <li><strong>Input:</strong> accept prompts, votes, or controls; decide moderation and ordering.</li>
+      <li><strong>Input:</strong> accept prompts, proposals, votes, or controls; decide moderation and ordering.</li>
+      <li><strong>Selection:</strong> state who decides the next action, when that window closes, and what happens to late or losing input.</li>
       <li><strong>Generation:</strong> measure acceptance-to-ready time, not an advertised frame rate.</li>
       <li><strong>Buffer:</strong> hold enough finished or in-flight playable work for a slow render or retry.</li>
       <li><strong>Playout:</strong> choose the output fps; state filler, transitions, fallback footage, and what black, silence, a frozen frame, or slowed motion means.</li>
-      <li><strong>Delivery:</strong> send to the audience through the chosen browser, WebRTC, RTMP, or platform path.</li>
-      <li><strong>Recovery:</strong> reconnect sessions, preserve the story state if possible, and log the gap.</li>
+      <li><strong>Delivery and recovery:</strong> timestamp the visible result, reconnect sessions, preserve story state if possible, and log the gap.</li>
     </ol>
+  </section>
+
+  <section>
+    <h2>A fast next clip does not reveal the control-loop wait</h2>
+    <p><strong>Provider says:</strong> Yoroll’s YoLive lets a group propose and vote on the next scene. Its launch announcement says H3 Superfast generates 10 seconds of 768p, 24 fps video with native audio in four seconds on eight B200 GPUs. That figure leaves a six-second gross lead over the cited clip duration.</p>
+    <p>The missing timestamps are proposal close, moderation, winning instruction, generator acceptance, first delivered frame, and visible story turn. Without them, the source supports a faster-than-playback clip claim and a collective next-scene product—not a measured audience response time.</p>
   </section>
 
   <section>
@@ -94,20 +100,16 @@
   </section>
 
   <section>
-    <h2>Hardware count belongs beside the queue</h2>
-    <p><strong>Project says:</strong> the current FastH3 README gives about 15.5 seconds to build a roughly 15-second clip on four B200 GPUs and 12.9 seconds on eight. A demo that shows smooth playout must also name which profile, checkpoint variant, attention path, warm-up, queue depth, output fps, and filler policy it uses. The pool has not independently measured either figure.</p>
-  </section>
-
-  <section>
-    <h2>Open session versus buffered clips</h2>
+    <h2>Open session, group choice, or buffered clips</h2>
     <p><strong>Provider says:</strong> H3 Max Director uses an open WebRTC session, with new directions sent over a data channel while output tracks play. The provider says later segments retain context and hide a small re-rendered overlap before delivery. Public sessions are finite, so this route still needs a reopening plan.</p>
-    <p><strong>Community project says:</strong> a local FastH3 channel can keep distinct prepared scenes moving at a source-stated sub-24-fps pace. Use it for a scheduled or unattended sequence unless an end-to-end test proves that the fallback, prompt delay, and scene boundaries fit your audience.</p>
+    <p><strong>Provider says:</strong> YoLive is a group-selected next-scene route. <strong>Community project says:</strong> a local FastH3 channel can keep distinct prepared scenes moving at a source-stated sub-24-fps pace. These are three different promises; neither one implies the other two.</p>
   </section>
 
   <section>
-    <h2>Seven questions before you call it live</h2>
+    <h2>Eight questions before you call it live</h2>
     <ul>
-      <li>How long until the first playable frame?</li>
+      <li>Who proposes or directs the change, and who selects it?</li>
+      <li>When does that control window close?</li>
       <li>How long from a new direction to visible change?</li>
       <li>What are the source fps, delivered fps, and visible motion trade-off?</li>
       <li>Which GPU profile, checkpoint, attention path, and warm-up plan produced the next ready clip?</li>
@@ -117,7 +119,7 @@
     </ul>
   </section>
 
-  <footer><p>Sources: <a href="https://huggingface.co/datasets/jacokon/fasth3-live">FastH3 Live</a>, <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">Reactor FastH3 implementation notes</a>, <a href="https://github.com/reactor-team/infinite-livestream/blob/main/streaming-client/README.md">Reactor streaming-client notes</a>, and <a href="https://fal.ai/h3-max-director">fal H3 Max Director</a>. This pool has not measured an end-to-end stream.</p></footer>
+  <footer><p>Sources: <a href="https://www.globenewswire.com/news-release/2026/09/07/3357194/0/en/10-seconds-of-video-in-4-seconds-yoroll-launches-h3-superfast-and-yolive.html">Yoroll’s YoLive announcement</a>, <a href="https://huggingface.co/datasets/jacokon/fasth3-live">FastH3 Live</a>, <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">Reactor FastH3 implementation notes</a>, and <a href="https://fal.ai/h3-max-director">fal H3 Max Director</a>. This pool has not measured an end-to-end stream.</p></footer>
 </article>
 <!-- SHADUF_AGENT_DOCUMENT_END --></div>
     </article><div class="center-fade" aria-hidden="true"></div></main>
@@ -134,7 +136,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>15 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>16 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>

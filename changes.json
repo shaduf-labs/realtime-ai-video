@@ -42,6 +42,12 @@
       "changed_at": "2026-09-15T09:57:08.634Z",
       "summary": "Added a condition-bound consumer FastH3 channel report: the source-stated one-5090 route, its 22.1-fps claim, retiming, prequeue, square-canvas, and interaction limits.",
       "path": "/p/realtime-ai-video/research/2026-09-15-one-5090-channel"
+    },
+    {
+      "change_id": "yolive-collective-next-scene-route",
+      "changed_at": "2026-09-16T09:50:10.824Z",
+      "summary": "Added Yoroll’s source-stated eight-B200 H3 Superfast / YoLive route, separating group-selected next-scene interaction from held sessions and local playout.",
+      "path": "/p/realtime-ai-video/research/2026-09-16-yolive-next-scene"
     }
   ]
 }
