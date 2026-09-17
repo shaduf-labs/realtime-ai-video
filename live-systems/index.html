@@ -15,7 +15,7 @@
     <meta property="og:description" content="Queues, buffers, playout, interaction, recovery, and delivery for live-looking video.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/live-systems/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Live Systems","description":"Queues, buffers, playout, interaction, recovery, and delivery for live-looking video.","dateModified":"2026-09-16T09:50:10.824Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/live-systems/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Live Systems","description":"Queues, buffers, playout, interaction, recovery, and delivery for live-looking video.","dateModified":"2026-09-17T10:28:00.000Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/live-systems/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="live-systems">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -64,9 +64,9 @@
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
   <header>
-    <p>Live systems · checked 16 September 2026</p>
+    <p>Live systems · checked 17 September 2026</p>
     <h1>“Continuous” survives only if the system survives a miss</h1>
-    <p>A smooth demo can hide a queue, an idle filler, a repeated frame, a slower playback rate, a hard scene cut, or a vote that waits offscreen. Ask what continues when the next clip is late, a prompt fails, a vote closes, or a session ends.</p>
+    <p>A smooth demo can hide a remote API wait, a queue, an idle filler, a repeated frame, a slower playback rate, a hard scene cut, or a vote that waits offscreen. Ask what continues when the next clip is late, a prompt fails, a vote closes, or a session ends.</p>
   </header>
 
   <section>
@@ -75,10 +75,17 @@
       <li><strong>Input:</strong> accept prompts, proposals, votes, or controls; decide moderation and ordering.</li>
       <li><strong>Selection:</strong> state who decides the next action, when that window closes, and what happens to late or losing input.</li>
       <li><strong>Generation:</strong> measure acceptance-to-ready time, not an advertised frame rate.</li>
+      <li><strong>Deployment:</strong> state the client host, inference host, task, adapter, server revision, GPU/host memory, and HTTP response boundary.</li>
       <li><strong>Buffer:</strong> hold enough finished or in-flight playable work for a slow render or retry.</li>
       <li><strong>Playout:</strong> choose the output fps; state filler, transitions, fallback footage, and what black, silence, a frozen frame, or slowed motion means.</li>
       <li><strong>Delivery and recovery:</strong> timestamp the visible result, reconnect sessions, preserve story state if possible, and log the gap.</li>
     </ol>
+  </section>
+
+  <section>
+    <h2>An API response is another boundary, not the visible result</h2>
+    <p><strong>Project says:</strong> vLLM-Omni can serve H3 through an OpenAI-compatible video API. Its stated four-B300 full-H3 FL2VA row returns 209 frames at 1248×768 in 86.964 seconds mean HTTP client latency. The output is about 8.71 seconds at 24 fps.</p>
+    <p>This tells a builder that remote H3 serving exists and that the named full-H3 condition is far behind playback. It does not reveal endpoint queue time, browser decode, media delivery, retries, or what a viewer sees while waiting. The next system timestamp after “request accepted” must be “playable media ready,” then “first visible frame.”</p>
   </section>
 
   <section>
@@ -94,32 +101,27 @@
   </section>
 
   <section>
-    <h2>FastH3: raw contract versus the supplied stream client</h2>
-    <p><strong>Project says:</strong> Reactor’s raw FastH3 contract keeps generation and playout queues separate. A completed or stopped clip flushes the tracks to black. Its default autoplay setting is off, so a client must issue <code>play</code> for the next clip.</p>
-    <p><strong>Project says:</strong> its supplied streaming client instead keeps autoplay on, curates playout order, and uses idle filler to keep the queue supplied. That can create very short transitions between ready clips. It cannot create a new clip, conceal a drained queue, or carry subject, framing, or voice over the project’s independent clip boundary.</p>
+    <h2>Open session, group choice, remote service, or buffered clips</h2>
+    <p><strong>Provider says:</strong> H3 Max Director uses an open WebRTC session, with new directions sent over a data channel while output tracks play. <strong>Provider says:</strong> YoLive is a group-selected next-scene route. <strong>Project says:</strong> vLLM-Omni is a separate H3 service route. <strong>Community project says:</strong> a local FastH3 channel can keep distinct prepared scenes moving at a source-stated sub-24-fps pace.</p>
+    <p>These are four different promises. Neither one implies the other three.</p>
   </section>
 
   <section>
-    <h2>Open session, group choice, or buffered clips</h2>
-    <p><strong>Provider says:</strong> H3 Max Director uses an open WebRTC session, with new directions sent over a data channel while output tracks play. The provider says later segments retain context and hide a small re-rendered overlap before delivery. Public sessions are finite, so this route still needs a reopening plan.</p>
-    <p><strong>Provider says:</strong> YoLive is a group-selected next-scene route. <strong>Community project says:</strong> a local FastH3 channel can keep distinct prepared scenes moving at a source-stated sub-24-fps pace. These are three different promises; neither one implies the other two.</p>
-  </section>
-
-  <section>
-    <h2>Eight questions before you call it live</h2>
+    <h2>Nine questions before you call it live</h2>
     <ul>
       <li>Who proposes or directs the change, and who selects it?</li>
       <li>When does that control window close?</li>
-      <li>How long from a new direction to visible change?</li>
+      <li>Where does the request run, and when does the inference server accept it?</li>
+      <li>How long from a new direction to playable media and then visible change?</li>
       <li>What are the source fps, delivered fps, and visible motion trade-off?</li>
-      <li>Which GPU profile, checkpoint, attention path, and warm-up plan produced the next ready clip?</li>
+      <li>Which GPU profile, checkpoint, attention path, server state, and warm-up plan produced the next ready clip?</li>
       <li>How many ready or in-flight clips sit ahead of playback?</li>
       <li>What appears after a miss or a failed render?</li>
       <li>Does the next clip preserve the scene, voice, and viewer’s choice—or begin a new one?</li>
     </ul>
   </section>
 
-  <footer><p>Sources: <a href="https://www.globenewswire.com/news-release/2026/09/07/3357194/0/en/10-seconds-of-video-in-4-seconds-yoroll-launches-h3-superfast-and-yolive.html">Yoroll’s YoLive announcement</a>, <a href="https://huggingface.co/datasets/jacokon/fasth3-live">FastH3 Live</a>, <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">Reactor FastH3 implementation notes</a>, and <a href="https://fal.ai/h3-max-director">fal H3 Max Director</a>. This pool has not measured an end-to-end stream.</p></footer>
+  <footer><p>Sources: <a href="https://github.com/vllm-project/vllm-omni/blob/main/recipes/MiniMaxAI/MiniMax-H3.md">vLLM-Omni’s H3 recipe</a>, <a href="https://www.globenewswire.com/news-release/2026/09/07/3357194/0/en/10-seconds-of-video-in-4-seconds-yoroll-launches-h3-superfast-and-yolive.html">Yoroll’s YoLive announcement</a>, <a href="https://huggingface.co/datasets/jacokon/fasth3-live">FastH3 Live</a>, <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">Reactor FastH3 implementation notes</a>, and <a href="https://fal.ai/h3-max-director">fal H3 Max Director</a>. This pool has not measured an end-to-end stream.</p></footer>
 </article>
 <!-- SHADUF_AGENT_DOCUMENT_END --></div>
     </article><div class="center-fade" aria-hidden="true"></div></main>
@@ -136,7 +138,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>16 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>17 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>

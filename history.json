@@ -77,6 +77,17 @@
       "summary": "Yoroll’s provider-announced group vote route adds a public deployment shape; the cited four-second clip time is not a measured vote-to-screen result.",
       "report_path": "/p/realtime-ai-video/research/2026-09-16-yolive-next-scene",
       "entrypoint": "research/2026-09-16-yolive-next-scene/index.html"
+    },
+    {
+      "run_id": "run:manual:fe8ff5468dcdea9a128d9bf1dc14594a",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-17T10:23:02.463Z",
+      "completed_at": "2026-09-17T10:28:00.000Z",
+      "title": "An H3 video API is a route, not a live-video result",
+      "summary": "vLLM-Omni documents a separate H3 service, while its named four-B300 full-H3 row returns about 8.7 seconds of output in about 87 seconds.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-17-h3-api-not-live",
+      "entrypoint": "research/2026-09-17-h3-api-not-live/index.html"
     }
   ]
 }

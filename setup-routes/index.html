@@ -15,7 +15,7 @@
     <meta property="og:description" content="Choose local, rented, or API paths by constraints rather than model hype.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/setup-routes/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Setup Routes","description":"Choose local, rented, or API paths by constraints rather than model hype.","dateModified":"2026-09-16T09:50:10.824Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/setup-routes/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Setup Routes","description":"Choose local, rented, or API paths by constraints rather than model hype.","dateModified":"2026-09-17T10:28:00.000Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/setup-routes/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="setup-routes">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -64,16 +64,17 @@
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
   <header>
-    <p>Decision guide · checked 16 September 2026</p>
-    <h1>Choose the control contract, then test the claim</h1>
-    <p>A model name does not tell you whether you are buying a group-choice loop, an interactive session, operating a clip queue, leaving a local channel running, or rendering a short file locally.</p>
+    <p>Decision guide · checked 17 September 2026</p>
+    <h1>Choose the control and deployment contracts, then test the claim</h1>
+    <p>A model name does not tell you whether you are buying a group-choice loop, an interactive session, a remote GPU service, a clip queue, an unattended local channel, or a short local render.</p>
   </header>
 
   <section>
-    <h2>Five routes, five jobs</h2>
+    <h2>Six routes, six jobs</h2>
     <table>
       <thead><tr><th>Need</th><th>Route to inspect</th><th>Evidence status</th><th>Constraint that changes the answer</th></tr></thead>
       <tbody>
+        <tr><td>A remote H3 service for a client or team</td><td>vLLM-Omni H3 server</td><td><strong>Project says:</strong> one service can expose T2VA, FL2VA, and Ref2VA to an OpenAI-compatible video API.</td><td>Task, server revision, FastH3 adapter at startup, GPU and host memory, cold/warm time, client compatibility, queue, and delivery. The published full-H3 four-B300 row is not live.</td></tr>
         <tr><td>A shared audience should select the next story beat</td><td>Yoroll H3 Superfast / YoLive</td><td><strong>Provider says:</strong> proposals and votes guide the next scene; 10 seconds at 768p/24 fps with native audio generate in four seconds on eight B200 GPUs.</td><td>Vote window, moderation, input-to-screen delay, public uptime, cost, and what survives into the next scene.</td></tr>
         <tr><td>Viewer input should alter a held stream</td><td>fal H3 Max Director</td><td><strong>Provider says:</strong> persistent WebRTC tracks, carried context, and mid-session text directions.</td><td>Public session limit, current $0.08/second billing, reconnect, and moderation design.</td></tr>
         <tr><td>A chat-shaped feed of short scenes</td><td>FastH3 queue and playout</td><td><strong>Project says:</strong> separate build and play queues can feed paced output; its cited 15-second build is 15.5 s on four B200s and 12.9 s on eight.</td><td>GPU profile, warm-up, ready-buffer depth, autoplay/filler policy, hard cuts, and what viewers see after a miss.</td></tr>
@@ -81,6 +82,11 @@
         <tr><td>One controlled local shot</td><td>MiniMax H3 through a local framework such as ComfyUI</td><td><strong>Provider and community reports say:</strong> local base clips and an optimized dynamic-VRAM path exist; one 5090 report gives a condition-rich offline result.</td><td>Task mode, system RAM, model pack, resolution, steps, software version, and wait tolerance.</td></tr>
       </tbody>
     </table>
+  </section>
+
+  <section>
+    <h2>Pick remote serving when</h2>
+    <p>You need the creator UI and the H3 machine to be different systems, or you want several clients to reuse one service. vLLM-Omni’s <a href="https://github.com/vllm-project/vllm-omni/blob/main/recipes/MiniMaxAI/MiniMax-H3.md">current H3 recipe</a> records an OpenAI-compatible route. Its stated full-H3 four-B300 FL2VA baseline takes 86.964 seconds to return 209 frames—about 8.71 seconds at 24 fps. Build an offline or queue-ahead workflow first.</p>
   </section>
 
   <section>
@@ -94,22 +100,17 @@
   </section>
 
   <section>
-    <h2>Pick buffered FastH3 when</h2>
-    <p>You want a sequence of distinct scenes and can prebuild it. The <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">inspected contract</a> says a roughly 15-second clip takes about 15.5 seconds to build on four B200s and 12.9 on eight. Its <a href="https://github.com/reactor-team/infinite-livestream/blob/main/streaming-client/README.md">streaming client</a> enables autoplay and filler, but that is a delivery policy, not story continuity.</p>
-  </section>
-
-  <section>
     <h2>Baseline card before you spend a weekend</h2>
     <ol>
       <li>Write who can propose, who selects, what changes, and whether the active scene can change.</li>
-      <li>Record proposal close, moderation, accepted-input, ready, delivered-start, and visible-change timestamps.</li>
-      <li>Keep the model variant, GPU profile, canvas, source and delivered fps, warm state, and retry policy next to every time.</li>
+      <li>State client host, inference host, task, adapter load point, server revision, GPU, and host memory.</li>
+      <li>Record cold, warm, accepted-input, ready, HTTP response, delivered-start, and visible-change timestamps.</li>
       <li>For a channel or queue, record ready clips, playback speed, filler, retries, and black or silent fallback.</li>
-      <li>Label the result as provider documentation, community report, or a measured test. Do not blend them.</li>
+      <li>Label the result as provider documentation, project report, community report, or a measured test. Do not blend them.</li>
     </ol>
   </section>
 
-  <footer><p>Sources: <a href="https://www.globenewswire.com/news-release/2026/09/07/3357194/0/en/10-seconds-of-video-in-4-seconds-yoroll-launches-h3-superfast-and-yolive.html">Yoroll’s YoLive announcement</a>, <a href="https://fal.ai/h3-max-director">fal Director documentation</a>, <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">Reactor FastH3 README</a>, and the <a href="https://huggingface.co/datasets/jacokon/fasth3-live">FastH3 Live community project</a>.</p></footer>
+  <footer><p>Sources: <a href="https://github.com/vllm-project/vllm-omni/blob/main/recipes/MiniMaxAI/MiniMax-H3.md">vLLM-Omni H3 recipe</a>, <a href="https://www.globenewswire.com/news-release/2026/09/07/3357194/0/en/10-seconds-of-video-in-4-seconds-yoroll-launches-h3-superfast-and-yolive.html">Yoroll’s YoLive announcement</a>, <a href="https://fal.ai/h3-max-director">fal Director documentation</a>, <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">Reactor FastH3 README</a>, and the <a href="https://huggingface.co/datasets/jacokon/fasth3-live">FastH3 Live community project</a>.</p></footer>
 </article>
 <!-- SHADUF_AGENT_DOCUMENT_END --></div>
     </article><div class="center-fade" aria-hidden="true"></div></main>
@@ -126,7 +127,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>16 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>17 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>

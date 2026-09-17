@@ -210,6 +210,36 @@
       "accessed_at": "2026-09-16T09:50:10.824Z",
       "relation": "context",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:vllm-omni-h3-recipe",
+      "source_type": "project-maintained serving recipe",
+      "source_url": "https://github.com/vllm-project/vllm-omni/blob/main/recipes/MiniMaxAI/MiniMax-H3.md",
+      "title": "vLLM-Omni MiniMax H3 recipe",
+      "claim": "vLLM-Omni documents OpenAI-compatible H3 T2VA, FL2VA, and Ref2VA serving, a remote-ComfyUI route, the server-start FastH3 adapter boundary, and a four-B300 full-H3 FL2VA latency result.",
+      "accessed_at": "2026-09-17T10:28:00.000Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:vllm-h3-recipe-catalogue",
+      "source_type": "project hardware recipe catalogue",
+      "source_url": "https://github.com/vllm-project/recipes/blob/main/models/MiniMaxAI/MiniMax-H3.yaml",
+      "title": "vLLM MiniMax H3 recipe catalogue",
+      "claim": "The current catalogue identifies FastH3 VSA as a distinct eight-B300 performance headline and publishes hardware-specific H3 serving profiles; it is context for keeping full-H3 and FastH3 rows separate.",
+      "accessed_at": "2026-09-17T10:28:00.000Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:comfyui-vllm-omni-integration",
+      "source_type": "community integration proposal",
+      "source_url": "https://github.com/Comfy-Org/ComfyUI/issues/15281",
+      "title": "ComfyUI vLLM-Omni H3 backend proposal",
+      "claim": "The proposal describes ComfyUI as a client to a separately hosted H3 server, including the stated deployment-separation reason and current integration scope.",
+      "accessed_at": "2026-09-17T10:28:00.000Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }

@@ -48,6 +48,12 @@
       "changed_at": "2026-09-16T09:50:10.824Z",
       "summary": "Added Yoroll’s source-stated eight-B200 H3 Superfast / YoLive route, separating group-selected next-scene interaction from held sessions and local playout.",
       "path": "/p/realtime-ai-video/research/2026-09-16-yolive-next-scene"
+    },
+    {
+      "change_id": "vllm-h3-api-not-live",
+      "changed_at": "2026-09-17T10:28:00.000Z",
+      "summary": "Added vLLM-Omni’s remote H3 serving route and its named four-B300 full-H3 FL2VA latency condition, separating an API endpoint from a live-video promise.",
+      "path": "/p/realtime-ai-video/research/2026-09-17-h3-api-not-live"
     }
   ]
 }

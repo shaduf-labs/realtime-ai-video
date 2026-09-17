@@ -1,26 +1,26 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "Current evidence supports six distinct routes: fal H3 Max Director is a finite hosted context-carrying WebRTC session; Yoroll says H3 Superfast powers YoLive, a public group proposal-and-vote route for the next scene, with a 10-second 768p/24-fps/native-audio generation claim in four seconds on eight B200 GPUs; Reactor FastH3 is a high-end VSA queue-and-playout route; FastVideo FastH3 Preview has local clip paths; a community project reports one RTX 5090 sustaining an unattended dense FastH3 channel at 22.1 fps through 448×448 output, prequeued prompts, and retimed playout; and Comfy’s optimized H3 path broadens local access. YoLive’s launch claim does not establish individual prompt-to-screen latency, public uptime, cost, or durable story continuity.",
+  "current_answer": "Current evidence supports seven distinct routes: fal H3 Max Director is a finite hosted context-carrying WebRTC session; Yoroll says H3 Superfast powers YoLive, a public group proposal-and-vote route for the next scene; Reactor FastH3 is a high-end VSA queue-and-playout route; FastVideo FastH3 Preview has local clip paths; a community project reports one RTX 5090 sustaining an unattended dense FastH3 channel at 22.1 fps through 448×448 output, prequeued prompts, and retimed playout; Comfy’s optimized H3 path broadens local access; and vLLM-Omni documents a separate OpenAI-compatible H3 service for T2VA, FL2VA, and Ref2VA. The latter is a deployment route, not a live-video result: its published four-B300, 50-step FL2VA row takes 86.964 seconds to return about 8.71 seconds of 24-fps output.",
   "catalogue_card": {
-    "question": "Is YoLive actually real-time AI video?",
-    "text": "Yoroll says its new group-story product generates the next 10-second 768p/24-fps scene in four seconds on eight B200 GPUs. That clears a clip benchmark, not vote-to-screen delay or public uptime."
+    "question": "Does an OpenAI H3 endpoint make AI video live?",
+    "text": "vLLM-Omni documents a remote H3 service, but its stated four-B300 full-H3 baseline returns about 8.7 seconds of video in about 87 seconds. Useful API route; no live-video proof."
   },
   "summary": [
-    "Yoroll says its new YoLive product lets viewers propose and vote on the next scene. Its H3 Superfast claim is 10 seconds of 768p, 24 fps video with native audio in four seconds on eight B200 GPUs.",
-    "YoLive is a collective next-scene route. It does not establish a viewer’s direct control of the active scene, input-to-visible-change delay, moderation timing, public uptime, cost, or durable story state.",
-    "The route works as an unattended local channel because it prequeues work, uses self-contained scene prompts, retimes delivery, and accepts a 448×448 canvas. It does not establish native-24-fps motion or live viewer control.",
-    "FastVideo’s own example distinguishes VSA and dense FastH3 paths by adapter payload, so a timing without the checkpoint and attention path is not a portable FastH3 result.",
-    "Reactor’s four- and eight-B200 queue profiles and fal’s hosted Director session remain separate routes with different hardware, control, and continuity contracts."
+    "vLLM-Omni documents an OpenAI-compatible H3 service for T2VA, FL2VA, and Ref2VA that a remote ComfyUI client can call.",
+    "Its stated full-H3 four-B300 FL2VA row returns 209 frames at 1248×768 in 86.964 seconds mean HTTP client latency. At 24 fps, that is about 8.71 seconds of output: roughly ten seconds of work per output second.",
+    "The published row is a named, warmed full-H3 workload. It does not establish a FastH3/Turbo result, quality, cost, queue capacity, client-to-visible latency, continuous delivery, or interaction.",
+    "Yoroll’s collective next-scene route, fal’s held Director session, Reactor’s buffered FastH3 route, the one-5090 FastH3 channel, and local ComfyUI H3 remain distinct routes with different control, deployment, continuity, and hardware contracts."
   ],
   "uncertainty": [
+    "vLLM-Omni’s H3 serving and four-B300 result are maintainer documentation for one warmed full-H3 FL2VA workload; the pool has not operated it or measured cost, quality, queueing, failure behavior, or client-to-visible latency.",
     "Yoroll’s YoLive control loop and H3 Superfast timing are company launch claims; the pool did not observe a live vote, measure end-to-end response, or independently reproduce the eight-B200 result.",
     "The one-RTX-5090 FastH3 channel is a community project’s one-machine self-report; the pool has not run or independently audited it, and its downloadable files are access-gated.",
     "Reactor’s playout, continuity, and four- or eight-B200 timing statements are project-maintainer documentation for one implementation, not independent pool measurements or a viewer study.",
     "fal’s current endpoint terms and continuity behavior are provider claims; a prior provider learning article still conflicts on session and audio details.",
     "No pool test, invoice, uptime log, end-to-end latency measurement, or first-party pool analytics is available."
   ],
-  "checked_at": "2026-09-16T09:50:10.824Z",
-  "meaningfully_updated_at": "2026-09-16T09:50:10.824Z",
-  "freshness_note": "Checked 16 September 2026. Yoroll’s public launch describes a collective choice product and a faster-than-playback clip condition, but independent evidence for vote-to-screen delay, moderation, delivery, continuity, cost, uptime, and audience return is absent."
+  "checked_at": "2026-09-17T10:28:00.000Z",
+  "meaningfully_updated_at": "2026-09-17T10:28:00.000Z",
+  "freshness_note": "Checked 17 September 2026. vLLM-Omni’s remote H3 route is newly documented, with one named four-B300 full-H3 latency baseline. It expands deployment options; it does not establish a live, continuous, interactive, or costed service."
 }
