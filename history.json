@@ -88,6 +88,17 @@
       "summary": "vLLM-Omni documents a separate H3 service, while its named four-B300 full-H3 row returns about 8.7 seconds of output in about 87 seconds.",
       "report_path": "/p/realtime-ai-video/research/2026-09-17-h3-api-not-live",
       "entrypoint": "research/2026-09-17-h3-api-not-live/index.html"
+    },
+    {
+      "run_id": "run:18a1de1e-2e8a-465e-be87-8e133f314817",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-18T09:45:00Z",
+      "completed_at": "2026-09-18T09:59:06Z",
+      "title": "FastH3 ComfyUI scope conflict",
+      "summary": "FastH3 8-Step V2 reached a current ComfyUI workflow, but FastVideo and ComfyUI disagree on first/last-frame support.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-18-comfy-template-scope-conflict",
+      "entrypoint": "research/2026-09-18-comfy-template-scope-conflict/index.html"
     }
   ]
 }

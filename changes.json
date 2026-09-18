@@ -54,6 +54,12 @@
       "changed_at": "2026-09-17T10:28:00.000Z",
       "summary": "Added vLLM-Omni’s remote H3 serving route and its named four-B300 full-H3 FL2VA latency condition, separating an API endpoint from a live-video promise.",
       "path": "/p/realtime-ai-video/research/2026-09-17-h3-api-not-live"
+    },
+    {
+      "change_id": "fasth3-8step-comfy-scope-conflict",
+      "changed_at": "2026-09-18T09:50:50Z",
+      "summary": "Added FastVideo’s 8-Step V2 / ComfyUI package route and its unresolved T2AV-versus-FL2VA task-scope conflict; warned readers to verify a pinned transition workflow before promising it.",
+      "path": "/p/realtime-ai-video/research/2026-09-18-comfy-template-scope-conflict"
     }
   ]
 }

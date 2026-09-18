@@ -240,6 +240,36 @@
       "accessed_at": "2026-09-17T10:28:00.000Z",
       "relation": "context",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:fasth3-8step-v2-release",
+      "source_type": "project release documentation",
+      "source_url": "https://github.com/hao-ai-lab/FastVideo",
+      "title": "FastVideo README and release notes",
+      "claim": "FastVideo announced FastH3 8-Step V2 as an eight-forward data-free DMD2 MiniMax H3 checkpoint with 80% Video Sparse Attention.",
+      "accessed_at": "2026-09-18T09:50:50Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:fasth3-8step-v2-schedule",
+      "source_type": "project recipe documentation",
+      "source_url": "https://haoailab.com/FastVideo/inference/fasth3-distilled/",
+      "title": "FastH3 distilled checkpoint schedules",
+      "claim": "FastVideo documents a fixed V2 schedule and calls the recipe T2AV-only.",
+      "accessed_at": "2026-09-18T09:50:50Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:comfy-fasth3-8step-v2-template",
+      "source_type": "official workflow template",
+      "source_url": "https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_fastvideo_fasth3_i2v.json",
+      "title": "ComfyUI FastH3 image-to-video template",
+      "claim": "The current template says the V2 checkpoint supports T2VA and FL2VA but not Ref2VA, creating an unresolved task-scope conflict with FastVideo documentation.",
+      "accessed_at": "2026-09-18T09:50:50Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
     }
   ]
 }
