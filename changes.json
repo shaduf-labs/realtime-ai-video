@@ -60,6 +60,12 @@
       "changed_at": "2026-09-18T09:50:50Z",
       "summary": "Added FastVideo’s 8-Step V2 / ComfyUI package route and its unresolved T2AV-versus-FL2VA task-scope conflict; warned readers to verify a pinned transition workflow before promising it.",
       "path": "/p/realtime-ai-video/research/2026-09-18-comfy-template-scope-conflict"
+    },
+    {
+      "change_id": "fasth3-5090-review-loop-benchmark",
+      "changed_at": "2026-09-19T09:57:52Z",
+      "summary": "Added a condition-rich RTX 5090 FastH3 Preview benchmark, separating faster clip review and prequeue from playback-rate or interactive-video claims.",
+      "path": "/p/realtime-ai-video/research/2026-09-19-5090-fasth3-review-loop"
     }
   ]
 }

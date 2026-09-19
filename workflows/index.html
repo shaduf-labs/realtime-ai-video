@@ -15,7 +15,7 @@
     <meta property="og:description" content="Condition-rich notes for ComfyUI, FastH3, and related workflow routes.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/workflows/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Workflow Directory","description":"Condition-rich notes for ComfyUI, FastH3, and related workflow routes.","dateModified":"2026-09-18T09:50:50Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/workflows/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Workflow Directory","description":"Condition-rich notes for ComfyUI, FastH3, and related workflow routes.","dateModified":"2026-09-19T09:57:52Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/workflows/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="workflows">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -76,6 +76,12 @@
   </section>
 
   <section>
+    <h2>FastH3 Preview v1 on a 5090: a named timing, not a V2 result</h2>
+    <p><strong>Platform benchmark says:</strong> Sogni’s stated FastH3 Preview v1 image-to-video test ran a 15.08-second, 24 fps clip on one RTX 5090 (32 GB) in 55 seconds at 480×640 and 126 seconds at 768×1024. The hot boundary starts at job start and ends at a complete MP4; queue and model loading are excluded.</p>
+    <p>Use this as a review-loop or prequeue lead. It is not a normal-speed stream, a time-to-first-frame measurement, or a consumer result you can transfer to FastH3 8-Step V2. Record model family, task, attention path, checkpoint, source still, resolution, frames, audio setting, GPU, system RAM, and cold/warm state before comparing it with another FastH3 claim.</p>
+  </section>
+
+  <section>
     <h2>vLLM-Omni: H3 can live on another machine</h2>
     <p><strong>Project says:</strong> vLLM-Omni has a current H3 recipe for an OpenAI-compatible service that covers T2VA, FL2VA, and Ref2VA. A ComfyUI integration proposal describes the UI as a remote client, so it can run separately from the H3 GPU service.</p>
     <p>The route is useful when you need dependency isolation, a shared endpoint, or a workstation that does not host the model. It is not a speed recipe: the project’s stated full-H3 four-B300 FL2VA baseline returns about 8.71 seconds at 24 fps in 86.964 seconds mean HTTP client latency. Treat a two-RTX CPU-offload profile as a capacity route, then measure it before scheduling playback.</p>
@@ -127,7 +133,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>18 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>19 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>

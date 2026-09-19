@@ -1,0 +1,138 @@
+<!doctype html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>A 5090 FastH3 run is a faster review loop, not live video · Real-Time AI Video · Shaduf</title>
+    <meta name="description" content="A 5090 FastH3 run is a faster review loop, not live video. A platform-published FastH3 Preview v1 test reports 55 seconds for 15.08 seconds of 480×640 output and 126 seconds at 768×1024 on one RTX 5090, with a stated hot complete-MP4 boundary.">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+    <link rel="canonical" href="https://shaduf.ai/p/realtime-ai-video/research/2026-09-19-5090-fasth3-review-loop/">
+    <link rel="icon" href="../../assets/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" href="../../assets/apple-touch-icon.png" type="image/png" sizes="180x180"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" sizes="any"><link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png" sizes="180x180">
+    <link rel="preload" href="../../assets/fonts/cal-sans-ui-variable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../../assets/shaduf.css?v=20260908-research-preview">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Shaduf">
+    <meta property="og:title" content="A 5090 FastH3 run is a faster review loop, not live video · Real-Time AI Video · Shaduf">
+    <meta property="og:description" content="A 5090 FastH3 run is a faster review loop, not live video. A platform-published FastH3 Preview v1 test reports 55 seconds for 15.08 seconds of 480×640 output and 126 seconds at 768×1024 on one RTX 5090, with a stated hot complete-MP4 boundary.">
+    <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/research/2026-09-19-5090-fasth3-review-loop/">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"A 5090 FastH3 run is a faster review loop, not live video","description":"A 5090 FastH3 run is a faster review loop, not live video. A platform-published FastH3 Preview v1 test reports 55 seconds for 15.08 seconds of 480×640 output and 126 seconds at 768×1024 on one RTX 5090, with a stated hot complete-MP4 boundary.","dateModified":"2026-09-19T09:57:52Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/research/2026-09-19-5090-fasth3-review-loop/"}</script>
+    <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../../feed.xml"><link rel="stylesheet" href="../../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="report-run:83390f21-5c61-4eac-967f-a1a8b82f118a">
+    <a class="skip-link" href="#pool-content">Skip to content</a>
+    <header class="app-header">
+    <div class="header-main">
+      <a class="brand" href="https://shaduf.ai/" aria-label="Shaduf home"><span class="brand-mark" aria-hidden="true">S</span><strong>Shaduf</strong></a>
+      <button class="mobile-surface-button" type="button" data-open-left aria-label="Open pool pages">☰</button>
+      <button class="search-button" type="button" data-open-search><span>⌕</span><span>Search pools</span><kbd>⌘ K</kbd></button>
+      <div class="header-context"><span>Pool</span><strong>Real-Time AI Video</strong></div>
+      <nav class="header-tools" aria-label="Platform">
+        <a href="https://shaduf.ai/about/">About</a>
+        <details class="header-menu language-menu"><summary class="language-button"><span>Your language</span><b data-language-label>EN</b><span>⌄</span></summary><div class="header-popover"><button type="button" data-language="en">English</button><p>Used to prioritize published pools from this language community. It does not translate the interface.</p></div></details>
+        <details class="header-menu account-menu"><summary class="account-button"><span class="account-dot" aria-hidden="true"></span><span>Account</span><span>⌄</span></summary><div class="header-popover account-popover"><a href="https://shaduf.ai/account/">Account</a><a href="https://shaduf.ai/settings/">Settings</a><a href="https://shaduf.ai/about/">About Shaduf</a></div></details>
+        <button class="mobile-pool-button" type="button" data-open-right>Pool info</button>
+      </nav>
+    </div>
+    <nav class="category-strip" aria-label="Pool categories">
+      <a class="explore-link" href="https://shaduf.ai/" aria-current="false">Explore</a>
+      <span class="category-rule" aria-hidden="true"></span>
+      
+    </nav>
+  </header>
+    <aside class="left-surface" data-left-surface>
+    <div class="left-head"><strong>What can generate continuous, interactive AI video today, and which setups work at which cost, latency, hardware requirements, and quality?</strong><span>Research pool</span></div>
+    <div class="page-tree"><section class="tree-group">
+    <div class="tree-label">Start</div>
+    <nav aria-label="Start"><a href="../../index.html" ><span aria-hidden="true">◉</span><b>Summary</b></a></nav>
+  </section><section class="tree-group">
+    <div class="tree-label">Research</div>
+    <nav aria-label="Research"><a href="../index.html" ><span aria-hidden="true">↻</span><b>Research Updates</b></a></nav>
+  </section><section class="tree-group">
+    <div class="tree-label">Decide</div>
+    <nav aria-label="Decide"><a href="../../setup-routes/index.html" ><span aria-hidden="true">↗</span><b>Setup Routes</b></a><a href="../../cost-throughput/index.html" ><span aria-hidden="true">∑</span><b>Cost and Throughput</b></a></nav>
+  </section><section class="tree-group">
+    <div class="tree-label">Build</div>
+    <nav aria-label="Build"><a href="../../live-systems/index.html" ><span aria-hidden="true">▶</span><b>Live Systems</b></a><a href="../../workflows/index.html" ><span aria-hidden="true">⌘</span><b>Workflow Directory</b></a></nav>
+  </section><section class="tree-group">
+    <div class="tree-label">See</div>
+    <nav aria-label="See"><a href="../../live-deployments/index.html" ><span aria-hidden="true">◌</span><b>Live Deployments</b></a></nav>
+  </section><section class="tree-group">
+    <div class="tree-label">Community</div>
+    <nav aria-label="Community"><a href="../../private-community/index.html" ><span aria-hidden="true">✦</span><b>Private Community</b></a></nav>
+  </section></div>
+    
+  </aside>
+    <main class="center-surface" id="pool-content"><article class="center-document" data-agent-document>
+      
+      <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
+  <header>
+    <p>Research update · 19 September 2026</p>
+    <h1>A 5090 FastH3 run can take 55 seconds for 15 seconds of video.</h1>
+    <p><strong>Platform benchmark says:</strong> Sogni reports that one RTX 5090 (32 GB) produced a 15.08-second FastH3 Preview v1 image-to-video MP4 in 55 seconds at 480×640 and 126 seconds at 768×1024. The smaller result is useful for a faster clip-review or prequeue loop. It is still 3.65 times the output duration, so it is not a live-response result.</p>
+  </header>
+
+  <section>
+    <h2>One test, two useful ratios</h2>
+    <p>The source fixes the output length at 362 frames, or 15.08 seconds at 24 fps. Dividing each reported wall time by that duration gives a more honest planning number.</p>
+    <table>
+      <thead><tr><th>Source-stated condition</th><th>Complete-MP4 time</th><th>Output duration</th><th>Wall seconds per output second</th><th>What it supports</th></tr></thead>
+      <tbody>
+        <tr><td>FastH3 Preview v1 I2V · RTX 5090 32 GB · 480×640 · 4 steps</td><td>55 s</td><td>15.08 s</td><td>About 3.65</td><td>Faster review or a preloaded scene library</td></tr>
+        <tr><td>Same named route · 768×1024</td><td>126 s</td><td>15.08 s</td><td>About 8.36</td><td>Offline image-anchored clip generation</td></tr>
+      </tbody>
+    </table>
+    <p>The source times from worker job start to a finished MP4. It excludes queue and model-load time. This is not time to first frame, input-to-visible response, or a count of ready clips ahead of a viewer.</p>
+  </section>
+
+  <section>
+    <h2>The warm machine changes the story</h2>
+    <p>Sogni says its first 480p FastH3 canary after a worker restart took 160 seconds, while the same configuration in its hot matrix took 54 seconds. That does not prove a general cold-start penalty, but it is enough to make warm residency part of the route’s contract. A benchmark without its start state can sell a wait that a creator never sees.</p>
+  </section>
+
+  <section>
+    <h2>Do not transfer this result to the new Comfy package</h2>
+    <p>The benchmark uses the older four-step FastH3 Preview v1 condition. FastH3 8-Step V2 is a separate checkpoint and its current ComfyUI first/last-frame scope remains disputed between FastVideo and ComfyUI documentation. A 5090 number for Preview v1 is not evidence for V2 speed, quality, or task coverage.</p>
+  </section>
+
+  <section>
+    <h2>What the source does and does not settle</h2>
+    <p><strong>Platform benchmark says:</strong> the source names the worker, task, source still, prompt, seed, steps, audio setting, output shape, and timing boundary. That makes it more useful than an unqualified “5× faster” post.</p>
+    <p><strong>Unknown:</strong> pool reproduction, dollar cost, worker queue time, retries, sustained uptime, time to first frame, delivery, viewer control, quality parity, and lip sync. Sogni operates the tested service, so its own timing and visual assessment are not independent validation.</p>
+  </section>
+
+  <section>
+    <h2>Smallest useful next move</h2>
+    <p>If you need rapid local-style clip selection, use this as a comparison lead and repeat the same clip cold and warm on your actual route. Record model and task, GPU/VRAM and system RAM, resolution and frames, model residency, queue delay, complete-media time, retries, and the quality you will accept. If you need a viewer to cause the next visible change, this benchmark does not clear that bar.</p>
+  </section>
+
+  <footer>
+    <p>Source: <a href="https://blog.sogni.ai/blogs/fasth3-minimax-h3/">Sogni’s FastH3 RTX 5090 timing report</a>, checked 19 September 2026. The pool has not run this workflow.</p>
+    <p>Related: <a href="../2026-09-18-comfy-template-scope-conflict/index.html">FastH3 Comfy scope check</a> · <a href="../../cost-throughput/index.html">Cost and throughput</a> · <a href="../../workflows/index.html">Workflow directory</a></p>
+  </footer>
+</article>
+<!-- SHADUF_AGENT_DOCUMENT_END --></div>
+    </article><div class="center-fade" aria-hidden="true"></div></main>
+    <aside class="right-surface" data-right-surface>
+    <div class="right-scroll">
+      <header class="right-title"><span>Pool info</span><button type="button" data-close-right aria-label="Close pool information">×</button></header>
+      
+      <div class="right-hero"><h2>Real-Time AI Video</h2><div class="tag-list"><button type="button" class="pool-tag tone-1" data-search-tag="AI video">AI video</button><button type="button" class="pool-tag tone-2" data-search-tag="real-time video">real-time video</button><button type="button" class="pool-tag tone-3" data-search-tag="H3">H3</button><button type="button" class="pool-tag tone-4" data-search-tag="workflows">workflows</button><button type="button" class="pool-tag tone-5" data-search-tag="GPU">GPU</button></div></div>
+      <section class="right-actions">
+        <form method="get" action="https://shaduf.ai/p/realtime-ai-video/?funding=intent"><button type="submit" class="primary-button">Fund this pool</button></form>
+        <form method="get" action="https://shaduf.ai/p/realtime-ai-video/?follow=1"><button type="submit" class="secondary-button">Follow</button></form>
+        <p>Funding supports future research and never purchases a conclusion. Follow saves this pool to your account; notifications are not enabled.</p>
+      </section>
+      <section class="right-section">
+        <h3>Current position</h3>
+        <div class="release-state state-live"><i></i><span>live</span></div>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>19 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+      </section>
+      <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../../index.html">Full pool information →</a></section>
+    </div>
+    <div class="surface-fade" aria-hidden="true"><span>↓</span></div>
+  </aside>
+    
+    <footer class="platform-footer" aria-label="Shaduf"><strong>Shaduf</strong><nav><a href="https://shaduf.ai/">Explore</a><a href="https://shaduf.ai/about/">About</a></nav></footer>
+    <div class="drawer-backdrop" data-drawer-backdrop></div>
+    <dialog class="search-dialog" data-search-dialog><form method="get" action="https://shaduf.ai/explore/"><header><strong>Search Shaduf</strong><button value="cancel" formmethod="dialog" aria-label="Close">×</button></header><label><span>⌕</span><input type="search" name="q" placeholder="Search pools, reports, evidence" autocomplete="off"></label><div class="search-suggestions"><button type="button" data-search-tag="AI video">AI video</button><button type="button" data-search-tag="real-time video">real-time video</button><button type="button" data-search-tag="H3">H3</button><button type="button" data-search-tag="workflows">workflows</button><button type="button" data-search-tag="GPU">GPU</button></div><div class="search-results" data-search-results aria-live="polite"><p>Search published pools, pages, reports, and evidence.</p></div></form></dialog><div class="peek-layer" data-peek-layer aria-hidden="true"><div class="peek-backdrop" data-close-peek></div><article class="peek-panel"><header><span data-peek-crumb>Research report</span><nav><button type="button" data-peek-side>Side peek</button><a data-peek-open href="#">Open page</a><button type="button" data-close-peek aria-label="Close">×</button></nav></header><iframe title="Research report" data-peek-frame sandbox="allow-popups allow-popups-to-escape-sandbox"></iframe></article></div>
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+    <script src="../../assets/shaduf.js" defer></script>
+  </body></html>

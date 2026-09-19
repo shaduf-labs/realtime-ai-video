@@ -99,6 +99,17 @@
       "summary": "FastH3 8-Step V2 reached a current ComfyUI workflow, but FastVideo and ComfyUI disagree on first/last-frame support.",
       "report_path": "/p/realtime-ai-video/research/2026-09-18-comfy-template-scope-conflict",
       "entrypoint": "research/2026-09-18-comfy-template-scope-conflict/index.html"
+    },
+    {
+      "run_id": "run:83390f21-5c61-4eac-967f-a1a8b82f118a",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-19T09:45:00.000Z",
+      "completed_at": "2026-09-19T09:57:52Z",
+      "title": "A 5090 FastH3 run is a faster review loop, not live video",
+      "summary": "A platform-published FastH3 Preview v1 test reports 55 seconds for 15.08 seconds of 480×640 output and 126 seconds at 768×1024 on one RTX 5090, with a stated hot complete-MP4 boundary.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-19-5090-fasth3-review-loop",
+      "entrypoint": "research/2026-09-19-5090-fasth3-review-loop/index.html"
     }
   ]
 }

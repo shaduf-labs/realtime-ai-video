@@ -1,19 +1,20 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "Current evidence supports seven distinct routes: fal H3 Max Director is a finite hosted context-carrying WebRTC session; Yoroll says H3 Superfast powers YoLive, a public group proposal-and-vote route for the next scene; Reactor FastH3 is a high-end VSA queue-and-playout route; FastVideo has local FastH3 clip paths; a community project reports one RTX 5090 sustaining an unattended dense FastH3 channel at 22.1 fps through 448×448 output, prequeued prompts, and retimed playout; Comfy’s optimized H3 path broadens local access; and vLLM-Omni documents a separate OpenAI-compatible H3 service for T2VA, FL2VA, and Ref2VA. A new FastH3 8-Step V2 Comfy package is the actionable local update: FastVideo documents a fixed eight-forward V2 recipe, but FastVideo calls it T2AV-only while a current official ComfyUI template says it also accepts first/last-frame FL2VA. Treat the scope as unresolved until a pinned run settles it.",
+  "current_answer": "Current evidence supports seven distinct routes: fal H3 Max Director is a finite hosted context-carrying WebRTC session; Yoroll says H3 Superfast powers YoLive, a public group proposal-and-vote route for the next scene; Reactor FastH3 is a high-end VSA queue-and-playout route; FastVideo has local FastH3 clip paths; a community project reports one RTX 5090 sustaining an unattended dense FastH3 channel at 22.1 fps through 448×448 output, prequeued prompts, and retimed playout; Comfy’s optimized H3 path broadens local access; and vLLM-Omni documents a separate OpenAI-compatible H3 service for T2VA, FL2VA, and Ref2VA. A new platform-published 5090 benchmark puts one FastH3 Preview v1 path at 55 seconds for 15.08 seconds of 480×640 output and 126 seconds at 768×1024, under its stated hot-job boundary. That is a faster clip-review route, not playback-rate generation. FastH3 8-Step V2 remains a separate unresolved Comfy workflow: FastVideo documents it as T2AV-only while a current official template says it accepts first/last-frame FL2VA.",
   "catalogue_card": {
-    "question": "Can FastH3’s new ComfyUI path anchor your next scene?",
-    "text": "FastVideo calls 8-Step V2 text-to-video only. A current ComfyUI template says the same checkpoint also accepts first and last frames. Do not promise a transition until a pinned run settles the scope."
+    "question": "Can a 5090 make FastH3 feel real-time?",
+    "text": "One published FastH3 Preview test made 15 seconds of 480p video in 55 seconds on an RTX 5090. Useful for a faster review loop or prequeue, not a live response promise."
   },
   "summary": [
-    "FastVideo released FastH3 8-Step V2 as a distinct eight-forward DMD2 MiniMax H3 checkpoint; its older FastH3 Preview path remains four-forward.",
-    "A current official ComfyUI template links a Comfy-layout V2 package and says it supports T2VA plus first/last-frame FL2VA, while excluding Ref2VA.",
-    "FastVideo’s own current schedule page calls V2 T2AV-only. The scope conflict makes a first/last-frame transition an unverified claim, not a workflow promise.",
-    "No current V2 source inspected here provides a pool-measured or comparable local result for quality, hardware fit, time-to-ready, cost, failures, queue capacity, continuous delivery, or interaction."
+    "Sogni reports a pinned FastH3 Preview v1 image-to-video test on one RTX 5090 (32 GB): a 15.08-second MP4 took 55 seconds at 480×640 and 126 seconds at 768×1024 under its stated hot job-start-to-finished-MP4 boundary.",
+    "Those reported hot figures are about 3.65 and 8.36 wall-clock seconds per output second. The source excludes queue and model-load time; it reports a longer 480p canary after a worker restart.",
+    "This is a four-step Preview v1 condition, not the separate FastH3 8-Step V2 Comfy package. It cannot resolve or inherit the current V2 T2AV-versus-FL2VA scope conflict.",
+    "The result is a condition-rich local/hosted clip benchmark, not evidence of time to first frame, viewer interaction, continuous delivery, quality parity, or a general 5090 baseline."
   ],
   "uncertainty": [
     "FastVideo and ComfyUI conflict on the FastH3 8-Step V2 input scope. The pool did not run either T2VA or FL2VA, or measure quality, time, hardware fit, price, queueing, or failures.",
+    "Sogni is reporting its own controlled platform benchmark for FastH3 Preview v1, not the newer 8-Step V2 package. The pool did not reproduce it, inspect the worker image, price a Spark, or audit quality, queueing, cold startup, retries, or delivery.",
     "The one-RTX-5090 FastH3 channel is a community project’s one-machine self-report; the pool has not run or independently audited it, and its downloadable files are access-gated.",
     "Reactor’s playout, continuity, and four- or eight-B200 timing statements are project-maintainer documentation for one implementation, not independent pool measurements or a viewer study.",
     "fal’s current endpoint terms and continuity behavior are provider claims; a prior provider learning article still conflicts on session and audio details.",
@@ -21,7 +22,7 @@
     "Yoroll’s YoLive control loop and H3 Superfast timing are company launch claims; the pool did not observe a live vote, measure end-to-end response, or independently reproduce the eight-B200 result.",
     "vLLM-Omni’s H3 serving and four-B300 result are maintainer documentation for one warmed full-H3 FL2VA workload; the pool has not operated it or measured cost, quality, queueing, failure behavior, or client-to-visible latency."
   ],
-  "checked_at": "2026-09-18T09:50:50Z",
-  "meaningfully_updated_at": "2026-09-18T09:50:50Z",
-  "freshness_note": "Checked 18 September 2026. FastH3 8-Step V2 now has a current ComfyUI package and template, but FastVideo and ComfyUI conflict on whether first/last-frame FL2VA is supported. The pool has not run the route."
+  "checked_at": "2026-09-19T09:57:52Z",
+  "meaningfully_updated_at": "2026-09-19T09:57:52Z",
+  "freshness_note": "Checked 19 September 2026. A new platform-published RTX 5090 FastH3 Preview v1 benchmark gives a useful complete-MP4 timing condition, but it is slower than playback and excludes queue/model loading. The pool has not run it; FastH3 8-Step V2 workflow scope remains unresolved."
 }

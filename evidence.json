@@ -270,6 +270,16 @@
       "accessed_at": "2026-09-18T09:50:50Z",
       "relation": "unresolved",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:sogni-fasth3-5090-timing",
+      "source_type": "platform-published benchmark report",
+      "source_url": "https://blog.sogni.ai/blogs/fasth3-minimax-h3/",
+      "title": "FastH3 renders MiniMax H3 5.7× faster. Same cat, same GPU, stopwatch running.",
+      "claim": "Sogni reports its stated RTX 5090 FastH3 Preview v1 image-to-video timings, including hot complete-MP4 results at two resolutions and a longer post-restart canary.",
+      "accessed_at": "2026-09-19T09:57:52Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }
