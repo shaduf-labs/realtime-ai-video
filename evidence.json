@@ -280,6 +280,36 @@
       "accessed_at": "2026-09-19T09:57:52Z",
       "relation": "context",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:fasth3-v2-model-card",
+      "source_type": "project model card",
+      "source_url": "https://huggingface.co/FastVideo/FastVideo-FastH3-8-Step-V2",
+      "title": "FastVideo FastH3 8-Step V2",
+      "claim": "FastVideo says its V2 checkpoint supports text-to-audio-video generation only; FL2VA and Ref2VA were not distilled, and its documented trained default uses four B200 GPUs.",
+      "accessed_at": "2026-09-20T09:56:14Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:comfy-fasth3-v2-i2v-recheck",
+      "source_type": "official workflow template",
+      "source_url": "https://github.com/Comfy-Org/workflow_templates/blob/main/templates/video_fastvideo_fasth3_i2v.json",
+      "title": "ComfyUI FastH3 first/last-frame template",
+      "claim": "The current official template says the same V2 checkpoint supports T2VA and first/last-frame FL2VA, while excluding Ref2VA.",
+      "accessed_at": "2026-09-20T09:56:14Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:comfyui-036-release",
+      "source_type": "framework release notes",
+      "source_url": "https://github.com/Comfy-Org/ComfyUI/releases",
+      "title": "ComfyUI v0.36.0",
+      "claim": "The current ComfyUI release includes workflow-template updates and MiniMax H3 VAE changes; release availability is not a FastH3 V2 performance or compatibility measurement.",
+      "accessed_at": "2026-09-20T09:56:14Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }

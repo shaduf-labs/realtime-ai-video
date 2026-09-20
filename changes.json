@@ -66,6 +66,12 @@
       "changed_at": "2026-09-19T09:57:52Z",
       "summary": "Added a condition-rich RTX 5090 FastH3 Preview benchmark, separating faster clip review and prequeue from playback-rate or interactive-video claims.",
       "path": "/p/realtime-ai-video/research/2026-09-19-5090-fasth3-review-loop"
+    },
+    {
+      "change_id": "fasth3-v2-model-card-template-recheck",
+      "changed_at": "2026-09-20T09:56:14Z",
+      "summary": "Rechecked FastH3 8-Step V2 against the exact FastVideo model card and current official ComfyUI image-to-video template; kept FL2VA as unresolved and added a pre-download validation card.",
+      "path": "/p/realtime-ai-video/research/2026-09-20-fasth3-v2-scope-still-open"
     }
   ]
 }

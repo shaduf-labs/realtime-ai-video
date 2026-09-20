@@ -64,9 +64,9 @@
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
   <header>
-    <p>Checked 19 September 2026 · Research update 010</p>
-    <h1>A 5090 FastH3 run can take 55 seconds for 15 seconds of video.</h1>
-    <p><strong>The update:</strong> Sogni reports a pinned FastH3 Preview v1 test on one RTX 5090 (32 GB): its 15.08-second image-to-video MP4 took 55 seconds at 480×640 and 126 seconds at 768×1024. That is a concrete faster-review condition, not playback-rate generation. Its hot timing starts at worker job start and excludes queue and model loading.</p>
+    <p>Checked 20 September 2026 · Research update 011</p>
+    <h1>FastH3 V2 may anchor a scene transition. Its own model card says it should not.</h1>
+    <p><strong>The update:</strong> FastVideo’s current 8-Step V2 card says first/last-frame FL2VA was not distilled. ComfyUI’s current image-to-video template says the same checkpoint accepts first and last frames. Do not turn that disagreement into a continuity promise; run one pinned frame-anchor check first.</p>
   </header>
 
   <section>
@@ -75,7 +75,7 @@
       <thead><tr><th>Route</th><th>What the evidence supports</th><th>What it does not prove</th><th>Best first move</th></tr></thead>
       <tbody>
         <tr><td><strong>Remote H3 via vLLM-Omni</strong></td><td><strong>Project says:</strong> one OpenAI-compatible service can handle T2VA, FL2VA, and Ref2VA; a remote ComfyUI client can call it.</td><td>A live endpoint. Its published full-H3 four-B300 FL2VA row returns roughly 8.7 seconds of output in roughly 87 seconds.</td><td>Pin task, adapter, server revision, GPU and host memory, then time cold and warm response before building a client promise.</td></tr>
-        <tr><td><strong>FastH3 8-Step V2 in ComfyUI</strong></td><td><strong>Project and ComfyUI say:</strong> a new eight-forward FastH3 checkpoint has a current official template and named local components.</td><td>Its input scope is not settled. FastVideo says T2AV only; the template says T2VA plus first/last-frame FL2VA, not Ref2VA. Neither source supplies a local speed or quality result.</td><td>Pin the package, template, task, grid, components, and hardware; make FL2VA your first test if a transition matters.</td></tr>
+        <tr><td><strong>FastH3 8-Step V2 in ComfyUI</strong></td><td><strong>Project and ComfyUI say:</strong> a new eight-forward FastH3 checkpoint has a current official template and named local components.</td><td>Its input scope is not settled. FastVideo’s current V2 model card says T2AV only and that FL2VA was not distilled; the official Comfy image-to-video template says T2VA plus first/last-frame FL2VA, not Ref2VA. Neither source supplies a local speed or quality result.</td><td>Pin the model card and template revisions, package, task, grid, components, and hardware; make FL2VA your first test if a transition matters.</td></tr>
         <tr><td><strong>YoLive / H3 Superfast</strong></td><td><strong>Provider says:</strong> a group can propose and vote on the next scene; 10 seconds of 768p, 24 fps output with native audio generate in four seconds on eight B200 GPUs.</td><td>Vote-to-screen delay, individual control, public uptime, cost, or durable continuity.</td><td>Record the control rule, vote window, moderation, delivery time, and what survives into the next scene.</td></tr>
         <tr><td><strong>H3 Max Director on fal</strong></td><td><strong>Provider says:</strong> an open WebRTC session can accept directions while audio and video arrive, with carried context between segments.</td><td>A permanent channel, measured interaction delay, or a tested restart handoff.</td><td>Price a finite session at the current $0.08/generated-second list price before a test.</td></tr>
         <tr><td><strong>FastH3 queue + playout</strong></td><td><strong>Project says:</strong> distinct generated clips can sit in build and playout queues. The cited roughly 15-second build is 15.5 s on four B200s and 12.9 s on eight.</td><td>Automatic viewer-safe continuity. Clips still hard-cut and reset the scene; timing is not an independent test.</td><td>State the GPU count, warm build time, ready seconds, autoplay policy, filler, and empty-queue fallback.</td></tr>
@@ -121,7 +121,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>19 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>20 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="index.html">Full pool information →</a></section>
     </div>

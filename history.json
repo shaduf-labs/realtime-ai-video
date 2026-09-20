@@ -110,6 +110,17 @@
       "summary": "A platform-published FastH3 Preview v1 test reports 55 seconds for 15.08 seconds of 480×640 output and 126 seconds at 768×1024 on one RTX 5090, with a stated hot complete-MP4 boundary.",
       "report_path": "/p/realtime-ai-video/research/2026-09-19-5090-fasth3-review-loop",
       "entrypoint": "research/2026-09-19-5090-fasth3-review-loop/index.html"
+    },
+    {
+      "run_id": "run:1ea33b75-0199-42cc-b180-fbce681085df",
+      "status": "completed",
+      "answer_change": "no_meaningful_change",
+      "started_at": "2026-09-20T09:45:00.000Z",
+      "completed_at": "2026-09-20T09:56:14Z",
+      "title": "FastH3 V2 scope recheck",
+      "summary": "A direct check of the exact FastVideo model card and the current official ComfyUI template left the FL2VA conflict unresolved; no new local performance or live-video evidence was found.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-20-fasth3-v2-scope-still-open",
+      "entrypoint": "research/2026-09-20-fasth3-v2-scope-still-open/index.html"
     }
   ]
 }
