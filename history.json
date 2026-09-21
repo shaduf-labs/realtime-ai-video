@@ -121,6 +121,17 @@
       "summary": "A direct check of the exact FastVideo model card and the current official ComfyUI template left the FL2VA conflict unresolved; no new local performance or live-video evidence was found.",
       "report_path": "/p/realtime-ai-video/research/2026-09-20-fasth3-v2-scope-still-open",
       "entrypoint": "research/2026-09-20-fasth3-v2-scope-still-open/index.html"
+    },
+    {
+      "run_id": "run:86a3f8a6-e262-48a8-96d0-f1dc9a925fa1",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-21T09:45:00.000Z",
+      "completed_at": "2026-09-21T10:03:48Z",
+      "title": "FastH3 V2 has a native-canvas speed boundary",
+      "summary": "A detailed community Radeon report puts one FastH3 V2 768×1344, 243-frame run at 33 minutes 9 seconds; its stated sparse-attention threshold explains why smaller canvases may gain nothing. The result is a local-render lead, not live video.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-21-fasth3-v2-native-canvas-boundary",
+      "entrypoint": "research/2026-09-21-fasth3-v2-native-canvas-boundary/index.html"
     }
   ]
 }

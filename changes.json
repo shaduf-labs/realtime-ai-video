@@ -72,6 +72,12 @@
       "changed_at": "2026-09-20T09:56:14Z",
       "summary": "Rechecked FastH3 8-Step V2 against the exact FastVideo model card and current official ComfyUI image-to-video template; kept FL2VA as unresolved and added a pre-download validation card.",
       "path": "/p/realtime-ai-video/research/2026-09-20-fasth3-v2-scope-still-open"
+    },
+    {
+      "change_id": "fasth3-v2-native-canvas-boundary",
+      "changed_at": "2026-09-21T09:55:22Z",
+      "summary": "Added a condition-rich community FastH3 V2 Radeon result, its native-canvas timing conversion, the stated VSA threshold limit, and the still-unresolved official FL2VA template conflict.",
+      "path": "/p/realtime-ai-video/research/2026-09-21-fasth3-v2-native-canvas-boundary"
     }
   ]
 }
