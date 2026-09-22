@@ -132,6 +132,17 @@
       "summary": "A detailed community Radeon report puts one FastH3 V2 768×1344, 243-frame run at 33 minutes 9 seconds; its stated sparse-attention threshold explains why smaller canvases may gain nothing. The result is a local-render lead, not live video.",
       "report_path": "/p/realtime-ai-video/research/2026-09-21-fasth3-v2-native-canvas-boundary",
       "entrypoint": "research/2026-09-21-fasth3-v2-native-canvas-boundary/index.html"
+    },
+    {
+      "run_id": "run:8f910916-16fe-48c9-b24a-7df1512f1712",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-22T09:45:00.000Z",
+      "completed_at": "2026-09-22T09:57:10Z",
+      "title": "Dreamverse FastH3 profile: four-GPU chain, unmeasured capacity",
+      "summary": "FastVideo’s current README documents a frame-carried FastH3 Preview v1 profile and a cold readiness boundary; the pool treats it as an implementation lead, not a live result.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-22-dreamverse-fasth3-four-gpu-chain",
+      "entrypoint": "research/2026-09-22-dreamverse-fasth3-four-gpu-chain/index.html"
     }
   ]
 }

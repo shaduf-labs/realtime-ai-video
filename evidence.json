@@ -350,6 +350,16 @@
       "accessed_at": "2026-09-21T09:55:22Z",
       "relation": "context",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:dreamverse-fasth3-profile",
+      "source_type": "project runtime documentation",
+      "source_url": "https://github.com/hao-ai-lab/FastVideo/blob/main/apps/dreamverse/README.md",
+      "title": "FastVideo Dreamverse README",
+      "claim": "The current README documents an opt-in FastH3 Preview v1 profile using four visible GPUs by default, 124-frame 768×1344 audio-video segments, last-frame-to-next-segment conditioning, and a cold readiness boundary.",
+      "accessed_at": "2026-09-22T09:56:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
     }
   ]
 }

@@ -78,6 +78,12 @@
       "changed_at": "2026-09-21T09:55:22Z",
       "summary": "Added a condition-rich community FastH3 V2 Radeon result, its native-canvas timing conversion, the stated VSA threshold limit, and the still-unresolved official FL2VA template conflict.",
       "path": "/p/realtime-ai-video/research/2026-09-21-fasth3-v2-native-canvas-boundary"
+    },
+    {
+      "change_id": "dreamverse-fasth3-four-gpu-chain",
+      "changed_at": "2026-09-22T09:56:00Z",
+      "summary": "Added FastVideo’s documented Dreamverse FastH3 Preview v1 profile: four-GPU default, 124-frame frame-carried segments, cold readiness boundary, and the limit that this is not yet a live-capacity result.",
+      "path": "/p/realtime-ai-video/research/2026-09-22-dreamverse-fasth3-four-gpu-chain"
     }
   ]
 }
