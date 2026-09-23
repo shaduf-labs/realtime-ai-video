@@ -84,6 +84,12 @@
       "changed_at": "2026-09-22T09:56:00Z",
       "summary": "Added FastVideo’s documented Dreamverse FastH3 Preview v1 profile: four-GPU default, 124-frame frame-carried segments, cold readiness boundary, and the limit that this is not yet a live-capacity result.",
       "path": "/p/realtime-ai-video/research/2026-09-22-dreamverse-fasth3-four-gpu-chain"
+    },
+    {
+      "change_id": "vllm-fasth3-eight-b300-complete-mp4",
+      "changed_at": "2026-09-23T09:50:12Z",
+      "summary": "Added vLLM-Omni’s condition-bound eight-B300 FastH3 T2VA complete-MP4 result: faster than playback at the returned-artifact boundary, not a live-stream result.",
+      "path": "/p/realtime-ai-video/research/2026-09-23-eight-b300-complete-mp4-boundary"
     }
   ]
 }

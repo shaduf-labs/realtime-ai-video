@@ -15,7 +15,7 @@
     <meta property="og:description" content="Choose local, rented, or API paths by constraints rather than model hype.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/setup-routes/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Setup Routes","description":"Choose local, rented, or API paths by constraints rather than model hype.","dateModified":"2026-09-22T09:56:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/setup-routes/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Setup Routes","description":"Choose local, rented, or API paths by constraints rather than model hype.","dateModified":"2026-09-23T09:50:12Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/setup-routes/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="setup-routes">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -74,7 +74,7 @@
     <table>
       <thead><tr><th>Need</th><th>Route to inspect</th><th>Evidence status</th><th>Constraint that changes the answer</th></tr></thead>
       <tbody>
-        <tr><td>A remote H3 service for a client or team</td><td>vLLM-Omni H3 server</td><td><strong>Project says:</strong> one service can expose T2VA, FL2VA, and Ref2VA to an OpenAI-compatible video API.</td><td>Task, server revision, FastH3 adapter at startup, GPU and host memory, cold/warm time, client compatibility, queue, and delivery. The published full-H3 four-B300 row is not live.</td></tr>
+        <tr><td>A remote H3 service for a client or team</td><td>vLLM-Omni H3 server</td><td><strong>Project says:</strong> one service can expose T2VA, FL2VA, and Ref2VA; a dedicated warmed FastH3 T2VA profile returned a complete 10.125-second MP4 before playback ended on eight B300 GPUs.</td><td>Task, adapter, server revision, GPU and host memory, cold/warm time, first frame, client compatibility, queue, delivery, and cost. Complete MP4 is not a live screen result.</td></tr>
         <tr><td>A shared audience should select the next story beat</td><td>Yoroll H3 Superfast / YoLive</td><td><strong>Provider says:</strong> proposals and votes guide the next scene; 10 seconds at 768p/24 fps with native audio generate in four seconds on eight B200 GPUs.</td><td>Vote window, moderation, input-to-screen delay, public uptime, cost, and what survives into the next scene.</td></tr>
         <tr><td>Viewer input should alter a held stream</td><td>fal H3 Max Director</td><td><strong>Provider says:</strong> persistent WebRTC tracks, carried context, and mid-session text directions.</td><td>Public session limit, current $0.08/second billing, reconnect, and moderation design.</td></tr>
         <tr><td>A frame-carried FastH3 creative loop</td><td>FastVideo Dreamverse FastH3 profile</td><td><strong>Project says:</strong> four visible GPUs by default, 124-frame 768×1344 audio-video segments, and last-frame conditioning into the next segment.</td><td>Cold readiness, warm segment time, conditioning fidelity, ready-buffer margin, recovery, cost, and the visible response to a direction.</td></tr>
@@ -88,7 +88,7 @@
 
   <section>
     <h2>Pick remote serving when</h2>
-    <p>You need the creator UI and the H3 machine to be different systems, or you want several clients to reuse one service. vLLM-Omni’s <a href="https://github.com/vllm-project/vllm-omni/blob/main/recipes/MiniMaxAI/MiniMax-H3.md">current H3 recipe</a> records an OpenAI-compatible route. Its stated full-H3 four-B300 FL2VA baseline takes 86.964 seconds to return 209 frames—about 8.71 seconds at 24 fps. Build an offline or queue-ahead workflow first.</p>
+    <p>You need the creator UI and the H3 machine to be different systems, or you want several clients to reuse one service. vLLM-Omni’s <a href="https://github.com/vllm-project/vllm-omni/blob/main/recipes/MiniMaxAI/MiniMax-H3.md">current H3 recipe</a> records an OpenAI-compatible route. Its older full-H3 four-B300 FL2VA baseline takes 86.964 seconds to return 209 frames—about 8.71 seconds at 24 fps. A separate <a href="https://github.com/vllm-project/vllm-project.github.io/blob/main/_posts/2026-09-01-minimax-h3-production-serving.md">eight-B300 FastH3 T2VA report</a> says a complete 10.125-second MP4 returns in 8.678–8.710 seconds after warmup. Use that as a complete-response lead, not a live or frame-continuity promise.</p>
   </section>
 
   <section>
@@ -117,7 +117,7 @@
     </ol>
   </section>
 
-  <footer><p>Sources: <a href="https://github.com/vllm-project/vllm-omni/blob/main/recipes/MiniMaxAI/MiniMax-H3.md">vLLM-Omni H3 recipe</a>, <a href="https://www.globenewswire.com/news-release/2026/09/07/3357194/0/en/10-seconds-of-video-in-4-seconds-yoroll-launches-h3-superfast-and-yolive.html">Yoroll’s YoLive announcement</a>, <a href="https://fal.ai/h3-max-director">fal Director documentation</a>, <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">Reactor FastH3 README</a>, and the <a href="https://huggingface.co/datasets/jacokon/fasth3-live">FastH3 Live community project</a>, and FastVideo’s <a href="https://github.com/hao-ai-lab/FastVideo/blob/main/apps/dreamverse/README.md">Dreamverse README</a>.</p></footer>
+  <footer><p>Sources: <a href="https://github.com/vllm-project/vllm-project.github.io/blob/main/_posts/2026-09-01-minimax-h3-production-serving.md">vLLM-Omni FastH3 serving report</a>, <a href="https://github.com/vllm-project/vllm-omni/blob/main/recipes/MiniMaxAI/MiniMax-H3.md">vLLM-Omni H3 recipe</a>, <a href="https://www.globenewswire.com/news-release/2026/09/07/3357194/0/en/10-seconds-of-video-in-4-seconds-yoroll-launches-h3-superfast-and-yolive.html">Yoroll’s YoLive announcement</a>, <a href="https://fal.ai/h3-max-director">fal Director documentation</a>, <a href="https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md">Reactor FastH3 README</a>, and the <a href="https://huggingface.co/datasets/jacokon/fasth3-live">FastH3 Live community project</a>, and FastVideo’s <a href="https://github.com/hao-ai-lab/FastVideo/blob/main/apps/dreamverse/README.md">Dreamverse README</a>.</p></footer>
 </article>
 <!-- SHADUF_AGENT_DOCUMENT_END --></div>
     </article><div class="center-fade" aria-hidden="true"></div></main>
@@ -134,7 +134,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>22 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>23 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>

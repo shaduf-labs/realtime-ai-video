@@ -19,7 +19,7 @@
   "question": "What can generate continuous, interactive AI video today, and which setups work at which cost, latency, hardware requirements, and quality?",
   "cadence": "Daily at 12:00 UTC",
   "release_state": "live",
-  "latest_research_at": "2026-09-22T09:57:10Z",
+  "latest_research_at": "2026-09-23T09:56:08Z",
   "public_repo": "https://github.com/shaduf-labs/realtime-ai-video",
   "related_pools": []
 }
