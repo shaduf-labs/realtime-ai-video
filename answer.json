@@ -1,26 +1,26 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "Current evidence supports several different routes: fal H3 Max Director is a finite hosted WebRTC session; Yoroll says YoLive lets a group choose the next scene; Reactor FastH3 uses queued clips and playout; FastVideo documents local FastH3 paths and Dreamverse’s four-GPU frame-carried Preview v1 profile; a community project reports a retimed one-5090 channel; Comfy offers local H3 paths; and vLLM-Omni documents a separate H3 service. The material change is vLLM-Omni’s maintainer-published eight-B300 FastH3 T2VA result: a complete 10.125-second 1344×768 / 24 fps MP4 returned in 8.678 and 8.710 seconds after its excluded warmup. That beats playback at the stated complete-response boundary. It does not prove streaming delivery, time to first frame, cold start, queue capacity, cost, quality, continuity, or viewer-visible interaction; the report says its raw bundle is pending publication. Keep it separate from vLLM-Omni’s earlier four-B300 full-H3 FL2VA row, which returned about 8.71 seconds of output in 86.964 seconds, and from FastH3 8-Step V2’s unresolved ComfyUI FL2VA scope conflict.",
+  "current_answer": "Current evidence supports several distinct routes: fal H3 Max Director is a finite hosted context-carrying WebRTC session; Yoroll says H3 Superfast powers YoLive, a group proposal-and-vote route; Reactor FastH3 is a high-end queue-and-playout route; FastVideo documents local FastH3 clip paths and a four-GPU Dreamverse frame-carried Preview v1 profile; a community project reports one RTX 5090 sustaining a retimed dense FastH3 channel; Comfy offers local H3 paths; and vLLM-Omni documents a separate H3 service. The new lower-GPU vLLM-Omni record is a single 50-step full-H3 T2VA validation on two RTX 5090 GPUs: 124 frames at 1344×768 / 24 fps, about 5.17 seconds of output, returned in 8 minutes 38 seconds of client end-to-end time. The documented two-GPU DLO route requires at least 200 GiB host RAM, with 384 GiB recommended. It establishes an offline capacity path, not a warm low-latency, live, or transition route. Keep it separate from vLLM-Omni’s dedicated warmed eight-B300 FastH3 T2VA result, which returned a complete 10.125-second MP4 in 8.678 and 8.710 seconds, and from FastH3 8-Step V2’s unresolved ComfyUI FL2VA scope conflict.",
   "catalogue_card": {
-    "question": "Can FastH3 finish a clip before playback ends?",
-    "text": "vLLM-Omni says yes for a warmed, dedicated T2VA profile on eight B300 GPUs: 10.125 seconds of MP4 returned in 8.678–8.710 seconds. That is complete-response speed, not a measured live stream."
+    "question": "Can full H3 run on two RTX 5090s?",
+    "text": "vLLM-Omni says one 50-step T2VA job did: 5.17 seconds of 1344×768 / 24 fps output returned in 8 minutes 38 seconds. It needs a large-RAM host and is an offline capacity result, not live video."
   },
   "summary": [
-    "vLLM-Omni’s maintainer report says an eight-B300, dedicated Dense/Data-Free FastH3 T2VA profile returned a complete 10.125-second 1344×768 / 24 fps MP4 in 8.678 and 8.710 seconds.",
-    "The stated timer runs from synchronous submission through complete MP4 receipt. The report defines faster than playback as complete response before media duration, not streaming delivery or time to first frame.",
-    "The claim excludes startup, compilation, and an excluded warmup. The raw benchmark bundle is pending publication, so this is not yet independently auditable evidence.",
-    "The result is a dedicated T2VA endpoint on eight B300 GPUs. It does not establish FL2VA, frame-carried continuity, browser delivery, queue capacity, concurrency, quality, cost, retries, or viewer-visible response."
+    "vLLM-Omni says one 50-step full-H3 T2VA request completed on two RTX 5090 GPUs: 124 1344×768 frames at 24 fps, about 5.17 seconds of media, in 8 minutes 38 seconds of client end-to-end time.",
+    "The current two-GPU DLO recipe requires at least 200 GiB available host RAM and recommends 384 GiB. It reports a valid H.264/AAC output and a sampled per-GPU peak, not a general 5090 benchmark.",
+    "This is a single T2VA capacity validation, not a warmed latency test. It does not establish FL2VA/Ref2VA, first visible frame, streaming, queue capacity, cost, quality, retries, continuity, or interactive response.",
+    "A separate warmed eight-B300 FastH3 T2VA report returned a complete 10.125-second MP4 in 8.678–8.710 seconds. Do not merge that faster complete-response condition with the two-5090 full-H3 row."
   ],
   "uncertainty": [
-    "vLLM-Omni’s eight-B300 FastH3 result is a maintainer-published, warmed, fixed-profile claim. The pool did not run it, inspect the pending raw bundle, or independently audit its media, environment, quality, or timing.",
-    "The complete-MP4 time does not include startup, compilation, or the excluded warmup and says nothing about first frame, streaming, queue, concurrent requests, client delivery, retries, uptime, cost, or viewer-visible latency.",
-    "The stated FastH3 route is dedicated Dense/Data-Free T2VA. It does not settle FL2VA, Ref2VA, request-time adapter selection, or a frame-carried continuation workflow.",
-    "Dreamverse remains a documented four-GPU frame-carried Preview v1 mechanism, not a measured live-capacity result.",
-    "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 first/last-frame FL2VA scope.",
-    "No pool test, invoice, uptime log, end-to-end source-to-visible measurement, or first-party pool analytics is available."
+    "vLLM-Omni’s two-RTX-5090 result is one project-published T2VA validation. The pool did not run it or independently audit its environment, media, timing, or quality.",
+    "The reported 8 minutes 38 seconds is client end-to-end for one run, not a warmed multi-run result. It does not establish first frame, streaming, queue, concurrent requests, retries, uptime, cost, or viewer-visible latency.",
+    "The two-5090 target validation does not establish FL2VA or Ref2VA. vLLM-Omni’s eight-B300 FastH3 result is a different, warmed dedicated T2VA profile.",
+    "Dreamverse’s FastH3 profile is project documentation; the pool did not install or run it, inspect a generated handoff, or measure buffer, cost, recovery, or uptime.",
+    "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
+    "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics is available."
   ],
-  "checked_at": "2026-09-23T09:50:12Z",
-  "meaningfully_updated_at": "2026-09-23T09:50:12Z",
-  "freshness_note": "Checked 23 September 2026. vLLM-Omni now documents a warmed eight-B300 FastH3 T2VA complete-MP4 result below playback duration. The timing boundary is complete response, not a live screen result; its raw bundle is pending publication."
+  "checked_at": "2026-09-24T09:55:00Z",
+  "meaningfully_updated_at": "2026-09-24T09:55:00Z",
+  "freshness_note": "Checked 24 September 2026. vLLM-Omni now documents one two-RTX-5090 full-H3 T2VA capacity validation. It is an eight-minute returned-artifact result with large host-RAM requirements, not evidence of live delivery."
 }

@@ -154,6 +154,17 @@
       "summary": "vLLM-Omni’s maintainer report says a warmed dedicated FastH3 T2VA profile returned 10.125 seconds of MP4 in 8.678–8.710 seconds on eight B300 GPUs; the public record keeps streaming, cold, queue, and raw-evidence limits visible.",
       "report_path": "/p/realtime-ai-video/research/2026-09-23-eight-b300-complete-mp4-boundary",
       "entrypoint": "research/2026-09-23-eight-b300-complete-mp4-boundary/index.html"
+    },
+    {
+      "run_id": "run:1a3aa3e4-3211-4ce8-9916-b5e1a77fef66",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-24T09:45:00.000Z",
+      "completed_at": "2026-09-24T09:57:00Z",
+      "title": "Two RTX 5090s can run full H3. The documented job still takes 8:38 for five seconds of video.",
+      "summary": "vLLM-Omni documents one two-RTX-5090 full-H3 T2VA capacity validation, with large host-RAM requirements and no live-performance claim.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-24-two-rtx5090-full-h3-capacity",
+      "entrypoint": "research/2026-09-24-two-rtx5090-full-h3-capacity/index.html"
     }
   ]
 }

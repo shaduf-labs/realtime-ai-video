@@ -15,7 +15,7 @@
     <meta property="og:description" content="Queues, buffers, playout, interaction, recovery, and delivery for live-looking video.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/live-systems/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Live Systems","description":"Queues, buffers, playout, interaction, recovery, and delivery for live-looking video.","dateModified":"2026-09-23T09:50:12Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/live-systems/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Live Systems","description":"Queues, buffers, playout, interaction, recovery, and delivery for live-looking video.","dateModified":"2026-09-24T09:55:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/live-systems/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="live-systems">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -64,7 +64,7 @@
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
   <header>
-    <p>Live systems · checked 22 September 2026</p>
+    <p>Live systems · checked 24 September 2026</p>
     <h1>“Continuous” survives only if the system survives a miss</h1>
     <p>A smooth demo can hide a remote API wait, a queue, an idle filler, a repeated frame, a slower playback rate, a hard scene cut, or a vote that waits offscreen. Ask what continues when the next clip is late, a prompt fails, a vote closes, or a session ends.</p>
   </header>
@@ -98,6 +98,12 @@
     <p><strong>Project says:</strong> vLLM-Omni’s maintainer report returned a complete 10.125-second 1344×768 / 24 fps FastH3 T2VA MP4 in 8.678 and 8.710 seconds on a warmed, dedicated eight-B300 profile. Its timer begins with synchronous submission and ends when the whole MP4 returns.</p>
     <p>That is a meaningful complete-response threshold. The report explicitly does not call it streaming delivery or time to first frame. It excludes startup, compilation, and an excluded warmup; its raw bundle is pending. It does not reveal queue time, concurrent capacity, browser decode, media delivery, retries, or what a viewer sees while waiting.</p>
     <p>The earlier vLLM-Omni full-H3 FL2VA row remains a different route: four B300 GPUs, 209 frames at 1248×768, and 86.964 seconds mean HTTP client latency for about 8.71 seconds of output. Do not use the FastH3 T2VA number to sell a first/last-frame or live-continuity workflow.</p>
+  </section>
+
+  <section>
+    <h2>Local capacity still leaves a long clip wait</h2>
+    <p><strong>Project says:</strong> vLLM-Omni completed one full-H3 50-step T2VA job on two RTX 5090s: 124 1344×768 / 24 fps frames in 8 minutes 38 seconds of client end-to-end time. The route needs at least 200 GiB available host RAM, with 384 GiB recommended.</p>
+    <p>That establishes a documented offline capacity path. It does not state when a first frame becomes visible, how a second request queues, whether a first/last-frame task works on the same hardware, or what a viewer sees while the renderer works. Do not use the lower GPU count as a live-system claim.</p>
   </section>
 
   <section>
@@ -150,7 +156,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>23 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>24 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>
