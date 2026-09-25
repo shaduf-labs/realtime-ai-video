@@ -96,6 +96,12 @@
       "changed_at": "2026-09-24T09:55:00Z",
       "summary": "Added vLLM-Omni’s documented two-RTX-5090 full-H3 T2VA capacity check: 5.17 seconds of output in 8 minutes 38 seconds, with the host-RAM and non-live boundary.",
       "path": "/p/realtime-ai-video/research/2026-09-24-two-rtx5090-full-h3-capacity"
+    },
+    {
+      "change_id": "vllm-h3-comfy-client-scope",
+      "changed_at": "2026-09-25T09:55:47Z",
+      "summary": "Added the vLLM-Omni H3 server-versus-current-ComfyUI-client boundary: two-keyframe and richer-reference capability must be checked at the client, not inferred from the endpoint.",
+      "path": "/p/realtime-ai-video/research/2026-09-25-vllm-comfy-client-scope"
     }
   ]
 }

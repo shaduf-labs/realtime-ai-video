@@ -15,7 +15,7 @@
     <meta property="og:description" content="Choose local, rented, or API paths by constraints rather than model hype.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/setup-routes/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Setup Routes","description":"Choose local, rented, or API paths by constraints rather than model hype.","dateModified":"2026-09-24T09:55:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/setup-routes/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Setup Routes","description":"Choose local, rented, or API paths by constraints rather than model hype.","dateModified":"2026-09-25T09:55:47Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/setup-routes/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="setup-routes">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -64,7 +64,7 @@
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
   <header>
-    <p>Decision guide · checked 24 September 2026</p>
+    <p>Decision guide · checked 25 September 2026</p>
     <h1>Choose the control and deployment contracts, then test the claim</h1>
     <p>A model name does not tell you whether you are buying a group-choice loop, an interactive session, a remote GPU service, a clip queue, an unattended local channel, or a short local render.</p>
   </header>
@@ -74,7 +74,7 @@
     <table>
       <thead><tr><th>Need</th><th>Route to inspect</th><th>Evidence status</th><th>Constraint that changes the answer</th></tr></thead>
       <tbody>
-        <tr><td>A remote H3 service for a client or team</td><td>vLLM-Omni H3 server</td><td><strong>Project says:</strong> one service can expose T2VA, FL2VA, and Ref2VA. One full-H3 T2VA validation completed on two RTX 5090s in 8:38 for 5.17 seconds of output; a separate warmed FastH3 T2VA profile returned a complete 10.125-second MP4 before playback ended on eight B300 GPUs.</td><td>Task, adapter, server revision, GPU and host memory, cold/warm time, first frame, client compatibility, queue, delivery, and cost. The two-5090 route needs at least 200 GiB host RAM; neither row is a live screen result.</td></tr>
+        <tr><td>A remote H3 service for a client or team</td><td>vLLM-Omni H3 server</td><td><strong>Project says:</strong> the server can express ordered first-and-last-frame conditioning, but the current ComfyUI client accepts one FL2VA frame and constrains some references. One full-H3 T2VA validation completed on two RTX 5090s in 8:38 for 5.17 seconds of output; a separate warmed FastH3 T2VA profile returned a complete 10.125-second MP4 before playback ended on eight B300 GPUs.</td><td>Task, adapter, server and client revision, GPU and host memory, cold/warm time, first frame, client compatibility, queue, delivery, and cost. The two-5090 route needs at least 200 GiB host RAM; neither row is a live screen result.</td></tr>
         <tr><td>A shared audience should select the next story beat</td><td>Yoroll H3 Superfast / YoLive</td><td><strong>Provider says:</strong> proposals and votes guide the next scene; 10 seconds at 768p/24 fps with native audio generate in four seconds on eight B200 GPUs.</td><td>Vote window, moderation, input-to-screen delay, public uptime, cost, and what survives into the next scene.</td></tr>
         <tr><td>Viewer input should alter a held stream</td><td>fal H3 Max Director</td><td><strong>Provider says:</strong> persistent WebRTC tracks, carried context, and mid-session text directions.</td><td>Public session limit, current $0.08/second billing, reconnect, and moderation design.</td></tr>
         <tr><td>A frame-carried FastH3 creative loop</td><td>FastVideo Dreamverse FastH3 profile</td><td><strong>Project says:</strong> four visible GPUs by default, 124-frame 768×1344 audio-video segments, and last-frame conditioning into the next segment.</td><td>Cold readiness, warm segment time, conditioning fidelity, ready-buffer margin, recovery, cost, and the visible response to a direction.</td></tr>
@@ -88,7 +88,7 @@
 
   <section>
     <h2>Pick remote serving when</h2>
-    <p>You need the creator UI and the H3 machine to be different systems, or you want several clients to reuse one service. vLLM-Omni’s <a href="https://github.com/vllm-project/vllm-omni/blob/main/recipes/MiniMaxAI/MiniMax-H3.md">current H3 recipe</a> records an OpenAI-compatible route. It now documents one two-RTX-5090, 50-step T2VA job at 1344×768: 124 frames at 24 fps, about 5.17 seconds of output, returned in 8 minutes 38 seconds. The route needs at least 200 GiB host RAM, with 384 GiB recommended. That is an offline capacity lead. A separate <a href="https://github.com/vllm-project/vllm-project.github.io/blob/main/_posts/2026-09-01-minimax-h3-production-serving.md">eight-B300 FastH3 T2VA report</a> says a complete 10.125-second MP4 returns in 8.678–8.710 seconds after warmup. Keep the two rows separate.</p>
+    <p>You need the creator UI and the H3 machine to be different systems, or you want several clients to reuse one service. vLLM-Omni’s <a href="https://github.com/vllm-project/vllm-omni/blob/main/recipes/MiniMaxAI/MiniMax-H3.md">current H3 recipe</a> records an OpenAI-compatible route. Its <a href="https://github.com/vllm-project/vllm-omni/issues/7380">current H3 API/ComfyUI RFC</a> says the server and current client have different input limits: check that the client can send the needed keyframes or references. The recipe documents one two-RTX-5090, 50-step T2VA job at 1344×768: 124 frames at 24 fps, about 5.17 seconds of output, returned in 8 minutes 38 seconds. The route needs at least 200 GiB host RAM, with 384 GiB recommended. That is an offline capacity lead. A separate <a href="https://github.com/vllm-project/vllm-project.github.io/blob/main/_posts/2026-09-01-minimax-h3-production-serving.md">eight-B300 FastH3 T2VA report</a> says a complete 10.125-second MP4 returns in 8.678–8.710 seconds after warmup. Keep the two rows separate.</p>
   </section>
 
   <section>
@@ -139,7 +139,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>24 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>25 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>

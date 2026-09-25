@@ -165,6 +165,17 @@
       "summary": "vLLM-Omni documents one two-RTX-5090 full-H3 T2VA capacity validation, with large host-RAM requirements and no live-performance claim.",
       "report_path": "/p/realtime-ai-video/research/2026-09-24-two-rtx5090-full-h3-capacity",
       "entrypoint": "research/2026-09-24-two-rtx5090-full-h3-capacity/index.html"
+    },
+    {
+      "run_id": "run:1e4674ca-9866-41c3-b5ba-68d2b2ca33b3",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-25T09:45:00.000Z",
+      "completed_at": "2026-09-25T10:05:00Z",
+      "title": "The H3 server can take first and last frames. vLLM-Omni’s current ComfyUI client cannot send both.",
+      "summary": "vLLM-Omni’s current documentation separates the server’s two-keyframe and richer-reference capability from a current client limited to one FL2VA frame and constrained references.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-25-vllm-comfy-client-scope",
+      "entrypoint": "research/2026-09-25-vllm-comfy-client-scope/index.html"
     }
   ]
 }

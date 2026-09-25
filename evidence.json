@@ -380,6 +380,26 @@
       "accessed_at": "2026-09-24T09:55:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:vllm-h3-comfy-client-scope",
+      "source_type": "project-maintained API and ComfyUI parity RFC",
+      "source_url": "https://github.com/vllm-project/vllm-omni/issues/7380",
+      "title": "vLLM-Omni RFC: MiniMax H3 API, ComfyUI nodes, and workflow parity",
+      "claim": "The current RFC distinguishes richer H3 server inputs from a current ComfyUI client limited to one FL2VA frame and constrained references.",
+      "accessed_at": "2026-09-25T09:55:47Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:vllm-h3-first-last-server-contract",
+      "source_type": "project serving recipe",
+      "source_url": "https://github.com/vllm-project/vllm-omni/blob/main/recipes/MiniMaxAI/MiniMax-H3.md",
+      "title": "vLLM-Omni MiniMax H3 serving recipe",
+      "claim": "The recipe documents ordered first and last images as FL2VA inputs at the server request layer.",
+      "accessed_at": "2026-09-25T09:55:47Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
     }
   ]
 }
