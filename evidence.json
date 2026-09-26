@@ -400,6 +400,26 @@
       "accessed_at": "2026-09-25T09:55:47Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:vllm-h3-step-batch-boundary",
+      "source_type": "project serving recipe",
+      "source_url": "https://github.com/vllm-project/vllm-omni/blob/main/recipes/MiniMaxAI/MiniMax-H3.md",
+      "title": "vLLM-Omni MiniMax H3 serving recipe",
+      "claim": "The current recipe reports that four simultaneous 672×384, 209-frame, 30-step H3 requests on two H100 GPUs had worse wall time and mean latency with four-way co-batching than in ordinary request mode; staggered-arrival behavior remains unmeasured.",
+      "accessed_at": "2026-09-26T09:55:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:vllm-h3-two-gpu-task-profile",
+      "source_type": "project serving recipe",
+      "source_url": "https://github.com/vllm-project/vllm-omni/blob/main/recipes/MiniMaxAI/MiniMax-H3.md",
+      "title": "vLLM-Omni MiniMax H3 serving recipe",
+      "claim": "The current two-RTX-5090 DLO launch selects the FL2VA task path, which the recipe maps to T2VA and FL2VA; the recipe recommends a 384 GiB host and records a separate single T2VA validation.",
+      "accessed_at": "2026-09-26T09:55:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
     }
   ]
 }

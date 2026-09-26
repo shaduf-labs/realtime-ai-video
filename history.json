@@ -176,6 +176,17 @@
       "summary": "vLLM-Omni’s current documentation separates the server’s two-keyframe and richer-reference capability from a current client limited to one FL2VA frame and constrained references.",
       "report_path": "/p/realtime-ai-video/research/2026-09-25-vllm-comfy-client-scope",
       "entrypoint": "research/2026-09-25-vllm-comfy-client-scope/index.html"
+    },
+    {
+      "run_id": "run:dbe97bd7-73d6-4330-b63b-8836e50ca1fa",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-26T09:45:00.000Z",
+      "completed_at": "2026-09-26T10:05:00Z",
+      "title": "H3 can schedule between denoise steps. Its four-request test still took longer.",
+      "summary": "vLLM-Omni’s named two-H100 H3 test finds four simultaneous jobs slower under four-way co-batching than ordinary request mode; the candidate also clarifies the selected FL2VA task path behind the two-RTX-5090 capacity record.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-26-vllm-h3-batching-boundary",
+      "entrypoint": "research/2026-09-26-vllm-h3-batching-boundary/index.html"
     }
   ]
 }

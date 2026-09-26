@@ -1,27 +1,27 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "Current evidence supports several distinct routes: fal H3 Max Director is a finite hosted context-carrying WebRTC session; Yoroll says H3 Superfast powers YoLive, a group proposal-and-vote route; Reactor FastH3 is a high-end queue-and-playout route; FastVideo documents local FastH3 clip paths and a four-GPU Dreamverse frame-carried Preview v1 profile; a community project reports one RTX 5090 sustaining a retimed dense FastH3 channel; Comfy offers local H3 paths; and vLLM-Omni documents a separate H3 service. The new vLLM-Omni workflow boundary is client scope: its serving recipe documents ordered first-and-last-frame conditioning, while its current H3 API/ComfyUI RFC says the current ComfyUI client accepts only one FL2VA frame and limits some reference combinations. Treat a server feature, a client feature, and a recorded workflow as separate facts. The two-RTX-5090 full-H3 record remains one 50-step T2VA validation: 124 frames at 1344×768 / 24 fps, about 5.17 seconds of output, returned in 8 minutes 38 seconds with at least 200 GiB available host RAM. It is an offline capacity result, not a first/last-frame, live, or transition route.",
+  "current_answer": "Current evidence supports several distinct routes: fal H3 Max Director is a finite hosted context-carrying WebRTC session; Yoroll says H3 Superfast powers YoLive, a group proposal-and-vote route; Reactor FastH3 is a high-end queue-and-playout route; FastVideo documents local FastH3 clip paths and a four-GPU Dreamverse frame-carried Preview v1 profile; a community project reports one RTX 5090 sustaining a retimed dense FastH3 channel; Comfy offers local H3 paths; and vLLM-Omni documents a separate H3 service. vLLM-Omni’s current H3 recipe says step execution can admit requests between denoise steps, but its stated two-H100 test found four simultaneous H3 jobs slower under four-way co-batching than ordinary request mode. Its documented two-RTX-5090 DLO launch selects the FL2VA task path, which serves T2VA and FL2VA, and recommends a 384 GiB host; its one 50-step T2VA validation returned about 5.17 seconds of output in 8 minutes 38 seconds. Treat task path, client capability, arrival pattern, and a recorded output as separate facts. No cited H3 result establishes a live viewer experience.",
   "catalogue_card": {
-    "question": "Can vLLM-Omni’s ComfyUI client send first and last H3 frames?",
-    "text": "Not yet, according to its current H3 parity RFC. The server recipe documents ordered first-and-last-frame conditioning, but the current client accepts one FL2VA frame and limits some references. Do not confuse the endpoint with the workflow."
+    "question": "Does H3 continuous batching make a four-request queue faster?",
+    "text": "Not in vLLM-Omni’s published two-H100 test. Four simultaneous H3 jobs took longer with four-way co-batching than in ordinary request mode. It is a queue boundary, not a live-video result."
   },
   "summary": [
-    "vLLM-Omni’s H3 serving recipe documents ordered first-and-last-frame FL2VA inputs, while its current H3 API/ComfyUI parity RFC says the current ComfyUI client accepts one FL2VA frame.",
-    "The RFC says the server supports T2VA, first-frame FL2VA, mixed Ref2VA, repeated references, reference ordering, and H3 reference limits; the current client caps each reference modality at two inputs and rejects some valid mixed-reference combinations.",
-    "The RFC lists work to add first/last-frame and broader reference support. It is an open plan, not proof of a shipped or tested client workflow.",
-    "The two-RTX-5090 full-H3 record remains one 50-step T2VA capacity validation: 124 1344×768 / 24 fps frames, about 5.17 seconds of media, returned in 8 minutes 38 seconds. It does not prove a two-keyframe workflow."
+    "vLLM-Omni says H3 can admit and retire requests between denoise steps, but its stated two-H100 test with four simultaneous 672×384, 209-frame, 30-step requests reports worse wall time and mean latency under four-way co-batching than ordinary request mode.",
+    "The source says staggered-arrival behavior remains unmeasured. The benchmark does not predict two RTX 5090 GPUs, a different job shape, a FastH3 adapter, a browser-visible result, or a public stream.",
+    "The current two-RTX-5090 DLO launch selects the FL2VA DiT; T2VA uses that path. The source recommends a 384 GiB host, while its one 50-step T2VA validation returned 124 1344×768 / 24 fps frames in 8 minutes 38 seconds.",
+    "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
-    "vLLM-Omni’s client-scope statements come from an open project RFC and recipe documentation. The pool did not install the server or client, inspect actual requests, or test first/last-frame or mixed-reference output.",
-    "The reported two-RTX-5090 result is one project-published T2VA validation. The pool did not independently audit its environment, media, timing, or quality.",
-    "The 8 minutes 38 seconds result is client end-to-end for one run, not a warmed multi-run result. It does not establish first frame, streaming, queue, concurrent requests, retries, uptime, cost, or viewer-visible latency.",
-    "The two-5090 target validation does not establish FL2VA or Ref2VA. vLLM-Omni’s eight-B300 FastH3 result is a different, warmed dedicated T2VA profile.",
+    "The batching result is one project-maintained two-H100 benchmark with four simultaneous requests. Staggered arrivals, other job shapes, other hardware, and viewer-visible behavior remain unmeasured.",
+    "The documented two-RTX-5090 result is one project-published T2VA validation. The pool did not independently audit its environment, media, timing, or quality.",
+    "The two-5090 command selects the FL2VA path; it does not establish a combined multi-task service, Ref2VA, a two-keyframe client workflow, warm performance, streaming, queueing, or first visible frame.",
+    "vLLM-Omni’s current ComfyUI client-scope statements come from an open RFC. The pool did not install or test the server or client.",
     "Dreamverse’s FastH3 profile is project documentation; the pool did not install or run it, inspect a generated handoff, or measure buffer, cost, recovery, or uptime.",
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
-    "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics is available."
+    "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-09-25T09:55:47Z",
-  "meaningfully_updated_at": "2026-09-25T09:55:47Z",
-  "freshness_note": "Checked 25 September 2026. The new workflow limit is client scope: current vLLM-Omni H3 documentation separates a server that can express richer conditioning from a ComfyUI client that cannot yet send both FL2VA keyframes. No pool test has verified either path."
+  "checked_at": "2026-09-26T09:55:00Z",
+  "meaningfully_updated_at": "2026-09-26T09:55:00Z",
+  "freshness_note": "Checked 26 September 2026. The new evidence is a named vLLM-Omni H3 batching benchmark: four simultaneous requests did not gain throughput from four-way co-batching. The two-RTX-5090 DLO route remains a selected FL2VA-path capacity record, not a live or multi-task-service result."
 }
