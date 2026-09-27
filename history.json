@@ -187,6 +187,17 @@
       "summary": "vLLM-Omni’s named two-H100 H3 test finds four simultaneous jobs slower under four-way co-batching than ordinary request mode; the candidate also clarifies the selected FL2VA task path behind the two-RTX-5090 capacity record.",
       "report_path": "/p/realtime-ai-video/research/2026-09-26-vllm-h3-batching-boundary",
       "entrypoint": "research/2026-09-26-vllm-h3-batching-boundary/index.html"
+    },
+    {
+      "run_id": "run:cd6d41fc-99f3-4153-83af-fcaf1d8db2b8",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-27T09:45:00Z",
+      "completed_at": "2026-09-27T09:53:50Z",
+      "title": "ComfyUI H3 VAE speed has a stage boundary",
+      "summary": "Comfy Org reports a faster H3 VAE encode/decode round trip on an RTX 5090, but no full-generation or live-service timing.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-27-comfy-h3-vae-stage",
+      "entrypoint": "research/2026-09-27-comfy-h3-vae-stage/index.html"
     }
   ]
 }

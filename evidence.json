@@ -420,6 +420,16 @@
       "accessed_at": "2026-09-26T09:55:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:comfy-h3-vae-stage-speed",
+      "source_type": "framework-provider A/B report",
+      "source_url": "https://blog.comfy.org/p/making-the-minimax-h3-video-vae-2x",
+      "title": "Making the MiniMax H3 Video VAE 2x Faster",
+      "claim": "Comfy Org reports a 24.3-to-12.7-second H3 video VAE-node A/B on RTX 5090 at 1344×768, 129 frames, with version and optional-path conditions.",
+      "accessed_at": "2026-09-27T09:49:30Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
     }
   ]
 }
