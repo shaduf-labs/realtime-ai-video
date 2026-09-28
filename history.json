@@ -198,6 +198,17 @@
       "summary": "Comfy Org reports a faster H3 VAE encode/decode round trip on an RTX 5090, but no full-generation or live-service timing.",
       "report_path": "/p/realtime-ai-video/research/2026-09-27-comfy-h3-vae-stage",
       "entrypoint": "research/2026-09-27-comfy-h3-vae-stage/index.html"
+    },
+    {
+      "run_id": "run:22644a56-8735-4021-b813-f79dfeeda0aa",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-28T09:45:00Z",
+      "completed_at": "2026-09-28T09:56:43Z",
+      "title": "H3 long-video output is not a live H3 stream",
+      "summary": "vLLM-Omni v0.30.0 documents opt-in Ref2VA continuation, but its eight-B300 30.667-second example lacks full wall time and viewer-visible delivery evidence.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-28-vllm-h3-long-video-boundary",
+      "entrypoint": "research/2026-09-28-vllm-h3-long-video-boundary/index.html"
     }
   ]
 }

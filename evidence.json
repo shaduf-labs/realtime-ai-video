@@ -430,6 +430,36 @@
       "accessed_at": "2026-09-27T09:49:30Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "vllm-h3-long-video-release",
+      "source_type": "project-release",
+      "source_url": "https://github.com/vllm-project/vllm-omni/releases/tag/v0.30.0",
+      "title": "vLLM-Omni v0.30.0",
+      "claim": "The release includes MiniMax H3 latent continuation and driving audio.",
+      "accessed_at": "2026-09-28T09:54:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "vllm-h3-long-video-pr",
+      "source_type": "project-pull-request",
+      "source_url": "https://github.com/vllm-project/vllm-omni/pull/7838",
+      "title": "Merged H3 long-video implementation",
+      "claim": "The maintainer describes a 736-frame 30.667-second Ref2VA result on eight B300 GPUs and the bounded-window mechanism; no full wall time is supplied.",
+      "accessed_at": "2026-09-28T09:54:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "vllm-h3-long-video-recipe",
+      "source_type": "project-serving-recipe",
+      "source_url": "https://github.com/vllm-project/vllm-omni/blob/main/recipes/MiniMaxAI/MiniMax-H3.md",
+      "title": "MiniMax H3 serving recipe",
+      "claim": "Continuation is an opt-in Ref2VA request-mode route; the 300-second limit is a request bound, not a performance guarantee.",
+      "accessed_at": "2026-09-28T09:54:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
     }
   ]
 }

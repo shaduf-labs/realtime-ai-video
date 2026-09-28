@@ -114,6 +114,12 @@
       "changed_at": "2026-09-27T09:49:30Z",
       "summary": "Added a condition-bound ComfyUI H3 VAE stage A/B and separated it from whole-render and live-video speed.",
       "path": "/p/realtime-ai-video/research/2026-09-27-comfy-h3-vae-stage"
+    },
+    {
+      "change_id": "vllm-h3-long-video-continuation",
+      "changed_at": "2026-09-28T09:54:00Z",
+      "summary": "Added vLLM-Omni v0.30.0 Ref2VA long-video continuation and its eight-B300 30.667-second example, while separating a completed clip from a measured live stream.",
+      "path": "/p/realtime-ai-video/research/2026-09-28-vllm-h3-long-video-boundary"
     }
   ]
 }
