@@ -16,7 +16,7 @@
     <meta property="og:description" content="Measured and reported cost, latency, hardware, and playback trade-offs.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/cost-throughput/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Cost and Throughput","description":"Measured and reported cost, latency, hardware, and playback trade-offs.","dateModified":"2026-09-28T09:54:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/cost-throughput/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Cost and Throughput","description":"Measured and reported cost, latency, hardware, and playback trade-offs.","dateModified":"2026-09-29T09:50:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/cost-throughput/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="cost-throughput">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -49,10 +49,16 @@
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
   <header>
-    <p>Cost and throughput · checked 28 September 2026</p>
+    <p>Cost and throughput · checked 29 September 2026</p>
     <h1>FastH3 can beat playback on eight B300s. The timing boundary still decides the product.</h1>
     <p>Put a clip’s output duration beside time-to-ready and the boundary being measured. Then add queue margin, retries, idle hardware, encoding, delivery, and session resets before calling a route fast or cheap.</p>
   </header>
+
+  <section>
+    <h2>Four-step FastH3: denoiser speed is not the complete response</h2>
+    <p><strong>Project says:</strong> its current H3 recipe reports a warmed FastH3 Dense T2VA test on eight B300 GPUs: a 1344×768, 4.4-second clip took 11.7 and 11.8 seconds to return as a complete MP4. The diffusion stage took 2.37 and 2.36 seconds. Against the same-profile base H3 test, whole response improved about 2.2×, while the denoiser improved about 6.9×. This short result missed its own playback duration; it does not contradict the separate longer-clip profile below.</p>
+    <p><a href="../research/2026-09-29-h3-four-step-whole-response/index.html">Read the timing and adapter conditions</a>. No cost, first-frame, queue, delivered-stream, or repeated quality result is reported here.</p>
+  </section>
 
   <section>
     <h2>Longer H3 output: no cost or wait figure yet</h2>
@@ -186,7 +192,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>28 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>29 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>

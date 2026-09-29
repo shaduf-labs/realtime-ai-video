@@ -209,6 +209,17 @@
       "summary": "vLLM-Omni v0.30.0 documents opt-in Ref2VA continuation, but its eight-B300 30.667-second example lacks full wall time and viewer-visible delivery evidence.",
       "report_path": "/p/realtime-ai-video/research/2026-09-28-vllm-h3-long-video-boundary",
       "entrypoint": "research/2026-09-28-vllm-h3-long-video-boundary/index.html"
+    },
+    {
+      "run_id": "run:c8802054-67b9-4139-81b6-e91b59c6ce0f",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-29T09:45:00Z",
+      "completed_at": "2026-09-29T09:52:00Z",
+      "title": "Four H3 steps do not make every short clip real time",
+      "summary": "vLLM-Omni reports 11.7–11.8 seconds for a 4.4-second FastH3 clip on eight B300 GPUs; the whole response is slower than playback despite a fast denoiser.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-29-h3-four-step-whole-response",
+      "entrypoint": "research/2026-09-29-h3-four-step-whole-response/index.html"
     }
   ]
 }

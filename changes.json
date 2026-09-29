@@ -120,6 +120,12 @@
       "changed_at": "2026-09-28T09:54:00Z",
       "summary": "Added vLLM-Omni v0.30.0 Ref2VA long-video continuation and its eight-B300 30.667-second example, while separating a completed clip from a measured live stream.",
       "path": "/p/realtime-ai-video/research/2026-09-28-vllm-h3-long-video-boundary"
+    },
+    {
+      "change_id": "h3-four-step-complete-response",
+      "changed_at": "2026-09-29T09:50:00Z",
+      "summary": "Added vLLM-Omni’s eight-B300 short FastH3 complete-response result and the exact adapter/task/schedule boundary; separated it from denoiser speed and longer-clip results.",
+      "path": "/p/realtime-ai-video/research/2026-09-29-h3-four-step-whole-response"
     }
   ]
 }
