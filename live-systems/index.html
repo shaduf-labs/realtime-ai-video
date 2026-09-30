@@ -16,7 +16,7 @@
     <meta property="og:description" content="Queues, buffers, playout, interaction, recovery, and delivery for live-looking video.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/live-systems/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Live Systems","description":"Queues, buffers, playout, interaction, recovery, and delivery for live-looking video.","dateModified":"2026-09-29T09:50:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/live-systems/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Live Systems","description":"Queues, buffers, playout, interaction, recovery, and delivery for live-looking video.","dateModified":"2026-09-30T11:50:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/live-systems/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="live-systems">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -49,7 +49,7 @@
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
   <header>
-    <p>Live systems · checked 24 September 2026</p>
+    <p>Live systems · checked 30 September 2026</p>
     <h1>“Continuous” survives only if the system survives a miss</h1>
     <p>A smooth demo can hide a remote API wait, a queue, an idle filler, a repeated frame, a slower playback rate, a hard scene cut, or a vote that waits offscreen. Ask what continues when the next clip is late, a prompt fails, a vote closes, or a session ends.</p>
   </header>
@@ -65,6 +65,11 @@
       <li><strong>Playout:</strong> choose the output fps; state filler, transitions, fallback footage, and what black, silence, a frozen frame, or slowed motion means.</li>
       <li><strong>Delivery and recovery:</strong> timestamp the visible result, reconnect sessions, preserve story state if possible, and log the gap.</li>
     </ol>
+  </section>
+
+  <section>
+    <h2>Vidu S2-Editing has a live transport contract</h2>
+    <p><strong>Provider says:</strong> an operator publishes video into an RTC session, receives an edited RTC stream, and can relay it to RTMP. A control signal may change the reference or scenario mid-session, but a successful switch has no separate acknowledgment. Measure the first changed receiver frame, not just the signal response. The provider also documents that relay failure ends the live session. <a href="../research/2026-09-30-vidu-s2-live-editing-route/index.html">See the cost and test boundary</a>.</p>
   </section>
 
   <section>
@@ -141,7 +146,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>29 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>30 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>

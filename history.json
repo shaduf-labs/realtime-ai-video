@@ -220,6 +220,17 @@
       "summary": "vLLM-Omni reports 11.7–11.8 seconds for a 4.4-second FastH3 clip on eight B300 GPUs; the whole response is slower than playback despite a fast denoiser.",
       "report_path": "/p/realtime-ai-video/research/2026-09-29-h3-four-step-whole-response",
       "entrypoint": "research/2026-09-29-h3-four-step-whole-response/index.html"
+    },
+    {
+      "run_id": "run:d968843e-e0cd-485c-a16d-9b8b951fae85",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-09-30T11:39:00Z",
+      "completed_at": "2026-09-30T11:53:00Z",
+      "title": "Vidu S2 documents live feed editing, not another H3 clip path",
+      "summary": "The provider documents RTC input and edited RTC/RTMP output at one credit per live second; end-to-end delay, sustained reliability and delivered cost remain unverified.",
+      "report_path": "/p/realtime-ai-video/research/2026-09-30-vidu-s2-live-editing-route",
+      "entrypoint": "research/2026-09-30-vidu-s2-live-editing-route/index.html"
     }
   ]
 }

@@ -480,6 +480,56 @@
       "accessed_at": "2026-09-29T09:50:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:vidu-s2-editing-route",
+      "source_type": "provider API documentation",
+      "source_url": "https://platform.vidu.com/vidu-stream/doc/s2-editing/parameters",
+      "title": "Vidu S2-Editing detailed parameters",
+      "claim": "The API documents source RTC publishing, edited RTC subscription, optional RTMP relay, and in-session reference/scenario changes.",
+      "accessed_at": "2026-09-30T11:50:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:vidu-s2-editing-billing",
+      "source_type": "provider API documentation",
+      "source_url": "https://platform.vidu.com/vidu-stream/doc/s2-editing/parameters",
+      "title": "Vidu S2-Editing billing",
+      "claim": "Editing bills one credit per on-live second from successful init acknowledgment to hangup.",
+      "accessed_at": "2026-09-30T11:50:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:vidu-credit-list-price",
+      "source_type": "provider pricing",
+      "source_url": "https://platform.vidu.com/docs/pricing",
+      "title": "Vidu credit pricing",
+      "claim": "The standard international credit price is $0.005; $18 for 3,600 billed seconds is derived arithmetic, excluding other costs.",
+      "accessed_at": "2026-09-30T11:50:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:vidu-s2-model-map",
+      "source_type": "provider model map",
+      "source_url": "https://platform.vidu.com/docs/model-map",
+      "title": "Vidu S2 model map",
+      "claim": "Editing is a live source-stream transformation, separate from Avatar Real-time, Avatar Component and offline MP4.",
+      "accessed_at": "2026-09-30T11:50:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:vidu-s2-paper-scope",
+      "source_type": "provider-authored paper",
+      "source_url": "https://arxiv.org/abs/2609.11638",
+      "title": "Vidu S2 paper",
+      "claim": "The reported 720p and 25–42 FPS figures refer to Avatar and do not establish Editing viewer-visible latency.",
+      "accessed_at": "2026-09-30T11:50:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
     }
   ]
 }
