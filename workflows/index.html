@@ -16,7 +16,7 @@
     <meta property="og:description" content="Condition-rich notes for ComfyUI, FastH3, and related workflow routes.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/workflows/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Workflow Directory","description":"Condition-rich notes for ComfyUI, FastH3, and related workflow routes.","dateModified":"2026-09-30T11:50:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/workflows/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Workflow Directory","description":"Condition-rich notes for ComfyUI, FastH3, and related workflow routes.","dateModified":"2026-10-01T12:16:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/workflows/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="workflows">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -110,6 +110,11 @@
   </section>
 
   <section>
+    <h2>Sol-H3 is a pinned fast-clip route, not a ComfyUI install promise</h2>
+    <p><strong>Project says:</strong> its eight-B300 benchmark uses a four-forward FastH3 Preview adapter at 1344×768 and 24 fps. The Sol-H3 code README says B300 SM103 is validated; reachable SM90 and SM120 paths still need hardware checks. Record the adapter, task, attention path, precision and output encoding before comparing it with another H3 route. <a href="../research/2026-10-01-sol-h3-fast-is-not-live/index.html">See the measured boundary</a>.</p>
+  </section>
+
+  <section>
     <h2>The task and adapter are part of the server</h2>
     <p><strong>Project says:</strong> H3 uses different T2VA/FL2VA and Ref2VA task paths. The current vLLM-Omni RFC says FastH3 works by fusing one selected adapter at server start; its remote ComfyUI LoRA control cannot switch FastH3 for a request. It says the current client supports one FL2VA frame, so a first/last-frame plan stops at the client before it reaches the server.</p>
     <p>Record the checkpoint, task, adapter filename, server revision, GPU and host memory, client revision, outgoing request, request shape, cold/warm state, response boundary, and audio result. An endpoint label alone is not a workflow.</p>
@@ -155,7 +160,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>30 Sept 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>1 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>

@@ -132,6 +132,12 @@
       "changed_at": "2026-09-30T11:50:00Z",
       "summary": "Added Vidu S2 live Editing as a distinct source-fed RTC/RTMP route, with endpoint-specific $18-per-billed-hour list-rate arithmetic and unresolved viewer latency.",
       "path": "/p/realtime-ai-video/research/2026-09-30-vidu-s2-live-editing-route"
+    },
+    {
+      "change_id": "sol-h3-fast-is-not-live",
+      "changed_at": "2026-10-01T12:16:00Z",
+      "summary": "Added NVIDIA Sol-H3 eight-B300 warm timing and the final-encoding, adapter, and live-service boundaries.",
+      "path": "/p/realtime-ai-video/research/2026-10-01-sol-h3-fast-is-not-live"
     }
   ]
 }

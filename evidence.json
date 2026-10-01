@@ -530,6 +530,26 @@
       "accessed_at": "2026-09-30T11:50:00Z",
       "relation": "limits",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:sol-h3-benchmark",
+      "source_type": "NVIDIA Research project benchmark",
+      "source_url": "https://nvlabs.github.io/Sana/Sol-Engine/Sol-H3/",
+      "title": "Sol-H3 project page",
+      "claim": "Warm eight-B300 T2VA 5/10/15-second timing through VAE decode; loading, compilation and MP4 encoding excluded; continuous delivery listed as future work.",
+      "accessed_at": "2026-10-01T12:16:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:sol-h3-code-scope",
+      "source_type": "project code README",
+      "source_url": "https://github.com/NVlabs/Sana/tree/sol-engine/models/minimax_h3/Sol-H3",
+      "title": "Sol-H3 code and validation",
+      "claim": "The four-forward adapter and lossy multi-GPU profile differ from the 49-forward Base H3 comparison; SM103 B300 validated and other paths not yet validated.",
+      "accessed_at": "2026-10-01T12:16:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
     }
   ]
 }

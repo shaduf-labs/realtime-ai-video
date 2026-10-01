@@ -231,6 +231,17 @@
       "summary": "The provider documents RTC input and edited RTC/RTMP output at one credit per live second; end-to-end delay, sustained reliability and delivered cost remain unverified.",
       "report_path": "/p/realtime-ai-video/research/2026-09-30-vidu-s2-live-editing-route",
       "entrypoint": "research/2026-09-30-vidu-s2-live-editing-route/index.html"
+    },
+    {
+      "run_id": "run:c4f28290-9990-4e53-ac71-707e72877b36",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-01T12:10:00Z",
+      "completed_at": "2026-10-01T12:17:00Z",
+      "title": "Sol-H3 warm inference is not a live show",
+      "summary": "NVIDIA reports fast eight-B300 H3 inference with a four-forward adapter, while final encoding and continuous interaction remain unmeasured.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-01-sol-h3-fast-is-not-live",
+      "entrypoint": "research/2026-10-01-sol-h3-fast-is-not-live/index.html"
     }
   ]
 }
