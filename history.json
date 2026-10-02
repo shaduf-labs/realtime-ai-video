@@ -242,6 +242,17 @@
       "summary": "NVIDIA reports fast eight-B300 H3 inference with a four-forward adapter, while final encoding and continuous interaction remain unmeasured.",
       "report_path": "/p/realtime-ai-video/research/2026-10-01-sol-h3-fast-is-not-live",
       "entrypoint": "research/2026-10-01-sol-h3-fast-is-not-live/index.html"
+    },
+    {
+      "run_id": "run:ac3cd164-978f-4b80-b625-33d4a40a0ade",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-02T09:49:00Z",
+      "completed_at": "2026-10-02T09:59:00Z",
+      "title": "TaoMate-H3 first playable chunk, not a live session",
+      "summary": "The project reports 17.287 seconds to a first playable benchmark chunk on eight H20s, while receiver-visible continuity and cost remain unmeasured.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-02-taomate-first-chunk-boundary",
+      "entrypoint": "research/2026-10-02-taomate-first-chunk-boundary/index.html"
     }
   ]
 }

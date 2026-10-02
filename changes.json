@@ -138,6 +138,12 @@
       "changed_at": "2026-10-01T12:16:00Z",
       "summary": "Added NVIDIA Sol-H3 eight-B300 warm timing and the final-encoding, adapter, and live-service boundaries.",
       "path": "/p/realtime-ai-video/research/2026-10-01-sol-h3-fast-is-not-live"
+    },
+    {
+      "change_id": "taomate-h3-first-chunk-boundary",
+      "changed_at": "2026-10-02T09:57:00Z",
+      "summary": "Added TaoMate-H3 eight-H20 first-playable benchmark and separated the official chunked runtime from a consumer LoRA adaptation.",
+      "path": "/p/realtime-ai-video/research/2026-10-02-taomate-first-chunk-boundary"
     }
   ]
 }

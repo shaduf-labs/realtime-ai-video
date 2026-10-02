@@ -550,6 +550,36 @@
       "accessed_at": "2026-10-01T12:16:00Z",
       "relation": "limits",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "evidence:taomate-project-profile",
+      "source_type": "project-readme",
+      "source_url": "https://github.com/TaoLiveAIGC/TaoMate-H3",
+      "title": "TaoMate-H3 README",
+      "claim": "Project-reported eight-H20 T2AV first playable benchmark and pure DiT time, with stated exclusions.",
+      "accessed_at": "2026-10-02T09:57:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "evidence:taomate-task-scope",
+      "source_type": "project-readme",
+      "source_url": "https://github.com/TaoLiveAIGC/TaoMate-H3",
+      "title": "TaoMate-H3 task and runtime documentation",
+      "claim": "Current runtime T2AV scope, final MP4 command, and planned FL2AV/Ref2AV modes.",
+      "accessed_at": "2026-10-02T09:57:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "evidence:taomate-5090-adaptation",
+      "source_type": "first-person-operator-report",
+      "source_url": "https://www.gamebusiness.jp/article/2026/09/15/28044.html",
+      "title": "Koya Matsuo RTX 5090 TaoMate LoRA report",
+      "claim": "Separate converted-LoRA ComfyUI route and reported roughly 14-second avatar reply; not official runtime validation.",
+      "accessed_at": "2026-10-02T09:57:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }

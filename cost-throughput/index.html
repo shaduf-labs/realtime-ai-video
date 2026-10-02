@@ -16,7 +16,7 @@
     <meta property="og:description" content="Measured and reported cost, latency, hardware, and playback trade-offs.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/cost-throughput/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Cost and Throughput","description":"Measured and reported cost, latency, hardware, and playback trade-offs.","dateModified":"2026-10-01T12:16:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/cost-throughput/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Cost and Throughput","description":"Measured and reported cost, latency, hardware, and playback trade-offs.","dateModified":"2026-10-02T09:57:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/cost-throughput/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="cost-throughput">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -49,10 +49,15 @@
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
   <header>
-    <p>Cost and throughput · checked 1 October 2026</p>
+    <p>Cost and throughput · checked 2 October 2026</p>
     <h1>Sol-H3 beats playback in a warm pipeline. Encoding and delivery still decide the product.</h1>
     <p>Put a clip’s output duration beside time-to-ready and the boundary being measured. Then add queue margin, retries, idle hardware, encoding, delivery, and session resets before calling a route fast or cheap.</p>
   </header>
+
+  <section>
+    <h2>TaoMate-H3: first playable is later than first latent</h2>
+    <p><strong>Project says:</strong> on eight H20 96 GB GPUs, its ten-second 480×864 T2AV benchmark took 14.810 seconds of pure DiT time, 6.148 seconds to first final chunk latent, and 17.287 seconds to benchmark first playable video. The latter includes video VAE decode and H.264 publication but excludes internal audio preparation. No cold, repeated-block, receiver or billed-hour figure is available. <a href="../research/2026-10-02-taomate-first-chunk-boundary/index.html">Read the boundary</a>.</p>
+  </section>
 
   <section>
     <h2>Sol-H3: faster than playback before the final MP4</h2>
@@ -202,7 +207,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>1 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>2 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>
