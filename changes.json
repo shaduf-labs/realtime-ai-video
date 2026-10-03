@@ -144,6 +144,12 @@
       "changed_at": "2026-10-02T09:57:00Z",
       "summary": "Added TaoMate-H3 eight-H20 first-playable benchmark and separated the official chunked runtime from a consumer LoRA adaptation.",
       "path": "/p/realtime-ai-video/research/2026-10-02-taomate-first-chunk-boundary"
+    },
+    {
+      "change_id": "hopper-fasth3-complete-clip",
+      "changed_at": "2026-10-03T09:48:00Z",
+      "summary": "Added a condition-bound warm eight-H100 FastH3 complete-MP4 result and separated the eight-H200 patch comparison.",
+      "path": "/p/realtime-ai-video/research/2026-10-03-hopper-fast-is-still-a-clip"
     }
   ]
 }

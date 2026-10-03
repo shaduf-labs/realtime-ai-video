@@ -253,6 +253,17 @@
       "summary": "The project reports 17.287 seconds to a first playable benchmark chunk on eight H20s, while receiver-visible continuity and cost remain unmeasured.",
       "report_path": "/p/realtime-ai-video/research/2026-10-02-taomate-first-chunk-boundary",
       "entrypoint": "research/2026-10-02-taomate-first-chunk-boundary/index.html"
+    },
+    {
+      "run_id": "run:6838dd03-f2bf-4eef-b933-e067936eacb8",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-03T09:45:00Z",
+      "completed_at": "2026-10-03T09:51:00Z",
+      "title": "FastH3 on Hopper: a warm complete clip, not a show",
+      "summary": "An independent eight-H100 project reports a 14.375-second audio-video clip saved in 13.506 seconds; quality and viewer delivery remain unmeasured.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-03-hopper-fast-is-still-a-clip",
+      "entrypoint": "research/2026-10-03-hopper-fast-is-still-a-clip/index.html"
     }
   ]
 }

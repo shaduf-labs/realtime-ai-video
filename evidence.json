@@ -580,6 +580,16 @@
       "accessed_at": "2026-10-02T09:57:00Z",
       "relation": "context",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "evidence:hopper-fast-h3-repo",
+      "source_type": "independent-project-repository",
+      "source_url": "https://github.com/hlander-ai/minimax-h3/blob/main/README.md",
+      "title": "Hopper FastH3 experiment",
+      "claim": "Warm eight-H100 complete-MP4 timing and separate eight-H200 matched patch comparison.",
+      "accessed_at": "2026-10-03T09:48:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
     }
   ]
 }
