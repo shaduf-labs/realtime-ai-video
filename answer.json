@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "An independent FastH3 experiment reports a warm 14.375-second 1344×768/24 fps video with native audio saved in 13.506 seconds on eight H100 80 GB GPUs. It uses a four-forward sparse checkpoint and excludes load and compilation. A separate matched eight-H200 patch comparison reports 23.810 to 14.085 seconds; it is not the same test. No accepted-quality, billed or receiver-visible continuous interactive H3 session is measured. Other routes still serve different jobs: TaoMate-H3 offers chunked T2AV on eight H20s; Sol-H3 reports fast warm eight-B300 inference; Vidu S2 edits an incoming live feed; fal Director offers a finite WebRTC session; YoLive guides the next scene by group choice; FastH3 queues pace separate clips; vLLM-Omni and ComfyUI support distinct remote and local work.",
+  "current_answer": "vLLM-Omni now supports request-scoped MiniMax H3 latent-mask editing in its video API: upload source media and masks, then get a completed edited clip. The dedicated ComfyUI client path was still an open PR on 4 October, and this is not live mid-session control. Faster-than-playback FastH3 clips on multi-GPU systems, TaoMate chunks, source-fed Vidu S2 editing, finite fal Director sessions, and queued playout still have different timing and continuity limits. No route here has a pool-measured accepted-quality, receiver-visible continuous interactive H3 session with delivered-hour cost.",
   "catalogue_card": {
-    "question": "Can H3 finish a clip before it plays on H100s?",
-    "text": "An independent FastH3 project reports 14.375 seconds of 768p video with audio saved in 13.506 seconds on eight H100s after warmup. Quality, viewer delivery and running cost are still unmeasured."
+    "question": "Can you remotely edit H3 video in ComfyUI yet?",
+    "text": "vLLM-Omni has merged H3 mask editing in its video API. Its dedicated ComfyUI node was still an open PR on 4 October; neither path is a measured live edit session."
   },
   "summary": [
+    "vLLM-Omni merged request-scoped H3 latent-mask editing into its video API on 20 September. Source video/audio and masks can preserve or regenerate regions in a completed job. Its proposed ComfyUI editing node and raw-mask server follow-up remained open at the 4 October check; the pool has not run this route.",
     "An independent project reports a warm FastH3 Preview v1 14.375-second 1344×768/24 fps audio-video clip saved in 13.506 seconds on eight H100 80 GB GPUs. A separate matched eight-H200 stock-versus-patched test reports 23.810 to 14.085 seconds; do not merge those comparisons. No accepted-quality, cold-start, receiver or cost result is available.",
     "TaoMate-H3 reports 14.810 seconds pure DiT and 17.287 seconds to benchmark first playable video for a ten-second 480×864 T2AV job on eight H20 96 GB GPUs. First playable includes video VAE decode and H.264 publication but excludes internal audio preparation. Current CLI output is a final MP4; sustained viewer delivery is unmeasured.",
     "NVIDIA Sol-H3 reports eight-B300 warm medians of 1.653/3.732/6.612 seconds for nominal 5/10/15-second 1344×768 T2VA outputs with audio. Final MP4 encoding, load, and compilation are excluded; continuous streaming and in-session control remain future work. The 11.04× five-second comparison also changes Base H3 from 49 denoiser forwards to a four-forward FastH3 adapter.",
@@ -20,6 +21,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "The merged H3 mask API has no pool-operated edit, accepted-quality comparison, complete wait, bill, or live receiver result. The client and raw-mask PR states may change after 4 October.",
     "The Hopper FastH3 results are project-reported. Warm complete-MP4 timing excludes load and compilation; quality suite, receiver-visible continuity, retries and billing are unknown. The H100 headline and H200 A/B use different hardware.",
     "TaoMate-H3 figures are project-reported for one eight-H20 480×864 test. No pool test, cold start, internal audio preparation, receiver-visible first frame, repeated-block timing, accepted quality or delivered-hour cost is available.",
     "The one-RTX-5090 converted TaoMate LoRA is a separate self-reported ComfyUI offline path, not validation of the official chunked runtime.",
@@ -36,7 +38,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-03T09:48:00Z",
-  "meaningfully_updated_at": "2026-10-03T09:48:00Z",
-  "freshness_note": "Checked 3 October 2026. A warm eight-H100 FastH3 clip completed faster than playback; viewer-visible service and cost remain unmeasured."
+  "checked_at": "2026-10-04T09:49:00Z",
+  "meaningfully_updated_at": "2026-10-04T09:49:00Z",
+  "freshness_note": "Checked 4 October 2026. H3 mask editing has a merged server API but not a merged dedicated ComfyUI client path in the inspected PR; it is not a live-control result."
 }

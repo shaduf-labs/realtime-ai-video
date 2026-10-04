@@ -264,6 +264,17 @@
       "summary": "An independent eight-H100 project reports a 14.375-second audio-video clip saved in 13.506 seconds; quality and viewer delivery remain unmeasured.",
       "report_path": "/p/realtime-ai-video/research/2026-10-03-hopper-fast-is-still-a-clip",
       "entrypoint": "research/2026-10-03-hopper-fast-is-still-a-clip/index.html"
+    },
+    {
+      "run_id": "run:c1b93007-f995-452a-8871-27356dc2c28f",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-04T09:45:00Z",
+      "completed_at": "2026-10-04T09:53:00Z",
+      "title": "H3 mask editing reached the server API before its ComfyUI client",
+      "summary": "vLLM-Omni supports request-scoped H3 mask editing in its video API; the dedicated ComfyUI client remained an open PR. Neither is measured live control.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-04-h3-mask-editing-api-client-gap",
+      "entrypoint": "research/2026-10-04-h3-mask-editing-api-client-gap/index.html"
     }
   ]
 }

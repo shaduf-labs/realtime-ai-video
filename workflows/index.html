@@ -16,7 +16,7 @@
     <meta property="og:description" content="Condition-rich notes for ComfyUI, FastH3, and related workflow routes.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/workflows/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Workflow Directory","description":"Condition-rich notes for ComfyUI, FastH3, and related workflow routes.","dateModified":"2026-10-03T09:48:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/workflows/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"Workflow Directory","description":"Condition-rich notes for ComfyUI, FastH3, and related workflow routes.","dateModified":"2026-10-04T09:49:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/workflows/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="../feed.xml"><link rel="stylesheet" href="../assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="workflows">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -95,6 +95,8 @@
     <p>Use this as a review-loop or prequeue lead. It is not a normal-speed stream, a time-to-first-frame measurement, or a consumer result you can transfer to FastH3 8-Step V2. Record model family, task, attention path, checkpoint, source still, resolution, frames, audio setting, GPU, system RAM, and cold/warm state before comparing it with another FastH3 claim.</p>
   </section>
 
+  <section><h2>Remote H3 mask editing: API before ComfyUI</h2><p><strong>Project says:</strong> vLLM-Omni merged H3 source-media and noise-mask editing into its video API. A mask value of 0 preserves source; 1 regenerates it. The dedicated ComfyUI editing node remained an open PR at the 4 October check. Use direct API requests only if you can supply the documented mask format; do not assume a portable ComfyUI workflow or live edits. <a href="../research/2026-10-04-h3-mask-editing-api-client-gap/index.html">Read the client check</a>.</p></section>
+
   <section>
     <h2>vLLM-Omni: the complete-MP4 timing excludes viewer delivery</h2>
     <p><strong>Project says:</strong> vLLM-Omni has a current H3 recipe for an OpenAI-compatible service that covers T2VA, FL2VA, and Ref2VA. Its recipe documents ordered first-and-last-frame inputs at the server layer. Its current H3 API/ComfyUI RFC says the client remains narrower: one FL2VA frame, at most two inputs per reference modality, and some valid mixed references rejected. The UI can run separately from the H3 GPU service, but it is not a complete proxy for the server contract.</p>
@@ -165,7 +167,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>3 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>4 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="../index.html">Full pool information →</a></section>
     </div>

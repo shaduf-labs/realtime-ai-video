@@ -590,6 +590,36 @@
       "accessed_at": "2026-10-03T09:48:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "evidence:h3-mask-server-20261004",
+      "source_type": "project-pull-request",
+      "source_url": "https://github.com/vllm-project/vllm-omni/pull/7465",
+      "title": "vLLM-Omni H3 latent-mask API PR",
+      "claim": "Merged request-scoped H3 video/audio mask-editing API on 20 September 2026.",
+      "accessed_at": "2026-10-04T09:49:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "evidence:h3-mask-api-20261004",
+      "source_type": "project-documentation",
+      "source_url": "https://github.com/vllm-project/vllm-omni/blob/main/docs/serving/videos_api.md",
+      "title": "vLLM-Omni Videos API",
+      "claim": "Documents source media, masks, completed-job response and 8 MiB JSON mask-file limit.",
+      "accessed_at": "2026-10-04T09:49:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "evidence:h3-mask-comfy-20261004",
+      "source_type": "project-pull-request",
+      "source_url": "https://github.com/vllm-project/vllm-omni/pull/7575",
+      "title": "vLLM-Omni ComfyUI latent-mask PR",
+      "claim": "Proposed dedicated H3 editing node remained open at the 4 October check.",
+      "accessed_at": "2026-10-04T09:49:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
     }
   ]
 }

@@ -150,6 +150,12 @@
       "changed_at": "2026-10-03T09:48:00Z",
       "summary": "Added a condition-bound warm eight-H100 FastH3 complete-MP4 result and separated the eight-H200 patch comparison.",
       "path": "/p/realtime-ai-video/research/2026-10-03-hopper-fast-is-still-a-clip"
+    },
+    {
+      "change_id": "h3-mask-api-client-boundary",
+      "changed_at": "2026-10-04T09:49:00Z",
+      "summary": "Added the H3 mask-editing API and ComfyUI client-status distinction, with an offline-versus-live warning.",
+      "path": "/p/realtime-ai-video/research/2026-10-04-h3-mask-editing-api-client-gap"
     }
   ]
 }
