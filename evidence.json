@@ -620,6 +620,36 @@
       "accessed_at": "2026-10-04T09:49:00Z",
       "relation": "limits",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "evidence:tavus-griffin",
+      "source_type": "provider-research",
+      "source_url": "https://www.tavus.io/griffin",
+      "title": "Tavus Griffin research release",
+      "claim": "Full-duplex preview, 320 ms video chunks, 0.43-second audio-to-video component result, and selected-tester access.",
+      "accessed_at": "2026-10-05T09:53:51Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "evidence:nvidia-videofdb",
+      "source_type": "benchmark-operator",
+      "source_url": "https://research.nvidia.com/labs/amri/projects/video-fdb/",
+      "title": "NVIDIA VideoFDB leaderboard",
+      "claim": "Separate Griffin Lite model-judged generation/perception scores and median event timing.",
+      "accessed_at": "2026-10-05T09:53:51Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "evidence:tavus-pricing",
+      "source_type": "provider-pricing",
+      "source_url": "https://www.tavus.io/pricing",
+      "title": "Tavus current CVI pricing",
+      "claim": "Existing CVI minutes refer to the current Phoenix/Raven/Sparrow stack, not a Griffin-specific price.",
+      "accessed_at": "2026-10-05T09:53:51Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
     }
   ]
 }

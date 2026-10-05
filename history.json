@@ -275,6 +275,17 @@
       "summary": "vLLM-Omni supports request-scoped H3 mask editing in its video API; the dedicated ComfyUI client remained an open PR. Neither is measured live control.",
       "report_path": "/p/realtime-ai-video/research/2026-10-04-h3-mask-editing-api-client-gap",
       "entrypoint": "research/2026-10-04-h3-mask-editing-api-client-gap/index.html"
+    },
+    {
+      "run_id": "run:0cc1862b-e775-4b74-8f26-81236ac622a8",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-05T09:45:00Z",
+      "completed_at": "2026-10-05T09:54:46Z",
+      "title": "Griffin's fast face is not a complete call",
+      "summary": "Tavus reports full-duplex video with a 0.43-second component clock; NVIDIA benchmark event timing differs, and Griffin remains a selected-tester preview.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-05-griffin-conversation-clock",
+      "entrypoint": "research/2026-10-05-griffin-conversation-clock/index.html"
     }
   ]
 }

@@ -16,7 +16,7 @@
     <meta property="og:description" content="What works now, what changed, and the limits behind the headline.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What can generate continuous, interactive AI video today, and which setups work at which cost, latency, hardware requirements, and quality?","description":"What works now, what changed, and the limits behind the headline.","dateModified":"2026-10-04T09:49:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What can generate continuous, interactive AI video today, and which setups work at which cost, latency, hardware requirements, and quality?","description":"What works now, what changed, and the limits behind the headline.","dateModified":"2026-10-05T09:53:51Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="feed.xml"><link rel="stylesheet" href="assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="home">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -48,14 +48,11 @@
     <main class="center-surface" id="pool-content"><article class="center-document" data-agent-document>
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
-  <header>
-    <p>Checked 4 October 2026 · Research update 025</p>
-    <h1>H3 editing reached the server API before the dedicated ComfyUI node.</h1>
-    <p><strong>Project says:</strong> vLLM-Omni accepts source media and masks for a completed H3 edit. Its dedicated ComfyUI client remained an open PR at the check. Neither route is a measured live edit session. <a href="research/2026-10-04-h3-mask-editing-api-client-gap/index.html">Read the status check</a>.</p>
-  </header>
+  <header><p>Checked 5 October 2026 · Research update 026</p><h1>Griffin adds a full-duplex conversation preview, not a customer setup.</h1><p><strong>Provider says:</strong> Griffin-Lite listens and watches while generating a speaking face. The 0.43-second H100 figure times audio-to-video generation, not a complete call. NVIDIA's event timing is a different test, and Griffin is limited to selected research testers. <a href="research/2026-10-05-griffin-conversation-clock/index.html">Read the clock and access check</a>.</p></header>
 
   <section>
     <h2>What works today</h2>
+    <p><strong>Full-duplex preview, not a setup recommendation:</strong> Tavus Griffin-Lite has a reported streaming video-to-video conversation route, but no customer access or Griffin-specific price. Its component and benchmark timing must not be read as one end-to-end wait.</p>
     <p><strong>New offline control route:</strong> H3 mask editing is merged in vLLM-Omni’s video API, while its dedicated ComfyUI client remains open. It returns a completed edited video; do not treat it as mid-session control or borrow FastH3 timing from a different task.</p>
     <p><strong>New Hopper lead:</strong> the eight-H100 saved-MP4 result beats the clip playback clock, but it does not measure a repeated stream. The project has not completed its quality suite. Compare it only with the exact checkpoint, output and warm state pinned.</p>
     <p><strong>New route:</strong> TaoMate-H3 documents chunked T2AV on eight H20s. Its first-playable benchmark is not a receiver-visible stream; a 5090 LoRA adaptation is a separate offline route. Sol-H3 makes H3 clips faster than their nominal playback duration on eight B300s in a warm partial-pipeline benchmark. It does not yet add a measured live system. The four-step adapter, hardware count and excluded encoding matter more than the headline multiplier.</p>
@@ -63,6 +60,7 @@
     <table>
       <thead><tr><th>Route</th><th>What the evidence supports</th><th>What it does not prove</th><th>Best first move</th></tr></thead>
       <tbody>
+        <tr><td><strong>Tavus Griffin-Lite</strong></td><td><strong>Provider says:</strong> selected-tester full-duplex preview generates 720p video in 320 ms chunks; 0.43 s average audio-to-video generator latency on H100s. NVIDIA VideoFDB reports separate median event timing of 1,892/2,232 ms for generation/perception.</td><td>A purchasable setup, complete user-call latency, production continuity, accepted quality, or Griffin-specific price.</td><td>Track customer access. Test one disclosed receiver-visible conversation and its bill before ranking it.</td></tr>
         <tr><td><strong>Hopper FastH3 patched clip route</strong></td><td><strong>Project says:</strong> 14.375 seconds of 1344×768/24 fps audio-video saved in 13.506 seconds on eight H100 80 GB GPUs after warmup.</td><td>Quality acceptance, load/compile, cold recovery, receiver-visible stream, control and cost. Its separate 1.690× A/B used eight H200s, not H100s.</td><td>Check accepted quality and bill first; then test repeated clips at a receiver with a missed-job fallback.</td></tr>
         <tr><td><strong>TaoMate-H3 chunked T2AV</strong></td><td><strong>Project says:</strong> on eight H20 96 GB GPUs, a ten-second 480×864 job took 14.810 s pure DiT and 17.287 s to benchmark first playable video.</td><td>Cold start, internal audio preparation, receiver-visible first frame, later-block margin, live control, accepted quality and delivered-hour cost. Its current command writes a final MP4; the 5090 LoRA adaptation is not this runtime.</td><td>Ask for repeated receiver timestamps and a prompt change before buying a streaming claim.</td></tr>
         <tr><td><strong>NVIDIA Sol-H3</strong></td><td><strong>Project says:</strong> eight B300s produced 5/10/15-second 1344×768 T2VA outputs with audio in warm medians of 1.653/3.732/6.612 seconds through VAE decode.</td><td>Final MP4 encoding, startup, queue, viewer delivery, continuous session, prompt-to-screen response, quality acceptance and cost. The cited 11× comparison also changes a 49-forward base profile to a four-forward adapter.</td><td>Pin the exact four-step task/profile and record encoded-to-receiver time, a second clip, quality and billed hardware time.</td></tr>
@@ -121,7 +119,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>4 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>5 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="index.html">Full pool information →</a></section>
     </div>

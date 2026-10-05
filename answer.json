@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "vLLM-Omni now supports request-scoped MiniMax H3 latent-mask editing in its video API: upload source media and masks, then get a completed edited clip. The dedicated ComfyUI client path was still an open PR on 4 October, and this is not live mid-session control. Faster-than-playback FastH3 clips on multi-GPU systems, TaoMate chunks, source-fed Vidu S2 editing, finite fal Director sessions, and queued playout still have different timing and continuity limits. No route here has a pool-measured accepted-quality, receiver-visible continuous interactive H3 session with delivered-hour cost.",
+  "current_answer": "Tavus Griffin-Lite adds a reported full-duplex conversational-video research preview, but it is not available to customers. Its 0.43-second audio-to-video generator result on H100s is not a complete conversation delay; NVIDIA VideoFDB reports separate 1.892/2.232-second median generation/perception event timing. Griffin-specific price and operated delivery cost remain unknown. Existing H3 clips, finite Director sessions, Vidu S2 live-feed editing and queued playout answer different jobs, with no pool-measured accepted-quality, receiver-visible delivered-hour comparison.",
   "catalogue_card": {
-    "question": "Can you remotely edit H3 video in ComfyUI yet?",
-    "text": "vLLM-Omni has merged H3 mask editing in its video API. Its dedicated ComfyUI node was still an open PR on 4 October; neither path is a measured live edit session."
+    "question": "Is Griffin a 0.43-second live video agent you can buy?",
+    "text": "No. Tavus reports 0.43-second audio-to-video generation on H100s, not a complete call. Griffin-Lite is a selected-tester preview with no customer price."
   },
   "summary": [
+    "Tavus describes Griffin-Lite as a full-duplex 720p conversational-video preview. Its reported 320 ms chunks and 0.43 s audio-to-video generator latency are not a customer session; NVIDIA VideoFDB has separate 1,892/2,232 ms median generation/perception timing.",
     "vLLM-Omni merged request-scoped H3 latent-mask editing into its video API on 20 September. Source video/audio and masks can preserve or regenerate regions in a completed job. Its proposed ComfyUI editing node and raw-mask server follow-up remained open at the 4 October check; the pool has not run this route.",
     "An independent project reports a warm FastH3 Preview v1 14.375-second 1344×768/24 fps audio-video clip saved in 13.506 seconds on eight H100 80 GB GPUs. A separate matched eight-H200 stock-versus-patched test reports 23.810 to 14.085 seconds; do not merge those comparisons. No accepted-quality, cold-start, receiver or cost result is available.",
     "TaoMate-H3 reports 14.810 seconds pure DiT and 17.287 seconds to benchmark first playable video for a ten-second 480×864 T2AV job on eight H20 96 GB GPUs. First playable includes video VAE decode and H.264 publication but excludes internal audio preparation. Current CLI output is a final MP4; sustained viewer delivery is unmeasured.",
@@ -21,6 +22,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "Griffin-Lite is limited to selected research testers; no pool-operated session, Griffin-specific customer price, accepted-quality distribution or delivered-hour bill exists.",
     "The merged H3 mask API has no pool-operated edit, accepted-quality comparison, complete wait, bill, or live receiver result. The client and raw-mask PR states may change after 4 October.",
     "The Hopper FastH3 results are project-reported. Warm complete-MP4 timing excludes load and compilation; quality suite, receiver-visible continuity, retries and billing are unknown. The H100 headline and H200 A/B use different hardware.",
     "TaoMate-H3 figures are project-reported for one eight-H20 480×864 test. No pool test, cold start, internal audio preparation, receiver-visible first frame, repeated-block timing, accepted quality or delivered-hour cost is available.",
@@ -38,7 +40,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-04T09:49:00Z",
-  "meaningfully_updated_at": "2026-10-04T09:49:00Z",
-  "freshness_note": "Checked 4 October 2026. H3 mask editing has a merged server API but not a merged dedicated ComfyUI client path in the inspected PR; it is not a live-control result."
+  "checked_at": "2026-10-05T09:53:51Z",
+  "meaningfully_updated_at": "2026-10-05T09:53:51Z",
+  "freshness_note": "Checked 5 October 2026. Griffin-Lite is a selected-tester preview, not a customer route; component and benchmark clocks differ."
 }
