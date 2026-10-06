@@ -650,6 +650,26 @@
       "accessed_at": "2026-10-05T09:53:51Z",
       "relation": "limits",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "evidence:raven-validation-20261006",
+      "source_type": "project-validation",
+      "source_url": "https://github.com/YanzuoLu/ComfyUI-MiniMax-H3-RAVEN-Streaming/blob/main/docs/validation.md",
+      "title": "RAVEN ComfyUI validation record",
+      "claim": "H200 memory holder, synthetic 192-frame timing, separate 39-frame real-prompt run, host RSS.",
+      "accessed_at": "2026-10-06T09:52:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "evidence:raven-compatibility-20261006",
+      "source_type": "project-compatibility",
+      "source_url": "https://github.com/YanzuoLu/ComfyUI-MiniMax-H3-RAVEN-Streaming/blob/main/COMPATIBILITY.md",
+      "title": "RAVEN ComfyUI compatibility",
+      "claim": "Verified ComfyUI baseline is 0.33.0; declared >=0.30 is a target, not measured support.",
+      "accessed_at": "2026-10-06T09:52:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
     }
   ]
 }

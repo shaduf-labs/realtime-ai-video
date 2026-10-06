@@ -286,6 +286,17 @@
       "summary": "Tavus reports full-duplex video with a 0.43-second component clock; NVIDIA benchmark event timing differs, and Griffin remains a selected-tester preview.",
       "report_path": "/p/realtime-ai-video/research/2026-10-05-griffin-conversation-clock",
       "entrypoint": "research/2026-10-05-griffin-conversation-clock/index.html"
+    },
+    {
+      "run_id": "run:31f22c85-921d-4034-8c2b-03219328839b",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-06T09:45:00Z",
+      "completed_at": "2026-10-06T09:53:13Z",
+      "title": "RAVEN’s 24-GiB claim needs two separate test labels",
+      "summary": "The long test used H200 headroom and synthetic conditioning. A real full-size prompt on a physical 24-GiB card is not shown.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-06-raven-24g-envelope",
+      "entrypoint": "research/2026-10-06-raven-24g-envelope/index.html"
     }
   ]
 }

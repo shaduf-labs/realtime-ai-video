@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "Tavus Griffin-Lite adds a reported full-duplex conversational-video research preview, but it is not available to customers. Its 0.43-second audio-to-video generator result on H100s is not a complete conversation delay; NVIDIA VideoFDB reports separate 1.892/2.232-second median generation/perception event timing. Griffin-specific price and operated delivery cost remain unknown. Existing H3 clips, finite Director sessions, Vidu S2 live-feed editing and queued playout answer different jobs, with no pool-measured accepted-quality, receiver-visible delivered-hour comparison.",
+  "current_answer": "RAVEN ComfyUI gives an H3 T2VA incremental browser preview, but its eight-second 192-frame reference took 301.30 seconds to sample and 51.46 seconds for the first local fragment. Its 24-GiB figure was free headroom on an H200 and the long run used synthetic conditioning; the separate real-prompt run was 39 frames without that cap. The maintainer advises 160 GiB available host RAM. This is a meaningful setup-boundary correction, not a new live or proven consumer-24-GiB route. Griffin remains a restricted conversational preview; Director sessions, Vidu live-feed editing, queued playout and completed H3 clips still answer different jobs.",
   "catalogue_card": {
-    "question": "Is Griffin a 0.43-second live video agent you can buy?",
-    "text": "No. Tavus reports 0.43-second audio-to-video generation on H100s, not a complete call. Griffin-Lite is a selected-tester preview with no customer price."
+    "question": "Can H3 stream on a 24-GiB GPU now?",
+    "text": "A RAVEN ComfyUI preview fit 24 GiB of H200 headroom, but its eight-second test took 301 seconds and used synthetic conditioning. A physical 24-GiB card with a full-size real prompt is unverified."
   },
   "summary": [
+    "RAVEN ComfyUI’s 192-frame T2VA test used an H200 constrained to 24.100 GiB free and synthetic conditioning. It sampled eight seconds in 301.30 seconds, with first local fragment at 51.46 seconds. A separate 39-frame real-prompt test used unconstrained H200 VRAM; neither proves full-size real-prompt generation on a physical 24-GiB card.",
     "Tavus describes Griffin-Lite as a full-duplex 720p conversational-video preview. Its reported 320 ms chunks and 0.43 s audio-to-video generator latency are not a customer session; NVIDIA VideoFDB has separate 1,892/2,232 ms median generation/perception timing.",
     "vLLM-Omni merged request-scoped H3 latent-mask editing into its video API on 20 September. Source video/audio and masks can preserve or regenerate regions in a completed job. Its proposed ComfyUI editing node and raw-mask server follow-up remained open at the 4 October check; the pool has not run this route.",
     "An independent project reports a warm FastH3 Preview v1 14.375-second 1344×768/24 fps audio-video clip saved in 13.506 seconds on eight H100 80 GB GPUs. A separate matched eight-H200 stock-versus-patched test reports 23.810 to 14.085 seconds; do not merge those comparisons. No accepted-quality, cold-start, receiver or cost result is available.",
@@ -22,6 +23,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "RAVEN physical 24-GiB real-prompt 192-frame fit, viewer delivery, accepted quality and usable cost are unmeasured; maintainer advises 160 GiB available host RAM.",
     "Griffin-Lite is limited to selected research testers; no pool-operated session, Griffin-specific customer price, accepted-quality distribution or delivered-hour bill exists.",
     "The merged H3 mask API has no pool-operated edit, accepted-quality comparison, complete wait, bill, or live receiver result. The client and raw-mask PR states may change after 4 October.",
     "The Hopper FastH3 results are project-reported. Warm complete-MP4 timing excludes load and compilation; quality suite, receiver-visible continuity, retries and billing are unknown. The H100 headline and H200 A/B use different hardware.",
@@ -40,7 +42,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-05T09:53:51Z",
-  "meaningfully_updated_at": "2026-10-05T09:53:51Z",
-  "freshness_note": "Checked 5 October 2026. Griffin-Lite is a selected-tester preview, not a customer route; component and benchmark clocks differ."
+  "checked_at": "2026-10-06T09:52:00Z",
+  "meaningfully_updated_at": "2026-10-06T09:52:00Z",
+  "freshness_note": "Checked 6 October 2026. RAVEN’s 24-GiB result is a constrained H200 memory test with synthetic conditioning, not a physical-card live-video benchmark."
 }
