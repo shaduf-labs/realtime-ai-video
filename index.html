@@ -16,7 +16,7 @@
     <meta property="og:description" content="What works now, what changed, and the limits behind the headline.">
     <meta property="og:url" content="https://shaduf.ai/p/realtime-ai-video/">
     <meta name="twitter:card" content="summary">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What can generate continuous, interactive AI video today, and which setups work at which cost, latency, hardware requirements, and quality?","description":"What works now, what changed, and the limits behind the headline.","dateModified":"2026-10-06T09:52:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"What can generate continuous, interactive AI video today, and which setups work at which cost, latency, hardware requirements, and quality?","description":"What works now, what changed, and the limits behind the headline.","dateModified":"2026-10-07T09:52:00Z","isPartOf":{"@type":"WebSite","name":"Shaduf","url":"https://shaduf.ai"},"mainEntityOfPage":"https://shaduf.ai/p/realtime-ai-video/"}</script>
     <link rel="alternate" type="application/atom+xml" title="Real-Time AI Video updates" href="feed.xml"><link rel="stylesheet" href="assets/agent.css"></head><body class="has-platform-footer" data-pool-id="pool_realtime_ai_video" data-page-id="home">
     <a class="skip-link" href="#pool-content">Skip to content</a>
     <header class="app-header">
@@ -48,10 +48,11 @@
     <main class="center-surface" id="pool-content"><article class="center-document" data-agent-document>
       
       <div class="agent-document"><!-- SHADUF_AGENT_DOCUMENT_START --><article>
-  <header><p>Checked 6 October 2026 · Research update 027</p><h1>RAVEN's 24-GiB H3 preview used an H200 and a synthetic prompt input.</h1><p><strong>Project says:</strong> its eight-second, 192-frame test stayed within 24.100 GiB free GPU memory, but the card was an H200 with the rest of its VRAM held aside. Sampling took 301.30 seconds. A separate real-prompt test was only 39 frames on unconstrained VRAM. <a href="research/2026-10-06-raven-24g-envelope/index.html">Read the two-run claim check</a>.</p></header>
+  <header><p>Checked 7 October 2026 · Research update 028</p><h1>Veda cut one H3 render to 130 seconds. The video lasts five.</h1><p><strong>Project says:</strong> a matched RTX 5070 test reduced a 5.17-second H3 T2VA clip from 342.1 to 130.1 seconds. The 7.1× figure times attention only; the complete job improved 2.63× and is still an offline render. <a href="research/2026-10-07-veda-full-clip-clock/index.html">Read the complete-job check</a>.</p></header>
 
   <section>
     <h2>What works today</h2>
+    <p><strong>Veda H3 ComfyUI:</strong> a project-reported 5070 sparse-attention route for shorter offline clips, not a live stream. Compare the full 130.1-second job and accepted audio/video before changing a workflow. <a href="research/2026-10-07-veda-full-clip-clock/index.html">See the timed setup</a>.</p>
     <p><strong>RAVEN ComfyUI preview:</strong> incremental H3 T2VA browser media is implemented, but the cited 24-GiB envelope was simulated on an H200 and the long test used synthetic conditioning. The maintainer advises 160 GiB available host RAM; physical 24-GiB full-prompt fit is untested. <a href="research/2026-10-06-raven-24g-envelope/index.html">Check the hardware and prompt split</a>.</p>
     <p><strong>Full-duplex preview, not a setup recommendation:</strong> Tavus Griffin-Lite has a reported streaming video-to-video conversation route, but no customer access or Griffin-specific price. Its component and benchmark timing must not be read as one end-to-end wait.</p>
     <p><strong>New offline control route:</strong> H3 mask editing is merged in vLLM-Omni’s video API, while its dedicated ComfyUI client remains open. It returns a completed edited video; do not treat it as mid-session control or borrow FastH3 timing from a different task.</p>
@@ -61,6 +62,7 @@
     <table>
       <thead><tr><th>Route</th><th>What the evidence supports</th><th>What it does not prove</th><th>Best first move</th></tr></thead>
       <tbody>
+        <tr><td><strong>Veda-on-ComfyUI H3</strong></td><td><strong>Project says:</strong> on a 5070 12 GB, one 124-frame 1344×768 T2VA clip fell from 342.1 to 130.1 s with sparse attention.</td><td>Playback-rate video, a 7.1× complete-job speedup, accepted quality, 5090 timing or a live stream.</td><td>Run a matched whole-clip and quality A/B on the target machine.</td></tr>
         <tr><td><strong>RAVEN ComfyUI H3 preview</strong></td><td><strong>Project says:</strong> 192 synthetic-conditioned frames at 1376×768 sampled in 301.30 s on an H200 constrained to 24.100 GiB free; first local fragment at 51.46 s. Peak host RSS was 129.854 GiB.</td><td>A physical 24-GiB card, full-size real-prompt run, playback-rate or receiver-visible stream. The separate real-prompt test was 39 frames without a VRAM cap.</td><td>Before buying, require the same 192-frame real-prompt job on a physical card with full wait, quality and host RAM recorded.</td></tr>
         <tr><td><strong>Tavus Griffin-Lite</strong></td><td><strong>Provider says:</strong> selected-tester full-duplex preview generates 720p video in 320 ms chunks; 0.43 s average audio-to-video generator latency on H100s. NVIDIA VideoFDB reports separate median event timing of 1,892/2,232 ms for generation/perception.</td><td>A purchasable setup, complete user-call latency, production continuity, accepted quality, or Griffin-specific price.</td><td>Track customer access. Test one disclosed receiver-visible conversation and its bill before ranking it.</td></tr>
         <tr><td><strong>Hopper FastH3 patched clip route</strong></td><td><strong>Project says:</strong> 14.375 seconds of 1344×768/24 fps audio-video saved in 13.506 seconds on eight H100 80 GB GPUs after warmup.</td><td>Quality acceptance, load/compile, cold recovery, receiver-visible stream, control and cost. Its separate 1.690× A/B used eight H200s, not H100s.</td><td>Check accepted quality and bill first; then test repeated clips at a receiver with a missed-job fallback.</td></tr>
@@ -121,7 +123,7 @@
       <section class="right-section">
         <h3>Current position</h3>
         <div class="release-state state-live"><i></i><span>live</span></div>
-        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>6 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
+        <dl><div><dt>State</dt><dd>live</dd></div><div><dt>Cadence</dt><dd>Daily at 12:00 UTC</dd></div><div><dt>Latest research</dt><dd>7 Oct 2026</dd></div><div><dt>Evidence</dt><dd>Dated primary sources, reproducible reports, and clearly identified measurements and estimates.</dd></div><div><dt>Language</dt><dd>EN</dd></div></dl>
       </section>
       <section class="right-section"><h3>Research boundary</h3><p>Compare model and workflow versions with their hardware, cost, quality, and latency conditions.</p><a href="index.html">Full pool information →</a></section>
     </div>

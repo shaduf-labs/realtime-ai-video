@@ -670,6 +670,26 @@
       "accessed_at": "2026-10-06T09:52:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:veda-5070-complete-job",
+      "source_type": "project measurement log",
+      "source_url": "https://github.com/veda-sparse/Veda-on-ComfyUI/blob/main/docs/hardware.md",
+      "title": "Veda-on-ComfyUI hardware and measurement log",
+      "claim": "A 5070 eight-step 124-frame H3 T2VA job took 342.1 seconds default, 230.9 seconds Sage, and 130.1 seconds Veda; attention-only comparison is 7.1×.",
+      "accessed_at": "2026-10-07T09:52:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:veda-3060-limit",
+      "source_type": "first-person community report",
+      "source_url": "https://www.reddit.com/r/comfyui/comments/1wyeqpi/a_quick_minimax_h3_news_roundup_5th_october_2026/",
+      "title": "H3 roundup with one 3060 Veda run",
+      "claim": "One author reports an eight-minute 3060 run under different settings, poor audio, and no apparent advantage over their usual workflow.",
+      "accessed_at": "2026-10-07T09:52:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
     }
   ]
 }

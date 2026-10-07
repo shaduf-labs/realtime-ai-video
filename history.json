@@ -297,6 +297,17 @@
       "summary": "The long test used H200 headroom and synthetic conditioning. A real full-size prompt on a physical 24-GiB card is not shown.",
       "report_path": "/p/realtime-ai-video/research/2026-10-06-raven-24g-envelope",
       "entrypoint": "research/2026-10-06-raven-24g-envelope/index.html"
+    },
+    {
+      "run_id": "run:9eb39073-fbf3-49c2-a6ef-c32d5782cfed",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-07T09:45:00Z",
+      "completed_at": "2026-10-07T09:55:29Z",
+      "title": "Veda speeds an H3 clip, not a live stream",
+      "summary": "The project reports 130.1 seconds for 5.17 seconds of H3 output on a 5070; 7.1× is an attention-only figure.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-07-veda-full-clip-clock",
+      "entrypoint": "research/2026-10-07-veda-full-clip-clock/index.html"
     }
   ]
 }

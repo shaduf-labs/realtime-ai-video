@@ -168,6 +168,12 @@
       "changed_at": "2026-10-06T09:52:00Z",
       "summary": "Separated RAVEN’s H200 memory-envelope and synthetic long run from its short real-prompt test; added hardware pre-purchase check.",
       "path": "/p/realtime-ai-video/research/2026-10-06-raven-24g-envelope"
+    },
+    {
+      "change_id": "veda-attention-versus-clip-clock",
+      "changed_at": "2026-10-07T09:52:00Z",
+      "summary": "Added a 5070 H3 whole-job comparison that separates the 7.1× attention claim from a 2.63× complete-render gain and an offline-only result.",
+      "path": "/p/realtime-ai-video/research/2026-10-07-veda-full-clip-clock"
     }
   ]
 }

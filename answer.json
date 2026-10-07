@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "RAVEN ComfyUI gives an H3 T2VA incremental browser preview, but its eight-second 192-frame reference took 301.30 seconds to sample and 51.46 seconds for the first local fragment. Its 24-GiB figure was free headroom on an H200 and the long run used synthetic conditioning; the separate real-prompt run was 39 frames without that cap. The maintainer advises 160 GiB available host RAM. This is a meaningful setup-boundary correction, not a new live or proven consumer-24-GiB route. Griffin remains a restricted conversational preview; Director sessions, Vidu live-feed editing, queued playout and completed H3 clips still answer different jobs.",
+  "current_answer": "Veda-on-ComfyUI gives a measured project-reported H3 clip-speed improvement, not a live stream: on an RTX 5070, one 5.17-second T2VA job fell from 342.1 to 130.1 seconds. The advertised 7.1× is attention time, while the complete job improved 2.63× and remained about 25 times slower than playback. A different 3060 user saw no apparent gain and poor audio; no matched consumer-GPU accepted-output result or cost exists. Director sessions, Vidu live-feed editing, queued playout, and completed H3 clips still answer different jobs.",
   "catalogue_card": {
-    "question": "Can H3 stream on a 24-GiB GPU now?",
-    "text": "A RAVEN ComfyUI preview fit 24 GiB of H200 headroom, but its eight-second test took 301 seconds and used synthetic conditioning. A physical 24-GiB card with a full-size real prompt is unverified."
+    "question": "Did Veda make H3 live on a consumer GPU?",
+    "text": "A project RTX 5070 test cut a 5.17-second H3 clip from 342.1 to 130.1 seconds. Its 7.1× headline times attention only; the full job improved 2.63× and is still offline."
   },
   "summary": [
+    "Veda-on-ComfyUI project test: on an RTX 5070 12 GB, a 124-frame 1344×768 H3 T2VA clip took 342.1 seconds with default attention, 230.9 with SageAttention and 130.1 with Veda. The 7.1× number is attention-only; the full-job default-to-Veda ratio is 2.63×.",
     "RAVEN ComfyUI’s 192-frame T2VA test used an H200 constrained to 24.100 GiB free and synthetic conditioning. It sampled eight seconds in 301.30 seconds, with first local fragment at 51.46 seconds. A separate 39-frame real-prompt test used unconstrained H200 VRAM; neither proves full-size real-prompt generation on a physical 24-GiB card.",
     "Tavus describes Griffin-Lite as a full-duplex 720p conversational-video preview. Its reported 320 ms chunks and 0.43 s audio-to-video generator latency are not a customer session; NVIDIA VideoFDB has separate 1,892/2,232 ms median generation/perception timing.",
     "vLLM-Omni merged request-scoped H3 latent-mask editing into its video API on 20 September. Source video/audio and masks can preserve or regenerate regions in a completed job. Its proposed ComfyUI editing node and raw-mask server follow-up remained open at the 4 October check; the pool has not run this route.",
@@ -23,6 +24,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "The Veda benchmark is project-maintained on a specific RTX 5070 T2VA setup; 5090, 3060, reference-input and longer-output quality and complete-job gains are unverified by this pool.",
     "RAVEN physical 24-GiB real-prompt 192-frame fit, viewer delivery, accepted quality and usable cost are unmeasured; maintainer advises 160 GiB available host RAM.",
     "Griffin-Lite is limited to selected research testers; no pool-operated session, Griffin-specific customer price, accepted-quality distribution or delivered-hour bill exists.",
     "The merged H3 mask API has no pool-operated edit, accepted-quality comparison, complete wait, bill, or live receiver result. The client and raw-mask PR states may change after 4 October.",
@@ -42,7 +44,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-06T09:52:00Z",
-  "meaningfully_updated_at": "2026-10-06T09:52:00Z",
-  "freshness_note": "Checked 6 October 2026. RAVEN’s 24-GiB result is a constrained H200 memory test with synthetic conditioning, not a physical-card live-video benchmark."
+  "checked_at": "2026-10-07T09:52:00Z",
+  "meaningfully_updated_at": "2026-10-07T09:52:00Z",
+  "freshness_note": "Checked 7 October 2026. Veda shortens one project-tested offline H3 job; 7.1× is attention-only and 130.1 seconds for about 5.17 seconds of video is not live."
 }
