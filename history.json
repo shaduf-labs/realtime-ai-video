@@ -308,6 +308,17 @@
       "summary": "The project reports 130.1 seconds for 5.17 seconds of H3 output on a 5070; 7.1× is an attention-only figure.",
       "report_path": "/p/realtime-ai-video/research/2026-10-07-veda-full-clip-clock",
       "entrypoint": "research/2026-10-07-veda-full-clip-clock/index.html"
+    },
+    {
+      "run_id": "run:5d0e604e-739c-4b51-986b-ce9e7caf40dd",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-08T09:45:00Z",
+      "completed_at": "2026-10-08T09:51:08Z",
+      "title": "ShotStream: H200 model speed is not a public live client",
+      "summary": "Paper-reported near-playback multi-shot model throughput is separated from the released CSV-to-final-MP4 example and unmeasured viewer delivery.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-08-shotstream-h200-client-boundary",
+      "entrypoint": "research/2026-10-08-shotstream-h200-client-boundary/index.html"
     }
   ]
 }

@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "Veda-on-ComfyUI gives a measured project-reported H3 clip-speed improvement, not a live stream: on an RTX 5070, one 5.17-second T2VA job fell from 342.1 to 130.1 seconds. The advertised 7.1× is attention time, while the complete job improved 2.63× and remained about 25 times slower than playback. A different 3060 user saw no apparent gain and poor audio; no matched consumer-GPU accepted-output result or cost exists. Director sessions, Vidu live-feed editing, queued playout, and completed H3 clips still answer different jobs.",
+  "current_answer": "ShotStream adds a distinct interactive-story research route: its authors report 15.95 generated FPS at 832×480 on one H200, near its 16-FPS saved playback rate. The public example reads prepared prompts from a CSV and writes a final MP4 after inference, so it does not demonstrate a viewer-visible interactive stream or a costed session. H3 routes still split among held Director sessions, live-feed editing, queued playout, and completed clips; faster model or component clocks alone cannot establish delivery, control, quality or operating cost.",
   "catalogue_card": {
-    "question": "Did Veda make H3 live on a consumer GPU?",
-    "text": "A project RTX 5070 test cut a 5.17-second H3 clip from 342.1 to 130.1 seconds. Its 7.1× headline times attention only; the full job improved 2.63× and is still offline."
+    "question": "Can ShotStream deliver an interactive story at 16 FPS?",
+    "text": "Its paper reports 15.95 generated FPS on one H200. The released example reads prepared prompts and saves a final MP4; live control and viewer delivery remain unmeasured."
   },
   "summary": [
+    "ShotStream reports 15.95 generated FPS at 832×480 on one H200 for a Wan2.1-T2V-1.3B-based multi-shot model. Its public inference example reads a prepared CSV and writes a final 16-FPS MP4; it does not demonstrate live viewer delivery or in-session prompt changes.",
     "Veda-on-ComfyUI project test: on an RTX 5070 12 GB, a 124-frame 1344×768 H3 T2VA clip took 342.1 seconds with default attention, 230.9 with SageAttention and 130.1 with Veda. The 7.1× number is attention-only; the full-job default-to-Veda ratio is 2.63×.",
     "RAVEN ComfyUI’s 192-frame T2VA test used an H200 constrained to 24.100 GiB free and synthetic conditioning. It sampled eight seconds in 301.30 seconds, with first local fragment at 51.46 seconds. A separate 39-frame real-prompt test used unconstrained H200 VRAM; neither proves full-size real-prompt generation on a physical 24-GiB card.",
     "Tavus describes Griffin-Lite as a full-duplex 720p conversational-video preview. Its reported 320 ms chunks and 0.43 s audio-to-video generator latency are not a customer session; NVIDIA VideoFDB has separate 1,892/2,232 ms median generation/perception timing.",
@@ -24,6 +25,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "ShotStream H200 throughput is paper-reported and not pool-reproduced; the released example does not measure prompt-to-visible latency, sustained receiver delivery, accepted quality or operating cost.",
     "The Veda benchmark is project-maintained on a specific RTX 5070 T2VA setup; 5090, 3060, reference-input and longer-output quality and complete-job gains are unverified by this pool.",
     "RAVEN physical 24-GiB real-prompt 192-frame fit, viewer delivery, accepted quality and usable cost are unmeasured; maintainer advises 160 GiB available host RAM.",
     "Griffin-Lite is limited to selected research testers; no pool-operated session, Griffin-specific customer price, accepted-quality distribution or delivered-hour bill exists.",
@@ -44,7 +46,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-07T09:52:00Z",
-  "meaningfully_updated_at": "2026-10-07T09:52:00Z",
-  "freshness_note": "Checked 7 October 2026. Veda shortens one project-tested offline H3 job; 7.1× is attention-only and 130.1 seconds for about 5.17 seconds of video is not live."
+  "checked_at": "2026-10-08T09:50:48Z",
+  "meaningfully_updated_at": "2026-10-08T09:50:48Z",
+  "freshness_note": "Checked 8 October 2026. ShotStream is a March 2026 research route newly reviewed here; its H200 throughput is not a demonstrated live client or viewer session."
 }

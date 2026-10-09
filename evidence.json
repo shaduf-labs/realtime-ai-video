@@ -690,6 +690,36 @@
       "accessed_at": "2026-10-07T09:52:00Z",
       "relation": "limits",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:shotstream-paper-h200",
+      "source_type": "research paper",
+      "source_url": "https://arxiv.org/html/2603.25746v1",
+      "title": "ShotStream paper",
+      "claim": "Authors report 15.95 generated FPS on one H200 at 832×480 for a multi-shot video model.",
+      "accessed_at": "2026-10-08T09:50:48Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:shotstream-entrypoint",
+      "source_type": "project code",
+      "source_url": "https://raw.githubusercontent.com/KlingAIResearch/ShotStream/main/Inference_Causal.py",
+      "title": "ShotStream reference inference entrypoint",
+      "claim": "The reviewed entrypoint reads dataset batches and writes a final MP4 after inference returns.",
+      "accessed_at": "2026-10-08T09:50:48Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:shotstream-command",
+      "source_type": "project code",
+      "source_url": "https://raw.githubusercontent.com/KlingAIResearch/ShotStream/main/tools/inference/causal_fewsteps.sh",
+      "title": "ShotStream example launch command",
+      "claim": "The listed launch command uses a prepared CSV path rather than a runtime prompt client.",
+      "accessed_at": "2026-10-08T09:50:48Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
     }
   ]
 }
