@@ -720,6 +720,36 @@
       "accessed_at": "2026-10-08T09:50:48Z",
       "relation": "limits",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:liveavatar-paper-clock",
+      "source_type": "author research paper",
+      "source_url": "https://arxiv.org/html/2512.04677",
+      "title": "LiveAvatar paper",
+      "claim": "Authors report 45.2 generated FPS and 1.21-second audio-to-first-visual timing on a four-step FP8, 720×400, five-H100 path; they estimate roughly three seconds with transport.",
+      "accessed_at": "2026-10-09T09:48:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:liveavatar-repo-offline",
+      "source_type": "official repository",
+      "source_url": "https://github.com/Alibaba-Quark/LiveAvatar",
+      "title": "LiveAvatar official release",
+      "claim": "The one-GPU command is labelled offline, and easy interactive-stream UI and TTS integration remain on the project to-do list.",
+      "accessed_at": "2026-10-09T09:48:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:liveavatar-h200-cold",
+      "source_type": "independent deployment report",
+      "source_url": "https://github.com/tight-studio/open-source-talking-avatar-benchmark/blob/main/REPORT.md",
+      "title": "Tight Studio talking-avatar deployment benchmark",
+      "claim": "One H200 cold job took 181.44 seconds from container start to final MP4 for a portrait and 3.63-second narration, with 61,401 MiB peak VRAM and estimated $0.3184 Modal compute.",
+      "accessed_at": "2026-10-09T09:48:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }

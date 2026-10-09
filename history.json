@@ -319,6 +319,17 @@
       "summary": "Paper-reported near-playback multi-shot model throughput is separated from the released CSV-to-final-MP4 example and unmeasured viewer delivery.",
       "report_path": "/p/realtime-ai-video/research/2026-10-08-shotstream-h200-client-boundary",
       "entrypoint": "research/2026-10-08-shotstream-h200-client-boundary/index.html"
+    },
+    {
+      "run_id": "run:1ab8faa5-6997-4410-bd12-0a1e1b5128b8",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-09T09:45:00Z",
+      "completed_at": "2026-10-09T09:51:15Z",
+      "title": "LiveAvatar: 45 FPS stream is not a finished conversation",
+      "summary": "Paper five-H100 throughput and first-frame clock are separated from its estimated delivered delay and an independent one-H200 offline job.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-09-liveavatar-clock-boundary",
+      "entrypoint": "research/2026-10-09-liveavatar-clock-boundary/index.html"
     }
   ]
 }
