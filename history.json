@@ -330,6 +330,17 @@
       "summary": "Paper five-H100 throughput and first-frame clock are separated from its estimated delivered delay and an independent one-H200 offline job.",
       "report_path": "/p/realtime-ai-video/research/2026-10-09-liveavatar-clock-boundary",
       "entrypoint": "research/2026-10-09-liveavatar-clock-boundary/index.html"
+    },
+    {
+      "run_id": "run:471081c5-83f2-4cd8-885d-3689abc791a5",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-10T09:45:00Z",
+      "completed_at": "2026-10-10T09:52:11Z",
+      "title": "Hallo-Live: model speed is not a live client",
+      "summary": "Two-H200 author throughput is separated from the current saved-MP4 command and approximately 60-GB default memory estimate.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-10-hallolive-paper-versus-client",
+      "entrypoint": "research/2026-10-10-hallolive-paper-versus-client/index.html"
     }
   ]
 }

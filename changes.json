@@ -186,6 +186,12 @@
       "changed_at": "2026-10-09T09:48:00Z",
       "summary": "Separated five-H100 avatar streaming throughput and first-frame timing from a one-H200 cold finished-clip result and the unmeasured conversation service.",
       "path": "/p/realtime-ai-video/research/2026-10-09-liveavatar-clock-boundary"
+    },
+    {
+      "change_id": "hallolive-paper-versus-public-client",
+      "changed_at": "2026-10-10T09:49:00Z",
+      "summary": "Added Hallo-Live text-to-audio-video benchmark, saved-file client boundary, default VRAM condition, and a model-versus-live-client decision.",
+      "path": "/p/realtime-ai-video/research/2026-10-10-hallolive-paper-versus-client"
     }
   ]
 }

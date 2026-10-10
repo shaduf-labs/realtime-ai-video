@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "LiveAvatar is an audio-driven avatar research route, not a general text-to-video stream. Its authors report 45.2 generated FPS and 1.21 seconds from audio arrival to first visual output on five H100s at 720×400, then estimate roughly three seconds end to end with transport. The released single-GPU command is offline; a separate independent one-H200 cold job took 181.44 seconds to finish a short talking clip. These figures measure different routes and do not establish a priced, receiver-tested conversation.",
+  "current_answer": "Hallo-Live reports 20.38 generated FPS and 0.94-second model latency for text-driven speech-and-avatar output on two H200s. Its public command saves a 24-fps MP4, above the paper throughput; no timed browser conversation is shown. A maintainer estimates about 60 GB peak GPU memory for default inference; 24 GB is a theoretical optimization target. LiveAvatar uses audio input and different hardware, so these numbers are not a direct ranking.",
   "catalogue_card": {
-    "question": "Does a 45-FPS avatar answer in real time?",
-    "text": "LiveAvatar’s five-H100 paper reports 45.2 generated FPS but estimates roughly three seconds end to end with transport. Its one-GPU release path is offline; an independent cold clip took 181 seconds."
+    "question": "Can 20 FPS buy a live speaking avatar?",
+    "text": "Hallo-Live reports 20.38 FPS on two H200s, below its public file’s 24-fps playback setting; the command saves an MP4. Default inference peaks around 60 GB GPU memory by maintainer estimate; a timed viewer session is still unshown."
   },
   "summary": [
+    "Hallo-Live authors report 20.38 generated FPS and 0.94-second model latency for text-to-audio-video on two H200s. The released inference command saves a final 24-fps MP4, above the paper throughput, while a maintainer estimates about 60 GB default peak VRAM; a 24-GB route is theoretical. No receiver-visible conversation or complete bill is documented.",
     "LiveAvatar authors report 45.2 generated FPS and 1.21 seconds from audio arrival to first visual output for a four-step FP8, 720×400, five-H100 audio-driven avatar path. Their paper estimates roughly three seconds end to end with transport and says this is not seamless two-way interaction. The released one-GPU route is offline; an independent one-H200 cold job took 181.44 seconds to produce a short final clip.",
     "ShotStream reports 15.95 generated FPS at 832×480 on one H200 for a Wan2.1-T2V-1.3B-based multi-shot model. Its public inference example reads a prepared CSV and writes a final 16-FPS MP4; it does not demonstrate live viewer delivery or in-session prompt changes.",
     "Veda-on-ComfyUI project test: on an RTX 5070 12 GB, a 124-frame 1344×768 H3 T2VA clip took 342.1 seconds with default attention, 230.9 with SageAttention and 130.1 with Veda. The 7.1× number is attention-only; the full-job default-to-Veda ratio is 2.63×.",
@@ -26,6 +27,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "Hallo-Live paper timings and memory are not pool-reproduced; public code lacks a documented live receiver and 24-GB default route.",
     "LiveAvatar paper and repository use different H100/H800 labels for the headline hardware; use the five-H100 paper measurement as written, not an interchangeable H800 or 48GB result.",
     "The independent one-H200 result is a cold offline job, not a five-card warm stream or delivered-hour bill. No pool receiver session, consented quality test or full invoice exists.",
     "ShotStream H200 throughput is paper-reported and not pool-reproduced; the released example does not measure prompt-to-visible latency, sustained receiver delivery, accepted quality or operating cost.",
@@ -49,7 +51,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-09T09:48:00Z",
-  "meaningfully_updated_at": "2026-10-09T09:48:00Z",
-  "freshness_note": "Checked 9 October 2026. LiveAvatar is an existing research release newly reviewed here, not a new October launch. Five-card throughput, one-card cold clip and a live receiver are different measurements."
+  "checked_at": "2026-10-10T09:49:00Z",
+  "meaningfully_updated_at": "2026-10-10T09:49:00Z",
+  "freshness_note": "Research checked 10 October 2026. The paper dates to April; current code and issues were rechecked, not announced as an October launch."
 }

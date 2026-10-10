@@ -750,6 +750,36 @@
       "accessed_at": "2026-10-09T09:48:00Z",
       "relation": "context",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:hallolive-paper",
+      "source_type": "author paper",
+      "source_url": "https://arxiv.org/html/2604.23632v1",
+      "title": "Hallo-Live paper",
+      "claim": "Authors report 20.38 generated FPS and 0.94-second latency on two H200s for text-to-audio-video.",
+      "accessed_at": "2026-10-10T09:49:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:hallolive-client",
+      "source_type": "official repository",
+      "source_url": "https://github.com/fudan-generative-vision/Hallo-Live/blob/main/inference.py",
+      "title": "Hallo-Live inference entry point",
+      "claim": "The published entry point saves a final MP4 at 24 fps; optional two-GPU parallel VAE decode is T2V-only.",
+      "accessed_at": "2026-10-10T09:49:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:hallolive-memory",
+      "source_type": "maintainer issue answer",
+      "source_url": "https://github.com/fudan-generative-vision/Hallo-Live/issues/12",
+      "title": "Hallo-Live default memory answer",
+      "claim": "Maintainer estimates around 60 GB default peak GPU memory; 24 GB is theoretical with additional optimization.",
+      "accessed_at": "2026-10-10T09:49:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
     }
   ]
 }
