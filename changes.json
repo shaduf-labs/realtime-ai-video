@@ -192,6 +192,18 @@
       "changed_at": "2026-10-10T09:49:00Z",
       "summary": "Added Hallo-Live text-to-audio-video benchmark, saved-file client boundary, default VRAM condition, and a model-versus-live-client decision.",
       "path": "/p/realtime-ai-video/research/2026-10-10-hallolive-paper-versus-client"
+    },
+    {
+      "change_id": "scope-show-readiness",
+      "changed_at": "2026-10-11T21:26:10.324Z",
+      "summary": "Added Scope WebRTC client path and the commercial, cold-start and hour-handover gates for a paid live show.",
+      "path": "/p/realtime-ai-video/research/2026-10-11-scope-show-readiness"
+    },
+    {
+      "change_id": "telefuser-delivered-minute",
+      "changed_at": "2026-10-12T09:58:18Z",
+      "summary": "Separated four-H100 LingBot-World v2 target compute from the later LiveKit client and session clock.",
+      "path": "/p/realtime-ai-video/research/2026-10-12-telefuser-delivered-minute"
     }
   ]
 }

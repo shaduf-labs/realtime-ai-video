@@ -341,6 +341,28 @@
       "summary": "Two-H200 author throughput is separated from the current saved-MP4 command and approximately 60-GB default memory estimate.",
       "report_path": "/p/realtime-ai-video/research/2026-10-10-hallolive-paper-versus-client",
       "entrypoint": "research/2026-10-10-hallolive-paper-versus-client/index.html"
+    },
+    {
+      "run_id": "run:23242f1a-dcdf-4be4-a961-4bcaa83ec69d",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-11T21:20:00Z",
+      "completed_at": "2026-10-11T21:27:18.912Z",
+      "title": "Scope has a live browser route; show readiness is still unproven",
+      "summary": "WebRTC client documentation is separated from one remote-beta operator record, paid-use license, cold start and rollover uncertainty.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-11-scope-show-readiness",
+      "entrypoint": "research/2026-10-11-scope-show-readiness/index.html"
+    },
+    {
+      "run_id": "run:e7e54ba9-0e71-400a-84fd-fb35dbe989ba",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-12T09:45:00Z",
+      "completed_at": "2026-10-12T10:00:40Z",
+      "title": "TeleFuser: a one-minute media replay took 79 seconds of session time",
+      "summary": "Four-H100 target compute above 16 FPS is separated from first client frame, callback cadence and full one-minute session time.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-12-telefuser-delivered-minute",
+      "entrypoint": "research/2026-10-12-telefuser-delivered-minute/index.html"
     }
   ]
 }

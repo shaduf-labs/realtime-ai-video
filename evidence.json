@@ -780,6 +780,86 @@
       "accessed_at": "2026-10-10T09:49:00Z",
       "relation": "limits",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:scope-repo",
+      "source_type": "project repository",
+      "source_url": "https://github.com/daydreamlive/scope",
+      "title": "Scope repository",
+      "claim": "Project lists WebRTC, control and visual bridge features; README describes non-commercial alpha code.",
+      "accessed_at": "2026-10-11T21:26:10.324Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:scope-webrtc-guide",
+      "source_type": "project documentation",
+      "source_url": "https://github.com/daydreamlive/scope/blob/main/docs/api/sendreceive.md",
+      "title": "Scope send/receive WebRTC guide",
+      "claim": "V2V example sends and receives WebRTC video and accepts prompt updates.",
+      "accessed_at": "2026-10-11T21:26:10.324Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:scope-server-guide",
+      "source_type": "project documentation",
+      "source_url": "https://github.com/daydreamlive/scope/blob/main/docs/server.md",
+      "title": "Scope server guide",
+      "claim": "Server guide describes local API and TURN/STUN conditions.",
+      "accessed_at": "2026-10-11T21:26:10.324Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:scope-license",
+      "source_type": "project license text",
+      "source_url": "https://github.com/daydreamlive/scope/blob/main/LICENSE.md",
+      "title": "Scope license",
+      "claim": "License text is CC BY-NC-SA 4.0.",
+      "accessed_at": "2026-10-11T21:26:10.324Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:scope-event-operator",
+      "source_type": "first-person community report",
+      "source_url": "https://github.com/daydreamlive/scope/discussions/1043",
+      "title": "Scope event-operator field report",
+      "claim": "One Thailand event operator reports remote-beta H100 cold and warm timing, task-specific FPS, and open event-use questions.",
+      "accessed_at": "2026-10-11T21:26:10.324Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:telefuser-repo",
+      "source_type": "project-maintained documentation",
+      "source_url": "https://github.com/Tele-AI/TeleFuser",
+      "title": "TeleFuser repository",
+      "claim": "Documents a four-H100 LingBot-World v2 LiveKit browser-control example, separate from H3 service mode.",
+      "accessed_at": "2026-10-12T09:58:18Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:telefuser-benchmark",
+      "source_type": "project-maintained benchmark",
+      "source_url": "https://github.com/Tele-AI/TeleFuser/blob/main/docs/en/benchmark_aiperf.md",
+      "title": "TeleFuser AIPerf benchmark",
+      "claim": "Reports the 77-frame target compute gate and separate 59.75-second media replay with client and session clocks.",
+      "accessed_at": "2026-10-12T09:58:18Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:telefuser-stream-guide",
+      "source_type": "project-maintained documentation",
+      "source_url": "https://github.com/Tele-AI/TeleFuser/blob/main/docs/en/world_model_streaming_inference.md",
+      "title": "TeleFuser streaming guide",
+      "claim": "Defines resident stateful sessions and LiveKit media/control transport.",
+      "accessed_at": "2026-10-12T09:58:18Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
     }
   ]
 }
