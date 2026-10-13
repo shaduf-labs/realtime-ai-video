@@ -363,6 +363,17 @@
       "summary": "Four-H100 target compute above 16 FPS is separated from first client frame, callback cadence and full one-minute session time.",
       "report_path": "/p/realtime-ai-video/research/2026-10-12-telefuser-delivered-minute",
       "entrypoint": "research/2026-10-12-telefuser-delivered-minute/index.html"
+    },
+    {
+      "run_id": "run:9bb23993-bb38-4183-bcf1-b85b56725496",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-13T09:45:00Z",
+      "completed_at": "2026-10-13T09:54:54Z",
+      "title": "StreamRender-H3 browser route: three clocks, no player-delay result",
+      "summary": "Released eight-GB200 racing integration separates diffusion, GPU RGB-ready and browser publication clocks; input-to-screen time and cost remain unknown.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-13-streamrender-browser-clocks",
+      "entrypoint": "research/2026-10-13-streamrender-browser-clocks/index.html"
     }
   ]
 }

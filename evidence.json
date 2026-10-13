@@ -860,6 +860,26 @@
       "accessed_at": "2026-10-12T09:58:18Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "streamrender-project-20261013",
+      "source_type": "research-project-page",
+      "source_url": "https://nvlabs.github.io/Sana/Sol-Engine/StreamRender-H3/",
+      "title": "StreamRender-H3 project page",
+      "claim": "Code-owned racing state drives H3 rendering on eight GB200s; project reports 218 ms warm diffusion render.",
+      "accessed_at": "2026-10-13T09:53:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "streamrender-asset-card-20261013",
+      "source_type": "model-card",
+      "source_url": "https://huggingface.co/yitongl/StreamRender-H3",
+      "title": "StreamRender-H3 runtime assets",
+      "claim": "Same-rack browser integration and distinct GPU RGB-ready and browser publication intervals; eight GB200s and H3 Community License.",
+      "accessed_at": "2026-10-13T09:53:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
     }
   ]
 }

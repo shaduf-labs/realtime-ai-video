@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "TeleFuser documents a LiveKit browser-control route for LingBot-World v2 on four H100 80 GB GPUs. Its later one-minute replay generated 59.75 seconds of media but took 79.25 seconds of session runtime; first client frame arrived at 5.98 seconds and callbacks after that averaged 15.23 FPS. This is stronger receiver evidence than a model-only FPS number, but not proof of an uninterrupted live hour, quick control response, acceptable quality or usable cost. Scope remains a separate WebRTC effects route; H3 file and service timings cannot be transferred to this LingBot stream.",
+  "current_answer": "StreamRender-H3 adds a released browser-to-H3-to-browser interactive racing route: a code engine owns game state, and a semantic stream drives H3 visuals on eight GB200 GPUs. The project reports 218 ms warm diffusion-render steps, while its asset card reports 295.58 ms median GPU-resident RGB-to-RGB-ready intervals and about 1.03-second browser publication intervals. Those are different clocks, not a measured control-to-screen delay. The renderer is trained for one racing scenario and the roughly 217 GB bundle has H3 Community License terms. TeleFuser remains a separate four-H100 LiveKit world-model route whose one-minute media replay took 79.25 seconds of session time. Neither route has a pool-run, costed, one-hour viewer test.",
   "catalogue_card": {
-    "question": "Can a 17-FPS world model run a live session?",
-    "text": "TeleFuser reports 17.58 steady compute FPS on four H100s, but its 59.75-second LingBot-World v2 media replay took 79.25 seconds of session time. A live client exists; hour-long continuity, control delay and cost remain unverified."
+    "question": "Does StreamRender-H3 make H3 playable in a browser?",
+    "text": "A racing demo connects code-controlled game state to H3 visuals on eight GB200s. The 218 ms render step is not player delay; the release reports about 1.03 seconds between browser publications. Input-to-screen time and cost are still unknown."
   },
   "summary": [
+    "StreamRender-H3 reports a same-rack eight-GB200 browser racing route. Its 218 ms warm diffusion step, 295.58 ms median GPU RGB interval and ~1.03-second browser publication interval are different clocks; control-to-visible latency, wider scene fit and cost remain unknown.",
     "TeleFuser reports a four-H100 LingBot-World v2 LiveKit route: a later one-minute replay generated 59.75 seconds of media in 79.2523 seconds of session time, with first client frame at 5.9822 seconds. This is separate from a 77-frame 17.1399-FPS target-compute gate and separate from its H3 service route.",
     "Scope documents WebRTC video input/output and live prompt changes. One Thailand event operator reports about ten minutes cold remote-beta H100 readiness and distinct 512×512 LongLive T2V versus StreamDiffusionV2 V2V results. Paid-use rights, venue delay, session rollover and complete cost remain unverified.",
     "Hallo-Live authors report 20.38 generated FPS and 0.94-second model latency for text-to-audio-video on two H200s. The released inference command saves a final 24-fps MP4, above the paper throughput, while a maintainer estimates about 60 GB default peak VRAM; a 24-GB route is theoretical. No receiver-visible conversation or complete bill is documented.",
@@ -29,6 +30,11 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "StreamRender-H3 timings and browser integration are project-reported; the pool has not operated the eight-GB200 runtime.",
+    "The 1.03-second figure is a browser publication interval, not input-to-screen latency; sustained p95 delay and remote-network behavior are unknown.",
+    "The published racing-trained renderer has not been validated for other games, camera views, accepted quality, one-hour operation, or cost.",
+    "H3 Community License terms require use-specific review before commercial operation.",
+    "First-party pool analytics remain unavailable; attention, repeat use and funding are unknown.",
     "TeleFuser timing is a project-maintained one-run report, not pool-reproduced; no one-hour receiver continuity, control-to-visible delay, accepted quality or full bill is established.",
     "Scope has not been run by this pool; the event record is one self-report and its possible connected-idle charge is not a settled rate.",
     "Hallo-Live paper timings and memory are not pool-reproduced; public code lacks a documented live receiver and 24-GB default route.",
@@ -55,7 +61,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-12T09:58:18Z",
-  "meaningfully_updated_at": "2026-10-12T09:58:18Z",
-  "freshness_note": "Research checked 12 October 2026. TeleFuser route and August project benchmarks are existing evidence newly examined here, not an October launch."
+  "checked_at": "2026-10-13T09:53:00Z",
+  "meaningfully_updated_at": "2026-10-13T09:53:00Z",
+  "freshness_note": "Research checked 13 October 2026. StreamRender-H3 is a new project release; all performance figures are project-reported."
 }
