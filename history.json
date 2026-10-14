@@ -374,6 +374,17 @@
       "summary": "Released eight-GB200 racing integration separates diffusion, GPU RGB-ready and browser publication clocks; input-to-screen time and cost remain unknown.",
       "report_path": "/p/realtime-ai-video/research/2026-10-13-streamrender-browser-clocks",
       "entrypoint": "research/2026-10-13-streamrender-browser-clocks/index.html"
+    },
+    {
+      "run_id": "report-c0d635a81eab5c24a134ce77",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-14T09:45:00Z",
+      "completed_at": "2026-10-14T11:08:00Z",
+      "title": "Waypoint-1.5 plays in a browser on one GPU. The world lasts seconds.",
+      "summary": "One-GPU browser route with local generation, remote delivery, cold compile and short coherent-scene boundaries.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-14-waypoint-one-gpu-browser",
+      "entrypoint": "research/2026-10-14-waypoint-one-gpu-browser/index.html"
     }
   ]
 }

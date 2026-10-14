@@ -880,6 +880,16 @@
       "accessed_at": "2026-10-13T09:53:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "waypoint-aws-cartridge-20261014",
+      "source_type": "project-maintained deployment and benchmark",
+      "source_url": "https://github.com/awslabs/world-models-inference/blob/main/inference/models/waypoint-1-5/README.md",
+      "title": "AWS Labs Waypoint-1.5 cartridge",
+      "claim": "Reports the one-GPU browser path, separate generated and delivered rates, input lag, cold compilation and context decay.",
+      "accessed_at": "2026-10-14T11:05:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
     }
   ]
 }

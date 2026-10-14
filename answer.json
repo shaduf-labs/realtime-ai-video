@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "StreamRender-H3 adds a released browser-to-H3-to-browser interactive racing route: a code engine owns game state, and a semantic stream drives H3 visuals on eight GB200 GPUs. The project reports 218 ms warm diffusion-render steps, while its asset card reports 295.58 ms median GPU-resident RGB-to-RGB-ready intervals and about 1.03-second browser publication intervals. Those are different clocks, not a measured control-to-screen delay. The renderer is trained for one racing scenario and the roughly 217 GB bundle has H3 Community License terms. TeleFuser remains a separate four-H100 LiveKit world-model route whose one-minute media replay took 79.25 seconds of session time. Neither route has a pool-run, costed, one-hour viewer test.",
+  "current_answer": "AWS Labs now documents a browser-playable Waypoint-1.5 world-model route on one GPU. Its project report measured 82 generated 720p FPS on an H100 and 25 on an A10G from an instance-local client. A separate London-to-us-west-2 sample delivered 44.6 FPS at 27.3 Mbit/s, with 263 ms reported input lag on about 220 ms RTT. The route has a 645-second cold compilation wait and visibly degrades after roughly 512 generated frames; it is one player at a time. This is a stronger interactive client than a model-only speed claim, not a validated one-hour, secure or fully costed service. StreamRender-H3 remains a separate eight-GB200 racing renderer with unmeasured control-to-screen delay.",
   "catalogue_card": {
-    "question": "Does StreamRender-H3 make H3 playable in a browser?",
-    "text": "A racing demo connects code-controlled game state to H3 visuals on eight GB200s. The 218 ms render step is not player delay; the release reports about 1.03 seconds between browser publications. Input-to-screen time and cost are still unknown."
+    "question": "Can one GPU run a playable AI-video world in a browser?",
+    "text": "AWS Labs reports a browser-playable Waypoint-1.5 route on one H100 or A10G. The 82/25 FPS figures are local generation rates; one remote sample delivered 44.6 FPS. Cold compilation took 645 seconds and the scene visibly decayed after roughly 512 generated frames. A costed, stable hour is untested."
   },
   "summary": [
+    "AWS Labs reports a browser-playable Waypoint-1.5 route on one H100 or A10G. The 82/25 FPS figures are local generation rates; one remote sample delivered 44.6 FPS. Cold compilation took 645 seconds and the scene visibly decayed after roughly 512 generated frames. A costed, stable hour is untested.",
     "StreamRender-H3 reports a same-rack eight-GB200 browser racing route. Its 218 ms warm diffusion step, 295.58 ms median GPU RGB interval and ~1.03-second browser publication interval are different clocks; control-to-visible latency, wider scene fit and cost remain unknown.",
     "TeleFuser reports a four-H100 LingBot-World v2 LiveKit route: a later one-minute replay generated 59.75 seconds of media in 79.2523 seconds of session time, with first client frame at 5.9822 seconds. This is separate from a 77-frame 17.1399-FPS target-compute gate and separate from its H3 service route.",
     "Scope documents WebRTC video input/output and live prompt changes. One Thailand event operator reports about ten minutes cold remote-beta H100 readiness and distinct 512×512 LongLive T2V versus StreamDiffusionV2 V2V results. Paid-use rights, venue delay, session rollover and complete cost remain unverified.",
@@ -30,6 +31,10 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "Waypoint measurements and browser validation are project reports; raw captures are held outside its repository and this pool did not deploy it.",
+    "The 82/25 FPS figures are instance-local generation rates, not remote delivery. One path’s 263 ms lag does not establish p95 or other regions.",
+    "Scene coherence, secure transport, reconnect and full billed-hour performance remain unverified for a production session.",
+    "First-party analytics remain unavailable; attention, repeat use and funding are unknown.",
     "StreamRender-H3 timings and browser integration are project-reported; the pool has not operated the eight-GB200 runtime.",
     "The 1.03-second figure is a browser publication interval, not input-to-screen latency; sustained p95 delay and remote-network behavior are unknown.",
     "The published racing-trained renderer has not been validated for other games, camera views, accepted quality, one-hour operation, or cost.",
@@ -61,7 +66,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-13T09:53:00Z",
-  "meaningfully_updated_at": "2026-10-13T09:53:00Z",
-  "freshness_note": "Research checked 13 October 2026. StreamRender-H3 is a new project release; all performance figures are project-reported."
+  "checked_at": "2026-10-14T11:05:00Z",
+  "meaningfully_updated_at": "2026-10-14T11:05:00Z",
+  "freshness_note": "Research checked 14 October 2026. Waypoint browser and timing figures are project-reported, not pool-reproduced."
 }

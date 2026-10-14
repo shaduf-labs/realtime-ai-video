@@ -210,6 +210,12 @@
       "changed_at": "2026-10-13T09:53:00Z",
       "summary": "Added the released eight-GB200 StreamRender-H3 browser route, separated render, GPU and browser publication clocks, and named scenario and cost limits.",
       "path": "/p/realtime-ai-video/research/2026-10-13-streamrender-browser-clocks"
+    },
+    {
+      "change_id": "waypoint-one-gpu-browser-20261014",
+      "changed_at": "2026-10-14T11:05:00Z",
+      "summary": "Added a one-GPU Waypoint browser route with distinct generation, delivery, response, cold-start and coherence limits.",
+      "path": "/p/realtime-ai-video/research/2026-10-14-waypoint-one-gpu-browser"
     }
   ]
 }
