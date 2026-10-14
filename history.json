@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "runs": [
     {
-      "run_id": "run:32cd33e0-c360-4ea9-89b5-b4856a87bf9b",
+      "run_id": "report-4bb610be968f0439ec6cd36e",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-10T18:40:00Z",
@@ -13,7 +13,7 @@
       "entrypoint": "research/2026-09-10-first-map/index.html"
     },
     {
-      "run_id": "run:849326bc-8f91-4369-850d-95d36cdb0ef6",
+      "run_id": "report-1a36bab29774219228675874",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-11T12:00:00Z",
@@ -24,7 +24,7 @@
       "entrypoint": "research/2026-09-11-fasth3-local-reality-check/index.html"
     },
     {
-      "run_id": "run:424db1b9-e0a4-4b03-ae64-b24c0434efd8",
+      "run_id": "report-27b0c586b9b0c2fd746d8b66",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-12T12:00:00Z",
@@ -35,7 +35,7 @@
       "entrypoint": "research/2026-09-12-continuous-broadcast-hard-cuts/index.html"
     },
     {
-      "run_id": "run:d852075d-8acf-41ae-b295-d1998cbbe9e7",
+      "run_id": "report-d757667e9af7915d47d2833e",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-13T12:00:00Z",
@@ -46,7 +46,7 @@
       "entrypoint": "research/2026-09-13-autoplay-is-a-setting/index.html"
     },
     {
-      "run_id": "run:bfe1f584-fea4-4fcf-bd3f-14a6ba43ebbf",
+      "run_id": "report-becf469bed9aa8d3dcc4edbc",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-14T09:45:00Z",
@@ -57,7 +57,7 @@
       "entrypoint": "research/2026-09-14-four-vs-eight-b200/index.html"
     },
     {
-      "run_id": "run:14704768-9593-4452-9e16-d856fcb03a10",
+      "run_id": "report-562b6d17754285b8d0c8fced",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-15T09:45:00.000Z",
@@ -68,7 +68,7 @@
       "entrypoint": "research/2026-09-15-one-5090-channel/index.html"
     },
     {
-      "run_id": "run:0870fa4b-a71b-4260-9c6f-2b51c4d6116f",
+      "run_id": "report-17c0e06a223d0c6d898a0607",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-16T09:45:00.000Z",
@@ -79,7 +79,7 @@
       "entrypoint": "research/2026-09-16-yolive-next-scene/index.html"
     },
     {
-      "run_id": "run:manual:fe8ff5468dcdea9a128d9bf1dc14594a",
+      "run_id": "report-eaf2461defc8437afc3189ab",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-17T10:23:02.463Z",
@@ -90,7 +90,7 @@
       "entrypoint": "research/2026-09-17-h3-api-not-live/index.html"
     },
     {
-      "run_id": "run:18a1de1e-2e8a-465e-be87-8e133f314817",
+      "run_id": "report-25a09c9fe0e7139743c9579a",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-18T09:45:00Z",
@@ -101,7 +101,7 @@
       "entrypoint": "research/2026-09-18-comfy-template-scope-conflict/index.html"
     },
     {
-      "run_id": "run:83390f21-5c61-4eac-967f-a1a8b82f118a",
+      "run_id": "report-ee7471c244ed8e5b35a17a7d",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-19T09:45:00.000Z",
@@ -112,7 +112,7 @@
       "entrypoint": "research/2026-09-19-5090-fasth3-review-loop/index.html"
     },
     {
-      "run_id": "run:1ea33b75-0199-42cc-b180-fbce681085df",
+      "run_id": "report-09f1fb97cfd0d75cef6757b3",
       "status": "completed",
       "answer_change": "no_meaningful_change",
       "started_at": "2026-09-20T09:45:00.000Z",
@@ -123,7 +123,7 @@
       "entrypoint": "research/2026-09-20-fasth3-v2-scope-still-open/index.html"
     },
     {
-      "run_id": "run:86a3f8a6-e262-48a8-96d0-f1dc9a925fa1",
+      "run_id": "report-95dbdcd1fd8dd91678288a50",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-21T09:45:00.000Z",
@@ -134,7 +134,7 @@
       "entrypoint": "research/2026-09-21-fasth3-v2-native-canvas-boundary/index.html"
     },
     {
-      "run_id": "run:8f910916-16fe-48c9-b24a-7df1512f1712",
+      "run_id": "report-610e9217c5deacfec50c28e8",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-22T09:45:00.000Z",
@@ -145,7 +145,7 @@
       "entrypoint": "research/2026-09-22-dreamverse-fasth3-four-gpu-chain/index.html"
     },
     {
-      "run_id": "run:ff873835-3aa9-47aa-acc4-eaa49e6369fb",
+      "run_id": "report-87e07ab37b4b210ec411b4ab",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-23T09:45:00.000Z",
@@ -156,7 +156,7 @@
       "entrypoint": "research/2026-09-23-eight-b300-complete-mp4-boundary/index.html"
     },
     {
-      "run_id": "run:1a3aa3e4-3211-4ce8-9916-b5e1a77fef66",
+      "run_id": "report-7cd78a901fed5b72610bfc61",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-24T09:45:00.000Z",
@@ -167,7 +167,7 @@
       "entrypoint": "research/2026-09-24-two-rtx5090-full-h3-capacity/index.html"
     },
     {
-      "run_id": "run:1e4674ca-9866-41c3-b5ba-68d2b2ca33b3",
+      "run_id": "report-76a2ccc365dc90e6db5cb59c",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-25T09:45:00.000Z",
@@ -178,7 +178,7 @@
       "entrypoint": "research/2026-09-25-vllm-comfy-client-scope/index.html"
     },
     {
-      "run_id": "run:dbe97bd7-73d6-4330-b63b-8836e50ca1fa",
+      "run_id": "report-de12a2f46133d7547c3b9a07",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-26T09:45:00.000Z",
@@ -189,7 +189,7 @@
       "entrypoint": "research/2026-09-26-vllm-h3-batching-boundary/index.html"
     },
     {
-      "run_id": "run:cd6d41fc-99f3-4153-83af-fcaf1d8db2b8",
+      "run_id": "report-3d0641d6a5d234c645e397e1",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-27T09:45:00Z",
@@ -200,7 +200,7 @@
       "entrypoint": "research/2026-09-27-comfy-h3-vae-stage/index.html"
     },
     {
-      "run_id": "run:22644a56-8735-4021-b813-f79dfeeda0aa",
+      "run_id": "report-4cd0c0788cf025f3ef2b8e6e",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-28T09:45:00Z",
@@ -211,7 +211,7 @@
       "entrypoint": "research/2026-09-28-vllm-h3-long-video-boundary/index.html"
     },
     {
-      "run_id": "run:c8802054-67b9-4139-81b6-e91b59c6ce0f",
+      "run_id": "report-d984f11a266d2d06f058cb9c",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-29T09:45:00Z",
@@ -222,7 +222,7 @@
       "entrypoint": "research/2026-09-29-h3-four-step-whole-response/index.html"
     },
     {
-      "run_id": "run:d968843e-e0cd-485c-a16d-9b8b951fae85",
+      "run_id": "report-1d341d9f312cae6ca076cc56",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-09-30T11:39:00Z",
@@ -233,7 +233,7 @@
       "entrypoint": "research/2026-09-30-vidu-s2-live-editing-route/index.html"
     },
     {
-      "run_id": "run:c4f28290-9990-4e53-ac71-707e72877b36",
+      "run_id": "report-810f91c496a958cfd7e72788",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-10-01T12:10:00Z",
@@ -244,7 +244,7 @@
       "entrypoint": "research/2026-10-01-sol-h3-fast-is-not-live/index.html"
     },
     {
-      "run_id": "run:ac3cd164-978f-4b80-b625-33d4a40a0ade",
+      "run_id": "report-aee0ae3c43bbfa1fb74d7543",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-10-02T09:49:00Z",
@@ -255,7 +255,7 @@
       "entrypoint": "research/2026-10-02-taomate-first-chunk-boundary/index.html"
     },
     {
-      "run_id": "run:6838dd03-f2bf-4eef-b933-e067936eacb8",
+      "run_id": "report-4818c205ce7ba85c0102dc4a",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-10-03T09:45:00Z",
@@ -266,7 +266,7 @@
       "entrypoint": "research/2026-10-03-hopper-fast-is-still-a-clip/index.html"
     },
     {
-      "run_id": "run:c1b93007-f995-452a-8871-27356dc2c28f",
+      "run_id": "report-6eb52c1d7e662ccf98b0c643",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-10-04T09:45:00Z",
@@ -277,7 +277,7 @@
       "entrypoint": "research/2026-10-04-h3-mask-editing-api-client-gap/index.html"
     },
     {
-      "run_id": "run:0cc1862b-e775-4b74-8f26-81236ac622a8",
+      "run_id": "report-7808d79f78c70a09c79b6376",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-10-05T09:45:00Z",
@@ -288,7 +288,7 @@
       "entrypoint": "research/2026-10-05-griffin-conversation-clock/index.html"
     },
     {
-      "run_id": "run:31f22c85-921d-4034-8c2b-03219328839b",
+      "run_id": "report-df2e81b9434e83210745e776",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-10-06T09:45:00Z",
@@ -299,7 +299,7 @@
       "entrypoint": "research/2026-10-06-raven-24g-envelope/index.html"
     },
     {
-      "run_id": "run:9eb39073-fbf3-49c2-a6ef-c32d5782cfed",
+      "run_id": "report-bebc58de5c498332e523dc3f",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-10-07T09:45:00Z",
@@ -310,7 +310,7 @@
       "entrypoint": "research/2026-10-07-veda-full-clip-clock/index.html"
     },
     {
-      "run_id": "run:5d0e604e-739c-4b51-986b-ce9e7caf40dd",
+      "run_id": "report-e383a41198cc096836e478c2",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-10-08T09:45:00Z",
@@ -321,7 +321,7 @@
       "entrypoint": "research/2026-10-08-shotstream-h200-client-boundary/index.html"
     },
     {
-      "run_id": "run:1ab8faa5-6997-4410-bd12-0a1e1b5128b8",
+      "run_id": "report-789659bddc89793cef8f4483",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-10-09T09:45:00Z",
@@ -332,7 +332,7 @@
       "entrypoint": "research/2026-10-09-liveavatar-clock-boundary/index.html"
     },
     {
-      "run_id": "run:471081c5-83f2-4cd8-885d-3689abc791a5",
+      "run_id": "report-7f7090f62054e4bc25579ad2",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-10-10T09:45:00Z",
@@ -343,7 +343,7 @@
       "entrypoint": "research/2026-10-10-hallolive-paper-versus-client/index.html"
     },
     {
-      "run_id": "run:23242f1a-dcdf-4be4-a961-4bcaa83ec69d",
+      "run_id": "report-20927f0b941576071d39b8de",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-10-11T21:20:00Z",
@@ -354,7 +354,7 @@
       "entrypoint": "research/2026-10-11-scope-show-readiness/index.html"
     },
     {
-      "run_id": "run:e7e54ba9-0e71-400a-84fd-fb35dbe989ba",
+      "run_id": "report-b58cbe39e7e4354e31d093e8",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-10-12T09:45:00Z",
@@ -365,7 +365,7 @@
       "entrypoint": "research/2026-10-12-telefuser-delivered-minute/index.html"
     },
     {
-      "run_id": "run:9bb23993-bb38-4183-bcf1-b85b56725496",
+      "run_id": "report-f1b8e58c2b4d694f7ae8acb1",
       "status": "completed",
       "answer_change": "meaningful_change",
       "started_at": "2026-10-13T09:45:00Z",
