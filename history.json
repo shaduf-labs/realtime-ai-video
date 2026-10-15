@@ -385,6 +385,17 @@
       "summary": "One-GPU browser route with local generation, remote delivery, cold compile and short coherent-scene boundaries.",
       "report_path": "/p/realtime-ai-video/research/2026-10-14-waypoint-one-gpu-browser",
       "entrypoint": "research/2026-10-14-waypoint-one-gpu-browser/index.html"
+    },
+    {
+      "run_id": "report-81d5f9fbebc31eee248b7e3e",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-15T09:45:00Z",
+      "completed_at": "2026-10-15T09:53:34Z",
+      "title": "StreamForce: an unpaced change sat 13 seconds ahead of display in a local test",
+      "summary": "A released force-control demo measures how pacing reduces stale input, while network delay, scene life and cost remain unresolved.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-15-streamforce-browser-buffer",
+      "entrypoint": "research/2026-10-15-streamforce-browser-buffer/index.html"
     }
   ]
 }

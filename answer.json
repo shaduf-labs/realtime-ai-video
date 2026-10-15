@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "AWS Labs now documents a browser-playable Waypoint-1.5 world-model route on one GPU. Its project report measured 82 generated 720p FPS on an H100 and 25 on an A10G from an instance-local client. A separate London-to-us-west-2 sample delivered 44.6 FPS at 27.3 Mbit/s, with 263 ms reported input lag on about 220 ms RTT. The route has a 645-second cold compilation wait and visibly degrades after roughly 512 generated frames; it is one player at a time. This is a stronger interactive client than a model-only speed claim, not a validated one-hour, secure or fully costed service. StreamRender-H3 remains a separate eight-GB200 racing renderer with unmeasured control-to-screen delay.",
+  "current_answer": "StreamForce adds a downloadable browser route for steering generated video with point pushes or wind, but its own test shows why generator FPS alone is not interaction: an unpaced force change landed about 13 seconds ahead of the viewer. With local pacing, the project reports a six-frame (0.4-second) steady-state queue lead in three runs, not a measured remote control-to-screen time. One H200 reached about 23 generated FPS in its newer implementation; image quality reportedly drifts past roughly 10–15 seconds at 16-fps playout. The pool has not run it or priced an accepted session. Waypoint-1.5 remains a separate one-GPU keyboard-controlled browser route with its own cold-start and scene-life limits.",
   "catalogue_card": {
-    "question": "Can one GPU run a playable AI-video world in a browser?",
-    "text": "AWS Labs reports a browser-playable Waypoint-1.5 route on one H100 or A10G. The 82/25 FPS figures are local generation rates; one remote sample delivered 44.6 FPS. Cold compilation took 645 seconds and the scene visibly decayed after roughly 512 generated frames. A costed, stable hour is untested."
+    "question": "Can a generated scene respond when you push it?",
+    "text": "StreamForce ships a browser demo for point and wind control. In one local test, an unpaced change sat about 13 seconds ahead of the viewer; pacing cut the steady-state lead to six frames. That is not remote input-to-screen latency, and reported visual drift begins after roughly 10–15 seconds."
   },
   "summary": [
+    "StreamForce releases a browser force-control route. Its local headless-viewer test put an unpaced force change 213 frames ahead of display (about 13 seconds at 16 FPS), versus six frames (0.4 seconds) of steady-state queue lead with pacing. One H200 reached about 23 generated FPS in the newer demo; quality reportedly drifts beyond roughly 10–15 seconds. Remote control-to-visible time and full cost are unknown.",
     "AWS Labs reports a browser-playable Waypoint-1.5 route on one H100 or A10G. The 82/25 FPS figures are local generation rates; one remote sample delivered 44.6 FPS. Cold compilation took 645 seconds and the scene visibly decayed after roughly 512 generated frames. A costed, stable hour is untested.",
     "StreamRender-H3 reports a same-rack eight-GB200 browser racing route. Its 218 ms warm diffusion step, 295.58 ms median GPU RGB interval and ~1.03-second browser publication interval are different clocks; control-to-visible latency, wider scene fit and cost remain unknown.",
     "TeleFuser reports a four-H100 LingBot-World v2 LiveKit route: a later one-minute replay generated 59.75 seconds of media in 79.2523 seconds of session time, with first client frame at 5.9822 seconds. This is separate from a 77-frame 17.1399-FPS target-compute gate and separate from its H3 service route.",
@@ -31,6 +32,10 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "StreamForce numbers are project-maintained and not pool-reproduced; paper and current demo benchmark different implementations.",
+    "The six-frame figure is a local headless-viewer queue position, not measured remote input-to-visible latency or guaranteed p95.",
+    "Longer coherent play, full GPU/transport cost and independent user acceptance remain unknown.",
+    "First-party pool analytics remain unavailable; attention, repeat use and funding are unknown.",
     "Waypoint measurements and browser validation are project reports; raw captures are held outside its repository and this pool did not deploy it.",
     "The 82/25 FPS figures are instance-local generation rates, not remote delivery. One path’s 263 ms lag does not establish p95 or other regions.",
     "Scene coherence, secure transport, reconnect and full billed-hour performance remain unverified for a production session.",
@@ -66,7 +71,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-14T11:05:00Z",
-  "meaningfully_updated_at": "2026-10-14T11:05:00Z",
-  "freshness_note": "Research checked 14 October 2026. Waypoint browser and timing figures are project-reported, not pool-reproduced."
+  "checked_at": "2026-10-15T09:51:10Z",
+  "meaningfully_updated_at": "2026-10-15T09:51:10Z",
+  "freshness_note": "Research checked 15 October 2026. StreamForce browser and timing results are project-reported, not pool-reproduced."
 }

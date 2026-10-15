@@ -890,6 +890,36 @@
       "accessed_at": "2026-10-14T11:05:00Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:streamforce-repo",
+      "source_type": "research repository",
+      "source_url": "https://github.com/neu-vi/StreamForce",
+      "title": "StreamForce release",
+      "claim": "The repository documents the browser route, H200 performance, GPU memory and visual drift limit.",
+      "accessed_at": "2026-10-15T09:51:10Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:streamforce-demo",
+      "source_type": "project demo documentation",
+      "source_url": "https://github.com/neu-vi/StreamForce/blob/main/demo/README.md",
+      "title": "StreamForce interactive demo notes",
+      "claim": "The project reports one local 501-frame headless-viewer force-reversal comparison with and without pacing, including startup and queue-position limits.",
+      "accessed_at": "2026-10-15T09:51:10Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:streamforce-paper",
+      "source_type": "research paper",
+      "source_url": "https://arxiv.org/abs/2606.07508",
+      "title": "Streaming Video Generation with Streaming Force Control",
+      "claim": "The June paper reports up to 16.6 generated FPS on one GPU; this is a separate test from the current release.",
+      "accessed_at": "2026-10-15T09:51:10Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }
