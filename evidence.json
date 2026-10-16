@@ -920,6 +920,46 @@
       "accessed_at": "2026-10-15T09:51:10Z",
       "relation": "context",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:comfystreamerh3-readme",
+      "source_type": "project repository",
+      "source_url": "https://github.com/Comfy-Org/comfystreamerh3",
+      "title": "ComfyStreamerH3",
+      "claim": "The project reports two 15.08-second warm RTX 5090 clips in a median 23.51 seconds across 11 jobs.",
+      "accessed_at": "2026-10-16T09:59:30Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:comfystreamerh3-client",
+      "source_type": "project code",
+      "source_url": "https://raw.githubusercontent.com/Comfy-Org/comfystreamerh3/main/examples/continuous_demo.py",
+      "title": "Continuous HLS demo source",
+      "claim": "The released demo waits for two completed clips, converts finished MP4s to HLS and queues new prompts behind the current clip.",
+      "accessed_at": "2026-10-16T09:59:30Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:comfy-price-20261016",
+      "source_type": "provider pricing",
+      "source_url": "https://comfy.org/pricing/",
+      "title": "Comfy API pricing",
+      "claim": "The listed managed RTX PRO 6000 GPU is $4.54/hour with separate network storage and a paid plan.",
+      "accessed_at": "2026-10-16T09:59:30Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:comfystreamerh3-author",
+      "source_type": "first-person engineering note",
+      "source_url": "https://blog.comfy.org/p/how-i-generated-live-video-with-minimax",
+      "title": "How I Generated Live Video with MiniMax H3 on a Single GPU",
+      "claim": "The author describes low-resolution output with artifacts and limits on detail and consistency.",
+      "accessed_at": "2026-10-16T09:59:30Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
     }
   ]
 }

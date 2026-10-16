@@ -396,6 +396,17 @@
       "summary": "A released force-control demo measures how pacing reduces stale input, while network delay, scene life and cost remain unresolved.",
       "report_path": "/p/realtime-ai-video/research/2026-10-15-streamforce-browser-buffer",
       "entrypoint": "research/2026-10-15-streamforce-browser-buffer/index.html"
+    },
+    {
+      "run_id": "report-fafd0c1e33dea08b1a2628af",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-16T09:45:00Z",
+      "completed_at": "2026-10-16T10:01:00Z",
+      "title": "One RTX 5090 beats playback speed. The browser still waits for two clips.",
+      "summary": "A warm paired H3 result crosses playback speed, while the released HLS client still gates first playback on two finished clips and lacks a receiver response measurement.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-16-comfystreamerh3-two-clip-gate",
+      "entrypoint": "research/2026-10-16-comfystreamerh3-two-clip-gate/index.html"
     }
   ]
 }

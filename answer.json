@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "StreamForce adds a downloadable browser route for steering generated video with point pushes or wind, but its own test shows why generator FPS alone is not interaction: an unpaced force change landed about 13 seconds ahead of the viewer. With local pacing, the project reports a six-frame (0.4-second) steady-state queue lead in three runs, not a measured remote control-to-screen time. One H200 reached about 23 generated FPS in its newer implementation; image quality reportedly drifts past roughly 10–15 seconds at 16-fps playout. The pool has not run it or priced an accepted session. Waypoint-1.5 remains a separate one-GPU keyboard-controlled browser route with its own cold-start and scene-life limits.",
+  "current_answer": "ComfyStreamerH3 reports 30.16 seconds of low-resolution H3 video in a 23.51-second warm paired job on one RTX 5090. Its browser demo still waits for two completed clips and queues prompt changes behind the current clip. Faster-than-playback generation is not measured prompt-to-screen response. The documented managed example uses an RTX PRO 6000 listed at $4.54/hour before plan and storage; accepted quality and delivered-hour cost remain unknown.",
   "catalogue_card": {
-    "question": "Can a generated scene respond when you push it?",
-    "text": "StreamForce ships a browser demo for point and wind control. In one local test, an unpaced change sat about 13 seconds ahead of the viewer; pacing cut the steady-state lead to six frames. That is not remote input-to-screen latency, and reported visual drift begins after roughly 10–15 seconds."
+    "question": "Can one RTX 5090 keep an H3 stream moving?",
+    "text": "ComfyStreamerH3 reports 30.16 seconds of video in a 23.51-second warm job. Its HLS browser demo waits for two finished clips and queues new prompts until the current clip ends. The viewer response and complete cost have not been measured."
   },
   "summary": [
+    "ComfyStreamerH3 reports a warm RTX 5090 paired job: two 15.08-second 448×256 clips in a median 23.51 seconds across 11 jobs. The HLS demo waits for two completed MP4s before playback and queues prompt changes behind the current clip. Its managed example instead selects RTX PRO 6000, listed at $4.54/hour before plan and storage. Receiver response, accepted quality and delivered-hour cost are unknown.",
     "StreamForce releases a browser force-control route. Its local headless-viewer test put an unpaced force change 213 frames ahead of display (about 13 seconds at 16 FPS), versus six frames (0.4 seconds) of steady-state queue lead with pacing. One H200 reached about 23 generated FPS in the newer demo; quality reportedly drifts beyond roughly 10–15 seconds. Remote control-to-visible time and full cost are unknown.",
     "AWS Labs reports a browser-playable Waypoint-1.5 route on one H100 or A10G. The 82/25 FPS figures are local generation rates; one remote sample delivered 44.6 FPS. Cold compilation took 645 seconds and the scene visibly decayed after roughly 512 generated frames. A costed, stable hour is untested.",
     "StreamRender-H3 reports a same-rack eight-GB200 browser racing route. Its 218 ms warm diffusion step, 295.58 ms median GPU RGB interval and ~1.03-second browser publication interval are different clocks; control-to-visible latency, wider scene fit and cost remain unknown.",
@@ -32,6 +33,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "ComfyStreamerH3’s warm 1.28× playback-duration ratio is not a measured browser response or accepted-session result.",
     "StreamForce numbers are project-maintained and not pool-reproduced; paper and current demo benchmark different implementations.",
     "The six-frame figure is a local headless-viewer queue position, not measured remote input-to-visible latency or guaranteed p95.",
     "Longer coherent play, full GPU/transport cost and independent user acceptance remain unknown.",
@@ -71,7 +73,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-15T09:51:10Z",
-  "meaningfully_updated_at": "2026-10-15T09:51:10Z",
-  "freshness_note": "Research checked 15 October 2026. StreamForce browser and timing results are project-reported, not pool-reproduced."
+  "checked_at": "2026-10-16T09:59:30Z",
+  "meaningfully_updated_at": "2026-10-16T09:59:30Z",
+  "freshness_note": "Checked 16 October 2026. Warm generation, HLS delivery and managed-GPU pricing are different evidence conditions."
 }

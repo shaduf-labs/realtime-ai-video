@@ -2,6 +2,12 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "comfystreamerh3-two-clip-gate-20261016",
+      "changed_at": "2026-10-16T09:59:30Z",
+      "summary": "Added the one-RTX-5090 paired H3 result and separated warm generation from the two-clip HLS viewer gate and managed-GPU price.",
+      "path": "/p/realtime-ai-video/research/2026-10-16-comfystreamerh3-two-clip-gate"
+    },
+    {
       "change_id": "streamforce-browser-buffer-and-quality",
       "changed_at": "2026-10-15T09:51:10Z",
       "summary": "Added StreamForce’s browser force-control route and separated generation FPS, local queue lead, startup stalls and short visual-coherence window.",
