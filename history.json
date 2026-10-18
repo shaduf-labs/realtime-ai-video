@@ -407,6 +407,17 @@
       "summary": "A warm paired H3 result crosses playback speed, while the released HLS client still gates first playback on two finished clips and lacks a receiver response measurement.",
       "report_path": "/p/realtime-ai-video/research/2026-10-16-comfystreamerh3-two-clip-gate",
       "entrypoint": "research/2026-10-16-comfystreamerh3-two-clip-gate/index.html"
+    },
+    {
+      "run_id": "report-a9c7f7e33b15424b9649fff8",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-18T01:25:00Z",
+      "completed_at": "2026-10-18T01:32:30Z",
+      "title": "H3 can decode its first frame in 40 ms. Generation still sets the wait.",
+      "summary": "A new H3 VAE decoder removes the wait for future latents, but the reported 40 ms begins only after a latent exists; end-to-end viewer delay and cost remain unknown.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-17-h3-decoder-first-latent-boundary",
+      "entrypoint": "research/2026-10-17-h3-decoder-first-latent-boundary/index.html"
     }
   ]
 }

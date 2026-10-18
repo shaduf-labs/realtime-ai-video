@@ -2,6 +2,12 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "h3-decoder-first-latent-20261017",
+      "changed_at": "2026-10-18T01:32:30Z",
+      "summary": "Added the H3 streaming VAE decoder and separated first-latent decode, reconstruction quality and viewer-visible response.",
+      "path": "/p/realtime-ai-video/research/2026-10-17-h3-decoder-first-latent-boundary"
+    },
+    {
       "change_id": "comfystreamerh3-two-clip-gate-20261016",
       "changed_at": "2026-10-16T09:59:30Z",
       "summary": "Added the one-RTX-5090 paired H3 result and separated warm generation from the two-clip HLS viewer gate and managed-GPU price.",

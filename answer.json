@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "ComfyStreamerH3 reports 30.16 seconds of low-resolution H3 video in a 23.51-second warm paired job on one RTX 5090. Its browser demo still waits for two completed clips and queues prompt changes behind the current clip. Faster-than-playback generation is not measured prompt-to-screen response. The documented managed example uses an RTX PRO 6000 listed at $4.54/hour before plan and storage; accepted quality and delivered-hour cost remain unknown.",
+  "current_answer": "A new H3 streaming video decoder reports a first frame 0.04 seconds after the first latent is generated, removing the official decoder’s wait for future latents. That is a decoder clock, not prompt-to-viewer latency. Its reconstruction loses 0.63 dB PSNR versus official decode on the authors’ 30-clip test; integrated viewer delay, accepted quality and cost remain unknown. Existing streaming and HLS routes still require separate client and session checks.",
   "catalogue_card": {
-    "question": "Can one RTX 5090 keep an H3 stream moving?",
-    "text": "ComfyStreamerH3 reports 30.16 seconds of video in a 23.51-second warm job. Its HLS browser demo waits for two finished clips and queues new prompts until the current clip ends. The viewer response and complete cost have not been measured."
+    "question": "Can H3 show a frame 40 ms after you prompt it?",
+    "text": "No: a new decoder reports 40 ms after the first video latent already exists. It removes a VAE wait but does not measure prompt-to-screen delay. Its 30-clip reconstruction test also loses 0.63 dB PSNR versus official decode."
   },
   "summary": [
+    "SolarX-Team released a causal H3 VAE decoder on 16 October. It reports the first decoded frame 0.04 seconds after the first latent exists, versus an official decoder that waits for seven latents then decodes its first window in 0.73 seconds. On 30 MCL-JCV clips, source-reconstruction PSNR is 30.41 dB versus official 31.04 dB. SolarWM generates five-latent chunks; receiver-visible response and cost are unmeasured.",
     "ComfyStreamerH3 reports a warm RTX 5090 paired job: two 15.08-second 448×256 clips in a median 23.51 seconds across 11 jobs. The HLS demo waits for two completed MP4s before playback and queues prompt changes behind the current clip. Its managed example instead selects RTX PRO 6000, listed at $4.54/hour before plan and storage. Receiver response, accepted quality and delivered-hour cost are unknown.",
     "StreamForce releases a browser force-control route. Its local headless-viewer test put an unpaced force change 213 frames ahead of display (about 13 seconds at 16 FPS), versus six frames (0.4 seconds) of steady-state queue lead with pacing. One H200 reached about 23 generated FPS in the newer demo; quality reportedly drifts beyond roughly 10–15 seconds. Remote control-to-visible time and full cost are unknown.",
     "AWS Labs reports a browser-playable Waypoint-1.5 route on one H100 or A10G. The 82/25 FPS figures are local generation rates; one remote sample delivered 44.6 FPS. Cold compilation took 645 seconds and the scene visibly decayed after roughly 512 generated frames. A costed, stable hour is untested.",
@@ -33,6 +34,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "The reported 40 ms starts after latent generation; the optimized decode benchmark does not name the GPU, and no integrated viewer test or bill is published.",
     "ComfyStreamerH3’s warm 1.28× playback-duration ratio is not a measured browser response or accepted-session result.",
     "StreamForce numbers are project-maintained and not pool-reproduced; paper and current demo benchmark different implementations.",
     "The six-frame figure is a local headless-viewer queue position, not measured remote input-to-visible latency or guaranteed p95.",
@@ -73,7 +75,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-16T09:59:30Z",
-  "meaningfully_updated_at": "2026-10-16T09:59:30Z",
-  "freshness_note": "Checked 16 October 2026. Warm generation, HLS delivery and managed-GPU pricing are different evidence conditions."
+  "checked_at": "2026-10-18T01:32:30Z",
+  "meaningfully_updated_at": "2026-10-18T01:32:30Z",
+  "freshness_note": "Checked 18 October 2026; component result, not a live-session measurement."
 }

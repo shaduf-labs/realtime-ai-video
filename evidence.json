@@ -2,6 +2,36 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "evidence_id": "public:h3-decoder-blog-20261017",
+      "source_type": "first-person research post",
+      "source_url": "https://solarx-team.github.io/H3-Streaming-VAE-Decoder/",
+      "title": "H3 Streaming VAE Decoder",
+      "claim": "The authors report a first frame 0.04 seconds after first latent generation and 30.41 dB reconstruction PSNR versus official 31.04 dB on 30 MCL-JCV clips.",
+      "accessed_at": "2026-10-18T01:32:30Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:h3-decoder-repo-20261017",
+      "source_type": "project repository",
+      "source_url": "https://github.com/SolarX-Team/H3-Streaming-VAE-Decoder",
+      "title": "H3 Streaming VAE Decoder",
+      "claim": "The released code has streaming decode paths for official H3 and StreamRender-H3 decoders; fused paths carry Blackwell-specific dependencies.",
+      "accessed_at": "2026-10-18T01:32:30Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:solarwm-h3-guide-20261017",
+      "source_type": "project documentation",
+      "source_url": "https://github.com/Junchao-cs/SolarWM/blob/main/docs/backends/minimax-h3.md",
+      "title": "SolarWM MiniMax-H3 guide",
+      "claim": "The documented H3 inference uses eight GPUs and writes generated results; it does not report a viewer-timed live client.",
+      "accessed_at": "2026-10-18T01:32:30Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
       "evidence_id": "public:fasth3-continuity",
       "source_type": "project model documentation",
       "source_url": "https://github.com/reactor-team/infinite-livestream/blob/main/fast-h3/README.md",
