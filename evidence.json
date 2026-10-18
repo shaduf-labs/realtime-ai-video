@@ -2,6 +2,26 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "evidence_id": "public:self-forcing-pr-20261018",
+      "source_type": "open project pull request",
+      "source_url": "https://github.com/vllm-project/vllm-omni/pull/8754",
+      "title": "vLLM-Omni Self-Forcing stepwise PR",
+      "claim": "The contributor reports one-A800 first nine frames at 1.80 seconds, later 12-frame chunks at 1.16–1.74 seconds, and 81 frames in 10.57 seconds; the PR remains open.",
+      "accessed_at": "2026-10-18T09:51:45Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:self-forcing-issue-20261018",
+      "source_type": "project issue",
+      "source_url": "https://github.com/vllm-project/vllm-omni/issues/8755",
+      "title": "Self-Forcing model support issue",
+      "claim": "The proposal is text-to-video with prompt updates; minWM camera-control integration is listed as later work.",
+      "accessed_at": "2026-10-18T09:51:45Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
       "evidence_id": "public:h3-decoder-blog-20261017",
       "source_type": "first-person research post",
       "source_url": "https://solarx-team.github.io/H3-Streaming-VAE-Decoder/",

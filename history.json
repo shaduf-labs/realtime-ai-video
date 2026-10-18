@@ -418,6 +418,17 @@
       "summary": "A new H3 VAE decoder removes the wait for future latents, but the reported 40 ms begins only after a latent exists; end-to-end viewer delay and cost remain unknown.",
       "report_path": "/p/realtime-ai-video/research/2026-10-17-h3-decoder-first-latent-boundary",
       "entrypoint": "research/2026-10-17-h3-decoder-first-latent-boundary/index.html"
+    },
+    {
+      "run_id": "report-1a669996dc3b019c9e632880",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-18T09:45:00Z",
+      "completed_at": "2026-10-18T09:53:17Z",
+      "title": "One A800 streamed its first nine frames in 1.8 seconds. It could not keep up with playback.",
+      "summary": "An open one-A800 Self-Forcing route emits frames incrementally but takes roughly twice the 16-fps playout time for its 81-frame local test.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-18-self-forcing-stepwise-a800",
+      "entrypoint": "research/2026-10-18-self-forcing-stepwise-a800/index.html"
     }
   ]
 }

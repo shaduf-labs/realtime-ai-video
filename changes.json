@@ -2,6 +2,12 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "self-forcing-stepwise-a800-20261018",
+      "changed_at": "2026-10-18T09:51:45Z",
+      "summary": "Added the open Self-Forcing stepwise route and compared first-chunk arrival with sustained 16-fps playout on its reported A800 run.",
+      "path": "/p/realtime-ai-video/research/2026-10-18-self-forcing-stepwise-a800"
+    },
+    {
       "change_id": "h3-decoder-first-latent-20261017",
       "changed_at": "2026-10-18T01:32:30Z",
       "summary": "Added the H3 streaming VAE decoder and separated first-latent decode, reconstruction quality and viewer-visible response.",
