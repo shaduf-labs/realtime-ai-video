@@ -2,6 +2,36 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "evidence_id": "public:h3-ci-issue-20261019",
+      "source_type": "project issue and CI report",
+      "source_url": "https://github.com/vllm-project/vllm-omni/issues/8791",
+      "title": "MiniMax H3 performance issue",
+      "claim": "One four-H100 CI run showed a large H3 slowdown; a four-H200 rerun did not reproduce it, and the issue closed when CI returned to normal.",
+      "accessed_at": "2026-10-19T09:48:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:h3-frame-count-pr-20261019",
+      "source_type": "contributor PR and review",
+      "source_url": "https://github.com/vllm-project/vllm-omni/pull/9074",
+      "title": "Carry encoded H3 frame counts to the video API",
+      "claim": "An open PR proposes skipping MP4 metadata rereading but lacks a controlled speed result and does not cover the split decoder path.",
+      "accessed_at": "2026-10-19T09:48:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:world-runtime-roadmap-20261019",
+      "source_type": "project roadmap RFC",
+      "source_url": "https://github.com/vllm-project/vllm-omni/issues/8659",
+      "title": "October world-model runtime roadmap",
+      "claim": "Backpressure is proposed to bound generation lead and output buffering; it cannot fix underruns from slow inference.",
+      "accessed_at": "2026-10-19T09:48:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
       "evidence_id": "public:self-forcing-pr-20261018",
       "source_type": "open project pull request",
       "source_url": "https://github.com/vllm-project/vllm-omni/pull/8754",

@@ -7,6 +7,7 @@
     "text": "An open Self-Forcing PR sent its first nine frames in 1.8 seconds on one A800 80 GB. Its 81-frame WebSocket run took 10.57 seconds for 5.06 seconds of playback. Incremental output is real; a sustained viewer session is not yet shown."
   },
   "summary": [
+    "A vLLM-Omni four-H100 H3 nightly reported a 142.84-second text-to-video response versus a 38.33-second baseline, but the metric returned to normal and the issue closed with machine contention suspected. A same-shape four-H200 rerun did not reproduce the slowdown. A separate open PR to carry encoded frame counts into API metadata has no controlled end-to-end speed result. Neither establishes a new live-video capability or route price.",
     "An open vLLM-Omni PR proposes Self-Forcing text-to-video over stepwise WebSocket with prompt updates. On one eager A800 80 GB at 832×480/16 fps, the author reports nine frames at 1.80 seconds, later 12-frame chunks in 1.16–1.74 seconds each, and 81 frames in 10.57 seconds. The 81 frames play for 5.06 seconds. No remote receiver, merged release, accepted quality or full bill is reported.",
     "SolarX-Team released a causal H3 VAE decoder on 16 October. It reports the first decoded frame 0.04 seconds after the first latent exists, versus an official decoder that waits for seven latents then decodes its first window in 0.73 seconds. On 30 MCL-JCV clips, source-reconstruction PSNR is 30.41 dB versus official 31.04 dB. SolarWM generates five-latent chunks; receiver-visible response and cost are unmeasured.",
     "ComfyStreamerH3 reports a warm RTX 5090 paired job: two 15.08-second 448×256 clips in a median 23.51 seconds across 11 jobs. The HLS demo waits for two completed MP4s before playback and queues prompt changes behind the current clip. Its managed example instead selects RTX PRO 6000, listed at $4.54/hour before plan and storage. Receiver response, accepted quality and delivered-hour cost are unknown.",
@@ -35,6 +36,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "The H3 CI failure was not reproduced on the same H100 host with full telemetry; the open frame-count PR has no measured complete-response or viewer benefit.",
     "Self-Forcing stepwise support is an open contributor PR; one A800 local test did not sustain unbuffered 16-fps playout or measure a remote viewer.",
     "The reported 40 ms starts after latent generation; the optimized decode benchmark does not name the GPU, and no integrated viewer test or bill is published.",
     "ComfyStreamerH3’s warm 1.28× playback-duration ratio is not a measured browser response or accepted-session result.",
@@ -77,7 +79,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-18T09:51:45Z",
+  "checked_at": "2026-10-19T09:48:00Z",
   "meaningfully_updated_at": "2026-10-18T09:51:45Z",
-  "freshness_note": "Checked 18 October 2026; proposed incremental client, not a sustained or merged service."
+  "freshness_note": "Checked 19 October 2026; a large H3 CI slowdown normalized, and a new API metadata PR has no measured serving gain. The prior stepwise-route limit remains."
 }

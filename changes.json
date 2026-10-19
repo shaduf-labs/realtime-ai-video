@@ -2,6 +2,12 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "h3-ci-benchmark-correction-20261019",
+      "changed_at": "2026-10-19T09:48:00Z",
+      "summary": "Corrected a transient H3 CI slowdown claim and separated an unmeasured API metadata PR from a delivered-video speed gain.",
+      "path": "/p/realtime-ai-video/research/2026-10-19-h3-ci-benchmark-correction"
+    },
+    {
       "change_id": "self-forcing-stepwise-a800-20261018",
       "changed_at": "2026-10-18T09:51:45Z",
       "summary": "Added the open Self-Forcing stepwise route and compared first-chunk arrival with sustained 16-fps playout on its reported A800 run.",

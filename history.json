@@ -429,6 +429,17 @@
       "summary": "An open one-A800 Self-Forcing route emits frames incrementally but takes roughly twice the 16-fps playout time for its 81-frame local test.",
       "report_path": "/p/realtime-ai-video/research/2026-10-18-self-forcing-stepwise-a800",
       "entrypoint": "research/2026-10-18-self-forcing-stepwise-a800/index.html"
+    },
+    {
+      "run_id": "report-f0645a97a4c6e2d0069f00d1",
+      "status": "completed",
+      "answer_change": "no_meaningful_change",
+      "started_at": "2026-10-19T09:45:00Z",
+      "completed_at": "2026-10-19T09:49:50Z",
+      "title": "The reported H3 slowdown disappeared. Do not price a route from that CI run.",
+      "summary": "A four-H100 H3 CI alarm returned to normal; an open metadata PR has no measured serving gain.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-19-h3-ci-benchmark-correction",
+      "entrypoint": "research/2026-10-19-h3-ci-benchmark-correction/index.html"
     }
   ]
 }
