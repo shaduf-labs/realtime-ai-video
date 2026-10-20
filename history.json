@@ -440,6 +440,17 @@
       "summary": "A four-H100 H3 CI alarm returned to normal; an open metadata PR has no measured serving gain.",
       "report_path": "/p/realtime-ai-video/research/2026-10-19-h3-ci-benchmark-correction",
       "entrypoint": "research/2026-10-19-h3-ci-benchmark-correction/index.html"
+    },
+    {
+      "run_id": "report-4c10791faa44a136636449dd",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-20T09:45:00Z",
+      "completed_at": "2026-10-20T09:50:00Z",
+      "title": "fal Worlds is a hosted route; compute time is not delivered time",
+      "summary": "Checked two hosted interactive world endpoints, their different use labels, listed rate and missing session measurements.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-20-fal-worlds-session-price",
+      "entrypoint": "research/2026-10-20-fal-worlds-session-price/index.html"
     }
   ]
 }

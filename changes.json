@@ -2,6 +2,12 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "fal-worlds-session-and-price-20261020",
+      "changed_at": "2026-10-20T09:50:00Z",
+      "summary": "Added hosted Abot and Lingbot browser routes, their separate use labels and a compute-second versus delivered-hour cost check.",
+      "path": "/p/realtime-ai-video/research/2026-10-20-fal-worlds-session-price"
+    },
+    {
       "change_id": "h3-ci-benchmark-correction-20261019",
       "changed_at": "2026-10-19T09:48:00Z",
       "summary": "Corrected a transient H3 CI slowdown claim and separated an unmeasured API metadata PR from a delivered-video speed gain.",

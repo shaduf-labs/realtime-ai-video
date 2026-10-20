@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "An open vLLM-Omni Self-Forcing PR streams video in chunks and accepts mid-stream text prompts. On one A800 80 GB, its first nine frames arrived in 1.80 seconds, but 81 frames took 10.57 seconds to generate about 5.06 seconds of 16-fps video. Later chunks also took longer than their playout time. It is not a merged, sustained live service. A recent H3 decoder improves another stage, not prompt-to-viewer response. Receiver delay, accepted quality and full cost remain unknown.",
+  "current_answer": "fal now lists hosted Abot World 0 and Lingbot World 2 browser/WebRTC worlds with movement and prompt controls. Both cards show $0.00125 per generated compute second; Abot is labeled Commercial use and Lingbot Research only. That is $4.50 per 3,600 charged compute seconds, not a measured delivered stream-hour. Neither route has a pool-tested response, stable session or complete bill.",
   "catalogue_card": {
-    "question": "Can one GPU stream interactive AI video without falling behind?",
-    "text": "An open Self-Forcing PR sent its first nine frames in 1.8 seconds on one A800 80 GB. Its 81-frame WebSocket run took 10.57 seconds for 5.06 seconds of playback. Incremental output is real; a sustained viewer session is not yet shown."
+    "question": "Can you try interactive AI video without building a GPU stack?",
+    "text": "fal lists browser/WebRTC sessions for Abot World 0 and Lingbot World 2 at $0.00125 per generated compute second. Abot is labeled Commercial use; Lingbot Research only. The $4.50 compute-hour is not a verified hour of usable video."
   },
   "summary": [
+    "fal Worlds lists hosted WebRTC sessions for Abot World 0 and Lingbot World 2 with movement and prompt controls. Both cards show $0.00125 per generated compute second; Abot is labeled Commercial use and Lingbot Research only. The realtime client is alpha. A $4.50 nominal compute-hour does not establish a delivered viewer hour, action-to-visible delay or session stability.",
     "A vLLM-Omni four-H100 H3 nightly reported a 142.84-second text-to-video response versus a 38.33-second baseline, but the metric returned to normal and the issue closed with machine contention suspected. A same-shape four-H200 rerun did not reproduce the slowdown. A separate open PR to carry encoded frame counts into API metadata has no controlled end-to-end speed result. Neither establishes a new live-video capability or route price.",
     "An open vLLM-Omni PR proposes Self-Forcing text-to-video over stepwise WebSocket with prompt updates. On one eager A800 80 GB at 832×480/16 fps, the author reports nine frames at 1.80 seconds, later 12-frame chunks in 1.16–1.74 seconds each, and 81 frames in 10.57 seconds. The 81 frames play for 5.06 seconds. No remote receiver, merged release, accepted quality or full bill is reported.",
     "SolarX-Team released a causal H3 VAE decoder on 16 October. It reports the first decoded frame 0.04 seconds after the first latent exists, versus an official decoder that waits for seven latents then decodes its first window in 0.73 seconds. On 30 MCL-JCV clips, source-reconstruction PSNR is 30.41 dB versus official 31.04 dB. SolarWM generates five-latent chunks; receiver-visible response and cost are unmeasured.",
@@ -36,6 +37,8 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "No fal Worlds session, billed receipt, action-to-visible timing or long-run quality check was performed.",
+    "The provider use labels and alpha API need checking before a paid deployment.",
     "The H3 CI failure was not reproduced on the same H100 host with full telemetry; the open frame-count PR has no measured complete-response or viewer benefit.",
     "Self-Forcing stepwise support is an open contributor PR; one A800 local test did not sustain unbuffered 16-fps playout or measure a remote viewer.",
     "The reported 40 ms starts after latent generation; the optimized decode benchmark does not name the GPU, and no integrated viewer test or bill is published.",
@@ -79,7 +82,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-19T09:48:00Z",
-  "meaningfully_updated_at": "2026-10-18T09:51:45Z",
-  "freshness_note": "Checked 19 October 2026; a large H3 CI slowdown normalized, and a new API metadata PR has no measured serving gain. The prior stepwise-route limit remains."
+  "checked_at": "2026-10-20T09:50:00Z",
+  "meaningfully_updated_at": "2026-10-20T09:50:00Z",
+  "freshness_note": "fal model pages and API checked 20 October 2026; performance and billing remain untested."
 }
