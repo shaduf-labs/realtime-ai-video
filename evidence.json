@@ -2,6 +2,56 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "evidence_id": "public:taomate-merge-20261021",
+      "source_type": "project merged pull request",
+      "source_url": "https://github.com/vllm-project/vllm-omni/pull/8268",
+      "title": "TaoMate-H3 merged video route",
+      "claim": "Merged WebSocket video and prompt updates on 19 October; merged MP4 transport is video-only.",
+      "accessed_at": "2026-10-21T09:52:30Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:taomate-recipe-20261021",
+      "source_type": "project recipe",
+      "source_url": "https://github.com/vllm-project/vllm-omni/blob/main/recipes/TaoLiveAIGC/TaoMate-H3.md",
+      "title": "TaoMate-H3 vLLM recipe",
+      "claim": "One-session two-H200-class FP8 or four-H200-class BF16 route; prompt acknowledgements are not first visibly changed frames.",
+      "accessed_at": "2026-10-21T09:52:30Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:taomate-aac-20261021",
+      "source_type": "open pull request",
+      "source_url": "https://github.com/vllm-project/vllm-omni/pull/8314",
+      "title": "AAC in fragmented MP4",
+      "claim": "Audio transport is proposed separately and remained open at this check.",
+      "accessed_at": "2026-10-21T09:52:30Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:taomate-full-20261021",
+      "source_type": "open pull request",
+      "source_url": "https://github.com/vllm-project/vllm-omni/pull/8676",
+      "title": "TaoMate full-request and streamed audio",
+      "claim": "The still-open follow-up includes an author-reported 4.74-second two-GPU window median; its branch-level audio and full-request tests are not merged-main capabilities.",
+      "accessed_at": "2026-10-21T09:52:30Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:taomate-comfy-20261021",
+      "source_type": "first-person community note",
+      "source_url": "https://www.reddit.com/r/StableDiffusion/comments/1x6jwi2/new_taomate_h3_fl2va_lora_is_out_heres_a_comfyui/",
+      "title": "ComfyUI adapter conversion",
+      "claim": "The converter states that the repack does not include streaming or KV caching.",
+      "accessed_at": "2026-10-21T09:52:30Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
       "evidence_id": "public:fal-abot-worlds-20261020",
       "source_type": "provider model card",
       "source_url": "https://fal.ai/models/alibaba/abot-world-0",

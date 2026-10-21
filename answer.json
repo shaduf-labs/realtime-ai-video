@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "fal now lists hosted Abot World 0 and Lingbot World 2 browser/WebRTC worlds with movement and prompt controls. Both cards show $0.00125 per generated compute second; Abot is labeled Commercial use and Lingbot Research only. That is $4.50 per 3,600 charged compute seconds, not a measured delivered stream-hour. Neither route has a pool-tested response, stable session or complete bill.",
+  "current_answer": "vLLM-Omni merged TaoMate-H3 WebSocket video with prompt updates on 19 October. Its recipe uses one server session on two H200-class FP8 or four H200-class BF16 GPUs. The merged MP4 stream is video-only; AAC is still in open follow-up work. The reported 4.74-second median for a 4.958-second window does not establish viewer response, accepted quality or delivered-hour cost.",
   "catalogue_card": {
-    "question": "Can you try interactive AI video without building a GPU stack?",
-    "text": "fal lists browser/WebRTC sessions for Abot World 0 and Lingbot World 2 at $0.00125 per generated compute second. Abot is labeled Commercial use; Lingbot Research only. The $4.50 compute-hour is not a verified hour of usable video."
+    "question": "Did TaoMate-H3 live video actually ship?",
+    "text": "Yes: vLLM-Omni merged a one-session, H200-class WebSocket video route with prompt updates. The merged stream is video-only, and its near-playback window timing is not a measured viewer delay or full operating cost."
   },
   "summary": [
+    "vLLM-Omni merged TaoMate-H3 WebSocket video with prompt changes on 19 October. Its one-session server recipe needs two H200-class FP8 or four H200-class BF16 GPUs. The merged fragmented MP4 is video-only; AAC transport and an ordinary full-request follow-up remain open. A source-reported 4.74-second median for a 4.958-second window is not receiver-visible response or delivered-hour cost.",
     "fal Worlds lists hosted WebRTC sessions for Abot World 0 and Lingbot World 2 with movement and prompt controls. Both cards show $0.00125 per generated compute second; Abot is labeled Commercial use and Lingbot Research only. The realtime client is alpha. A $4.50 nominal compute-hour does not establish a delivered viewer hour, action-to-visible delay or session stability.",
     "A vLLM-Omni four-H100 H3 nightly reported a 142.84-second text-to-video response versus a 38.33-second baseline, but the metric returned to normal and the issue closed with machine contention suspected. A same-shape four-H200 rerun did not reproduce the slowdown. A separate open PR to carry encoded frame counts into API metadata has no controlled end-to-end speed result. Neither establishes a new live-video capability or route price.",
     "An open vLLM-Omni PR proposes Self-Forcing text-to-video over stepwise WebSocket with prompt updates. On one eager A800 80 GB at 832×480/16 fps, the author reports nine frames at 1.80 seconds, later 12-frame chunks in 1.16–1.74 seconds each, and 81 frames in 10.57 seconds. The 81 frames play for 5.06 seconds. No remote receiver, merged release, accepted quality or full bill is reported.",
@@ -25,7 +26,7 @@
     "Tavus describes Griffin-Lite as a full-duplex 720p conversational-video preview. Its reported 320 ms chunks and 0.43 s audio-to-video generator latency are not a customer session; NVIDIA VideoFDB has separate 1,892/2,232 ms median generation/perception timing.",
     "vLLM-Omni merged request-scoped H3 latent-mask editing into its video API on 20 September. Source video/audio and masks can preserve or regenerate regions in a completed job. Its proposed ComfyUI editing node and raw-mask server follow-up remained open at the 4 October check; the pool has not run this route.",
     "An independent project reports a warm FastH3 Preview v1 14.375-second 1344×768/24 fps audio-video clip saved in 13.506 seconds on eight H100 80 GB GPUs. A separate matched eight-H200 stock-versus-patched test reports 23.810 to 14.085 seconds; do not merge those comparisons. No accepted-quality, cold-start, receiver or cost result is available.",
-    "TaoMate-H3 reports 14.810 seconds pure DiT and 17.287 seconds to benchmark first playable video for a ten-second 480×864 T2AV job on eight H20 96 GB GPUs. First playable includes video VAE decode and H.264 publication but excludes internal audio preparation. Current CLI output is a final MP4; sustained viewer delivery is unmeasured.",
+    "TaoMate-H3 reports 14.810 seconds pure DiT and 17.287 seconds to benchmark first playable video for a ten-second 480×864 T2AV job on eight H20 96 GB GPUs. First playable includes video VAE decode and H.264 publication but excludes internal audio preparation. That original benchmark command saved a final MP4; a separate vLLM WebSocket video route has since merged, but receiver-visible sustained delivery remains unmeasured.",
     "NVIDIA Sol-H3 reports eight-B300 warm medians of 1.653/3.732/6.612 seconds for nominal 5/10/15-second 1344×768 T2VA outputs with audio. Final MP4 encoding, load, and compilation are excluded; continuous streaming and in-session control remain future work. The 11.04× five-second comparison also changes Base H3 from 49 denoiser forwards to a four-forward FastH3 adapter.",
     "Vidu S2-Editing documents a source-fed live editing path: publish video into RTC, subscribe to edited RTC output, and optionally relay it to RTMP. It bills one credit per live second; at a $0.005 standard credit, 3,600 billed seconds imply $18 before delivery costs. No independent viewer-delay or long-session result is available.",
     "vLLM-Omni’s current recipe reports a separate warmed eight-B300 FastH3 Dense T2VA test: a 4.4-second, 1344×768 clip returned as a complete MP4 in 11.7 and 11.8 seconds. Four denoiser evaluations took 2.36–2.37 seconds, so the complete short-clip response was still slower than playback. This is distinct from the previously reported longer FastH3 profile that beat its playback clock.",
@@ -37,6 +38,8 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "The merged TaoMate WebSocket route was not pool-tested; it has no receiver trace, accepted-quality result or full bill.",
+    "AAC transport is still an open follow-up, not merged support.",
     "No fal Worlds session, billed receipt, action-to-visible timing or long-run quality check was performed.",
     "The provider use labels and alpha API need checking before a paid deployment.",
     "The H3 CI failure was not reproduced on the same H100 host with full telemetry; the open frame-count PR has no measured complete-response or viewer benefit.",
@@ -82,7 +85,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-20T09:50:00Z",
-  "meaningfully_updated_at": "2026-10-20T09:50:00Z",
-  "freshness_note": "fal model pages and API checked 20 October 2026; performance and billing remain untested."
+  "checked_at": "2026-10-21T09:52:30Z",
+  "meaningfully_updated_at": "2026-10-21T09:52:30Z",
+  "freshness_note": "Checked 21 October 2026. Merge and follow-up statuses may change; confirm the exact revision before deployment."
 }

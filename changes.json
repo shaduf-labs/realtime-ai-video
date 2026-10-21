@@ -252,6 +252,12 @@
       "changed_at": "2026-10-14T11:05:00Z",
       "summary": "Added a one-GPU Waypoint browser route with distinct generation, delivery, response, cold-start and coherence limits.",
       "path": "/p/realtime-ai-video/research/2026-10-14-waypoint-one-gpu-browser"
+    },
+    {
+      "change_id": "taomate-vllm-merged-video-only-20261021",
+      "changed_at": "2026-10-21T09:52:30Z",
+      "summary": "Added the merged TaoMate-H3 WebSocket video route, its one-session H200-class conditions and the separate open audio work.",
+      "path": "/p/realtime-ai-video/research/2026-10-21-taomate-merged-video-only"
     }
   ]
 }

@@ -451,6 +451,17 @@
       "summary": "Checked two hosted interactive world endpoints, their different use labels, listed rate and missing session measurements.",
       "report_path": "/p/realtime-ai-video/research/2026-10-20-fal-worlds-session-price",
       "entrypoint": "research/2026-10-20-fal-worlds-session-price/index.html"
+    },
+    {
+      "run_id": "report-06200319fcca1e8d793f23f9",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-21T09:45:00Z",
+      "completed_at": "2026-10-21T09:56:22Z",
+      "title": "TaoMate-H3 streaming merged, but main still sends video only",
+      "summary": "Checked merged vLLM route, two/four-H200-class recipe, author window timing and open synchronized-audio follow-ups.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-21-taomate-merged-video-only",
+      "entrypoint": "research/2026-10-21-taomate-merged-video-only/index.html"
     }
   ]
 }
