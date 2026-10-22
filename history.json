@@ -462,6 +462,17 @@
       "summary": "Checked merged vLLM route, two/four-H200-class recipe, author window timing and open synchronized-audio follow-ups.",
       "report_path": "/p/realtime-ai-video/research/2026-10-21-taomate-merged-video-only",
       "entrypoint": "research/2026-10-21-taomate-merged-video-only/index.html"
+    },
+    {
+      "run_id": "report-3d90b1c05116a0eb6b289997",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-22T09:45:00Z",
+      "completed_at": "2026-10-22T09:52:00Z",
+      "title": "FastH3 Omni: finished clips versus live sessions",
+      "summary": "An eight-GB200 benchmark varies by reference load; local paths and a live receiver need separate checks.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-22-fasth3-omni-mp4-not-live",
+      "entrypoint": "research/2026-10-22-fasth3-omni-mp4-not-live/index.html"
     }
   ]
 }

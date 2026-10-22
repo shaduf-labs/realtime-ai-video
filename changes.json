@@ -258,6 +258,12 @@
       "changed_at": "2026-10-21T09:52:30Z",
       "summary": "Added the merged TaoMate-H3 WebSocket video route, its one-session H200-class conditions and the separate open audio work.",
       "path": "/p/realtime-ai-video/research/2026-10-21-taomate-merged-video-only"
+    },
+    {
+      "change_id": "fasth3-omni-mp4-boundary-20261022",
+      "changed_at": "2026-10-22T09:49:30Z",
+      "summary": "Compared FastH3 Omni completed-MP4 timing by reference workload and separated eight-GB200, local and live-receiver claims.",
+      "path": "/p/realtime-ai-video/research/2026-10-22-fasth3-omni-mp4-not-live"
     }
   ]
 }

@@ -2,6 +2,46 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "evidence_id": "public:fasth3-omni-3090-20261022",
+      "source_type": "community report",
+      "source_url": "https://www.reddit.com/r/comfyui/comments/1xc7czj/fasth3_omni_vs_ref2va_8steps_turbo_comparison_on/",
+      "title": "RTX 3090 four-shot comparison",
+      "claim": "One local comparison was slower than Turbo+VSA and the author preferred Turbo quality.",
+      "accessed_at": "2026-10-22T09:49:30Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:fasth3-omni-comfy-card-20261022",
+      "source_type": "model card",
+      "source_url": "https://huggingface.co/FastVideo/FastH3-Omni-Comfy",
+      "title": "FastH3 Omni ComfyUI card",
+      "claim": "Comfy-specific components and sampler differ from server runtimes.",
+      "accessed_at": "2026-10-22T09:49:30Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:fasth3-omni-model-card-20261022",
+      "source_type": "model card",
+      "source_url": "https://huggingface.co/FastVideo/FastVideo-FastH3-Omni-8-Step-V1",
+      "title": "FastH3 Omni BF16 card",
+      "claim": "Separate server and local checkpoint/precision profiles; synchronized audio clip output.",
+      "accessed_at": "2026-10-22T09:49:30Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:fasth3-omni-benchmark-20261022",
+      "source_type": "project benchmark",
+      "source_url": "https://haoailab.com/blogs/fastvideo-omniref-update/",
+      "title": "FastVideo Omni benchmark",
+      "claim": "Eight-GB200 warm complete-MP4 latency varies sharply by reference composition.",
+      "accessed_at": "2026-10-22T09:49:30Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
       "evidence_id": "public:taomate-merge-20261021",
       "source_type": "project merged pull request",
       "source_url": "https://github.com/vllm-project/vllm-omni/pull/8268",

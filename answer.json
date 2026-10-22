@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "vLLM-Omni merged TaoMate-H3 WebSocket video with prompt updates on 19 October. Its recipe uses one server session on two H200-class FP8 or four H200-class BF16 GPUs. The merged MP4 stream is video-only; AAC is still in open follow-up work. The reported 4.74-second median for a 4.958-second window does not establish viewer response, accepted quality or delivered-hour cost.",
+  "current_answer": "FastH3 Omni adds a reference-guided H3 clip route with synchronized audio. FastVideo reports 5.6–11.9× faster complete-MP4 times than Base H3 on eight GB200 GPUs, but the result is workload-specific: a 15-second single-image job took 14.14 seconds, while a 12-reference job took 59.77 seconds. Local 5090 and ComfyUI paths use other profiles; this does not establish continuous interactive delivery, quality parity or a full bill. TaoMate remains a separate merged video-only WebSocket route.",
   "catalogue_card": {
-    "question": "Did TaoMate-H3 live video actually ship?",
-    "text": "Yes: vLLM-Omni merged a one-session, H200-class WebSocket video route with prompt updates. The merged stream is video-only, and its near-playback window timing is not a measured viewer delay or full operating cost."
+    "question": "Does FastH3 Omni make H3 live on a consumer GPU?",
+    "text": "Not shown. Its up-to-12× result measures finished MP4s on eight GB200s; local 5090/ComfyUI routes need separate timing, quality and receiver tests."
   },
   "summary": [
+    "FastVideo reports 5.6–11.9× lower complete-MP4 latency than Base H3 across 27 reference-guided jobs on eight GB200 GPUs at 1344×768/24 fps. A 15-second one-image clip finished in 14.14 seconds, but nine images plus three clips took 59.77 seconds. These warm measurements exclude load and do not show continuous viewer delivery.",
     "vLLM-Omni merged TaoMate-H3 WebSocket video with prompt changes on 19 October. Its one-session server recipe needs two H200-class FP8 or four H200-class BF16 GPUs. The merged fragmented MP4 is video-only; AAC transport and an ordinary full-request follow-up remain open. A source-reported 4.74-second median for a 4.958-second window is not receiver-visible response or delivered-hour cost.",
     "fal Worlds lists hosted WebRTC sessions for Abot World 0 and Lingbot World 2 with movement and prompt controls. Both cards show $0.00125 per generated compute second; Abot is labeled Commercial use and Lingbot Research only. The realtime client is alpha. A $4.50 nominal compute-hour does not establish a delivered viewer hour, action-to-visible delay or session stability.",
     "A vLLM-Omni four-H100 H3 nightly reported a 142.84-second text-to-video response versus a 38.33-second baseline, but the metric returned to normal and the issue closed with machine contention suspected. A same-shape four-H200 rerun did not reproduce the slowdown. A separate open PR to carry encoded frame counts into API metadata has no controlled end-to-end speed result. Neither establishes a new live-video capability or route price.",
@@ -38,6 +39,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "FastH3 Omni has no pool-operated receiver session, accepted-quality comparison or full bill; GB200 results cannot be transferred to local hardware.",
     "The merged TaoMate WebSocket route was not pool-tested; it has no receiver trace, accepted-quality result or full bill.",
     "AAC transport is still an open follow-up, not merged support.",
     "No fal Worlds session, billed receipt, action-to-visible timing or long-run quality check was performed.",
@@ -85,7 +87,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-21T09:52:30Z",
-  "meaningfully_updated_at": "2026-10-21T09:52:30Z",
-  "freshness_note": "Checked 21 October 2026. Merge and follow-up statuses may change; confirm the exact revision before deployment."
+  "checked_at": "2026-10-22T09:49:30Z",
+  "meaningfully_updated_at": "2026-10-22T09:49:30Z",
+  "freshness_note": "Checked 22 October 2026. Release recipes and benchmark claims may change; confirm the exact checkpoint and runtime before testing."
 }
