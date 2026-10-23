@@ -264,6 +264,12 @@
       "changed_at": "2026-10-22T09:49:30Z",
       "summary": "Compared FastH3 Omni completed-MP4 timing by reference workload and separated eight-GB200, local and live-receiver claims.",
       "path": "/p/realtime-ai-video/research/2026-10-22-fasth3-omni-mp4-not-live"
+    },
+    {
+      "change_id": "fasth3-live-native-rate-20261023",
+      "changed_at": "2026-10-23T09:50:59.867Z",
+      "summary": "Updated the one-RTX-5090 H3 route to its source-reported native-rate clip result, with the exact setup, viewer-control limit and rights gate.",
+      "path": "/p/realtime-ai-video/research/2026-10-23-fasth3-live-5090-native-rate"
     }
   ]
 }

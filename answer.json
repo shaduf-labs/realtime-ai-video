@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "FastH3 Omni adds a reference-guided H3 clip route with synchronized audio. FastVideo reports 5.6–11.9× faster complete-MP4 times than Base H3 on eight GB200 GPUs, but the result is workload-specific: a 15-second single-image job took 14.14 seconds, while a 12-reference job took 59.77 seconds. Local 5090 and ComfyUI paths use other profiles; this does not establish continuous interactive delivery, quality parity or a full bill. TaoMate remains a separate merged video-only WebSocket route.",
+  "current_answer": "FastH3 Live v2.1.0 reports one RTX 5090 generating 448×448 H3 video and audio faster than 24-fps playback: 362-frame warm clips take 10.8 seconds, leaving about 4.3 seconds of margin per clip. This is an unattended, prefilled clip stream, not a timed interactive receiver. The exact ComfyUI/TaoMate/Light VAE/attention stack and H3 derivative-weight license matter. FastH3 Omni remains a separate reference-guided completed-MP4 route; TaoMate vLLM is a separate video-only WebSocket route.",
   "catalogue_card": {
-    "question": "Does FastH3 Omni make H3 live on a consumer GPU?",
-    "text": "Not shown. Its up-to-12× result measures finished MP4s on eight GB200s; local 5090/ComfyUI routes need separate timing, quality and receiver tests."
+    "question": "Can one RTX 5090 really run an H3 video channel at normal speed?",
+    "text": "One project reports 15-second, 448×448 clips in 10.8 seconds on a pinned 5090 stack. That supports unattended 24-fps playout, not measured viewer control, a full bill or unrestricted broadcast rights."
   },
   "summary": [
+    "FastH3 Live v2.1.0 author reports 362-frame, 448×448 T2AV clips in 10.8 warm seconds on one RTX 5090: 33.6 generated fps for 24-fps playback, with 4.3 seconds of clip margin. The 10-clip-per-arm benchmark depends on a TaoMate adapter, official base DiT, Light VAE, Spectrum, SageAttention and ComfyUI VRAM headroom. It does not measure a viewer-directed session, thirty-minute stability or full cost. H3 derivative-weight rights have territorial limits.",
     "FastVideo reports 5.6–11.9× lower complete-MP4 latency than Base H3 across 27 reference-guided jobs on eight GB200 GPUs at 1344×768/24 fps. A 15-second one-image clip finished in 14.14 seconds, but nine images plus three clips took 59.77 seconds. These warm measurements exclude load and do not show continuous viewer delivery.",
     "vLLM-Omni merged TaoMate-H3 WebSocket video with prompt changes on 19 October. Its one-session server recipe needs two H200-class FP8 or four H200-class BF16 GPUs. The merged fragmented MP4 is video-only; AAC transport and an ordinary full-request follow-up remain open. A source-reported 4.74-second median for a 4.958-second window is not receiver-visible response or delivered-hour cost.",
     "fal Worlds lists hosted WebRTC sessions for Abot World 0 and Lingbot World 2 with movement and prompt controls. Both cards show $0.00125 per generated compute second; Abot is labeled Commercial use and Lingbot Research only. The realtime client is alpha. A $4.50 nominal compute-hour does not establish a delivered viewer hour, action-to-visible delay or session stability.",
@@ -39,6 +40,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "The one-5090 FastH3 Live result is source-reported warm throughput for unattended clips; it is not an independently measured receiver session or bill.",
     "FastH3 Omni has no pool-operated receiver session, accepted-quality comparison or full bill; GB200 results cannot be transferred to local hardware.",
     "The merged TaoMate WebSocket route was not pool-tested; it has no receiver trace, accepted-quality result or full bill.",
     "AAC transport is still an open follow-up, not merged support.",
@@ -87,7 +89,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-22T09:49:30Z",
-  "meaningfully_updated_at": "2026-10-22T09:49:30Z",
-  "freshness_note": "Checked 22 October 2026. Release recipes and benchmark claims may change; confirm the exact checkpoint and runtime before testing."
+  "checked_at": "2026-10-23T09:50:59.867Z",
+  "meaningfully_updated_at": "2026-10-23T09:50:59.867Z",
+  "freshness_note": "Checked 23 October 2026 against the current FastH3 Live v2.1.0 card and related source conditions."
 }

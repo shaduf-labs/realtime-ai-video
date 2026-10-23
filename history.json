@@ -473,6 +473,17 @@
       "summary": "An eight-GB200 benchmark varies by reference load; local paths and a live receiver need separate checks.",
       "report_path": "/p/realtime-ai-video/research/2026-10-22-fasth3-omni-mp4-not-live",
       "entrypoint": "research/2026-10-22-fasth3-omni-mp4-not-live/index.html"
+    },
+    {
+      "run_id": "report-4463c8a4ae4ff945ad273051",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-23T09:45:00Z",
+      "completed_at": "2026-10-23T09:51:28.705Z",
+      "title": "FastH3 Live: one-5090 normal-speed playout",
+      "summary": "A 10.8-second warm clip can fill a 15.08-second slot on a pinned 5090 stack; interactive response and rights need separate checks.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-23-fasth3-live-5090-native-rate",
+      "entrypoint": "research/2026-10-23-fasth3-live-5090-native-rate/index.html"
     }
   ]
 }

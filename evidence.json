@@ -1160,6 +1160,26 @@
       "accessed_at": "2026-10-16T09:59:30Z",
       "relation": "limits",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:fasth3-live-v21",
+      "source_type": "first-person engineering report",
+      "source_url": "https://huggingface.co/datasets/jacokon/fasth3-live",
+      "title": "FastH3 Live v2.1.0 dataset card",
+      "claim": "Author reports 10.8 seconds per 362-frame warm clip on one RTX 5090 with the named TaoMate/Light VAE/attention stack, not a measured viewer-controlled session.",
+      "accessed_at": "2026-10-23T09:50:59.867Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:minimax-h3-license-request",
+      "source_type": "provider licensing form",
+      "source_url": "https://platform.minimax.io/h3-license",
+      "title": "MiniMax H3 license request",
+      "claim": "MiniMax provides a separate request form for territories excluded from its H3 community license; submission is not authorization.",
+      "accessed_at": "2026-10-23T09:50:59.867Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
     }
   ]
 }
