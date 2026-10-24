@@ -2,6 +2,12 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "reactor-comfyui-hosted-clip-queue-20261024",
+      "changed_at": "2026-10-24T09:49:52Z",
+      "summary": "Separated Reactor’s hosted ComfyUI client from local FastH3-Omni weights, and documented the completed-clip playback and displayed rate boundaries.",
+      "path": "/p/realtime-ai-video/research/2026-10-24-reactor-comfyui-hosted-clip-queue"
+    },
+    {
       "change_id": "fal-worlds-session-and-price-20261020",
       "changed_at": "2026-10-20T09:50:00Z",
       "summary": "Added hosted Abot and Lingbot browser routes, their separate use labels and a compute-second versus delivered-hour cost check.",

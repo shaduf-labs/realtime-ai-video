@@ -484,6 +484,17 @@
       "summary": "A 10.8-second warm clip can fill a 15.08-second slot on a pinned 5090 stack; interactive response and rights need separate checks.",
       "report_path": "/p/realtime-ai-video/research/2026-10-23-fasth3-live-5090-native-rate",
       "entrypoint": "research/2026-10-23-fasth3-live-5090-native-rate/index.html"
+    },
+    {
+      "run_id": "report-4877c4452ffcf9ca30cfe2c0",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-24T09:45:00Z",
+      "completed_at": "2026-10-24T09:51:30Z",
+      "title": "Reactor ComfyUI: hosted window, completed-clip queue",
+      "summary": "The new node pack gives ComfyUI users a hosted live window, not local FastH3-Omni inference or measured frame-by-frame response.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-24-reactor-comfyui-hosted-clip-queue",
+      "entrypoint": "research/2026-10-24-reactor-comfyui-hosted-clip-queue/index.html"
     }
   ]
 }

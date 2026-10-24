@@ -2,6 +2,46 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "evidence_id": "public:reactor-local-20261024",
+      "source_type": "model card",
+      "source_url": "https://huggingface.co/FastVideo/FastH3-Omni-Comfy",
+      "title": "FastVideo local ComfyUI weights",
+      "claim": "FastVideo provides separate open weights for native local ComfyUI use.",
+      "accessed_at": "2026-10-24T09:49:52Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:reactor-price-20261024",
+      "source_type": "provider documentation",
+      "source_url": "https://www.reactor.inc/models/fast-h3-omni/info",
+      "title": "Reactor FastH3-Omni model price",
+      "claim": "The current model page displays $0.75 per minute and says four to nine images take longer than playback.",
+      "accessed_at": "2026-10-24T09:49:52Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:reactor-docs-20261024",
+      "source_type": "provider documentation",
+      "source_url": "https://docs.reactor.inc/model-api-reference/fast-h3-omni/overview",
+      "title": "FastH3-Omni API overview",
+      "claim": "FastH3-Omni enqueues completed audio-video clips before play; three reference images fit the realtime condition.",
+      "accessed_at": "2026-10-24T09:49:52Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:reactor-node-20261024",
+      "source_type": "project repository",
+      "source_url": "https://github.com/reactor-team/comfyui-reactor-api/blob/main/README.md",
+      "title": "Reactor ComfyUI node pack",
+      "claim": "Reactor ComfyUI nodes control hosted models via an API key, with Realtime and Render modes.",
+      "accessed_at": "2026-10-24T09:49:52Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
       "evidence_id": "public:fasth3-omni-3090-20261022",
       "source_type": "community report",
       "source_url": "https://www.reddit.com/r/comfyui/comments/1xc7czj/fasth3_omni_vs_ref2va_8steps_turbo_comparison_on/",
