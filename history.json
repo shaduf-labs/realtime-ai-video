@@ -506,6 +506,17 @@
       "summary": "The warm 5090 MP4 case beats playback speed narrowly; the WebRTC service and motion-heavy quality need separate checks.",
       "report_path": "/p/realtime-ai-video/research/2026-10-27-edenlive-5090-two-deployments",
       "entrypoint": "research/2026-10-27-edenlive-5090-two-deployments/index.html"
+    },
+    {
+      "run_id": "report-3fcada4ce6ded5167d830b40",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-27T11:28:00Z",
+      "completed_at": "2026-10-27T11:31:30Z",
+      "title": "SolarWM-H3 reports a 1.15-second browser response on eight Blackwell GPUs",
+      "summary": "Project report times keypress to a matching visible frame; p95, long-session quality and cost remain unmeasured.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-27-solarwm-h3-browser-response",
+      "entrypoint": "research/2026-10-27-solarwm-h3-browser-response/index.html"
     }
   ]
 }

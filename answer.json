@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "EdenLive 5B now has a source-reported 25.17-inference-FPS 5090 proxy-video path at 1280×704, just above 24-fps playback. The warm LightX2V job saves an MP4; EdenLive’s separate WebRTC service still lists an 80-GB NVIDIA GPU as its verified environment. A game developer reports distorted moving objects on a different, unoptimized setup. Neither source measures a 5090 browser session, full bill or accepted live quality.",
+  "current_answer": "SolarWM-H3 reports a 1.15-second median keypress-to-visible-frame result on a documented eight-Blackwell browser route. Its integrated backend reaches 24.38 steady-state FPS, narrowly above 24-fps playout; p95, cold start, accepted quality and full cost are unknown. EdenLive’s one-5090 result is a different warm MP4 route, not a matched browser test.",
   "catalogue_card": {
-    "question": "Does EdenLive run live 720p video on one RTX 5090?",
-    "text": "A 5090 LightX2V benchmark reaches 25.17 inference FPS on one warm proxy-video job. The documented browser service is a separate 80-GB-verified route; test moving-object quality and receiver delay before calling it live."
+    "question": "Can H3 respond to a keypress on screen in about a second?",
+    "text": "SolarWM-H3 reports a 1.15-second browser median, but its documented setup needs eight Blackwell GPUs. The 24.38-FPS backend rate has little margin; p95 delay, long-session quality and full cost are still unknown."
   },
   "summary": [
+    "SolarX-Team reports a 1.15-second median keypress-to-visible-frame web result on a video-only eight-Blackwell SolarWM-H3 route. Its integrated serial backend reaches 24.38 steady-state FPS, versus 4.92 FPS before optimization; 0.58 seconds to first backend frame is a different clock. No p95, cold-start time, accepted quality or delivered-hour bill is published.",
     "EdenLive’s LightX2V 5B path reports 25.17 inference FPS on one RTX 5090 for 717 frames at 1280×704/24 fps. About 1.4 seconds of measured inference margin remains across the thirty-second sample. The separate WebRTC service lists an 80-GB verified environment, and one non-matched game developer reports moving-object defects. No receiver-visible delay, accepted-quality rate or delivered-hour bill is known.",
     "Reactor’s ComfyUI node pack uses a Reactor API key and hosted inference, separate from local FastH3-Omni open weights. Its realtime window can steer the session, but FastH3-Omni queues completed 5–15-second audio-video clips before play. Up to three reference images fit the provider’s realtime profile; four to nine are slower than playback. The displayed $0.75/minute model rate is not a complete delivered-hour invoice.",
     "FastH3 Live v2.1.0 author reports 362-frame, 448×448 T2AV clips in 10.8 warm seconds on one RTX 5090: 33.6 generated fps for 24-fps playback, with 4.3 seconds of clip margin. The 10-clip-per-arm benchmark depends on a TaoMate adapter, official base DiT, Light VAE, Spectrum, SageAttention and ComfyUI VRAM headroom. It does not measure a viewer-directed session, thirty-minute stability or full cost. H3 derivative-weight rights have territorial limits.",
@@ -42,6 +43,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "SolarWM-H3 browser and backend results are project-maintained, not pool-reproduced; no p95, long-session trace, quality evaluation or full bill is available.",
     "The EdenLive RTX 5090 number comes from one warm completed-file benchmark; it is not a browser-service or pool-operated test.",
     "Reactor ComfyUI has no pool-operated receiver trace or invoice; the displayed model rate has no verified promotional expiry or retry/idle cost here.",
     "The one-5090 FastH3 Live result is source-reported warm throughput for unattended clips; it is not an independently measured receiver session or bill.",
@@ -93,7 +95,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-27T09:39:00Z",
-  "meaningfully_updated_at": "2026-10-27T09:39:00Z",
-  "freshness_note": "Checked 27 October 2026. The latest route comparison distinguishes the accelerated 5090 file path from the documented WebRTC service."
+  "checked_at": "2026-10-27T11:30:00Z",
+  "meaningfully_updated_at": "2026-10-27T11:30:00Z",
+  "freshness_note": "Checked 27 October 2026. The newest browser-response report names its eight-Blackwell requirement and separates backend from screen timing."
 }

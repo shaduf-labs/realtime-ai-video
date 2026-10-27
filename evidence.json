@@ -1250,6 +1250,26 @@
       "accessed_at": "2026-10-23T09:50:59.867Z",
       "relation": "context",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:solarwm-h3-realtime-blog",
+      "source_type": "research-project report",
+      "source_url": "https://solarx-team.github.io/SolarWM-H3-Realtime/",
+      "title": "SolarWM H3 Realtime Interaction",
+      "claim": "Reports 1.15-second median keypress-to-screen delay and 24.38 steady-state serial backend FPS on its web route.",
+      "accessed_at": "2026-10-27T11:30:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:solarwm-h3-realtime-guide",
+      "source_type": "project deployment guide",
+      "source_url": "https://github.com/Junchao-cs/SolarWM/blob/main/src/solarwm/realtime_interaction/README.md",
+      "title": "SolarWM-H3 realtime interaction guide",
+      "claim": "Documents the eight-Blackwell, video-only browser route and its checkpoint and decoder conditions.",
+      "accessed_at": "2026-10-27T11:30:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
     }
   ]
 }
