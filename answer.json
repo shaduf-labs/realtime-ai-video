@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "One RTX 5090 has a source-reported H3 route that generates warm 448×448 clips faster than 24-fps playback, but viewer control remains unmeasured. Reactor now offers a different path: ComfyUI nodes control hosted FastH3-Omni inference. Its audio-video clips finish generating before playback, even in a realtime window. The displayed $0.75/minute model rate is not a delivered-stream-hour bill. Local open weights and the Reactor API must not be treated as one setup.",
+  "current_answer": "EdenLive 5B now has a source-reported 25.17-inference-FPS 5090 proxy-video path at 1280×704, just above 24-fps playback. The warm LightX2V job saves an MP4; EdenLive’s separate WebRTC service still lists an 80-GB NVIDIA GPU as its verified environment. A game developer reports distorted moving objects on a different, unoptimized setup. Neither source measures a 5090 browser session, full bill or accepted live quality.",
   "catalogue_card": {
-    "question": "Does Reactor make FastH3 Omni live inside ComfyUI?",
-    "text": "Reactor’s ComfyUI node opens a hosted live window, not local inference. FastH3-Omni still queues completed clips before playback; its displayed $0.75/minute rate needs a receiver and billing check."
+    "question": "Does EdenLive run live 720p video on one RTX 5090?",
+    "text": "A 5090 LightX2V benchmark reaches 25.17 inference FPS on one warm proxy-video job. The documented browser service is a separate 80-GB-verified route; test moving-object quality and receiver delay before calling it live."
   },
   "summary": [
+    "EdenLive’s LightX2V 5B path reports 25.17 inference FPS on one RTX 5090 for 717 frames at 1280×704/24 fps. About 1.4 seconds of measured inference margin remains across the thirty-second sample. The separate WebRTC service lists an 80-GB verified environment, and one non-matched game developer reports moving-object defects. No receiver-visible delay, accepted-quality rate or delivered-hour bill is known.",
     "Reactor’s ComfyUI node pack uses a Reactor API key and hosted inference, separate from local FastH3-Omni open weights. Its realtime window can steer the session, but FastH3-Omni queues completed 5–15-second audio-video clips before play. Up to three reference images fit the provider’s realtime profile; four to nine are slower than playback. The displayed $0.75/minute model rate is not a complete delivered-hour invoice.",
     "FastH3 Live v2.1.0 author reports 362-frame, 448×448 T2AV clips in 10.8 warm seconds on one RTX 5090: 33.6 generated fps for 24-fps playback, with 4.3 seconds of clip margin. The 10-clip-per-arm benchmark depends on a TaoMate adapter, official base DiT, Light VAE, Spectrum, SageAttention and ComfyUI VRAM headroom. It does not measure a viewer-directed session, thirty-minute stability or full cost. H3 derivative-weight rights have territorial limits.",
     "FastVideo reports 5.6–11.9× lower complete-MP4 latency than Base H3 across 27 reference-guided jobs on eight GB200 GPUs at 1344×768/24 fps. A 15-second one-image clip finished in 14.14 seconds, but nine images plus three clips took 59.77 seconds. These warm measurements exclude load and do not show continuous viewer delivery.",
@@ -41,6 +42,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "The EdenLive RTX 5090 number comes from one warm completed-file benchmark; it is not a browser-service or pool-operated test.",
     "Reactor ComfyUI has no pool-operated receiver trace or invoice; the displayed model rate has no verified promotional expiry or retry/idle cost here.",
     "The one-5090 FastH3 Live result is source-reported warm throughput for unattended clips; it is not an independently measured receiver session or bill.",
     "FastH3 Omni has no pool-operated receiver session, accepted-quality comparison or full bill; GB200 results cannot be transferred to local hardware.",
@@ -91,7 +93,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-24T09:49:52Z",
-  "meaningfully_updated_at": "2026-10-24T09:49:52Z",
-  "freshness_note": "Checked 24 October 2026 against Reactor’s ComfyUI node README, FastH3-Omni model documentation and displayed price; the receiver and bill remain unmeasured."
+  "checked_at": "2026-10-27T09:39:00Z",
+  "meaningfully_updated_at": "2026-10-27T09:39:00Z",
+  "freshness_note": "Checked 27 October 2026. The latest route comparison distinguishes the accelerated 5090 file path from the documented WebRTC service."
 }

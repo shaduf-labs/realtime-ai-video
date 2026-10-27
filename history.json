@@ -495,6 +495,17 @@
       "summary": "The new node pack gives ComfyUI users a hosted live window, not local FastH3-Omni inference or measured frame-by-frame response.",
       "report_path": "/p/realtime-ai-video/research/2026-10-24-reactor-comfyui-hosted-clip-queue",
       "entrypoint": "research/2026-10-24-reactor-comfyui-hosted-clip-queue/index.html"
+    },
+    {
+      "run_id": "report-06e63792da26ccc0f8da1d83",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-27T09:37:00Z",
+      "completed_at": "2026-10-27T09:41:02Z",
+      "title": "EdenLive 5090 file speed versus browser service",
+      "summary": "The warm 5090 MP4 case beats playback speed narrowly; the WebRTC service and motion-heavy quality need separate checks.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-27-edenlive-5090-two-deployments",
+      "entrypoint": "research/2026-10-27-edenlive-5090-two-deployments/index.html"
     }
   ]
 }

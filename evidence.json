@@ -2,6 +2,36 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "evidence_id": "public:edenlive-lightx2v-20261027",
+      "source_type": "project deployment guide",
+      "source_url": "https://github.com/ModelTC/LightX2V/blob/main/scripts/edenlive/README.md",
+      "title": "LightX2V EdenLive deployment guide",
+      "claim": "The warm 5090 proxy-video job reports 25.1732 inference FPS for 717 frames at 1280×704, excluding startup and final save.",
+      "accessed_at": "2026-10-27T09:39:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:edenlive-service-20261027",
+      "source_type": "project repository",
+      "source_url": "https://github.com/VAST-AI-Research/EdenLive",
+      "title": "EdenLive repository",
+      "claim": "The documented real-time WebRTC service lists an 80-GB NVIDIA GPU in its verified environment.",
+      "accessed_at": "2026-10-27T09:39:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:edenlive-motion-20261027",
+      "source_type": "first-person community report",
+      "source_url": "https://www.reddit.com/r/StableDiffusion/comments/1xcnkae/tried_edenlive_5b_on_my_game_footage_with_an_rtx/",
+      "title": "Game developer EdenLive 5090 footage report",
+      "claim": "One user reports distorted moving objects on different, unoptimized settings; the result is not a matched speed benchmark.",
+      "accessed_at": "2026-10-27T09:39:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
       "evidence_id": "public:reactor-local-20261024",
       "source_type": "model card",
       "source_url": "https://huggingface.co/FastVideo/FastH3-Omni-Comfy",
