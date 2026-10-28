@@ -517,6 +517,17 @@
       "summary": "Project report times keypress to a matching visible frame; p95, long-session quality and cost remain unmeasured.",
       "report_path": "/p/realtime-ai-video/research/2026-10-27-solarwm-h3-browser-response",
       "entrypoint": "research/2026-10-27-solarwm-h3-browser-response/index.html"
+    },
+    {
+      "run_id": "report-b262c9418899973bbf26dcd7",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-28T09:45:00Z",
+      "completed_at": "2026-10-28T09:55:19Z",
+      "title": "Micro-World 2 single-MI350X throughput and decoder trade-off",
+      "summary": "AMD reports decoded generation above 30 FPS on one MI350X; viewer response, quality acceptance and cost remain unmeasured.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-28-micro-world-2-mi350x",
+      "entrypoint": "research/2026-10-28-micro-world-2-mi350x/index.html"
     }
   ]
 }

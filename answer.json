@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "SolarWM-H3 reports a 1.15-second median keypress-to-visible-frame result on a documented eight-Blackwell browser route. Its integrated backend reaches 24.38 steady-state FPS, narrowly above 24-fps playout; p95, cold start, accepted quality and full cost are unknown. EdenLive’s one-5090 result is a different warm MP4 route, not a matched browser test.",
+  "current_answer": "Micro-World 2 reports 42.49 decoded FPS on one MI350X at 352×640 with an optional lower-fidelity decoder; the original decoder reports 32.12 FPS. Neither result times the viewer or prices a delivered session. SolarWM-H3 separately reports a 1.15-second browser keypress median on eight Blackwell GPUs.",
   "catalogue_card": {
-    "question": "Can H3 respond to a keypress on screen in about a second?",
-    "text": "SolarWM-H3 reports a 1.15-second browser median, but its documented setup needs eight Blackwell GPUs. The 24.38-FPS backend rate has little margin; p95 delay, long-session quality and full cost are still unknown."
+    "question": "Can one GPU now generate a live AI world?",
+    "text": "AMD reports 42.49 decoded FPS for Micro-World 2 on one MI350X at 352×640. The faster decoder costs visual quality; browser response, sustained viewer quality and full cost are unmeasured."
   },
   "summary": [
+    "AMD reports 32.12 decoded FPS with the original VAE and 42.49 with a lower-fidelity lightweight VAE for Micro-World 2 at 352×640 on one MI350X. Its main WBench comparison uses the original decoder. This is not an RTX 5090 result, browser FPS or complete session cost.",
     "SolarX-Team reports a 1.15-second median keypress-to-visible-frame web result on a video-only eight-Blackwell SolarWM-H3 route. Its integrated serial backend reaches 24.38 steady-state FPS, versus 4.92 FPS before optimization; 0.58 seconds to first backend frame is a different clock. No p95, cold-start time, accepted quality or delivered-hour bill is published.",
     "EdenLive’s LightX2V 5B path reports 25.17 inference FPS on one RTX 5090 for 717 frames at 1280×704/24 fps. About 1.4 seconds of measured inference margin remains across the thirty-second sample. The separate WebRTC service lists an 80-GB verified environment, and one non-matched game developer reports moving-object defects. No receiver-visible delay, accepted-quality rate or delivered-hour bill is known.",
     "Reactor’s ComfyUI node pack uses a Reactor API key and hosted inference, separate from local FastH3-Omni open weights. Its realtime window can steer the session, but FastH3-Omni queues completed 5–15-second audio-video clips before play. Up to three reference images fit the provider’s realtime profile; four to nine are slower than playback. The displayed $0.75/minute model rate is not a complete delivered-hour invoice.",
@@ -43,6 +44,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "Micro-World 2 receiver timing, long-session quality, alternate-GPU fit, rights for a specific use and a complete bill are unknown.",
     "SolarWM-H3 browser and backend results are project-maintained, not pool-reproduced; no p95, long-session trace, quality evaluation or full bill is available.",
     "The EdenLive RTX 5090 number comes from one warm completed-file benchmark; it is not a browser-service or pool-operated test.",
     "Reactor ComfyUI has no pool-operated receiver trace or invoice; the displayed model rate has no verified promotional expiry or retry/idle cost here.",
@@ -95,7 +97,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-27T11:30:00Z",
-  "meaningfully_updated_at": "2026-10-27T11:30:00Z",
-  "freshness_note": "Checked 27 October 2026. The newest browser-response report names its eight-Blackwell requirement and separates backend from screen timing."
+  "checked_at": "2026-10-28T09:53:00Z",
+  "meaningfully_updated_at": "2026-10-28T09:53:00Z",
+  "freshness_note": "Checked 28 October 2026 against AMD model, code and benchmark sources. No pool receiver or billing test."
 }

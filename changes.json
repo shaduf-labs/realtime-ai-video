@@ -2,6 +2,12 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "micro-world-2-mi350x-decoder-20261028",
+      "changed_at": "2026-10-28T09:53:00Z",
+      "summary": "Added AMD Micro-World 2 single-MI350X decoded throughput with its original-versus-light decoder quality and receiver-cost boundaries.",
+      "path": "/p/realtime-ai-video/research/2026-10-28-micro-world-2-mi350x"
+    },
+    {
       "change_id": "edenlive-5090-deployment-check-20261027",
       "changed_at": "2026-10-27T09:39:00Z",
       "summary": "Separated the warm 5090 EdenLive file benchmark from the 80-GB-verified WebRTC service and identified a motion-quality test.",

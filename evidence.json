@@ -2,6 +2,36 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "evidence_id": "public:micro-world-2-blog-20261028",
+      "source_type": "vendor technical report",
+      "source_url": "https://rocm.blogs.amd.com/artificial-intelligence/Micro-World-V2/README.html",
+      "title": "AMD Micro-World 2 technical report",
+      "claim": "One MI350X at 352×640 reports 32.12 decoded FPS with original VAE and 42.49 with lighter, lower-fidelity VAE.",
+      "accessed_at": "2026-10-28T09:53:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:micro-world-2-card-20261028",
+      "source_type": "model card",
+      "source_url": "https://huggingface.co/amd/Micro-World-2",
+      "title": "AMD Micro-World 2 checkpoint card",
+      "claim": "Model checkpoints require separate Wan2.2 base weights; card labels weights OpenRAIL.",
+      "accessed_at": "2026-10-28T09:53:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:streameval-20261028",
+      "source_type": "research paper",
+      "source_url": "https://arxiv.org/abs/2610.28402",
+      "title": "StreamEval paper",
+      "claim": "The benchmark separates quality, following and continuity in interactive tasks; it does not list Micro-World 2.",
+      "accessed_at": "2026-10-28T09:53:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
       "evidence_id": "public:edenlive-lightx2v-20261027",
       "source_type": "project deployment guide",
       "source_url": "https://github.com/ModelTC/LightX2V/blob/main/scripts/edenlive/README.md",
