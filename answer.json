@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "Micro-World 2 reports 42.49 decoded FPS on one MI350X at 352×640 with an optional lower-fidelity decoder; the original decoder reports 32.12 FPS. Neither result times the viewer or prices a delivered session. SolarWM-H3 separately reports a 1.15-second browser keypress median on eight Blackwell GPUs.",
+  "current_answer": "SGF+ authors show 24-hour video generation, while a separate B200 Reactor browser route reports about 19 generated FPS for 16-FPS playback. The independent RTX 5090 ComfyUI file route takes 56.6 warm seconds for 20 seconds of output. The three results do not establish a 24-hour live viewer session or a complete bill.",
   "catalogue_card": {
-    "question": "Can one GPU now generate a live AI world?",
-    "text": "AMD reports 42.49 decoded FPS for Micro-World 2 on one MI350X at 352×640. The faster decoder costs visual quality; browser response, sustained viewer quality and full cost are unmeasured."
+    "question": "Does SGF+ run a 24-hour live stream on one GPU?",
+    "text": "Its paper shows four 24-hour generations. A separate one-B200 browser service reports 19 generated FPS for 16-FPS playback, but defaults to about four minutes and has no published long-session bill. A 5090 ComfyUI job is slower than playback."
   },
   "summary": [
+    "SGF+ authors show four 24-hour generations from five-second training windows; their main quantitative quality test covers 60 and 240 seconds. A Reactor integration reports about 19 generated FPS on one B200 for 16-FPS browser playback with next-chunk prompt edits and a roughly four-minute default horizon. An independent ComfyUI pack reports a warm RTX 5090 321-frame job in 56.6 seconds for about 20 seconds of file output. These are different deployments, not a proved 24-hour viewer session or cost.",
     "AMD reports 32.12 decoded FPS with the original VAE and 42.49 with a lower-fidelity lightweight VAE for Micro-World 2 at 352×640 on one MI350X. Its main WBench comparison uses the original decoder. This is not an RTX 5090 result, browser FPS or complete session cost.",
     "SolarX-Team reports a 1.15-second median keypress-to-visible-frame web result on a video-only eight-Blackwell SolarWM-H3 route. Its integrated serial backend reaches 24.38 steady-state FPS, versus 4.92 FPS before optimization; 0.58 seconds to first backend frame is a different clock. No p95, cold-start time, accepted quality or delivered-hour bill is published.",
     "EdenLive’s LightX2V 5B path reports 25.17 inference FPS on one RTX 5090 for 717 frames at 1280×704/24 fps. About 1.4 seconds of measured inference margin remains across the thirty-second sample. The separate WebRTC service lists an 80-GB verified environment, and one non-matched game developer reports moving-object defects. No receiver-visible delay, accepted-quality rate or delivered-hour bill is known.",
@@ -44,6 +45,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "The SGF+ B200 browser and 5090 file results are project-reported, not pool-operated; prompt-to-visible p95, long-session quality, recovery, commercial rights for a specific use, and full delivered-hour cost remain unverified.",
     "Micro-World 2 receiver timing, long-session quality, alternate-GPU fit, rights for a specific use and a complete bill are unknown.",
     "SolarWM-H3 browser and backend results are project-maintained, not pool-reproduced; no p95, long-session trace, quality evaluation or full bill is available.",
     "The EdenLive RTX 5090 number comes from one warm completed-file benchmark; it is not a browser-service or pool-operated test.",
@@ -97,7 +99,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-28T09:53:00Z",
-  "meaningfully_updated_at": "2026-10-28T09:53:00Z",
-  "freshness_note": "Checked 28 October 2026 against AMD model, code and benchmark sources. No pool receiver or billing test."
+  "checked_at": "2026-10-29T09:50:14Z",
+  "meaningfully_updated_at": "2026-10-29T09:50:14Z",
+  "freshness_note": "Checked 29 October 2026 against the SGF+ paper, official browser integration and independent ComfyUI pack. No pool receiver or billing test."
 }

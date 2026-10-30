@@ -1300,6 +1300,36 @@
       "accessed_at": "2026-10-27T11:30:00Z",
       "relation": "limits",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:sgfplus-paper-20261029",
+      "source_type": "research paper",
+      "source_url": "https://arxiv.org/html/2610.10429v3",
+      "title": "SGF+ v3 paper",
+      "claim": "Four 24-hour author examples; main quality evaluation at 60 and 240 seconds.",
+      "accessed_at": "2026-10-29T09:50:14Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:sgfplus-reactor-20261029",
+      "source_type": "project integration guide",
+      "source_url": "https://github.com/Zihan-Su/Self_Gradient_Forcing_Plus/blob/main/reactor/README.md",
+      "title": "SGF+ on Reactor",
+      "claim": "One B200 reports about 19 generated FPS for 16-FPS browser playback, next-chunk prompt updates and a four-minute default horizon.",
+      "accessed_at": "2026-10-29T09:50:14Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:sgfplus-comfy-20261029",
+      "source_type": "independent integration README",
+      "source_url": "https://github.com/hiroki-abe-58/ComfyUI-SGFPlus",
+      "title": "ComfyUI-SGFPlus",
+      "claim": "RTX 5090 warm 321-frame 832x480/16-FPS file output took 56.6 seconds; it is not a live receiver.",
+      "accessed_at": "2026-10-29T09:50:14Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
     }
   ]
 }
