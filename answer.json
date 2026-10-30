@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "SGF+ authors show 24-hour video generation, while a separate B200 Reactor browser route reports about 19 generated FPS for 16-FPS playback. The independent RTX 5090 ComfyUI file route takes 56.6 warm seconds for 20 seconds of output. The three results do not establish a 24-hour live viewer session or a complete bill.",
+  "current_answer": "Hy-Nomas adds text and camera control, but its routes are not interchangeable: one-RTX-4090 low-memory inference has no published viewer rate; an eight-B200 Reactor test reported 18.53 generated FPS over two minutes and 17.43 presented FPS at a relayed Chromium viewer; an independent 4090 ComfyUI 10-second clip took 85 warm seconds. Full delivered-hour cost, long-run quality and commercial rights for its PixelUMM-derived decoder remain unresolved.",
   "catalogue_card": {
-    "question": "Does SGF+ run a 24-hour live stream on one GPU?",
-    "text": "Its paper shows four 24-hour generations. A separate one-B200 browser service reports 19 generated FPS for 16-FPS playback, but defaults to about four minutes and has no published long-session bill. A 5090 ComfyUI job is slower than playback."
+    "question": "Can Hy-Nomas run live on one RTX 4090?",
+    "text": "The official 4090 preset documents fit, not viewer speed. The measured browser run uses eight B200s; an independent 4090 ComfyUI job takes 85 seconds for a 10-second clip. Decoder-weight rights for paid use need clarification."
   },
   "summary": [
+    "Hy-Nomas runs on one RTX 4090, but the published browser-speed test uses eight B200s. The official 4090 preset shows that the model fits with INT8 weights and CPU offload; it does not report a viewer-speed result. In a separate Reactor run, eight B200s generated 18.53 FPS over two minutes. A relayed Chromium viewer presented 17.43 FPS, below the project’s 24-FPS video timebase. An independent ComfyUI port took 85 warm seconds to finish a 10-second 1280×704 clip on a 4090. The same port flags a noncommercial license on its PixelUMM-derived decoder weights despite Apache-2.0 wording for the upstream project. Check rights before paid use. No pool-operated long session or complete bill is available.",
     "SGF+ authors show four 24-hour generations from five-second training windows; their main quantitative quality test covers 60 and 240 seconds. A Reactor integration reports about 19 generated FPS on one B200 for 16-FPS browser playback with next-chunk prompt edits and a roughly four-minute default horizon. An independent ComfyUI pack reports a warm RTX 5090 321-frame job in 56.6 seconds for about 20 seconds of file output. These are different deployments, not a proved 24-hour viewer session or cost.",
     "AMD reports 32.12 decoded FPS with the original VAE and 42.49 with a lower-fidelity lightweight VAE for Micro-World 2 at 352×640 on one MI350X. Its main WBench comparison uses the original decoder. This is not an RTX 5090 result, browser FPS or complete session cost.",
     "SolarX-Team reports a 1.15-second median keypress-to-visible-frame web result on a video-only eight-Blackwell SolarWM-H3 route. Its integrated serial backend reaches 24.38 steady-state FPS, versus 4.92 FPS before optimization; 0.58 seconds to first backend frame is a different clock. No p95, cold-start time, accepted quality or delivered-hour bill is published.",
@@ -45,6 +46,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "Hy-Nomas browser and ComfyUI measurements are source-reported. No pool-operated long session, p95 control-to-visible response, accepted-quality rate or full bill is available. Decoder-weight rights for paid use remain unresolved.",
     "The SGF+ B200 browser and 5090 file results are project-reported, not pool-operated; prompt-to-visible p95, long-session quality, recovery, commercial rights for a specific use, and full delivered-hour cost remain unverified.",
     "Micro-World 2 receiver timing, long-session quality, alternate-GPU fit, rights for a specific use and a complete bill are unknown.",
     "SolarWM-H3 browser and backend results are project-maintained, not pool-reproduced; no p95, long-session trace, quality evaluation or full bill is available.",
@@ -99,7 +101,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-29T09:50:14Z",
-  "meaningfully_updated_at": "2026-10-29T09:50:14Z",
-  "freshness_note": "Checked 29 October 2026 against the SGF+ paper, official browser integration and independent ComfyUI pack. No pool receiver or billing test."
+  "checked_at": "2026-10-30T09:49:00Z",
+  "meaningfully_updated_at": "2026-10-30T09:49:00Z",
+  "freshness_note": "Checked 30 October 2026; Hy-Nomas routes are source-reported, not pool-operated."
 }

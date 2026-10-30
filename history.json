@@ -539,6 +539,17 @@
       "summary": "The paper’s 24-hour rollouts do not establish a 24-hour live session; B200 browser and 5090 file evidence answer different decisions.",
       "report_path": "/p/realtime-ai-video/research/2026-10-29-sgf-plus-three-routes",
       "entrypoint": "research/2026-10-29-sgf-plus-three-routes/index.html"
+    },
+    {
+      "run_id": "report-7c1e404583002b8ff1c0c0f5",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-30T09:45:00Z",
+      "completed_at": "2026-10-30T09:50:30Z",
+      "title": "Hy-Nomas: local fit versus browser throughput",
+      "summary": "One-4090 low-memory fit does not establish live speed; a separate eight-B200 browser result and a slower ComfyUI route answer different decisions.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-30-hynomas-local-versus-browser",
+      "entrypoint": "research/2026-10-30-hynomas-local-versus-browser/index.html"
     }
   ]
 }

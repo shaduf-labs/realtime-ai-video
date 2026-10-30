@@ -2,6 +2,12 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "hynomas-route-split-20261030",
+      "changed_at": "2026-10-30T09:49:00Z",
+      "summary": "Separated one-4090 low-memory fit, eight-B200 browser throughput and slower local ComfyUI job; flagged decoder-weight rights for paid use.",
+      "path": "/p/realtime-ai-video/research/2026-10-30-hynomas-local-versus-browser"
+    },
+    {
       "change_id": "sgfplus-three-routes-20261029",
       "changed_at": "2026-10-29T09:50:14Z",
       "summary": "Separated SGF+ long-generation research, a B200 interactive browser route and a slower RTX 5090 ComfyUI file workflow.",

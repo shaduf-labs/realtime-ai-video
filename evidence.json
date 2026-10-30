@@ -1330,6 +1330,51 @@
       "accessed_at": "2026-10-29T09:50:14Z",
       "relation": "supports",
       "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "evidence:hynomas-20261030",
+      "source_url": "https://github.com/Tencent-Hunyuan/Hy-Nomas",
+      "claim": "Official one-4090 low-memory path documents INT8/FP8 offload setup, not viewer throughput.",
+      "accessed_at": "2026-10-30T09:49:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary",
+      "source_type": "provider"
+    },
+    {
+      "evidence_id": "evidence:reactor-20261030",
+      "source_url": "https://github.com/Tencent-Hunyuan/Hy-Nomas/blob/main/reactor/README.md",
+      "claim": "Eight-B200 two-minute run reported 18.53 generation FPS and 17.43 presented FPS at a relayed Chromium viewer.",
+      "accessed_at": "2026-10-30T09:49:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary",
+      "source_type": "provider"
+    },
+    {
+      "evidence_id": "evidence:comfy-20261030",
+      "source_url": "https://github.com/PedroMarinhoDev/ComfyUI-Hy-Nomas",
+      "claim": "Independent RTX 4090 warm 10-second 1280×704 completed job took 85 seconds; 12-GB fit timing was simulated.",
+      "accessed_at": "2026-10-30T09:49:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary",
+      "source_type": "community"
+    },
+    {
+      "evidence_id": "evidence:pixelumm-20261030",
+      "source_url": "https://huggingface.co/nvidia/PixelUMM/blob/main/README.md",
+      "claim": "NVIDIA PixelUMM checkpoint is listed for noncommercial research/evaluation.",
+      "accessed_at": "2026-10-30T09:49:00Z",
+      "relation": "context",
+      "publication_basis": "linked-summary",
+      "source_type": "provider"
+    },
+    {
+      "evidence_id": "evidence:weights-20261030",
+      "source_url": "https://huggingface.co/PedroMarinhoDev/Hy-Nomas-ComfyUI/blob/main/LICENSE",
+      "claim": "Redistributor labels the fine-tuned PixelUMM decoder derivative noncommercial despite upstream project Apache-2.0 wording.",
+      "accessed_at": "2026-10-30T09:49:00Z",
+      "relation": "unresolved",
+      "publication_basis": "linked-summary",
+      "source_type": "community"
     }
   ]
 }
