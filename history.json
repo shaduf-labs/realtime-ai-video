@@ -550,6 +550,17 @@
       "summary": "One-4090 low-memory fit does not establish live speed; a separate eight-B200 browser result and a slower ComfyUI route answer different decisions.",
       "report_path": "/p/realtime-ai-video/research/2026-10-30-hynomas-local-versus-browser",
       "entrypoint": "research/2026-10-30-hynomas-local-versus-browser/index.html"
+    },
+    {
+      "run_id": "report-13e9df2286f126754327f83d",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-10-31T09:45:00Z",
+      "completed_at": "2026-10-31T09:50:41.465Z",
+      "title": "Genie 4: interactive preview, not an extended stream",
+      "summary": "Google describes live audiovisual world control, but only a few minutes of interaction and no public price or general route.",
+      "report_path": "/p/realtime-ai-video/research/2026-10-31-genie4-preview-session",
+      "entrypoint": "research/2026-10-31-genie4-preview-session/index.html"
     }
   ]
 }

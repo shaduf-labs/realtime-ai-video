@@ -2,6 +2,26 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "evidence_id": "public:genie4-model-20261031",
+      "source_type": "provider model page",
+      "source_url": "https://deepmind.google/models/genie/",
+      "title": "Google DeepMind Genie 4 model page",
+      "claim": "Trusted-tester preview, future subscriber/partner access, few-minute interaction and drift limits.",
+      "accessed_at": "2026-10-31T09:50:41.465Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary"
+    },
+    {
+      "evidence_id": "public:genie4-blog-20261031",
+      "source_type": "provider announcement",
+      "source_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "title": "Genie 4 announcement",
+      "claim": "Vendor describes interactive text/camera control and native audio; examples are selected and shortened.",
+      "accessed_at": "2026-10-31T09:50:41.465Z",
+      "relation": "context",
+      "publication_basis": "linked-summary"
+    },
+    {
       "evidence_id": "public:micro-world-2-blog-20261028",
       "source_type": "vendor technical report",
       "source_url": "https://rocm.blogs.amd.com/artificial-intelligence/Micro-World-V2/README.html",

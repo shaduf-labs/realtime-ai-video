@@ -2,6 +2,12 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "genie4-preview-session-20261031",
+      "changed_at": "2026-10-31T09:50:41.465Z",
+      "summary": "Added Genie 4 trusted-tester access, few-minute interaction limit and missing deployment economics.",
+      "path": "/p/realtime-ai-video/research/2026-10-31-genie4-preview-session"
+    },
+    {
       "change_id": "hynomas-route-split-20261030",
       "changed_at": "2026-10-30T09:49:00Z",
       "summary": "Separated one-4090 low-memory fit, eight-B200 browser throughput and slower local ComfyUI job; flagged decoder-weight rights for paid use.",
