@@ -2,6 +2,18 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "orbis-route-clock-billing-20261109",
+      "changed_at": "2026-11-09T07:30:12Z",
+      "summary": "Added the Orbis hosted API route, separate deployment clocks and ready-to-termination billing boundary.",
+      "path": "/p/realtime-ai-video/research/2026-11-09-orbis-api-chunk-billing"
+    },
+    {
+      "change_id": "streameval-control-quality-20261102",
+      "changed_at": "2026-11-02T13:22:33.417Z",
+      "summary": "Added a timed-control quality check from StreamEval and distinguished its scores from deployed latency or cost.",
+      "path": "/p/realtime-ai-video/research/2026-11-02-streameval-control-quality"
+    },
+    {
       "change_id": "genie4-preview-session-20261031",
       "changed_at": "2026-10-31T09:50:41.465Z",
       "summary": "Added Genie 4 trusted-tester access, few-minute interaction limit and missing deployment economics.",

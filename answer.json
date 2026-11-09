@@ -1,12 +1,14 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "Genie 4 adds live text, camera and native-audio interaction, but Google currently limits it to a trusted-tester research preview and says sessions last only a few minutes. Upcoming AI Ultra and API/AI Studio access is not a purchasable continuous-show setup. Its public pages give no delivered-hour price, hardware requirement or viewer-delay distribution. Existing routes such as Hy-Nomas likewise need route-specific receiver, quality and cost checks.",
+  "current_answer": "Hosted Orbis now has a documented steerable WebRTC API with 18-FPS native 832×480 video and optional upscaling. Reactor reports a 1.76-second median segment-processing time, but that is not a measured viewer response or a sustained-session result. Its meter runs from ready through idle or recoverable disconnect. A separate Google Cloud TPU port reports 1.07× playback at 18 FPS; it should not be combined with the paper’s 4K/24-FPS GPU claim. The usable-hour bill, p95 response, quality and rights remain open.",
   "catalogue_card": {
-    "question": "Can I use Genie 4 for a continuous AI video stream?",
-    "text": "Not yet as a general setup. Google lists trusted-tester access and says interactions last only a few minutes. Subscriber and API partner access are planned; public price and viewer delay are still missing."
+    "question": "Can Orbis run a live AI-video session through an API?",
+    "text": "Reactor documents an 18-FPS WebRTC route with prompt changes. Its 1.76-second median is segment processing, not viewer delay; a ready session bills even while idle."
   },
   "summary": [
+    "Reactor documents hosted Orbis Stable and Dynamic at native 832×480/18 FPS with 33-frame chunks and optional upscaling. Its reported 1.76-second median segment time is not p95 viewer delay. A separate Google TPU port reports 1.07× playback at 18 FPS, not the paper’s GPU 4K/24-FPS path. Reactor bills a ready GPU through idle and recoverable disconnect; current Orbis rate and a full delivered-hour bill were not obtained.",
+    "StreamEval’s author-run world tests show why frame quality is not a control test: HappyOyster 1.0 Adventure led Quality at 58.34 but scored 5.56 for Following; Krea Realtime led Following at 25.93. The 15–300-second scripted benchmark does not measure viewer interest, deployed latency or complete cost.",
     "Genie 4 is a hosted interactive audiovisual research preview, not a generally available continuous stream. Google says sessions support a few minutes of interaction and warns of drift with length or complex edits. Its launch examples are selected and shortened; price, hardware and receiver delay are not public.",
     "Hy-Nomas runs on one RTX 4090, but the published browser-speed test uses eight B200s. The official 4090 preset shows that the model fits with INT8 weights and CPU offload; it does not report a viewer-speed result. In a separate Reactor run, eight B200s generated 18.53 FPS over two minutes. A relayed Chromium viewer presented 17.43 FPS, below the project’s 24-FPS video timebase. An independent ComfyUI port took 85 warm seconds to finish a 10-second 1280×704 clip on a 4090. The same port flags a noncommercial license on its PixelUMM-derived decoder weights despite Apache-2.0 wording for the upstream project. Check rights before paid use. No pool-operated long session or complete bill is available.",
     "SGF+ authors show four 24-hour generations from five-second training windows; their main quantitative quality test covers 60 and 240 seconds. A Reactor integration reports about 19 generated FPS on one B200 for 16-FPS browser playback with next-chunk prompt edits and a roughly four-minute default horizon. An independent ComfyUI pack reports a warm RTX 5090 321-frame job in 56.6 seconds for about 20 seconds of file output. These are different deployments, not a proved 24-hour viewer session or cost.",
@@ -47,6 +49,9 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "Reactor and Google Cloud measurements refer to different deployments, neither pool-operated.",
+    "No p95 browser response, accepted long session, current Orbis dollar rate or full bill was obtained.",
+    "StreamEval uses author-defined scripted cases and automated judges. Its task scores are not a receiver trace, pricing comparison, independent pool measurement or player preference study.",
     "Genie 4 evidence is vendor-provided and the public examples are shortened; no independent pool receiver session, published delivered-hour bill or general access was found.",
     "Hy-Nomas browser and ComfyUI measurements are source-reported. No pool-operated long session, p95 control-to-visible response, accepted-quality rate or full bill is available. Decoder-weight rights for paid use remain unresolved.",
     "The SGF+ B200 browser and 5090 file results are project-reported, not pool-operated; prompt-to-visible p95, long-session quality, recovery, commercial rights for a specific use, and full delivered-hour cost remain unverified.",
@@ -103,7 +108,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-10-31T09:50:41.465Z",
-  "meaningfully_updated_at": "2026-10-31T09:50:41.465Z",
-  "freshness_note": "Checked 31 October 2026; Genie 4 access and duration come from Google, not a pool-operated test."
+  "checked_at": "2026-11-09T07:30:12Z",
+  "meaningfully_updated_at": "2026-11-09T07:30:12Z",
+  "freshness_note": "Checked 9 November 2026 against Reactor, Google Cloud and Visko sources. Provider measurements have not been reproduced here."
 }

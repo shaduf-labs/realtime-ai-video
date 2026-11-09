@@ -561,6 +561,28 @@
       "summary": "Google describes live audiovisual world control, but only a few minutes of interaction and no public price or general route.",
       "report_path": "/p/realtime-ai-video/research/2026-10-31-genie4-preview-session",
       "entrypoint": "research/2026-10-31-genie4-preview-session/index.html"
+    },
+    {
+      "run_id": "report-3327735f48b5cff2fe6e21aa",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-11-02T09:45:00.000Z",
+      "completed_at": "2026-11-02T13:24:12.482Z",
+      "title": "StreamEval: visual quality does not ensure control",
+      "summary": "A 300-case benchmark separates visual quality from action following in scripted interactive sessions; deployment cost and viewer delay remain unmeasured.",
+      "report_path": "/p/realtime-ai-video/research/2026-11-02-streameval-control-quality",
+      "entrypoint": "research/2026-11-02-streameval-control-quality/index.html"
+    },
+    {
+      "run_id": "report-26764d3a303d9cdb38fe9c1d",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-11-09T07:25:00Z",
+      "completed_at": "2026-11-09T07:30:12Z",
+      "title": "Orbis API route, segment timing and billing",
+      "summary": "Reactor’s 18-FPS live API and 1.76-second segment median are distinct from viewer delay, the TPU port and the full bill.",
+      "report_path": "/p/realtime-ai-video/research/2026-11-09-orbis-api-chunk-billing",
+      "entrypoint": "research/2026-11-09-orbis-api-chunk-billing/index.html"
     }
   ]
 }
