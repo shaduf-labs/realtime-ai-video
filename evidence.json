@@ -2,6 +2,26 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "evidence_id": "evidence:alayaworld-reactor-20261109",
+      "source_url": "https://github.com/AlayaLab/AlayaWorld/blob/main/reactor/README.md",
+      "claim": "One-B200 DA3 browser adapter reports 9.7 delivered FPS with paced playback, about 60 GB peak load VRAM, chunk-boundary controls and non-commercial label.",
+      "accessed_at": "2026-11-09T12:23:43Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary",
+      "source_type": "provider-documentation",
+      "title": "AlayaWorld Reactor adapter README"
+    },
+    {
+      "evidence_id": "evidence:alayaworld-repo-20261109",
+      "source_url": "https://github.com/AlayaLab/AlayaWorld",
+      "claim": "Repository route table separates DA3 browser adapter from v1.1 DMD file inference and states the released license boundary.",
+      "accessed_at": "2026-11-09T12:23:43Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary",
+      "source_type": "provider-repository",
+      "title": "AlayaWorld repository"
+    },
+    {
       "evidence_id": "public:orbis-paper-20261109",
       "source_url": "https://arxiv.org/abs/2607.26694",
       "claim": "The Visko paper reports a separate 4K/24-FPS GPU serving result.",

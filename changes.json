@@ -2,6 +2,12 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "alayaworld-browser-rate-20261109",
+      "changed_at": "2026-11-09T12:23:43Z",
+      "summary": "Separated AlayaWorld’s DA3 browser route from v1.1 file inference and reported paced 9.7-FPS B200 delivery, hardware and rights limits.",
+      "path": "/p/realtime-ai-video/research/2026-11-09-alayaworld-browser-rate"
+    },
+    {
       "change_id": "orbis-route-clock-billing-20261109",
       "changed_at": "2026-11-09T07:30:12Z",
       "summary": "Added the Orbis hosted API route, separate deployment clocks and ready-to-termination billing boundary.",

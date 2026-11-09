@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "Hosted Orbis now has a documented steerable WebRTC API with 18-FPS native 832×480 video and optional upscaling. Reactor reports a 1.76-second median segment-processing time, but that is not a measured viewer response or a sustained-session result. Its meter runs from ready through idle or recoverable disconnect. A separate Google Cloud TPU port reports 1.07× playback at 18 FPS; it should not be combined with the paper’s 4K/24-FPS GPU claim. The usable-hour bill, p95 response, quality and rights remain open.",
+  "current_answer": "AlayaWorld has a steerable DA3 browser adapter, but its one-B200 setup delivers a source-reported 9.7 FPS by slowing nominal 24-FPS video to generation pace. It peaks near 60 GB VRAM during load and is described as non-commercial. Its v1.1 DMD file path is different. Hosted Orbis remains a separate steerable WebRTC route; its receiver p95 and full bill remain unknown.",
   "catalogue_card": {
-    "question": "Can Orbis run a live AI-video session through an API?",
-    "text": "Reactor documents an 18-FPS WebRTC route with prompt changes. Its 1.76-second median is segment processing, not viewer delay; a ready session bills even while idle."
+    "question": "Does AlayaWorld really stream at 24 FPS in the browser?",
+    "text": "Its documented DA3 browser setup delivers 9.7 FPS on one B200 by slowing playback. It needs about 60 GB peak load VRAM and is labeled non-commercial; v1.1 DMD file results are separate."
   },
   "summary": [
+    "AlayaWorld’s DA3 Reactor browser adapter accepts camera and prompt changes. The project reports 9.7 delivered browser FPS on one B200 with paced playback, because a 32-frame turn takes 3.2 seconds versus about 1.33 seconds of nominal 24-FPS media. Peak load VRAM is about 60 GB, and the code and weights are labeled non-commercial. The newer v1.1 DMD file path is separate; no pool-operated p95 control delay, long-session quality or full bill is available.",
     "Reactor documents hosted Orbis Stable and Dynamic at native 832×480/18 FPS with 33-frame chunks and optional upscaling. Its reported 1.76-second median segment time is not p95 viewer delay. A separate Google TPU port reports 1.07× playback at 18 FPS, not the paper’s GPU 4K/24-FPS path. Reactor bills a ready GPU through idle and recoverable disconnect; current Orbis rate and a full delivered-hour bill were not obtained.",
     "StreamEval’s author-run world tests show why frame quality is not a control test: HappyOyster 1.0 Adventure led Quality at 58.34 but scored 5.56 for Following; Krea Realtime led Following at 25.93. The 15–300-second scripted benchmark does not measure viewer interest, deployed latency or complete cost.",
     "Genie 4 is a hosted interactive audiovisual research preview, not a generally available continuous stream. Google says sessions support a few minutes of interaction and warns of drift with length or complex edits. Its launch examples are selected and shortened; price, hardware and receiver delay are not public.",
@@ -49,6 +50,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "AlayaWorld figures are project-reported for one B200 camera-still condition; the pool did not test input-to-screen p95, long-session quality, alternate GPUs or cost.",
     "Reactor and Google Cloud measurements refer to different deployments, neither pool-operated.",
     "No p95 browser response, accepted long session, current Orbis dollar rate or full bill was obtained.",
     "StreamEval uses author-defined scripted cases and automated judges. Its task scores are not a receiver trace, pricing comparison, independent pool measurement or player preference study.",
@@ -108,7 +110,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-11-09T07:30:12Z",
-  "meaningfully_updated_at": "2026-11-09T07:30:12Z",
-  "freshness_note": "Checked 9 November 2026 against Reactor, Google Cloud and Visko sources. Provider measurements have not been reproduced here."
+  "checked_at": "2026-11-09T12:23:43Z",
+  "meaningfully_updated_at": "2026-11-09T12:23:43Z",
+  "freshness_note": "Checked 9 November 2026. Project-reported browser performance; no pool-operated session or bill."
 }

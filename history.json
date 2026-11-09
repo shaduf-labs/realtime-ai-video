@@ -583,6 +583,17 @@
       "summary": "Reactor’s 18-FPS live API and 1.76-second segment median are distinct from viewer delay, the TPU port and the full bill.",
       "report_path": "/p/realtime-ai-video/research/2026-11-09-orbis-api-chunk-billing",
       "entrypoint": "research/2026-11-09-orbis-api-chunk-billing/index.html"
+    },
+    {
+      "run_id": "report-00ca0e52cd229b710a93f604",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-11-09T09:45:00Z",
+      "completed_at": "2026-11-09T12:24:12Z",
+      "title": "AlayaWorld browser route and slowed playout",
+      "summary": "The interactive DA3 adapter reports 9.7 browser FPS on one B200 by slowing nominal 24-FPS media; v1.1 file results and rights are separate.",
+      "report_path": "/p/realtime-ai-video/research/2026-11-09-alayaworld-browser-rate",
+      "entrypoint": "research/2026-11-09-alayaworld-browser-rate/index.html"
     }
   ]
 }
