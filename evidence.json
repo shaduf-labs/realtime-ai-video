@@ -2,6 +2,36 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "evidence_id": "evidence:matrix-game-4-roblox-issue",
+      "source_url": "https://github.com/SkyworkAI/Matrix-Game/issues/87",
+      "claim": "A project collaborator says the released models do not generalize to arbitrary Roblox experiences without likely adaptation.",
+      "accessed_at": "2026-11-10T09:52:00Z",
+      "relation": "limits",
+      "publication_basis": "linked-summary",
+      "source_type": "community-issue",
+      "title": "Matrix-Game 4.0 Roblox integration request"
+    },
+    {
+      "evidence_id": "evidence:matrix-game-4-paper",
+      "source_url": "https://arxiv.org/abs/2610.27999",
+      "claim": "Authors report one-RTX-5090 480p/60-FPS gameplay and 112 ms keypress-to-display.",
+      "accessed_at": "2026-11-10T09:52:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary",
+      "source_type": "research-paper",
+      "title": "Matrix-Game 4.0 paper"
+    },
+    {
+      "evidence_id": "evidence:matrix-game-4-readme",
+      "source_url": "https://github.com/SkyworkAI/Matrix-Game/blob/main/Matrix-Game-4/README.md",
+      "claim": "The released scene-specific route includes a single-user WebRTC browser demo; lower-card warm fixed-prompt FPS excludes video I/O.",
+      "accessed_at": "2026-11-10T09:52:00Z",
+      "relation": "supports",
+      "publication_basis": "linked-summary",
+      "source_type": "provider-repository",
+      "title": "Matrix-Game 4.0 released README"
+    },
+    {
       "evidence_id": "evidence:alayaworld-reactor-20261109",
       "source_url": "https://github.com/AlayaLab/AlayaWorld/blob/main/reactor/README.md",
       "claim": "One-B200 DA3 browser adapter reports 9.7 delivered FPS with paced playback, about 60 GB peak load VRAM, chunk-boundary controls and non-commercial label.",

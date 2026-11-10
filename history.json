@@ -594,6 +594,17 @@
       "summary": "The interactive DA3 adapter reports 9.7 browser FPS on one B200 by slowing nominal 24-FPS media; v1.1 file results and rights are separate.",
       "report_path": "/p/realtime-ai-video/research/2026-11-09-alayaworld-browser-rate",
       "entrypoint": "research/2026-11-09-alayaworld-browser-rate/index.html"
+    },
+    {
+      "run_id": "report-39567afb037125eb35ea4375",
+      "status": "completed",
+      "answer_change": "meaningful_change",
+      "started_at": "2026-11-10T09:45:00Z",
+      "completed_at": "2026-11-10T09:53:49Z",
+      "title": "Matrix-Game 4.0 scene-specific browser route",
+      "summary": "The 5090 paper reports a display result, while lower-card figures are model-only; the released demo is scene-specific and single-user.",
+      "report_path": "/p/realtime-ai-video/research/2026-11-10-matrix-game-4-scene-boundary",
+      "entrypoint": "research/2026-11-10-matrix-game-4-scene-boundary/index.html"
     }
   ]
 }

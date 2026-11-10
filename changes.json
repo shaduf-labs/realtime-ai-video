@@ -2,6 +2,12 @@
   "schema_version": "1.0.0",
   "items": [
     {
+      "change_id": "matrix-game-4-scene-boundary-20261110",
+      "changed_at": "2026-11-10T09:52:00Z",
+      "summary": "Added the scene-specific Matrix-Game 4.0 browser route and separated the RTX 5090 paper receiver claim from RTX 5080/5070 Ti model throughput.",
+      "path": "/p/realtime-ai-video/research/2026-11-10-matrix-game-4-scene-boundary"
+    },
+    {
       "change_id": "alayaworld-browser-rate-20261109",
       "changed_at": "2026-11-09T12:23:43Z",
       "summary": "Separated AlayaWorld’s DA3 browser route from v1.1 file inference and reported paced 9.7-FPS B200 delivery, hardware and rights limits.",

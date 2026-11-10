@@ -1,12 +1,13 @@
 {
   "schema_version": "1.0.0",
   "status": "current",
-  "current_answer": "AlayaWorld has a steerable DA3 browser adapter, but its one-B200 setup delivers a source-reported 9.7 FPS by slowing nominal 24-FPS video to generation pace. It peaks near 60 GB VRAM during load and is described as non-commercial. Its v1.1 DMD file path is different. Hosted Orbis remains a separate steerable WebRTC route; its receiver p95 and full bill remain unknown.",
+  "current_answer": "Matrix-Game 4.0 now has a documented single-user WebRTC game route. Its low-poly engine keeps gameplay and a scene-specific model renders the visuals. Authors report 480p/60-FPS play and 112 ms keypress-to-display on one RTX 5090; 5080/5070 Ti figures are warm fixed-prompt model throughput excluding video I/O. A general-game renderer, accepted long session and complete bill are unproven. AlayaWorld and Orbis remain distinct interactive routes with different limits.",
   "catalogue_card": {
-    "question": "Does AlayaWorld really stream at 24 FPS in the browser?",
-    "text": "Its documented DA3 browser setup delivers 9.7 FPS on one B200 by slowing playback. It needs about 60 GB peak load VRAM and is labeled non-commercial; v1.1 DMD file results are separate."
+    "question": "Does Matrix-Game 4.0 run any game at 112 ms?",
+    "text": "The reported 112-ms keypress-to-display result is a scene-specific 480p/60-FPS hybrid game on one RTX 5090. The 5080/5070 Ti FPS figures exclude video I/O; arbitrary games need adaptation."
   },
   "summary": [
+    "Matrix-Game 4.0 combines an executable low-poly game with a scene-specific video renderer. Its paper reports one-RTX-5090 480p/60-FPS play and 112 ms keypress-to-display. The released single-user WebRTC demo is not a public cloud game. README results of 67 FPS on RTX 5080 and 58 FPS on RTX 5070 Ti at 864×480 are warm fixed-prompt model throughput with SageAttention and video I/O excluded, not matching browser response. The maintainer says arbitrary Roblox integration needs adaptation. No independent receiver test, accepted long session or full cost is available.",
     "AlayaWorld’s DA3 Reactor browser adapter accepts camera and prompt changes. The project reports 9.7 delivered browser FPS on one B200 with paced playback, because a 32-frame turn takes 3.2 seconds versus about 1.33 seconds of nominal 24-FPS media. Peak load VRAM is about 60 GB, and the code and weights are labeled non-commercial. The newer v1.1 DMD file path is separate; no pool-operated p95 control delay, long-session quality or full bill is available.",
     "Reactor documents hosted Orbis Stable and Dynamic at native 832×480/18 FPS with 33-frame chunks and optional upscaling. Its reported 1.76-second median segment time is not p95 viewer delay. A separate Google TPU port reports 1.07× playback at 18 FPS, not the paper’s GPU 4K/24-FPS path. Reactor bills a ready GPU through idle and recoverable disconnect; current Orbis rate and a full delivered-hour bill were not obtained.",
     "StreamEval’s author-run world tests show why frame quality is not a control test: HappyOyster 1.0 Adventure led Quality at 58.34 but scored 5.56 for Following; Krea Realtime led Following at 25.93. The 15–300-second scripted benchmark does not measure viewer interest, deployed latency or complete cost.",
@@ -50,6 +51,7 @@
     "vLLM-Omni’s current ComfyUI client still accepts one FL2VA frame even though the server recipe can represent ordered first-and-last-frame inputs."
   ],
   "uncertainty": [
+    "Matrix-Game 4.0 performance is author-reported for different route boundaries. The pool has not measured a receiver, long-session quality, generic-game fit or full billed hour.",
     "AlayaWorld figures are project-reported for one B200 camera-still condition; the pool did not test input-to-screen p95, long-session quality, alternate GPUs or cost.",
     "Reactor and Google Cloud measurements refer to different deployments, neither pool-operated.",
     "No p95 browser response, accepted long session, current Orbis dollar rate or full bill was obtained.",
@@ -110,7 +112,7 @@
     "FastVideo and ComfyUI still conflict on FastH3 8-Step V2 FL2VA scope. The pool did not run a pinned T2VA or FL2VA workflow.",
     "No pool test, invoice, uptime log, end-to-end source-to-visible latency measurement, or first-party pool analytics record is available."
   ],
-  "checked_at": "2026-11-09T12:23:43Z",
-  "meaningfully_updated_at": "2026-11-09T12:23:43Z",
-  "freshness_note": "Checked 9 November 2026. Project-reported browser performance; no pool-operated session or bill."
+  "checked_at": "2026-11-10T09:52:00Z",
+  "meaningfully_updated_at": "2026-11-10T09:52:00Z",
+  "freshness_note": "Checked 10 November 2026. Project- and paper-reported results; no pool-operated receiver, accepted hour or bill."
 }
